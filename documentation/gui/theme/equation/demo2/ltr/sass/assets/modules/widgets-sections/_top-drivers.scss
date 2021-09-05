@@ -1,0 +1,42 @@
+/*
+    Top Drivers
+*/
+.top-drivers.widget-card {
+	padding: 12px 0px;
+	h5 {
+		font-weight: 600;
+		color: $color_76;
+		font-size: 21px;
+	}
+	.usr-meta-img {
+		position: relative;
+		width: 70px;
+		height: 70px;
+		img {
+			width: 100%;
+			height: 100%;
+			border: 4px solid $color_38;
+		}
+	}
+	.t-d-drive-stats {
+		p {
+			font-size: 15px;
+			font-weight: 600;
+			color: $color_76;
+		}
+	}
+	.t-d-total-rev {
+		font-weight: 600;
+		color: $color_76;
+		font-size: 16px;
+		span {
+			color: $additional-color-5;
+		}
+	}
+	.t-d-rating {
+		i {
+			color: $additional-color-5;
+			font-size: 17px;
+		}
+	}
+}

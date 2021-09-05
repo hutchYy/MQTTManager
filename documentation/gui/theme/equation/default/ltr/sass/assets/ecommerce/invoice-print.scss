@@ -1,0 +1,111 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../base/color_variables';      // Color Variables
+@import '../base/fonticons';            // Fonticons Variables
+@import '../base/urls';                 // URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+/*
+===================
+    Invoice
+===================
+*/
+
+.invoice {
+    h3.in-heading {
+        font-size: 24px;
+        font-weight: 500;
+        color: $color_398;
+        margin: 0 0 20px;
+        line-height: 1;
+    }
+    .widget-content-area {
+        padding: $p-40;
+    }
+    .invoice-top-section {
+        border-bottom: $b-width-1 $solid $light-gray;
+    }
+    h5.invoice-info-title {
+        font-size: 15px;
+        font-weight: 500;
+        color: $color_398;
+        margin: $m-0 $m-0 5px;
+        line-height: 1;
+    }
+    .invoice-serial-number {
+        font-size: 20px;
+        color: $color_57;
+    }
+    .invoice-order-status {
+        font-size: 14px;
+        color: $color_399;
+        margin: $m-0 $m-0 5px;
+    }
+    .invoice-order-date {
+        font-size: 14px;
+        color: $color_399;
+        margin: $m-0 $m-0 5px;
+    }
+    /*    invoice-form    */
+    .invoice-from {
+        font-size: 14px;
+        margin: $m-0 $m-0 5px;
+        .invoice-from-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: $color_399;
+            margin: $m-0 $m-0 5px;
+        }
+        p {
+            margin-bottom: $m-0;
+            color: $color_400;
+        }
+    }
+    /*    invoice-to    */
+    .invoice-to {
+        font-size: 14px;
+        margin: $m-0 $m-0 5px;
+        .invoice-to-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: $color_399;
+            margin: $m-0 $m-0 5px;
+        }
+        p {
+            margin-bottom: $m-0;
+            color: $color_400;
+        }
+    }
+    .table {
+        .thead-light {
+            th {
+                font-size: 13px;
+                background-color: $light-gray;
+            }
+        }
+        >tbody {
+            >tr {
+                >td {
+                    font-size: 13px;
+                    color: $color_5;
+                    border-top: $b-width-1 $solid $light-gray;
+                }
+            }
+        }
+    }
+    .invoice-total-amounts {
+        p {
+            font-size: 14px;
+            color: $color_6;
+        }
+        h4 {
+            font-size: 18px;
+            color: $color_398;
+        }
+    }
+    .send-invoice {
+        color: $white !important;
+    }
+}

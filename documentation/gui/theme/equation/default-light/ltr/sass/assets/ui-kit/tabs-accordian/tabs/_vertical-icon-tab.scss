@@ -1,0 +1,38 @@
+/*
+    Vertical With Icon
+*/
+.rounded-vertical-pills-icon {
+	.nav-pills {
+		a {
+			-webkit-border-radius: 0.625rem !important;
+			-moz-border-radius: 0.625rem !important;
+			-ms-border-radius: 0.625rem !important;
+			-o-border-radius: 0.625rem !important;
+			border-radius: 0.625rem !important;
+			background-color: $white;
+			border: solid 1px #e4e2e2;
+			padding: 11px 23px;
+			text-align: center;
+			width: 100px;
+			padding: 8px;
+			i {
+				display: block;
+				text-align: center;
+				margin-bottom: 10px;
+				margin-top: 5px;
+			}
+		}
+		.nav-link.active {
+			box-shadow: $shadow-10;
+			background-color: $additional-color-3;
+			border-color: $color_none;
+		}
+		.show {
+			>.nav-link {
+				box-shadow: $shadow-10;
+				background-color: $additional-color-3;
+				border-color: $color_none;
+			}
+		}
+	}
+}

@@ -1,0 +1,120 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../assets/base/color_variables';   	// Color Variables
+@import '../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../assets/base/urls';   				// URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+.table {
+	>thead {
+		>tr {
+			>th {
+				color: $additional-color-2;
+				font-weight: 600;
+			}
+		}
+	}
+	td {
+		border-top: $b-width-1 $solid $color_6;
+	}
+	th {
+		border-top: $b-width-1 $solid $color_6;
+	}
+}
+.table-striped {
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				background-color: $white;
+			}
+		}
+	}
+}
+.table-hover {
+	tbody {
+		tr {
+			&:hover {
+				color: $additional-color-5;
+			}
+		}
+	}
+}
+tbody {
+	color: $color_2;
+}
+.btn.btn-default {
+	color: $white;
+	background-color: $additional-color-5;
+}
+.btn-default {
+	&:hover {
+		color: $white !important;
+		background-color: $color_47;
+	}
+	&:focus {
+		color: $white !important;
+		background-color: $color_47;
+	}
+}
+.form-control {
+	border-radius: 30px;
+	border: $b-width-1 $solid $color_2;
+}
+.page-item.active {
+	.page-link {
+		border-radius: 4px;
+		background-color: $color_47;
+		border-color: $color_47;
+	}
+}
+ul.pagination {
+	li {
+		a {
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-5;
+					border-top-left-radius: .25rem;
+					border-bottom-left-radius: .25rem;
+				}
+			}
+		}
+	}
+}
+.page-link {
+	&:focus {
+		box-shadow: none;
+	}
+}
+.pagination {
+	>li {
+		>a {
+			border-radius: 4px;
+			color: $color_2;
+		}
+		>span {
+			border-radius: 4px;
+			color: $color_2;
+		}
+	}
+}
+table {
+	tbody {
+		tr {
+			td {
+				.btn-group {
+					.dropdown-menu {
+						min-width: 10rem;
+						border-color: $light-gray-3;
+						.dropdown-item {
+							font-size: 0.79rem;
+							font-weight: 600;
+							padding: 3px 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+/*
+    Justify Centered Tab
+*/
+.tab-justify-centered {
+	.nav-tabs {
+		li {
+			a {
+				color: $additional-color-11;
+			}
+		}
+		.nav-item.show {
+			.nav-link {
+				color: $additional-color-7;
+				background-color: $white;
+				border-color: $color_142 $color_142 $white;
+			}
+		}
+		.nav-link.active {
+			color: $additional-color-7;
+			background-color: $white;
+			border-color: $color_142 $color_142 $white;
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

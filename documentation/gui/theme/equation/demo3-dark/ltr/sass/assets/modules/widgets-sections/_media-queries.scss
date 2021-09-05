@@ -1,0 +1,14 @@
+
+@media (max-width: 1199px) {
+	.last-trade {
+		border-right: none;
+	}
+}
+@media (max-width: 575px) {
+	.first-trade {
+		border-right: none;
+	}
+	.total-trades {
+		border-right: none;
+	}
+}

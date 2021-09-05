@@ -1,0 +1,26 @@
+/*
+    Social Card 2
+*/
+
+#social-card-2.card {
+	border: none;
+	background-color: $info;
+	padding: 46px 30px;
+	border-radius: 6px;
+	.media {
+		i {
+			color: $white;
+			font-size: 63px;
+		}
+		.media-body {
+			h5 {
+				color: $white;
+				font-size: 23px;
+			}
+			p {
+				color: $white;
+				font-size: 15px;
+			}
+		}
+	}
+}

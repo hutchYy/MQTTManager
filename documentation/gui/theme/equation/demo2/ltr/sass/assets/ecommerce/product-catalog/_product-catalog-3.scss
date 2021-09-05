@@ -1,0 +1,67 @@
+/*
+    Procut-catalog 3
+*/
+
+.product-cat3 {
+	.card {
+		height: 473px;
+		border: none;
+	}
+	img {
+		width: 100%;
+		height: 260px;
+	}
+	h4.card-title {
+		color: $color_394;
+		text-transform: $transform-upper;
+		font-weight: 600;
+		margin-top: -10px;
+	}
+	p.card-text {
+		color: $additional-color-6;
+		font-size: 13px;
+	}
+	button.btn {
+		background-color: $color_none;
+		border-radius: 24px;
+		color: $color_16;
+		box-shadow: none;
+		border: none;
+		font-size: 13px;
+		box-shadow: $shadow-1;
+		will-change: opacity, transform;
+		transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		&:hover {
+			border: $b-width-1 $solid $color_none;
+			padding: 0.5rem 1.375rem;
+		}
+	}
+	.product-sizes {
+		p {
+			width: 30px;
+			padding: $p-5;
+			font-size: 15px;
+			font-weight: 600;
+			&:hover {
+				color: $white;
+				background-color: $color_294;
+				border-radius: 50%;
+			}
+		}
+	}
+	.card-bottom-section {
+		position: $pos-abs;
+		right: 0;
+		bottom: 24px;
+	}
+	/*
+	    Procut-catalog 3 Hover
+	*/
+	&:hover {
+		button.btn {
+			background-color: $color_16;
+			color: $white;
+		}
+	}
+}

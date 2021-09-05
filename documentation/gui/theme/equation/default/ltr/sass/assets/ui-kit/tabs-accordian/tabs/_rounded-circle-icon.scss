@@ -1,0 +1,32 @@
+/*
+    Rouned Circle With Icons   
+*/
+.rounded-circle-pills-icon {
+	.nav-pills {
+		li {
+			a {
+				background-color: $color_6;
+				padding: 20px 20px;
+				i {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+		.nav-link.active {
+			box-shadow: $shadow-10;
+			background-color: $color_51;
+		}
+		.show {
+			>.nav-link {
+				box-shadow: $shadow-10;
+				background-color: $color_51;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

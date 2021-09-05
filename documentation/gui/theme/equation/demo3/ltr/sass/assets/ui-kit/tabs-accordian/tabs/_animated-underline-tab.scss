@@ -1,0 +1,54 @@
+/*
+    Animated Underline
+*/
+.animated-underline-content {
+	.nav-tabs {
+		border-bottom: $b-width-1 $solid $color_142;
+		li {
+			a {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				position: relative;
+			}
+		}
+		.nav-link.active {
+			border-color: $color_none;
+			color: $color_47;
+			&:before {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+		.show {
+			>.nav-link {
+				border-color: $color_none;
+				color: $color_47;
+			}
+		}
+		.nav-link {
+			&:focus {
+				border-color: $color_none;
+			}
+			&:hover {
+				border-color: $color_none;
+			}
+			&:before {
+				content: "";
+				height: 1px;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				background-color: $color_47;
+				-webkit-transform: scale(0);
+				transform: scale(0);
+				transition: all .3s;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "equation-admin-template",
+  "version": "1.0.0",
+  "description": "Booststrap 4 admin template made by equation",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "admin",
+    "bootstrap",
+    "html",
+    "css",
+    "js",
+    "dashboard",
+    "sass"
+  ],
+  "author": "Design Reset",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.7",
+    "gulp-cssnano": "^2.1.3"
+  }
+}

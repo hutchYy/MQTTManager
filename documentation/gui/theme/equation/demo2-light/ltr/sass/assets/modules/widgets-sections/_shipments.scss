@@ -1,0 +1,31 @@
+/*
+    Shipments
+*/
+.widget.t-shipments-widget {
+	h6 {
+		font-size: 15px;
+		font-weight: 600;
+		color: $color_76;
+	}
+	#t-shipments-chart {
+		width: 60px;
+		height: 60px;
+		position: $pos-rel;
+	}
+	.t-s-percentage {
+		color: $color_53;
+		font-size: 16px;
+	}
+	i.icon-up {
+		font-size: 17px;
+		color: $color_47;
+	}
+	i.icon-down {
+		color: $additional-color-6;
+		font-size: 17px;
+	}
+	.t-s-value {
+		font-size: 24px;
+		color: $color_76;
+	}
+}

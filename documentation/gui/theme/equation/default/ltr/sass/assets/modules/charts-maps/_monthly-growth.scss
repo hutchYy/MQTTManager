@@ -1,0 +1,73 @@
+/*
+  Monthly Growth
+*/
+.monthly-growth-title {
+	h6 {
+		color: $color_76;
+		font-size: 16px;
+		font-weight: 600;
+		padding: 20px;
+		border-bottom: 1px solid $light-gray;
+	}
+}
+.monthly-growth-chart {
+	#monthly_growth_chart {
+		.ct-label.ct-vertical.ct-start {
+			color: $dark;
+			font-weight: 600;
+		}
+		.ct-chart-bar {
+			.ct-label.ct-horizontal.ct-end {
+				color: $dark;
+				font-weight: 600;
+			}
+		}
+		.ct-grid {
+			stroke: $light-gray;
+		}
+		.ct-series-a {
+			.ct-bar {
+				stroke: $primary;
+				&:nth-child(1) {
+					stroke: $color_88;
+				}
+				&:nth-child(7) {
+					stroke: $color_88;
+				}
+				&:nth-child(10) {
+					stroke: $color_88;
+				}
+				&:nth-child(11) {
+					stroke: $color_88;
+				}
+				&:nth-child(12) {
+					stroke: $color_88;
+				}
+			}
+		}
+	}
+	.m-g-positive-stats {
+		position: relative;
+		padding-left: 3px;
+		color: $additional-color-11;
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.m-g-negative-stats {
+		position: relative;
+		padding-left: 3px;
+		color: $additional-color-11;
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.d-m-positive-stats {
+		background-color: $primary;
+		width: 12px;
+		height: 12px;
+	}
+	.d-m-negative-stats {
+		background-color: $color_88;
+		width: 12px;
+		height: 12px;
+	}
+}

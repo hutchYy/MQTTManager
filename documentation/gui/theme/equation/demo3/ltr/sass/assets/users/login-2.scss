@@ -1,0 +1,135 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+	background: $color_222 $url_11 no-repeat fixed center;
+	background-size: cover;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+}
+.form-login {
+	width: 410px;
+	max-width: 410px;
+	padding: 35px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 10px 60px 0 rgba(29,29,31,.09);
+	width: 100%;
+	margin: auto;
+	label {
+		color: $additional-color-6;
+		font-size: 13px;
+	}
+	.input-group {
+		.form-control {
+			position: relative;
+			box-sizing: border-box;
+			height: auto;
+			padding: 12px 45px 12px 0;
+			font-size: 16px;
+			border-left: none;
+			border-bottom-right-radius: 30px;
+			border-top-right-radius: 30px;
+			color: $white;
+			background: rgba(230, 230, 230, 0.20);
+			border: none;
+		}
+		.input-group-prepend {
+			margin-right: 0;
+			.input-group-text {
+				border-bottom-left-radius: 30px;
+				border-top-left-radius: 30px;
+				background-color: $color_221;
+				color: $white;
+				border-right: none;
+				border: none;
+			}
+		}
+	}
+	.form-control {
+		&::-webkit-input-placeholder {
+			color: $white;
+			font-size: 13px;
+		}
+		&::-ms-input-placeholder {
+			color: $white;
+			font-size: 13px;
+		}
+		&::-moz-placeholder {
+			color: $white;
+			font-size: 13px;
+		}
+		&:focus {
+			z-index: 2;
+			border-color: $white;
+		}
+	}
+	.checkbox {
+		.custom-control {
+			label {
+				color: $white;
+				font-size: 14px;
+			}
+		}
+		.custom-checkbox {
+			.custom-control-input {
+				&:checked~.custom-control-label {
+					&::before {
+						background-color: $color_225;
+					}
+				}
+			}
+		}
+	}
+	.forgot-pass {
+		a {
+			color: $white;
+			font-size: 13px;
+			font-weight: 600;
+		}
+	}
+	.social-icons {
+		h5 {
+			color: $color_48;
+			font-weight: 600;
+		}
+	}
+}
+.login-text {
+	p {
+		a {
+			color: $color_224;
+			font-weight: 600;
+			margin-left: 5px;
+			margin-right: 5px;
+			&:hover {
+				color: $color_35;
+			}
+		}
+	}
+}
+.btn-gradient-warning {
+	padding: 12px 15px 12px 15px;
+}
+.custom-control-label {
+	&::before {
+		background-color: $color_226;
+	}
+}

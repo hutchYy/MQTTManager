@@ -1,0 +1,19 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+//  ===============================
+//	     Newsletter Imports 
+//  ===============================
+
+@import 'newsletter/newsletter-header';
+@import 'newsletter/newsletter-section-1';
+@import 'newsletter/newsletter-section-2';
+@import 'newsletter/newsletter-section-3';
+@import 'newsletter/newsletter-section-4';
+@import 'newsletter/newsletter-footer';

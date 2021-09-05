@@ -1,0 +1,75 @@
+/*
+    Top Rented Cars
+*/
+.top-rented-cars-container {
+	.top-rented-cars-header {
+		padding: 20px;
+		border-bottom: 1px solid $light-gray;
+		h6 {
+			font-weight: 600;
+			color: $additional-color-11;
+			font-size: 20px;
+		}
+	}
+	.top-rented-cars-body {
+		table.table {
+			td {
+				border: none;
+				padding: 15px 20px;
+				vertical-align: $v-align-middle;
+				.media {
+					span.t-r-cars-short-name {
+						padding: 11px 0;
+						border-radius: 50%;
+						height: 45px;
+						width: 45px;
+						text-align: $align-center;
+						font-weight: 600;
+						font-size: 16px;
+					}
+					.media-body {
+						h6 {
+							font-weight: 600;
+							color: $additional-color-11;
+							font-size: 18px;
+						}
+						.t-r-rating {
+							span {
+								font-weight: 600;
+								color: $additional-color-11;
+								font-size: 25px;
+							}
+							.t-r-rating-star {
+								i.flaticon-star-fill {
+									color: $color_16;
+									font-size: 17px;
+									vertical-align: $v-align-text-top;
+								}
+								i.flaticon-star-outline {
+									color: $additional-color-6;
+									font-size: 17px;
+									vertical-align: $v-align-text-top;
+								}
+							}
+						}
+					}
+				}
+				div.t-r-usr {
+					i {
+						font-size: 20px;
+						color: $color_86;
+					}
+					span {
+						font-size: 18px;
+						color: $additional-color-11;
+					}
+				}
+			}
+			th {
+				border: none;
+				padding: 15px 20px;
+				vertical-align: $v-align-middle;
+			}
+		}
+	}
+}

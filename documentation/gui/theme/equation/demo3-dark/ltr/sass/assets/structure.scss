@@ -1,0 +1,31 @@
+//	=================
+//    	Imports
+//	=================
+@import 'structure/variables/variables';   // Variables
+@import 'structure/variables/fonticons';   // Fonticons
+
+
+#content {
+	margin-top: 92px;
+	margin-left: 125px;
+	width: 100%;
+	width: 50%;
+	flex-grow: 8;
+	margin-bottom: 67px;
+	transition: all .24s ease-in-out;
+}
+.dropdown-item {
+	line-height: 1.8;
+	padding: 0.625rem 1rem;
+}
+
+
+//    ====================================
+//        Structure of the admin panel 
+//    ====================================
+
+@import 'structure/navbar';         		//Navbar
+@import 'structure/profileSidebar';         //Profile Sidebar
+@import 'structure/footer';         		//Footer
+@import 'structure/sidebar';         		//Sidebar
+@import 'structure/media_query';         	//Media Query

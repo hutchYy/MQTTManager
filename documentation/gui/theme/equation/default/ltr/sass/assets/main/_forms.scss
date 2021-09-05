@@ -1,0 +1,177 @@
+.form-control-file {
+	width: 100%;
+	color: $color_96;
+	&::-webkit-file-upload-button {
+		padding: 9px 8px;
+		text-shadow: none;
+		font-size: 12px;
+		color: $white;
+		font-weight: normal;
+		white-space: normal;
+		word-wrap: break-word;
+		transition: .2s ease-out;
+		touch-action: manipulation;
+		cursor: pointer;
+		background-color: $color_97;
+		box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+		will-change: opacity, transform;
+		transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		border-radius: 2px;
+		border: $color_none;
+		outline: none;
+	}
+	&::-ms-file-upload-button {
+		padding: 0.4375rem 1.25rem;
+		text-shadow: none;
+		font-size: 14px;
+		color: $white;
+		font-weight: normal;
+		white-space: normal;
+		word-wrap: break-word;
+		transition: .2s ease-out;
+		touch-action: manipulation;
+		cursor: pointer;
+		background-color: $color_97;
+		box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+		will-change: opacity, transform;
+		transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		border-radius: 2px;
+		border: $color_none;
+		outline: none;
+	}
+}
+.form-control-file.form-control-file-rounded {
+	&::-webkit-file-upload-button {
+		-webkit-border-radius: 1.875rem !important;
+		-moz-border-radius: 1.875rem !important;
+		-ms-border-radius: 1.875rem !important;
+		-o-border-radius: 1.875rem !important;
+		border-radius: 1.875rem !important;
+	}
+}
+select.form-control-rounded.form-control[multiple] {
+	border: 1px solid $color_98;
+	&:focus {
+		option {
+			&:checked {
+				background: #3862f5 linear-gradient(0deg, #3862f5 0%, #3862f5 100%);
+				color: $white;
+			}
+		}
+	}
+	option {
+		&:checked {
+			background: #f1f2f3 linear-gradient(0deg, #f1f2f3 0%, #f1f2f3 100%);
+		}
+	}
+}
+.custom-select {
+	border: 1px solid $color_98;
+	border: inset 0 0px 1px rgba(0,0,0,.075), 0 0 1px rgba(0,0,0,.075);
+	&:focus {
+		option {
+			&:checked {
+				background: #3862f5 linear-gradient(0deg, #3862f5 0%, #3862f5 100%);
+				color: $white;
+			}
+		}
+	}
+	option {
+		&:checked {
+			background: #f1f2f3 linear-gradient(0deg, #f1f2f3 0%, #f1f2f3 100%);
+		}
+	}
+}
+.input-group-text {
+	background-color: $color_6;
+}
+.form-control-rounded-left {
+	-webkit-border-top-left-radius: 1.875rem !important;
+	-webkit-border-bottom-left-radius: 1.875rem !important;
+	-moz-border-top-left-radius: 1.875rem !important;
+	-moz-border-bottom-left-radius: 1.875rem !important;
+	-ms-border-top-left-radius: 1.875rem !important;
+	-ms-border-bottom-left-radius: 1.875rem !important;
+	-o-border-top-left-radius: 1.875rem !important;
+	-o-border-bottom-left-radius: 1.875rem !important;
+	border-top-left-radius: 1.875rem !important;
+	border-bottom-left-radius: 1.875rem !important;
+}
+.form-control-rounded-right {
+	-webkit-border-top-right-radius: 1.875rem !important;
+	-webkit-border-bottom-right-radius: 1.875rem !important;
+	-moz-border-top-right-radius: 1.875rem !important;
+	-moz-border-bottom-right-radius: 1.875rem !important;
+	-ms-border-top-right-radius: 1.875rem !important;
+	-ms-border-bottom-right-radius: 1.875rem !important;
+	-o-border-top-right-radius: 1.875rem !important;
+	-o-border-bottom-right-radius: 1.875rem !important;
+	border-top-right-radius: 1.875rem !important;
+	border-bottom-right-radius: 1.875rem !important;
+}
+.form-control-rounded {
+	-webkit-border-radius: 1.875rem !important;
+	-moz-border-radius: 1.875rem !important;
+	-ms-border-radius: 1.875rem !important;
+	-o-border-radius: 1.875rem !important;
+	border-radius: 1.875rem !important;
+}
+.custom-file-label.custom-file-rounded {
+	-webkit-border-radius: 1.875rem !important;
+	-moz-border-radius: 1.875rem !important;
+	-ms-border-radius: 1.875rem !important;
+	-o-border-radius: 1.875rem !important;
+	border-radius: 1.875rem !important;
+	border-radius: 1.875rem !important;
+	&::after {
+		-webkit-border-top-right-radius: 1.875rem !important;
+		-webkit-border-bottom-right-radius: 1.875rem !important;
+		-moz-border-top-right-radius: 1.875rem !important;
+		-moz-border-bottom-right-radius: 1.875rem !important;
+		-ms-border-top-right-radius: 1.875rem !important;
+		-ms-border-bottom-right-radius: 1.875rem !important;
+		-o-border-top-right-radius: 1.875rem !important;
+		-o-border-bottom-right-radius: 1.875rem !important;
+		border-top-right-radius: 1.875rem !important;
+		border-bottom-right-radius: 1.875rem !important;
+	}
+}
+
+.custom-select.is-valid {
+	border-color: $success;
+}
+.form-control.is-valid {
+	border-color: $success;
+}
+.was-validated {
+	.custom-select {
+		&:valid {
+			border-color: $success;
+		}
+		&:invalid {
+			border-color: $danger;
+		}
+	}
+	.form-control {
+		&:valid {
+			border-color: $success;
+		}
+		&:invalid {
+			border-color: $danger;
+		}
+	}
+}
+.valid-tooltip {
+	background-color: $success;
+}
+.custom-select.is-invalid {
+	border-color: $danger;
+}
+.form-control.is-invalid {
+	border-color: $danger;
+}
+.invalid-tooltip {
+	background-color: $danger;
+}

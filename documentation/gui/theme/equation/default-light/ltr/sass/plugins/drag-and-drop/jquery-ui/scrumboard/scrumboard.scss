@@ -1,0 +1,174 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../../assets/base/color_variables';   	// Color Variables
+@import '../../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../../assets/base/urls';   				// URLS Variables
+@import '../../../../assets/base/utilities_variables';  // Utilities Variables
+
+
+/*
+	=======================
+		Scrumboard Style
+	=======================
+*/
+.progress {
+	height: 2px;
+}
+.scrumboard {
+	[data-section="s-new"] {
+		.s-heading {
+			h6 {
+				color: $primary;
+				font-size: 14px;
+				font-weight: 600;
+				i {
+					vertical-align: $v-align-middle;
+					font-size: 18px;
+					font-weight: 100;
+				}
+			}
+		}
+		.card {
+			.status-badge {
+				background-color: $light-primary;
+				color: $primary;
+			}
+		}
+	}
+	[data-section="s-in-progress"] {
+		.s-heading {
+			h6 {
+				color: $additional-color-8;
+				font-size: 14px;
+				font-weight: 600;
+				i {
+					vertical-align: $v-align-middle;
+					font-size: 18px;
+					font-weight: 100;
+				}
+			}
+		}
+		.card {
+			.status-badge {
+				background-color: $light-warning;
+				color: $warning;
+			}
+		}
+	}
+	[data-section="s-on-review"] {
+		.s-heading {
+			h6 {
+				color: $secondary;
+				font-size: 14px;
+				font-weight: 600;
+				i {
+					vertical-align: $v-align-middle;
+					font-size: 18px;
+					font-weight: 100;
+				}
+			}
+		}
+		.card {
+			.status-badge {
+				background-color: $light-secondary;
+				color: $color_30;
+			}
+		}
+	}
+	[data-section="s-approved"] {
+		.s-heading {
+			h6 {
+				color: $success;
+				font-size: 14px;
+				font-weight: 600;
+				i {
+					vertical-align: $v-align-middle;
+					font-size: 18px;
+					font-weight: 100;
+				}
+			}
+		}
+		.card {
+			.status-badge {
+				background-color: $light-success;
+				color: $color_22;
+			}
+		}
+	}
+	.card {
+		position: $pos-rel;
+		border: none;
+		.card-body {
+			position: $pos-rel;
+			cursor: move;
+			i {
+				cursor: pointer;
+				color: $color_83;
+				font-size: 16px;
+			}
+			h6 {
+				font-weight: 600;
+				color: $additional-color-5;
+				font-size: 15px;
+			}
+			.task-quantity {
+				color: $additional-color-6;
+			}
+			.new-control.new-checkbox {
+				color: $additional-color-11;
+			}
+			.deadline {
+				color: $color_2;
+				font-size: 13px;
+			}
+		}
+		.status-badge {
+			position: $pos-abs;
+			top: 0;
+			left: 0;
+			padding: 2px 4px;
+			font-size: 12px;
+			border-bottom-right-radius: $br-6;
+			i {
+				font-size: 15px;
+				vertical-align: $v-align-middle;
+			}
+		}
+	}
+}
+
+/*
+	=========================
+		On Sorting Style
+	=========================
+*/
+.scrumboard-on-sort-change {
+	background: $dark !important;
+	border-radius: 100%;
+	width: 40px !important;
+	height: 40px !important;
+	cursor: move;
+	&:before {
+		content: "E";
+		font-size: 15px;
+		position: $pos-rel;
+		left: 15px;
+		color: $white;
+		top: 9px;
+	}
+}
+.ui-state-highlight {
+	position: $pos-rel;
+	border-color: $primary;
+	height: 33px;
+	background-color: $primary;
+	&:before {
+		content: 'Drop';
+		position: $pos-abs;
+		left: 41%;
+		font-size: 19px;
+		color: $white;
+	}
+}

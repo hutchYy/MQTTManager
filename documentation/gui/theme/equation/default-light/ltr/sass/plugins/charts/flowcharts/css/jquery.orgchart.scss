@@ -1,0 +1,120 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../../assets/base/color_variables';   	// Color Variables
+@import '../../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../../assets/base/urls';   				// URLS Variables
+@import '../../../../assets/base/utilities_variables';  // Utilities Variables
+
+
+div.orgChart {
+	margin: $m-10;
+	padding: $p-20;
+	h2 {
+		margin: $m-0;
+		font-size: $fs-16;
+		font-weight: normal;
+		min-height: 20px;
+		text-align: $align-center;
+		&:hover {
+			background: $color_50;
+			cursor: text;
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 4px;
+		padding: $p-0;
+		font-size: 0.8em;
+		text-align: $align-left;
+	}
+	ul.stack {
+		text-align: $align-center;
+		ul {
+			text-align: $align-center;
+		}
+	}
+	table {
+		width: 100%;
+	}
+	tr.lines {
+		td.line {
+			width: 1px;
+			height: 20px;
+		}
+		td.top {
+			border-top: $b-width-1 $dash $color_55;
+		}
+		td.left {
+			border-right: $b-width-1 $dash $color_55;
+		}
+		td.right {
+			border-left: $b-width-0 $dash $color_55;
+		}
+		td.half {
+			width: 50%;
+		}
+	}
+	td {
+		text-align: $align-center;
+		vertical-align: $v-align-top;
+		padding: $p-0 2px;
+	}
+	div.node {
+		cursor: default;
+		border: $b-width-1 $solid $color_526;
+		display: inline-block;
+		padding: $p-5;
+		width: 108px;
+		height: 70px;
+		background: $white;
+		background: -moz-$additional-gradient-color-77;
+		background: -webkit-$additional-gradient-color-77;
+		background: -o-$additional-gradient-color-77;
+		background: -ms-$additional-gradient-color-77;
+		background: $additional-gradient-color-77;
+		line-height: 1.3em;
+		border-radius: $br-4;
+		-moz-border-radius: $br-4;
+		-webkit-border-radius: $br-4;
+		position: $pos-rel;
+		box-shadow: 1px 1px 0px #ddd;
+	}
+}
+.org-add-button {
+	position: $pos-abs;
+	font-size: 12px;
+	bottom: 6px;
+	left: 5px;
+	padding-left: 27px;
+	background: $url_28 no-repeat 0 0px;
+	height: 20px;
+	&:hover {
+		background-color: $color_525;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+}
+.org-del-button {
+	position: $pos-abs;
+	font-size: 12px;
+	background: $url_29 no-repeat;
+	width: 20px;
+	height: 20px;
+	bottom: 7px;
+	right: 5px;
+	&:hover {
+		background-color: $color_525;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+}
+.org-confirm-del-button {
+	position: $pos-abs;
+	font-size: 12px;
+	display: none;
+}
+.org-input {
+	width: 165px;
+}

@@ -1,0 +1,25 @@
+/*
+    Justify Centered Pill
+*/
+.pill-justify-centered {
+	.nav-pills {
+		li {
+			a {
+				color: $additional-color-11;
+			}
+		}
+		.nav-link.active {
+			background-color: $additional-color-7;
+		}
+		.show {
+			>.nav-link {
+				background-color: $additional-color-7;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

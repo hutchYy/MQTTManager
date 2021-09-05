@@ -1,0 +1,33 @@
+
+/*  Border Radius */
+.br-0 {
+	border-radius: $br-0 !important;
+}
+.br-4 {
+	border-radius: $br-4 !important;
+}
+.br-6 {
+	border-radius: $br-6 !important;
+}
+.br-30 {
+	border-radius: $br-30 !important;
+}
+.br-50 {
+	border-radius: $br-50 !important;
+}
+.br-left-30 {
+	border-top-left-radius: $br-30 !important;
+	border-bottom-left-radius: $br-30 !important;
+}
+.br-right-30 {
+	border-top-right-radius: $br-30 !important;
+	border-bottom-right-radius: $br-30 !important;
+}
+.bx-top-6 {
+	border-top-right-radius: $br-6 !important;
+	border-top-left-radius: $br-6 !important;
+}
+.bx-bottom-6 {
+	border-bottom-right-radius: $br-6 !important;
+	border-bottom-left-radius: $br-6 !important;
+}

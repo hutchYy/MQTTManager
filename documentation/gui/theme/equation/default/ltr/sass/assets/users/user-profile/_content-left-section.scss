@@ -1,0 +1,204 @@
+/*---------------Left Section-------------*/
+#content {
+	//  Search Seaction
+	.search-section {
+		.card {
+			border-bottom: $b-width-1 $solid $additional-color-6;
+			border-radius: $br-0;
+			.card-body {
+				input {
+					border: none;
+				}
+			}
+		}
+	}
+	// 	Profile Section
+	.profile-info-section {
+		.card {
+			.card-body {
+				h4 {
+					font-weight: 600;
+					color: $color_228;
+					font-size: 1.125rem;
+				}
+				i {
+					color: $color_83;
+					margin-right: 8px;
+					font-size: 19px;
+				}
+				p {
+					color: $color_229;
+					font-size: 13px;
+					span.usr-work-position {
+						color: $additional-color-11;
+						font-size: 14px;
+					}
+					a {
+						color: $color_57;
+						font-size: 13px;
+					}
+				}
+				.social-networks-section {
+					h4 {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	//	 Friends Section
+	.friends-section {
+		.card {
+			.card-body {
+				h4 {
+					font-weight: 600;
+					color: $color_228;
+					padding: 15px $p-20;
+					font-size: 1.125rem;
+				}
+				i {
+					color: $color_83;
+					margin-right: 8px;
+					font-size: 17px;
+				}
+				ul {
+					color: $color_229;
+					font-size: 13px;
+					li {
+						margin-right: 0;
+						img {
+							width: 75.5px;
+							margin-bottom: 12px;
+							border-radius: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+	// 	Groups Section
+	.group-section {
+		.card {
+			.card-body {
+				h4 {
+					font-weight: 600;
+					color: $color_228;
+					padding-bottom: $p-20;
+					font-size: 1.125rem;
+				}
+				i {
+					color: $color_83;
+					margin-right: 8px;
+					font-size: 20px;
+				}
+				ul {
+					color: $color_229;
+					font-size: 13px;
+					li {
+						margin-right: 6px;
+						position: $pos-rel;
+						img {
+							width: 50px;
+							height: 50px;
+							border-radius: 50%;
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+	//  Weather Section  
+	.weather-section {
+		background-color: $light-primary;
+		.w-real-data {
+			padding: $p-20;
+		}
+		.w-real-time {
+			.time {
+				font-weight: 600;
+				font-size: 15px;
+				color: $primary;
+			}
+		}
+		.w-real-day {
+			font-size: 15px;
+			color: $color_57;
+			text-transform: $transform-upper;
+		}
+		.w-stats {
+			i {
+				font-size: 100px;
+				color: $color_57;
+			}
+			.w-temp {
+				font-size: 30px;
+				color: $primary;
+				span {
+					position: $pos-rel;
+					&:before {
+						position: $pos-abs;
+						content: 'o';
+						font-size: 20px;
+						right: -15px;
+						top: -2px;
+						font-weight: 600;
+					}
+				}
+			}
+			.w-txt {
+				color: $primary;
+				font-size: 17px;
+				font-weight: 600;
+				text-transform: $transform-upper;
+			}
+		}
+		.w-location {
+			font-weight: 600;
+			text-transform: $transform-upper;
+			color: $white;
+			padding: 15px $p-20;
+			border-top: $b-width-1 $solid $light-gray;
+			.w-location-city {
+				color: $color_2;
+			}
+			.w-location-country {
+				color: $color_2;
+			}
+		}
+	}
+	// Photo Section
+	.photo-section {
+		.card {
+			.card-body {
+				h4 {
+					font-weight: 600;
+					color: $color_228;
+					padding: 15px $p-20;
+					font-size: 1.125rem;
+				}
+				i {
+					font-weight: 700;
+					color: $color_83;
+					margin-right: 8px;
+				}
+				ul {
+					color: $color_229;
+					font-size: 13px;
+					li {
+						margin-right: 0;
+						img {
+							width: 75.5px;
+							margin-bottom: 12px;
+							border-radius: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.badge.counter {
+	box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.4);
+}
+/*---------------/Left Section-------------*/

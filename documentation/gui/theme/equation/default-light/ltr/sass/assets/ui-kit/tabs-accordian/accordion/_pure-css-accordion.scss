@@ -1,0 +1,36 @@
+/*     Pure CSS3 Hover Accordion      */
+.accordion {
+	background-color: $white;
+}
+.single-accordion {
+	height: 35px;
+	overflow: hidden;
+	background: #ebedf2;
+	color: $additional-color-11;
+	margin-bottom: 5px;
+	padding: 0px 10px;
+	border-radius: 2px;
+	-webkit-transition: all 1s;
+	&:hover {
+		height: 165px;
+		border-radius: 10px;
+		-webkit-transition: all 1s;
+	}
+	h3 {
+		&:hover {
+			cursor: pointer;
+		}
+		color: $white;
+		font-size: 22px;
+		font-variant: small-caps;
+		line-height: 0px;
+		margin-top: 16px;
+		margin-bottom: 10px;
+	}
+	p {
+		line-height: 25px;
+		color: $color_2;
+		text-align: $align-justify;
+		font-size: 0.8rem;
+	}
+}

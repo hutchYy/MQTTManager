@@ -1,0 +1,89 @@
+/*
+    Social Likes
+*/
+.social-likes {
+	.card {
+		border: none;
+		.icon {
+			padding: 30px 20px 5px 20px;
+			i {
+				font-size: 30px;
+				border-radius: 50%;
+				color: $white;
+				padding: 14px;
+				letter-spacing: 0;
+			}
+		}
+		.card-content {
+			h5 {
+				color: $color_76;
+				font-size: 25px;
+			}
+			p {
+				color: $additional-color-11;
+				margin-bottom: 25px;
+				font-size: 16px;
+			}
+		}
+		.card-btn-section {
+			margin-top: 30px;
+			p {
+				padding: 18px;
+				margin: 0;
+				font-weight: 600;
+				cursor: pointer;
+			}
+		}
+	}
+	.card.facebook {
+		.icon {
+			i {
+				background-image: linear-gradient(to right, #6424c9 0%, #5e8bf7 100%);
+			}
+		}
+		.card-btn-section {
+			p {
+				color: $color_53;
+				font-size: 15px;
+				&:hover {
+					background-image: linear-gradient(to right, #6424c9 0%, #5e8bf7 100%);
+					color: $white;
+				}
+			}
+		}
+	}
+	.card.dribbble {
+		.icon {
+			i {
+				background-image: linear-gradient(120deg, #ee3d50 0%, #f8538d 100%);
+			}
+		}
+		.card-btn-section {
+			p {
+				color: $additional-color-3;
+				font-size: 15px;
+				&:hover {
+					background-image: linear-gradient(120deg, #ee3d50 0%, #f8538d 100%);
+					color: $white;
+				}
+			}
+		}
+	}
+	.card.twitter {
+		.icon {
+			i {
+				background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+			}
+		}
+		.card-btn-section {
+			p {
+				color: $info;
+				font-size: 15px;
+				&:hover {
+					background-image: linear-gradient(to right, #3862f5 0%, #25d5e4 100%);
+					color: $white;
+				}
+			}
+		}
+	}
+}

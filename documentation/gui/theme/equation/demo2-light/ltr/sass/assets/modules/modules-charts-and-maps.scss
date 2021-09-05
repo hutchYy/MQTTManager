@@ -1,0 +1,59 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+.title-heading {
+	color: $color_76;
+	text-transform: initial;
+	font-weight: 600;
+	font-size: 18px;
+	margin: 0 0 20px 0;
+	text-transform: $transform-upper;
+}
+#activity-chart {
+	width: 100%;
+	height: 400px;
+}
+#bitcoin-chart {
+	width: 100%;
+	height: 525px;
+}
+#sale-statistics {
+	width: 100%;
+	height: 406px;
+}
+#radarchartdiv {
+	width: 100%;
+	height: 439px;
+	font-size: 11px;
+}
+
+//    =============================================
+//        	Modules Charts and maps Imports 
+//    =============================================
+
+@import 'charts-maps/analytics-chart';
+@import 'charts-maps/map';
+@import 'charts-maps/monthly-chart';
+@import 'charts-maps/monthly-growth';
+@import 'charts-maps/profit-revenue';
+@import 'charts-maps/revenue-profit-summary';
+@import 'charts-maps/revenue-statistics';
+@import 'charts-maps/sales-growth';
+@import 'charts-maps/today-volume';
+@import 'charts-maps/top-keywords';
+@import 'charts-maps/total-page-views';
+@import 'charts-maps/total-shared-traded';
+@import 'charts-maps/total-visitors';
+@import 'charts-maps/total-visits';
+@import 'charts-maps/traders-per-exchange';
+@import 'charts-maps/traffic-sources';
+@import 'charts-maps/visitors-engagement';
+@import 'charts-maps/visitors-monthly';
+@import 'charts-maps/visitors-stats';
+@import 'charts-maps/visitors-weekly';

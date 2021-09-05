@@ -1,0 +1,180 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+/*
+    Scheduled Appointments
+*/
+h5 {
+	font-size: 0.875rem;
+}
+.scheduler {
+	.card {
+		border: none;
+		.s-widget-title {
+			color: $color_57;
+			font-size: 15px;
+			font-weight: 600;
+			i {
+				color: $color_57;
+				font-size: 19px;
+				margin-right: 4px;
+			}
+		}
+		form.appointment-form {
+			h4 {
+				color: $color_57;
+				font-size: 15px;
+				font-weight: 600;
+			}
+			i {
+				color: $color_57;
+				font-size: 19px;
+				margin-right: 4px;
+				vertical-align: $v-align-text-bottom;
+			}
+			.form-group {
+				position: $pos-rel;
+				i {
+					position: $pos-abs;
+					z-index: 2;
+					right: 10px;
+					top: 9px;
+					pointer-events: none;
+				}
+				input {
+					border-radius: 20px;
+					color: $additional-color-6;
+					border-color: $light-gray;
+					font-size: 14px;
+					&::-ms-clear {
+						display: none;
+					}
+				}
+				select.custom-select {
+					border-radius: 20px;
+					color: $additional-color-6;
+					border-color: $light-gray;
+				}
+			}
+			.a-slots {
+				.slots-1 {
+					.custom-control {
+						label.custom-control-label {
+							padding: 5px 15px 5px 30px;
+							border: $b-width-1 $dash $light-gray;
+							border-radius: 20px;
+							margin-bottom: 14px;
+							&::before {
+								border-radius: 21px;
+								top: 9px;
+								left: 6px;
+							}
+							&::after {
+								top: 9px;
+								left: 6px;
+							}
+						}
+					}
+					.custom-checkbox {
+						.custom-control-input {
+							&:checked~.custom-control-label {
+								color: $color_55;
+								&::before {
+									background-color: $color_84;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.scheduled-appointments {
+		.scheduled-appointments-category {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.scheduled-appointments-item {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+}
+.daterangepicker {
+	table {
+		font-size: 13px;
+	}
+}
+.margin-bottom-25 {
+	margin-bottom: 25px;
+}
+.padding15 {
+	padding: 15px 0px;
+}
+.btn-meeting {
+	padding: 4px 4px;
+	font-size: 14px;
+	text-transform: $transform-capital;
+}
+.scheduled-appointments-item {
+	.meeting-profile {
+		display: none;
+	}
+	&:hover {
+		.meeting-profile {
+			display: block;
+		}
+	}
+}
+.meeting-profile {
+	position: $pos-abs;
+	display: block;
+	top: 70px;
+	left: -25px;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 205px;
+	background-color: $white;
+	padding: 0px 12px;
+	border-radius: 5px;
+	-webkit-box-shadow: $shadow-3;
+	-moz-box-shadow: $shadow-3;
+	-ms-box-shadow: $shadow-3;
+	-o-box-shadow: $shadow-3;
+	box-shadow: $shadow-3;
+	z-index: 1000;
+	h6 {
+		font-weight: 600;
+		margin-bottom: 18px;
+		color: $additional-color-5;
+		font-size: 0.875rem;
+	}
+	p {
+		margin: 0px 0px 2px;
+		color: $additional-color-11;
+	}
+}
+.meeting-img {
+	margin: -40px 0px 5px 0px;
+	max-width: 100%;
+	-webkit-box-shadow: $shadow-19;
+	-moz-box-shadow: $shadow-19;
+	-ms-box-shadow: $shadow-19;
+	-o-box-shadow: $shadow-19;
+	box-shadow: $shadow-19;
+	color: $black;
+	border-radius: 50%;
+	border: $b-width-4 $solid rgba(59, 63, 92, 0.1);
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+	.btn-lg {
+		padding: 10px 12px;
+	}
+}

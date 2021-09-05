@@ -1,0 +1,19 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+.widget-content {
+	.row.padding35 {
+		.col-md-4 {
+			margin-bottom: $m-20;
+		}
+	}
+}
+.btn {
+	margin-right: $m-5;
+}

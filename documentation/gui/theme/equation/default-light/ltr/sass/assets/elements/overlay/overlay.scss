@@ -1,0 +1,49 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+.image-container {
+	.image-overlay {
+		background-color: $color_260;
+		font-size: 15px;
+		line-height: 1.4;
+		&:before {
+			border: none;
+		}
+		&:after {
+			border: none;
+		}
+	}
+}
+h2 {
+	font-size: 22px;
+	text-transform: $transform-upper;
+}
+h5 {
+	font-size: 0.875rem;
+	color: $black;
+}
+.element-selected {
+	border: $b-width-2 $additional-color-11 $solid;
+}
+.image-container.bordered {
+	.frame {
+		border: $b-width-1 $color_6 $solid;
+		padding: .2rem;
+	}
+}
+.image-container.handing {
+	.frame {
+		border: $b-width-1 $color_6 $solid;
+		padding: 0.3rem;
+		&:after {
+			background-color: $additional-color-5;
+		}
+	}
+}

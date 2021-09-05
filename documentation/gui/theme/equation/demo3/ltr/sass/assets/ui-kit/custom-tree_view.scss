@@ -1,0 +1,14 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+@media (max-width: 767px) {
+	.custo-radio {
+		margin-top: $m-5;
+	}
+}

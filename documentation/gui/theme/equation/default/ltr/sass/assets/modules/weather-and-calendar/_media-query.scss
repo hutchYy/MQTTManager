@@ -1,0 +1,51 @@
+
+@media (max-width: 575px) {
+	.default {
+		.pignose-calendar {
+			.pignose-calendar-header {
+				padding: $p-0;
+			}
+			.pignose-calendar-body {
+				padding: $p-0;
+			}
+		}
+	}
+	.accounting {
+		.pignose-calendar {
+			.pignose-calendar-header {
+				padding: $p-0;
+			}
+			.pignose-calendar-body {
+				padding: $p-0;
+			}
+		}
+	}
+	.car {
+		.pignose-calendar {
+			.pignose-calendar-header {
+				padding: $p-0;
+			}
+			.pignose-calendar-body {
+				padding: $p-0;
+			}
+		}
+	}
+	.stock {
+		.pignose-calendar {
+			.pignose-calendar-top {
+				.pignose-calendar-top-nav.pignose-calendar-top-prev {
+					margin-left: 0.6em;
+				}
+				.pignose-calendar-top-nav.pignose-calendar-top-next {
+					margin-right: 0.6em;
+				}
+			}
+			.pignose-calendar-header {
+				padding: $p-0;
+			}
+			.pignose-calendar-body {
+				padding: $p-0;
+			}
+		}
+	}
+}

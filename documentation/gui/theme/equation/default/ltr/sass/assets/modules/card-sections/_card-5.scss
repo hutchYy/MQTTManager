@@ -1,0 +1,40 @@
+/*
+
+  Card 5
+
+*/
+#card-5 {
+	padding: 35px 35px 30px 35px;
+	background-image: $additional-gradient-color-8;
+	.img-container {
+		img {
+			border-radius: 50%;
+		}
+	}
+	.f-body {
+		p.card-text.txt-1 {
+			font-size: 18px;
+			font-weight: 600;
+			span.primary-txt {
+				color: $white;
+			}
+			span.secondary-txt {
+				color: $color_55;
+			}
+		}
+		p.card-text.txt-2 {
+			font-size: 18px;
+			font-weight: 600;
+			span.primary-txt {
+				color: $white;
+			}
+			span.secondary-txt {
+				color: $color_55;
+			}
+		}
+	}
+	.tip {
+		font-size: 20px;
+		color: $white;
+	}
+}

@@ -1,0 +1,53 @@
+/*
+    Underline
+*/
+.underline-content {
+	.nav-tabs {
+		border-bottom: $b-width-1 $solid $color_142;
+		li {
+			a {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+		.nav-link.active {
+			border-color: $color_none;
+			border-bottom: $b-width-1 $solid $color_47;
+			color: $color_47;
+			background-color: $color_none;
+			&:hover {
+				border-bottom: $b-width-1 $solid $color_47;
+			}
+			&:focus {
+				border-bottom: $b-width-1 $solid $color_47;
+			}
+		}
+		.show {
+			>.nav-link {
+				border-color: $color_none;
+				border-bottom: $b-width-1 $solid $color_47;
+				color: $color_47;
+				background-color: $color_none;
+				&:hover {
+					border-bottom: $b-width-1 $solid $color_47;
+				}
+				&:focus {
+					border-bottom: $b-width-1 $solid $color_47;
+				}
+			}
+		}
+		.nav-link {
+			&:focus {
+				border-color: $color_none;
+			}
+			&:hover {
+				border-color: $color_none;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

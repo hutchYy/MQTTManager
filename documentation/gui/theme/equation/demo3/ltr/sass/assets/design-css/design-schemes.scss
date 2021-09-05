@@ -1,0 +1,312 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+/*
+* params: name, background, backgroundHover, backgroundActive, item, itemHover, itemActive, itemDisabled
+*/
+.calendar.darcula {
+	background: $dark;
+	a {
+		color: $white;
+		&:hover {
+			background: $color_82;
+			color: $white;
+		}
+	}
+	.calendar-header {
+		background: $dark;
+	}
+	.today {
+		a {
+			background-color: $additional-color-6;
+			text-shadow: none;
+		}
+	}
+	.day {
+		border-color: $color_82;
+	}
+	.month {
+		border-color: $color_82;
+	}
+	.year {
+		border-color: $color_82;
+	}
+	.other-day {
+		background: $color_82;
+		border-color: $color_82;
+	}
+	.day-of-week {
+		color: $white;
+	}
+	.calendar-actions {
+		.calendar-btn-today {
+			background: $color_82;
+			border-color: $color_82;
+			&:active {
+				background: $color_82;
+			}
+		}
+		.calendar-btn-clear {
+			background: $color_2;
+			border-color: $color_82;
+		}
+	}
+}
+.calendar.info {
+	background: $info;
+	a {
+		color: $white;
+		&:hover {
+			background: $color_51;
+			color: $white;
+		}
+	}
+	.calendar-header {
+		background: $info;
+	}
+	.today {
+		a {
+			background-color: $color_51;
+			text-shadow: none;
+		}
+	}
+	.day {
+		border-color: $color_51;
+	}
+	.month {
+		border-color: $color_51;
+	}
+	.year {
+		border-color: $color_51;
+	}
+	.other-day {
+		background: $color_178;
+		border-color: $info;
+	}
+	.day-of-week {
+		color: $white;
+	}
+	.calendar-actions {
+		.calendar-btn-today {
+			background: $color_51;
+			border-color: $color_51;
+			&:active {
+				background: $color_51;
+			}
+		}
+		.calendar-btn-clear {
+			background: $color_none;
+			border-color: $color_51;
+		}
+	}
+}
+.calendar.primary {
+	background: $primary;
+	a {
+		color: $white;
+		&:hover {
+			background: $color_179;
+			color: $white;
+		}
+	}
+	.calendar-header {
+		background: $color_57;
+	}
+	.today {
+		a {
+			background-color: $additional-color-2;
+			text-shadow: none;
+		}
+	}
+	.day {
+		border-color: $additional-color-2;
+	}
+	.month {
+		border-color: $additional-color-2;
+	}
+	.year {
+		border-color: $additional-color-2;
+	}
+	.other-day {
+		background: $color_173;
+		border-color: $color_173;
+	}
+	.day-of-week {
+		color: $white;
+	}
+	.calendar-actions {
+		.calendar-btn-today {
+			background: $additional-color-2;
+			border-color: $additional-color-2;
+			&:active {
+				background: $additional-color-2;
+			}
+		}
+		.calendar-btn-clear {
+			background: transparent;
+			border-color: $additional-color-2;
+		}
+	}
+}
+.calendar.secondary {
+	background: $secondary;
+	a {
+		color: $white;
+		&:hover {
+			background: $color_180;
+			color: $white;
+		}
+	}
+	.calendar-header {
+		background: $secondary;
+	}
+	.today {
+		a {
+			background-color: $color_172;
+			text-shadow: none;
+		}
+	}
+	.day {
+		border-color: $color_174;
+		border-color: $color_175;
+	}
+	.month {
+		border-color: $color_174;
+		border-color: $color_175;
+	}
+	.year {
+		border-color: $color_174;
+		border-color: $color_175;
+	}
+	.other-day {
+		background: $color_176;
+		border-color: $color_176;
+	}
+	.day-of-week {
+		color: $white;
+	}
+	.calendar-actions {
+		.calendar-btn-today {
+			background: $color_172;
+			border-color: $color_172;
+			&:active {
+				background: $color_172;
+			}
+		}
+		.calendar-btn-clear {
+			background: transparent;
+			border-color: $color_172;
+		}
+	}
+}
+.calendar.success {
+	background: $success;
+	a {
+		color: $white;
+		&:hover {
+			background: $color_22;
+			color: $white;
+		}
+	}
+	.calendar-header {
+		background: $success;
+	}
+	.today {
+		a {
+			background-color: $color_22;
+			text-shadow: none;
+		}
+	}
+	.day {
+		border-color: $color_22;
+	}
+	.month {
+		border-color: $color_22;
+	}
+	.year {
+		border-color: $color_22;
+	}
+	.other-day {
+		background: $color_22;
+		border-color: $color_22;
+		color: $light-gray;
+	}
+	.day-of-week {
+		color: $white;
+	}
+	.calendar-actions {
+		.calendar-btn-today {
+			background: $color_22;
+			border-color: $color_22;
+			&:active {
+				background: $color_181;
+			}
+		}
+		.calendar-btn-clear {
+			background: transparent;
+			border-color: $color_22;
+		}
+	}
+}
+.calendar.warning {
+	background: $warning;
+	a {
+		color: $additional-color-11;
+		&:hover {
+			background: $color_177;
+			border-color: $color_177;
+			color: $white;
+		}
+	}
+	.day-of-week {
+		color: $additional-color-11 !important;
+		color: $white;
+	}
+	.calendar-header {
+		background: $warning;
+	}
+	.today {
+		a {
+			background-color: $color_171;
+			color: $white;
+			text-shadow: none;
+		}
+	}
+	.day {
+		background-color: $color_none;
+		border: $b-width-1 $color_182 $solid;
+	}
+	.month {
+		background-color: $color_none;
+		border: $b-width-1 $color_182 $solid;
+	}
+	.year {
+		background-color: $color_none;
+		border: $b-width-1 $color_182 $solid;
+	}
+	.other-day {
+		background: $warning;
+		border-color: $warning;
+		color: $light-gray;
+	}
+	.calendar-actions {
+			background: $additional-color-8;
+			border-color: $additional-color-8;
+		.calendar-btn-today {
+			&:active {
+				background: $color_182;
+			}
+		}
+			background: transparent;
+			border-color: $additional-color-8;
+		.calendar-btn-clear {
+			color: $additional-color-11;
+		}
+	}
+}

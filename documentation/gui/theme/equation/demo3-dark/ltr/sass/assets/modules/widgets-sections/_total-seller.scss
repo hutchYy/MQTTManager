@@ -1,0 +1,50 @@
+/*
+    Top Seller
+*/
+.top-seller-container {
+	.top-seller-header {
+		h6 {
+			font-weight: 600;
+			color: $color_82;
+		}
+		.t-s-car-name {
+			font-weight: 600;
+			color: $additional-color-11;
+			font-size: 18px;
+		}
+		.t-s-rating {
+			i.flaticon-star-fill {
+				font-size: 20px;
+				color: $light-dark;
+			}
+			i.flaticon-star-outline {
+				font-size: 20px;
+				color: $additional-color-6;
+			}
+		}
+	}
+	.top-seller-body {
+		.t-s-car-sold-number {
+			font-weight: 600;
+			color: $black;
+			font-size: 20px;
+			vertical-align: middle;
+		}
+		.t-s-car-price {
+			font-weight: 600;
+			color: $danger;
+			font-size: 18px;
+		}
+		button.btn {
+		    background-image: linear-gradient(-20deg, #3232b7 0%, #1a73e9 100%);
+		    background-color: #3232b7;
+			border: none;
+			padding: 7px 30px;
+			&:hover {
+			    background-image: linear-gradient(-20deg, #1a73e9 0%, #3232b7 100%);
+			    background-color: #1a73e9;
+				border: none;
+			}
+		}
+	}
+}

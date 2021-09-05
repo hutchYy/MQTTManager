@@ -1,0 +1,32 @@
+/*
+    Total Orders
+*/
+.widget.t-order-widget {
+	padding: 0 0 17.3px 0;
+	.t-o-cogs {
+		width: 138px;
+	    height: 138px;
+		position: $pos-rel;
+	}
+	.t-o-txt {
+		font-weight: 600;
+		color: $color_76;
+		font-size: 18px;
+	}
+	.t-o-value {
+		font-size: 28px;
+		font-weight: 600;
+		color: $color_76;
+		i {
+			font-size: 20px;
+			color: $color_57;
+			vertical-align: $v-align-middle;
+		}
+	}
+	.t-o-icon {
+		i {
+			color: $color_57;
+			font-size: 45px;
+		}
+	}
+}

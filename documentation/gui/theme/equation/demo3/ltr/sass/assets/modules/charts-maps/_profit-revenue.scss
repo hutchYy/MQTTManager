@@ -1,0 +1,47 @@
+/*
+    Profit and Revenue
+*/
+.monthly-profit-chart {
+	.ct-series-a {
+		.ct-slice-donut {
+			stroke: $primary;
+			stroke-width: 47px !important;
+		}
+	}
+	.ct-series-b {
+		.ct-slice-donut {
+			stroke: $light-dark;
+			stroke-width: 32px !important;
+		}
+	}
+	.ct-label {
+		fill: $white;
+	}
+}
+.ct-label {
+	color: $color_2;
+}
+.sales {
+	font-weight: 600;
+	text-transform: $transform-capital;
+	color: $color_2;
+	font-size: 14px;
+	padding-left: 15px;
+}
+.revenue {
+	font-weight: 600;
+	text-transform: $transform-capital;
+	color: $primary;
+	font-size: 14px;
+	padding-left: 15px;
+}
+.d-m-revenue {
+	background-color: $light-dark;
+	width: 8px;
+	height: 8px;
+}
+.d-m-profit {
+	background-color: $primary;
+	width: 8px;
+	height: 8px;
+}

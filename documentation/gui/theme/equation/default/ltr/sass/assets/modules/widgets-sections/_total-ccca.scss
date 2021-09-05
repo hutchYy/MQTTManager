@@ -1,0 +1,163 @@
+/*
+    Total Coins
+*/
+.widget-content-area.total-coins {
+	border-radius: 6px;
+}
+.total-coins {
+	padding: 10px;
+	.widget-icon {
+		position: absolute;
+		top: -30px;
+		right: 25px;
+		padding: 10px;
+		color: $white;
+		background-color: $color_57;
+		border-radius: 4px;
+		img {
+			width: 50px;
+		}
+	}
+	.widget-title {
+		font-size: 15px;
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+		color: $color_76;
+		font-size: 16px;
+		font-weight: 300;
+	}
+	.widget-value {
+		font-weight: 800;
+		font-size: 16px;
+		color: $color_2;
+		font-size: 17px;
+		color: $color_76;
+		span {
+			font-weight: 600;
+			font-size: 16px;
+			color: $additional-color-6;
+		}
+	}
+}
+/*
+    Total Commodities
+*/
+.widget-content-area.total-commodities {
+	border-radius: 6px;
+}
+.total-commodities {
+	padding: 10px;
+	.widget-icon {
+		position: absolute;
+		top: -30px;
+		right: 25px;
+		padding: 10px;
+		color: $white;
+		background-color: $color_84;
+		border-radius: 4px;
+		img {
+			width: 50px;
+		}
+	}
+	.widget-title {
+		font-size: 15px;
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+		color: $color_76;
+		font-size: 16px;
+	}
+	.widget-value {
+		font-weight: 800;
+		font-size: 16px;
+		font-size: 17px;
+		color: $color_76;
+		span {
+			font-weight: 600;
+			font-size: 16px;
+			color: $color_2;
+			color: $additional-color-6;
+		}
+	}
+}
+/*
+    Total Currencies
+*/
+.widget-content-area.total-currencies {
+	border-radius: 6px;
+}
+.total-currencies {
+	padding: 10px;
+	.widget-icon {
+		position: absolute;
+		top: -30px;
+		right: 25px;
+		padding: 10px;
+		color: $white;
+		background-color: $color_47;
+		border-radius: 4px;
+		img {
+			width: 50px;
+		}
+	}
+	.widget-title {
+		font-size: 15px;
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+		color: $color_76;
+		font-size: 16px;
+	}
+	.widget-value {
+		font-weight: 800;
+		font-size: 16px;
+		font-size: 17px;
+		color: $color_76;
+		span {
+			font-weight: 600;
+			font-size: 16px;
+			color: $additional-color-6;
+		}
+	}
+}
+/*
+    Total Account Value
+*/
+.widget-content-area.total-account-value {
+	border-radius: 6px;
+}
+.total-account-value {
+	padding: 10px;
+	.widget-icon {
+		position: absolute;
+		top: -30px;
+		right: 25px;
+		padding: 10px;
+		color: $white;
+		background-color: $color_59;
+		border-radius: 4px;
+		img {
+			width: 50px;
+		}
+	}
+	.widget-title {
+		font-size: 15px;
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 10px;
+		color: $color_76;
+		font-size: 16px;
+	}
+	.widget-value {
+		font-weight: 800;
+		font-size: 16px;
+		font-size: 17px;
+		color: $color_76;
+		span {
+			font-weight: 600;
+			font-size: 16px;
+			color: $additional-color-6;
+		}
+	}
+}

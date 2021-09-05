@@ -1,0 +1,54 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+
+.border-default {
+	border-color: $color_146 !important;
+}
+.list-group-item {
+	border: $b-width-1 $solid #f1f3f1;
+	padding: 14px 20px;
+}
+.list-group-item.active {
+	color: $primary;
+	border-radius: 4px;
+	background-color: $light-primary;
+	border-color: $color_none;
+	box-shadow: $shadow-9;
+}
+.new-control-indicator {
+	background-color: $color_6;
+	border: $solid $b-width-1 $color_38;
+}
+a.list-group-item.list-group-item-action.active {
+	i {
+		color: $color_147;
+	}
+}
+code {
+	color: $color_56;
+}
+.list-group-item-action {
+	&:hover {
+		color: $additional-color-11;
+		background-color: $color_54;
+		box-shadow: $shadow-17;
+	}
+}
+
+
+//    ====================================
+//        	List Groups Imports 
+//    ====================================
+
+
+@import 'list-group/list-group-icon-meta';
+@import 'list-group/list-group-image-meta';
+@import 'list-group/list-group-name-meta';
+@import 'list-group/list-group-task-list';

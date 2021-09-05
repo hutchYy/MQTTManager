@@ -1,0 +1,492 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../../base/color_variables';    // Color Variables
+@import '../../../base/fonticons';        // Fonticons Variables
+@import '../../../base/urls';           // URLS Variables
+@import '../../../base/utilities_variables';  // Utilities Variables
+
+/*!
+ * Ladda including the default theme.
+ */
+/*!
+ * Ladda
+ * http://lab.hakim.se/ladda
+ * MIT licensed
+ *
+ * Copyright (C) 2016 Hakim El Hattab, http://hakim.se
+ */
+.ladda-button {
+	position: $pos-rel;
+	-webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	-o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	background: #666;
+	border: 0;
+	padding: 0.4375rem 1.25rem;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: $br-4;
+	color: $white;
+	border: $b-width-1 $solid $color_none;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	.ladda-spinner {
+		position: $pos-abs;
+		z-index: 2;
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		top: 50%;
+		margin-top: $m-0;
+		opacity: 0;
+		pointer-events: none;
+		-webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		-moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		-ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		-o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	}
+	.ladda-label {
+		position: $pos-rel;
+		z-index: 3;
+		-webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		-moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		-ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		-o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+		transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+	}
+	.ladda-progress {
+		position: $pos-abs;
+		width: 0;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(211,211, 211, 0.27);
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transition: 0.1s linear all !important;
+		-moz-transition: 0.1s linear all !important;
+		-ms-transition: 0.1s linear all !important;
+		-o-transition: 0.1s linear all !important;
+		transition: 0.1s linear all !important;
+	}
+	&:hover {
+		border-color: $color_288;
+		background-color: $color_75;
+	}
+}
+.ladda-button[data-loading] {
+	.ladda-progress {
+		opacity: 1;
+		visibility: visible;
+	}
+	border-color: $color_288;
+	cursor: default;
+	background-color: $additional-color-11;
+	&:hover {
+		cursor: default;
+		background-color: $additional-color-11;
+	}
+}
+.ladda-button[data-style=zoom-in] {
+	-webkit-transition: 0.3s ease all !important;
+	-moz-transition: 0.3s ease all !important;
+	-ms-transition: 0.3s ease all !important;
+	-o-transition: 0.3s ease all !important;
+	transition: 0.3s ease all !important;
+	overflow: hidden;
+	.ladda-spinner {
+		-webkit-transition: 0.3s ease all !important;
+		-moz-transition: 0.3s ease all !important;
+		-ms-transition: 0.3s ease all !important;
+		-o-transition: 0.3s ease all !important;
+		transition: 0.3s ease all !important;
+		left: 50%;
+		margin-left: -16px;
+		-webkit-transform: scale(0.2);
+		-moz-transform: scale(0.2);
+		-ms-transform: scale(0.2);
+		-o-transform: scale(0.2);
+		transform: scale(0.2);
+	}
+	.ladda-label {
+		-webkit-transition: 0.3s ease all !important;
+		-moz-transition: 0.3s ease all !important;
+		-ms-transition: 0.3s ease all !important;
+		-o-transition: 0.3s ease all !important;
+		transition: 0.3s ease all !important;
+		position: $pos-rel;
+		display: inline-block;
+	}
+}
+.ladda-button[data-style=zoom-out] {
+	-webkit-transition: 0.3s ease all !important;
+	-moz-transition: 0.3s ease all !important;
+	-ms-transition: 0.3s ease all !important;
+	-o-transition: 0.3s ease all !important;
+	transition: 0.3s ease all !important;
+	overflow: hidden;
+	.ladda-spinner {
+		-webkit-transition: 0.3s ease all !important;
+		-moz-transition: 0.3s ease all !important;
+		-ms-transition: 0.3s ease all !important;
+		-o-transition: 0.3s ease all !important;
+		transition: 0.3s ease all !important;
+		left: 50%;
+		margin-left: 32px;
+		-webkit-transform: scale(2.5);
+		-moz-transform: scale(2.5);
+		-ms-transform: scale(2.5);
+		-o-transform: scale(2.5);
+		transform: scale(2.5);
+	}
+	.ladda-label {
+		-webkit-transition: 0.3s ease all !important;
+		-moz-transition: 0.3s ease all !important;
+		-ms-transition: 0.3s ease all !important;
+		-o-transition: 0.3s ease all !important;
+		transition: 0.3s ease all !important;
+		position: $pos-rel;
+		display: inline-block;
+	}
+}
+.ladda-button[data-style=expand-right] {
+	.ladda-spinner {
+		right: -6px;
+	}
+}
+.ladda-button[data-style=expand-right][data-size="s"] {
+	.ladda-spinner {
+		right: -12px;
+	}
+}
+.ladda-button[data-style=expand-right][data-size="xs"] {
+	.ladda-spinner {
+		right: -12px;
+	}
+}
+.ladda-button[data-style=expand-right][data-loading] {
+	padding-right: 56px;
+	.ladda-spinner {
+		opacity: 1;
+	}
+}
+.ladda-button[data-style=expand-right][data-loading][data-size="s"] {
+	padding-right: $p-40;
+}
+.ladda-button[data-style=expand-right][data-loading][data-size="xs"] {
+	padding-right: $p-40;
+}
+.ladda-button[data-style=expand-left] {
+	.ladda-spinner {
+		left: 26px;
+	}
+}
+.ladda-button[data-style=expand-left][data-size="s"] {
+	.ladda-spinner {
+		left: 4px;
+	}
+}
+.ladda-button[data-style=expand-left][data-size="xs"] {
+	.ladda-spinner {
+		left: 4px;
+	}
+}
+.ladda-button[data-style=expand-left][data-loading] {
+	padding-left: 56px;
+	.ladda-spinner {
+		opacity: 1;
+	}
+}
+.ladda-button[data-style=expand-left][data-loading][data-size="s"] {
+	padding-left: $p-40;
+}
+.ladda-button[data-style=expand-left][data-loading][data-size="xs"] {
+	padding-left: $p-40;
+}
+.ladda-button[data-style=expand-up] {
+	overflow: hidden;
+	.ladda-spinner {
+		top: -32px;
+		left: 50%;
+		margin-left: $m-0;
+	}
+}
+.ladda-button[data-style=expand-up][data-loading] {
+	padding-top: 54px;
+	.ladda-spinner {
+		opacity: 1;
+		top: 26px;
+		margin-top: $m-0;
+	}
+}
+.ladda-button[data-style=expand-up][data-loading][data-size="s"] {
+	padding-top: 32px;
+	.ladda-spinner {
+		top: 4px;
+	}
+}
+.ladda-button[data-style=expand-up][data-loading][data-size="xs"] {
+	padding-top: 32px;
+	.ladda-spinner {
+		top: 4px;
+	}
+}
+.ladda-button[data-style=expand-down] {
+	overflow: hidden;
+	.ladda-spinner {
+		top: 62px;
+		left: 50%;
+		margin-left: $m-0;
+	}
+}
+.ladda-button[data-style=expand-down][data-size="s"] {
+	.ladda-spinner {
+		top: 40px;
+	}
+}
+.ladda-button[data-style=expand-down][data-size="xs"] {
+	.ladda-spinner {
+		top: 40px;
+	}
+}
+.ladda-button[data-style=expand-down][data-loading] {
+	padding-bottom: 54px;
+	.ladda-spinner {
+		opacity: 1;
+	}
+}
+.ladda-button[data-style=expand-down][data-loading][data-size="s"] {
+	padding-bottom: 32px;
+}
+.ladda-button[data-style=expand-down][data-loading][data-size="xs"] {
+	padding-bottom: 32px;
+}
+.ladda-button[data-style=slide-left] {
+	overflow: hidden;
+	.ladda-label {
+		position: $pos-rel;
+	}
+	.ladda-spinner {
+		left: 100%;
+		margin-left: $m-0;
+	}
+}
+.ladda-button[data-style=slide-left][data-loading] {
+	.ladda-label {
+		opacity: 0;
+		left: -100%;
+	}
+	.ladda-spinner {
+		opacity: 1;
+		left: 50%;
+	}
+}
+.ladda-button[data-style=slide-right] {
+	overflow: hidden;
+	.ladda-label {
+		position: $pos-rel;
+	}
+	.ladda-spinner {
+		right: 100%;
+		margin-left: $m-0;
+		left: 16px;
+	}
+}
+.ladda-button[data-style=slide-right][data-loading] {
+	.ladda-label {
+		opacity: 0;
+		left: 100%;
+	}
+	.ladda-spinner {
+		opacity: 1;
+		left: 50%;
+	}
+}
+.ladda-button[data-style=slide-up] {
+	overflow: hidden;
+	.ladda-label {
+		position: $pos-rel;
+	}
+	.ladda-spinner {
+		left: 50%;
+		margin-left: $m-0;
+		margin-top: 1em;
+	}
+}
+.ladda-button[data-style=slide-up][data-loading] {
+	.ladda-label {
+		opacity: 0;
+		top: -1em;
+	}
+	.ladda-spinner {
+		opacity: 1;
+		margin-top: $m-0;
+	}
+}
+.ladda-button[data-style=slide-down] {
+	overflow: hidden;
+	.ladda-label {
+		position: $pos-rel;
+	}
+	.ladda-spinner {
+		left: 50%;
+		margin-left: $m-0;
+		margin-top: -2em;
+	}
+}
+.ladda-button[data-style=slide-down][data-loading] {
+	.ladda-label {
+		opacity: 0;
+		top: 1em;
+	}
+	.ladda-spinner {
+		opacity: 1;
+		margin-top: $m-0;
+	}
+}
+.ladda-button[data-style=zoom-out][data-loading] {
+	.ladda-label {
+		opacity: 0;
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+	.ladda-spinner {
+		opacity: 1;
+		margin-left: $m-0;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+}
+.ladda-button[data-style=zoom-in][data-loading] {
+	.ladda-label {
+		opacity: 0;
+		-webkit-transform: scale(2.2);
+		-moz-transform: scale(2.2);
+		-ms-transform: scale(2.2);
+		-o-transform: scale(2.2);
+		transform: scale(2.2);
+	}
+	.ladda-spinner {
+		opacity: 1;
+		margin-left: $m-0;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+}
+.ladda-button[data-style=contract] {
+	overflow: hidden;
+	width: 100px;
+	.ladda-spinner {
+		left: 50%;
+		margin-left: $m-0;
+	}
+}
+.ladda-button[data-style=contract][data-loading] {
+	border-radius: 50%;
+	width: 52px;
+	.ladda-label {
+		opacity: 0;
+	}
+	.ladda-spinner {
+		opacity: 1;
+	}
+}
+.ladda-button[data-style=contract-overlay] {
+	overflow: hidden;
+	width: 100px;
+	box-shadow: 0px 0px 0px 2000px transparent;
+	.ladda-spinner {
+		left: 50%;
+		margin-left: $m-0;
+	}
+}
+.ladda-button[data-style=contract-overlay][data-loading] {
+	border-radius: 50%;
+	width: 52px;
+	box-shadow: 0px 0px 0px 2000px rgba(0, 0, 0, 0.8);
+	.ladda-label {
+		opacity: 0;
+	}
+	.ladda-spinner {
+		opacity: 1;
+	}
+}
+.ladda-button[data-color=green] {
+	background: $color_57;
+	&:hover {
+		background-color: $color_25;
+	}
+}
+.ladda-button[data-color=blue] {
+	background: $additional-color-3;
+	&:hover {
+		background-color: $color_44;
+	}
+}
+.ladda-button[data-color=red] {
+	background: $additional-color-8;
+	&:hover {
+		background-color: $color_289;
+	}
+}
+.ladda-button[data-color=purple] {
+	background: $color_52;
+	&:hover {
+		background-color: $color_28;
+	}
+}
+.ladda-button[data-color=mint] {
+	background: $color_59;
+	&:hover {
+		background-color: $additional-color-7;
+	}
+}
+.ladda-button[disabled] {
+	border-color: $color_288;
+	cursor: default;
+	background-color: $additional-color-11;
+	&:hover {
+		cursor: default;
+		background-color: $additional-color-11;
+	}
+}
+#sizes {
+	color: $black;
+}
+.ladda-button[data-size=xs] {
+	padding: 4px 8px;
+	.ladda-label {
+		font-size: 0.7em;
+	}
+}
+.ladda-button[data-size=s] {
+	padding: 6px 10px;
+	.ladda-label {
+		font-size: 0.9em;
+	}
+}
+.ladda-button[data-size=l] {
+	.ladda-label {
+		font-size: 1.2em;
+	}
+}
+.ladda-button[data-size=xl] {
+	.ladda-label {
+		font-size: 1.5em;
+	}
+}

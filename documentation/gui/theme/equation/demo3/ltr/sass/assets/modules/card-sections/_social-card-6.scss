@@ -1,0 +1,44 @@
+/*
+    Social Likes
+*/
+.social-likes {
+	.card {
+		border: none;
+		.icon {
+			padding: 30px 20px 5px 20px;
+			i {
+				font-size: 30px;
+				border-radius: 50%;
+				color: #1a73e9;
+				padding: 14px;
+				letter-spacing: 0;
+			    background-color: #c2d5ff;
+			}
+		}
+		.card-content {
+			h5 {
+				color: $color_76;
+				font-size: 25px;
+			}
+			p {
+				color: $additional-color-11;
+				margin-bottom: 25px;
+				font-size: 16px;
+			}
+		}
+		.card-btn-section {
+			margin-top: 30px;
+			p {
+				padding: 18px;
+				margin: 0;
+				font-weight: 600;
+				cursor: pointer;
+				color: #1a73e9;
+				&:hover {
+					color: #1a73e9;
+				    background-color: #c2d5ff;
+				}
+			}
+		}
+	}
+}

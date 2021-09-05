@@ -1,0 +1,49 @@
+/*
+
+  Procut-catalog 8
+
+*/
+.product-cat8 {
+	.card {
+		border: none;
+		background: #6156ce;
+	}
+	.product_inner {
+		.card-title {
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin-left: 0;
+			top: 22px;
+			p {
+				color: $white;
+				font-size: 20px;
+				margin-bottom: 6px;
+				text-align: center;
+				.product-name {
+					font-size: 32px;
+				}
+				.product-quality {
+					font-size: 22px;
+				}
+			}
+		}
+		p.product-price {
+			color: $white;
+			font-size: 24px;
+			margin-bottom: 8px;
+			padding: 32px;
+		}
+		span.badge {
+			padding: 11px 16px;
+			background-color: $color_53;
+			font-size: 14px;
+		}
+		i.add-to-fav {
+			padding: 10px;
+			background-color: $color_81;
+			border-radius: 50%;
+			color: $white;
+		}
+	}
+}

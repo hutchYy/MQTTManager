@@ -1,0 +1,138 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../assets/base/color_variables';   	// Color Variables
+@import '../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../assets/base/urls';   				// URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+
+div.dataTables_wrapper {
+	width: 865px;
+	margin: 0 auto;
+}
+.table-bordered {
+	border: $b-width-1 $solid $light-gray;
+	td {
+		border: $b-width-1 $solid $light-gray;
+	}
+}
+.table-bordered.dataTable {
+	th {
+		border-right: $b-width-1 $solid $light-gray;
+	}
+}
+div.dataTables_scrollBody {
+	table {
+		tbody {
+			tr {
+				&:first-child {
+					th {
+						border-top: $b-width-1 $solid $light-gray;
+					}
+					td {
+						border-top: $b-width-1 $solid $light-gray;
+					}
+				}
+			}
+		}
+	}
+}
+.table {
+	>thead {
+		>tr {
+			>th {
+				color: $color_57;
+				font-weight: 600;
+			}
+		}
+	}
+	>tbody {
+		>tr {
+			>td {
+				color: $additional-color-11;
+			}
+		}
+	}
+	>tfoot {
+		>tr {
+			>th {
+				color: $color_76;
+				font-weight: 600;
+			}
+		}
+	}
+}
+.table-striped {
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				background-color: $white;
+			}
+		}
+	}
+}
+.dataTables_filter {
+	input {
+		margin-left: 5px;
+		border-radius: $br-30;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border: $solid $b-width-1 $additional-color-6;
+	}
+}
+.form-control {
+	&:focus {
+		border-color: $color_57;
+	}
+}
+.table-hover {
+	&:not(.table-dark) {
+		tbody {
+			tr {
+				&:hover {
+					color: $additional-color-2;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}
+.page-item.active {
+	.page-link {
+		border-color: $additional-color-2;
+		background-color: $additional-color-2;
+		border-radius: $br-4;
+	}
+}
+.page-link {
+	&:focus {
+		box-shadow: none;
+	}
+}
+ul.pagination {
+	li {
+		a {
+			&:hover {
+				&:not(.active) {
+					background-color: $color_59;
+					border-top-left-radius: .25rem;
+					border-bottom-left-radius: .25rem;
+				}
+			}
+		}
+	}
+}
+.pagination {
+	>li {
+		>a {
+			border-radius: $br-4;
+			color: $color_2;
+		}
+		>span {
+			border-radius: $br-4;
+			color: $color_2;
+		}
+	}
+}

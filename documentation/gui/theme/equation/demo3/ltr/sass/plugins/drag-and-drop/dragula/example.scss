@@ -1,0 +1,570 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../assets/base/color_variables';   	// Color Variables
+@import '../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../assets/base/urls';   				// URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+pre {
+	white-space: pre-wrap;
+}
+button.btn.btn-button-16.btn-sm {
+	padding: 7px $p-30;
+	font-size: 13px;
+}
+sub {
+	display: block;
+	text-align: $align-right;
+	margin-top: -10px;
+	font-size: 11px;
+	font-style: italic;
+}
+ul {
+	margin: $m-0;
+	padding: $p-0;
+}
+.header-search {
+	>form {
+		>.input-box {
+			>.search-box {
+				background-color: $color_457;
+				border: none;
+				line-height: 25px;
+				border-radius: $br-4;
+				color: $color_375;
+				margin: $m-0 $m-0;
+				display: inline;
+				width: auto;
+			}
+		}
+	}
+}
+/*
+ * note that styling gu-mirror directly is a bad practice because it's too generic.
+ * you're better off giving the draggable elements a unique class and styling that directly!
+ */
+.dragula {
+	>div {
+		margin: $m-10;
+		padding: $p-10;
+		transition: opacity 0.4s ease-in-out;
+		cursor: move;
+		cursor: grab;
+		cursor: -moz-grab;
+		cursor: -webkit-grab;
+	}
+	.ex-moved {
+		background-color: $color_536;
+	}
+}
+.gu-mirror {
+	margin: $m-10;
+	padding: $p-10;
+	transition: opacity 0.4s ease-in-out;
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+.dragula.ex-over {
+	background-color: $color_537;
+}
+#left-lovehandles {
+	>div {
+		cursor: initial;
+	}
+}
+#right-lovehandles {
+	>div {
+		cursor: initial;
+	}
+}
+.image-thing {
+	margin: $m-20 $m-0;
+	display: block;
+	text-align: $align-center;
+}
+.slack-join {
+	position: $pos-abs;
+	font-weight: normal;
+	font-size: 14px;
+	right: 10px;
+	top: 50%;
+	margin-top: -8px;
+	line-height: 16px;
+}
+/*Ex -1*/
+.parent.ex-1 {
+	.dragula {
+		padding: 15px;
+		.media {
+			background-color: $white;
+			border-radius: 2px;
+			box-shadow: $shadow-14;
+			img {
+				width: 50px;
+				border-radius: 50%;
+			}
+			.media-body {
+				h6 {
+					color: $additional-color-11;
+					font-weight: 600;
+					font-size: $fs-15;
+					margin-top: 2px;
+				}
+				p {
+					color: $additional-color-6;
+					font-weight: 600;
+					margin-top: -6px;
+				}
+			}
+		}
+	}
+}
+body.gu-unselectable {
+	.media.el-drag-ex-1 {
+		background-color: $white;
+		border-radius: 2px;
+		box-shadow: $shadow-14;
+		img {
+			width: 50px;
+			border-radius: 50%;
+		}
+		.media-body {
+			h6 {
+				color: $additional-color-11;
+				font-weight: 600;
+				font-size: 15px;
+				margin-top: 2px;
+			}
+			p {
+				color: $additional-color-6;
+				font-weight: 600;
+				margin-top: -6px;
+			}
+		}
+	}
+	.media.el-drag-ex-2 {
+		background-color: $white;
+		border-radius: 2px;
+		box-shadow: $shadow-14;
+		img {
+			width: 45px;
+			border-radius: 50%;
+		}
+		i {
+			font-size: 19px;
+			border-radius: 20px;
+		}
+		.media-body {
+			h6 {
+				color: $additional-color-11;
+				margin-top: 2px;
+				font-size: 16px;
+				font-weight: 600;
+			}
+			p {
+				color: $additional-color-6;
+				font-size: 13px;
+				margin-top: -6px;
+			}
+		}
+		.f-icon-fill {
+			display: none !important;
+			color: $warning;
+			display: block !important;
+			color: $warning;
+		}
+		.f-icon-line {
+			display: block !important;
+			color: $additional-color-6;
+			display: none !important;
+			color: $warning;
+		}
+	}
+	div.media.el-drag-ex-3.gu-mirror {
+		border: $b-width-1 $solid $color_none;
+		padding: $p-10;
+		border-radius: 2px;
+		box-shadow: $shadow-14;
+	}
+	.media.el-drag-ex-3.gu-mirror {
+		img {
+			width: 52px;
+			border-radius: 10%;
+		}
+		.media-body {
+			h5 {
+				font-size: 13px;
+				span.usr-commented {
+					font-weight: 600;
+					color: $additional-color-11;
+					font-size: 14px;
+				}
+				span.comment-topic {
+					font-weight: 600;
+					color: $color_53;
+					font-size: 13px;
+				}
+			}
+			p.meta-time {
+				font-size: 11px;
+				margin-bottom: 0;
+				font-weight: 600;
+			}
+		}
+	}
+	.card.post.el-drag-ex-4.gu-mirror {
+		.media.user-meta {
+			padding: $p-10;
+			img {
+				width: 50px;
+				border-radius: 50%;
+			}
+			.media-body {
+				h5 {
+					font-weight: 600;
+					color: $additional-color-11;
+					font-size: 17px;
+					margin-bottom: 3px;
+				}
+				p {
+					font-size: 11px;
+					margin-top: 5px;
+					font-weight: 600;
+				}
+			}
+		}
+		div.people-liked-post {
+			ul {
+				li {
+					img {
+						width: 40px;
+						height: 40px;
+						border-radius: 20px;
+						border: $b-width-2 $solid $white;
+						box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.3);
+						margin-left: -21px;
+					}
+				}
+			}
+			.people-liked-post-name {
+				span {
+					vertical-align: -webkit-baseline-middle;
+					font-size: 12px;
+					a {
+						color: $color_56;
+						font-weight: 600;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+	.card.post.text-post.el-drag-ex-4.gu-mirror {
+		.card-body {
+			.post-content {
+				padding: $p-20 18px;
+				color: $additional-color-6;
+				border-bottom: $b-width-1 $solid $color_6;
+			}
+		}
+	}
+	.handle {
+		padding: $p-0 9px;
+		margin-right: $m-5;
+		background-color: $light-gray;
+		border-radius: 2px;
+		color: $additional-color-11;
+		cursor: move;
+	}
+	.media.el-drag-ex-5.gu-mirror {
+		ul {
+			position: $pos-rel;
+			li.badge-notify {
+				position: $pos-rel;
+			}
+			li {
+				.notification {
+					position: $pos-abs;
+					top: -30px;
+					left: -5px;
+					span.badge {
+						border-radius: 50px;
+						padding: 2px 6px;
+					}
+				}
+				img {
+					width: 40px;
+					height: 40px;
+					border-radius: 20px;
+					border: $b-width-2 $solid $white;
+					box-shadow: $shadow-3;
+					margin-left: -26px;
+				}
+			}
+		}
+		.media-body {
+			h6 {
+				color: $black;
+			}
+		}
+	}
+}
+/*Ex -2*/
+.parent.ex-2 {
+	.dragula {
+		padding: 15px;
+		.media {
+			background-color: $white;
+			border-radius: 2px;
+			box-shadow: $shadow-14;
+			img {
+				width: 45px;
+				border-radius: 50%;
+			}
+			i {
+				font-size: 19px;
+				border-radius: 20px;
+			}
+			.media-body {
+				h6 {
+					color: $additional-color-11;
+					margin-top: 2px;
+					font-size: 16px;
+					font-weight: 600;
+				}
+				p {
+					color: $additional-color-6;
+					font-size: 13px;
+					margin-top: -6px;
+				}
+			}
+		}
+	}
+	#left-events {
+		.f-icon-fill {
+			display: none !important;
+			color: $warning;
+		}
+		.f-icon-line {
+			display: block !important;
+			color: $additional-color-6;
+		}
+	}
+	#right-events {
+		.f-icon-fill {
+			display: block !important;
+			color: $warning;
+		}
+		.f-icon-line {
+			display: none !important;
+			color: $warning;
+		}
+	}
+}
+/*Ex -3*/
+.parent.ex-3 {
+	.dragula {
+		background-color: $color_none;
+		padding: 15px;
+		div {
+			background-color: $color_none !important;
+			padding: 0;
+			margin: 0;
+		}
+		div.media {
+			border: $b-width-1 $solid $color_none;
+			padding: $p-10;
+			border-radius: 2px;
+			box-shadow: $shadow-14;
+			&:hover {
+				border: $b-width-1 $solid $color_6;
+				border-radius: 4px;
+			}
+		}
+		.media {
+			img {
+				width: 52px;
+				border-radius: 10%;
+			}
+			.media-body {
+				h5 {
+					font-size: 13px;
+					span.usr-commented {
+						font-weight: 600;
+						color: $additional-color-11;
+						font-size: 14px;
+					}
+					span.comment-topic {
+						font-weight: 600;
+						color: $color_53;
+						font-size: 13px;
+					}
+				}
+				p.meta-time {
+					font-size: 11px;
+					margin-bottom: 0;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+/*Ex -4*/
+.parent.ex-4 {
+	.dragula {
+		background-color: $white;
+	}
+	.card.post {
+		.media.user-meta {
+			padding: $p-10;
+			img {
+				width: 50px;
+				border-radius: 50%;
+			}
+			.media-body {
+				h5 {
+					font-weight: 600;
+					color: $additional-color-11;
+					font-size: 17px;
+					margin-bottom: 3px;
+				}
+				p {
+					font-size: 11px;
+					margin-top: 5px;
+					font-weight: 600;
+				}
+			}
+		}
+		div.people-liked-post {
+			ul {
+				li {
+					img {
+						width: 40px;
+						height: 40px;
+						border-radius: 20px;
+						border: $b-width-2 $solid $white;
+						box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.3);
+						margin-left: -21px;
+					}
+				}
+			}
+			.people-liked-post-name {
+				span {
+					vertical-align: -webkit-baseline-middle;
+					font-size: 12px;
+					a {
+						color: $color_56;
+						font-weight: 600;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+	.card.post.text-post {
+		.card-body {
+			.post-content {
+				padding: 20px 18px;
+				color: $additional-color-6;
+				border-bottom: $b-width-1 $solid $color_6;
+			}
+		}
+	}
+}
+.card.post.text-post {
+	border: $b-width-1 $solid $color_none;
+	border-radius: 2px;
+	box-shadow: $shadow-14;
+}
+
+/*Ex -5*/
+.parent.ex-5 {
+	.dragula {
+		background-color: $white;
+		div {
+			background-color: $color_none !important;
+			color: $white;
+		}
+		.gu-transit {
+			background-color: $color_none !important;
+			color: $white;
+			.media {
+				.media-body {
+					h5 {
+						color: $color_535;
+						font-weight: 600;
+					}
+					p {
+						color: $black;
+					}
+				}
+			}
+		}
+		>div {
+			border-radius: 2px;
+			border: $b-width-1 $solid $color_none;
+			box-shadow: $shadow-14;
+		}
+		>.gu-transit {
+			border-radius: 2px;
+			border: $b-width-1 $solid $color_none;
+			box-shadow: $shadow-14;
+		}
+		.media {
+			.media-body {
+				h5 {
+					color: $black;
+					color: $color_535;
+					font-weight: 600;
+				}
+				p {
+					color: $black;
+				}
+			}
+		}
+	}
+	.handle {
+		padding: 0 9px;
+		margin-right: $m-5;
+		background-color: $light-gray;
+		border-radius: 2px;
+		color: $additional-color-11;
+		cursor: move;
+	}
+	.media {
+		ul {
+			position: $pos-rel;
+			li.badge-notify {
+				position: $pos-rel;
+			}
+			li {
+				.notification {
+					position: $pos-abs;
+					top: -30px;
+					left: -5px;
+					span.badge {
+						border-radius: 50px;
+						padding: 2px 6px;
+					}
+				}
+				img {
+					width: 40px;
+					height: 40px;
+					border-radius: 20px;
+					border: $b-width-2 $solid $white;
+					box-shadow: $shadow-3;
+					margin-left: -26px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.parent {
+		margin: 12px 0;
+		padding: 5px;
+	}
+}

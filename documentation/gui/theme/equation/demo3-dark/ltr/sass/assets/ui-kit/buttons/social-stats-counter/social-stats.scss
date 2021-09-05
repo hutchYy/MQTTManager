@@ -1,0 +1,342 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../../base/color_variables';    // Color Variables
+@import '../../../base/fonticons';        // Fonticons Variables
+@import '../../../base/urls';               // URLS Variables
+@import '../../../base/utilities_variables';  // Utilities Variables
+
+/*== COLORS ==*/
+.social-counter {
+  padding: $p-10;
+  display: block;
+}
+.count {
+  display: block;
+  padding: 7px 5px;
+  text-align: $align-left;
+  transition: all 0.5s ease;
+  &:hover {
+    background: rgba(0,0,0,0.033);
+    transform: scale(1.055);
+  }
+  .icon {
+    background: $color_286;
+    display: inline-block;
+    float: $align-left;
+    color: $white;
+    font-size: 22px;
+    margin-left: 5px;
+    text-align: $align-center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-shadow: 0 0 3px rgba(0,0,0,0.2);
+    display: table;
+    i {
+      display: table-cell;
+      vertical-align: $v-align-middle;
+    }
+  }
+  p {
+    display: inline-block;
+    font-size: 13px;
+    color: $color_75;
+    margin: 11px;
+    span {
+      color: $black;
+      font-size: 18px;
+      font-weight: bold;
+      padding-right: 2px;
+    }
+  }
+  .action-btn {
+    float: $align-right;
+    display: inline-block;
+    background: $color_286;
+    color: $white;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 11px;
+  }
+}
+.facebook {
+  .icon {
+    background: $primary;
+    i {
+      padding-top: 2px;
+    }
+  }
+  .action-btn {
+    background: $primary;
+  }
+}
+.twitter {
+  .icon {
+    background: $info;
+    i {
+      padding-top: 2px;
+    }
+  }
+  .action-btn {
+    background: $info;
+  }
+}
+.youtube {
+  .icon {
+    background: $danger;
+    i {
+      font-size: 24px;
+    }
+  }
+  .action-btn {
+    background: $danger;
+  }
+}
+.google-plus {
+  .icon {
+    background: $color_265;
+    i {
+      font-size: 18px;
+      padding-top: 1px;
+    }
+  }
+  .action-btn {
+    background: $color_265;
+  }
+}
+.instagram {
+  .icon {
+    background: $color_266;
+  }
+  .action-btn {
+    background: $color_266;
+  }
+}
+.rss {
+  .icon {
+    background: $color_267;
+  }
+  .action-btn {
+    background: $color_267;
+  }
+}
+.social-counter-2 {
+  .linkedin {
+    background: $color_268;
+  }
+  .vimeo {
+    background: $color_269;
+  }
+  .vk {
+    background: $color_270;
+  }
+  .tumblr {
+    background: $color_271;
+  }
+  .pinterest {
+    background: $color_272;
+  }
+  .stumbleupon {
+    background: $color_273;
+  }
+  .reddit {
+    background: $color_274;
+  }
+  .yelp {
+    background: $color_275;
+  }
+  .weibo {
+    background: $color_276;
+  }
+  .producthunt {
+    background: $color_277;
+  }
+  .whatsapp {
+    background: $color_278;
+  }
+  .vine {
+    background: $color_279;
+  }
+  .slack {
+    background: $color_280;
+  }
+  .dribbble {
+    background: $color_281;
+  }
+  .flickr {
+    background: $color_282;
+  }
+  .behance {
+    background: $color_283;
+  }
+  .foursquare {
+    background: $color_284;
+  }
+  .snapchat {
+    background: $color_285;
+  }
+}
+.linkedin {
+  .icon {
+    background: $color_268;
+  }
+  .action-btn {
+    background: $color_268;
+  }
+}
+.vimeo {
+  .icon {
+    background: $color_269;
+  }
+  .action-btn {
+    background: $color_269;
+  }
+}
+.vk {
+  .icon {
+    background: $color_270;
+  }
+  .action-btn {
+    background: $color_270;
+  }
+}
+.tumblr {
+  .icon {
+    background: $color_271;
+  }
+  .action-btn {
+    background: $color_271;
+  }
+}
+.pinterest {
+  .icon {
+    background: $color_272;
+  }
+  .action-btn {
+    background: $color_272;
+  }
+}
+.stumbleupon {
+  .icon {
+    background: $color_273;
+  }
+  .action-btn {
+    background: $color_273;
+  }
+}
+.reddit {
+  .icon {
+    background: $color_274;
+  }
+  .action-btn {
+    background: $color_274;
+  }
+}
+.yelp {
+  .icon {
+    background: $color_275;
+  }
+  .action-btn {
+    background: $color_275;
+  }
+}
+.weibo {
+  .icon {
+    background: $color_276;
+  }
+  .action-btn {
+    background: $color_276;
+  }
+}
+.producthunt {
+  .icon {
+    background: $color_277;
+  }
+  .action-btn {
+    background: $color_277;
+  }
+}
+.whatsapp {
+  .icon {
+    background: $color_278;
+  }
+  .action-btn {
+    background: $color_278;
+  }
+}
+.vine {
+  .icon {
+    background: $color_279;
+  }
+  .action-btn {
+    background: $color_279;
+  }
+}
+.slack {
+  .icon {
+    background: $color_280;
+  }
+  .action-btn {
+    background: $color_280;
+  }
+}
+.dribbble {
+  .icon {
+    background: $color_281;
+  }
+  .action-btn {
+    background: $color_281;
+  }
+}
+.flickr {
+  .icon {
+    background: $color_282;
+  }
+  .action-btn {
+    background: $color_282;
+  }
+}
+.behance {
+  .icon {
+    background: $color_283;
+    i {
+      font-size: 18px;
+    }
+  }
+  .action-btn {
+    background: $color_283;
+  }
+}
+.foursquare {
+  .icon {
+    background: $color_284;
+  }
+  .action-btn {
+    background: $color_284;
+  }
+}
+.snapchat {
+  .icon {
+    background: $color_285;
+    i {
+      font-size: 24px;
+      text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 1px black;
+    }
+  }
+  .action-btn {
+    background: $color_285;
+    text-shadow: 0 0 1px black;
+    color: $black;
+  }
+}
+@media (max-width: 425px) {
+  .count {
+    .action-btn {
+      float: none;
+      display: table;
+    }
+  }
+}

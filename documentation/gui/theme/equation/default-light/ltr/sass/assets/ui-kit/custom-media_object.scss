@@ -1,0 +1,44 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+
+.border-default {
+	border-color: $color_142 !important;
+}
+.table-bordered {
+	td {
+		border: $b-width-1 $solid $light-gray;
+	}
+	th {
+		border: $b-width-1 $solid $light-gray;
+	}
+}
+.widget-content-area {
+	padding-bottom: 32px;
+}
+
+
+
+//    ====================================
+//        	Media Objects Imports 
+//    ====================================
+
+
+@import 'media-object/media-notation';
+@import 'media-object/media-notation-icon';
+@import 'media-object/media-labels';
+@import 'media-object/media-badge';
+@import 'media-object/media-status-indicator';
+@import 'media-object/media-notification';
+@import 'media-object/media-dropdown';
+@import 'media-object/media-status-indicator-right';
+@import 'media-object/media-labels-icon';
+@import 'media-object/media-switches';
+@import 'media-object/media-checkbox';
+@import 'media-object/media-radio';

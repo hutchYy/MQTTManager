@@ -1,0 +1,69 @@
+/*
+    Creative vertical pill
+*/
+.creative-vertical-pill {
+	.nav-pills {
+		border-bottom: $b-width-1 $solid $color_none;
+		width: 92px;
+		a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			position: relative;
+		}
+		.nav-link {
+			padding: .5rem 0;
+			&:focus {
+				border-color: $color_none;
+			}
+			&:hover {
+				border-color: $color_none;
+			}
+			&:before {
+				content: "";
+				height: 1px;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				background-color: $additional-color-2;
+				-webkit-transform: scale(0);
+				transform: scale(0);
+				transition: all .3s;
+			}
+		}
+		.nav-link.active {
+			position: relative;
+			background-color: $color_none;
+			border-color: $color_none;
+			color: $additional-color-2;
+			font-weight: 600;
+			&:before {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				bottom: 0;
+			}
+		}
+		.show {
+			>.nav-link {
+				position: relative;
+				background-color: $color_none;
+				border-color: $color_none;
+				color: $additional-color-2;
+				font-weight: 600;
+			}
+		}
+	}
+	#creative-v-pills-tabContent {
+		h4 {
+			color: $color_90;
+		}
+		p {
+			color: $additional-color-6;
+		}
+	}
+}
+.media {
+	img {
+		border-radius: 50%;
+		border: solid 5px $light-gray;
+	}
+}

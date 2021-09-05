@@ -1,0 +1,82 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+#calendar {
+	color: $white;
+	font: 14px sans-serif;
+	background-color: $color_218;
+	border: $b-width-1 $solid $color_218;
+	border-collapse: separate;
+	border-spacing: 5px;
+	border-radius: 5px;
+	min-width: 50px;
+	td {
+		text-align: $align-center;
+		padding: 6px 5px;
+	}
+}
+#monthrow {
+	th {
+		color: $color_217 !important;
+		background-color: $color_113 !important;
+		font: 30px sans-serif !important;
+		border-radius: 5px;
+		text-align: $align-center;
+		padding: 14px $p-20 14px;
+		font-size: 16px;
+		font-weight: normal;
+		width: 300px;
+	}
+}
+#prev {
+	color: $color_217;
+	font-size: 16px;
+	padding: $p-10 $p-10;
+	background: none;
+	font-weight: bold;
+	border: none;
+	float: left;
+	&:disabled {
+		color: $color_113 !important;
+	}
+	&:hover {
+		&:enabled {
+			color: $color_217 !important;
+		}
+	}
+}
+#next {
+	color: $color_217;
+	font-size: 16px;
+	padding: $p-10 $p-10;
+	background: none;
+	font-weight: bold;
+	border: none;
+	float: right;
+	&:disabled {
+		color: $color_113 !important;
+	}
+	&:hover {
+		&:enabled {
+			color: $color_217 !important;
+		}
+	}
+}
+.daysoftheweek {
+	th {
+		text-align: $align-center;
+		padding-top: 6px 15px;
+	}
+}
+.current-date {
+	border-radius: 5%;
+	color: $color_94 !important;
+	background-color: $color_219;
+}

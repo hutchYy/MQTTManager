@@ -1,0 +1,332 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+h4 {
+	font-size: 1.125rem;
+}
+
+/*
+    Options
+*/
+.options {
+	.card.mail-actions {
+		border: none;
+		.media {
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+			.media-body {
+				h5 {
+					font-size: 20px;
+					text-transform: uppercase;
+					color: $color_47;
+					font-weight: 600;
+				}
+				a {
+					font-size: 13px;
+					color: $additional-color-6;
+					&:hover {
+						color: $color_48;
+					}
+					i {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		ul {
+			color: $black;
+			li {
+				margin-bottom: 30px;
+				font-size: 15px;
+				padding: 10px;
+				a {
+					&:hover {
+						color: $additional-color-5;
+						i {
+							color: $additional-color-5;
+						}
+					}
+					color: $additional-color-11;
+				}
+				i {
+					font-size: 22px;
+					vertical-align: $v-align-middle;
+					padding-right: 5px;
+					color: $additional-color-11;
+				}
+				span.badge {
+					font-weight: 600;
+					line-height: 1.4;
+					padding: 3px 6px;
+					font-size: 10px;
+				}
+			}
+			li.active {
+				a {
+					&:hover {
+						color: $additional-color-5;
+					}
+					color: $color_57;
+				}
+				i {
+					color: $color_57;
+				}
+			}
+		}
+		/*
+		    Mail Labels
+		*/
+		ul.mail-labels {
+			color: $black;
+			li {
+				position: relative;
+				margin-bottom: 16px;
+				font-size: 15px;
+				cursor: pointer;
+				i {
+					font-size: 18px;
+					vertical-align: $v-align-middle;
+					padding-right: 5px;
+				}
+			}
+			li.label {
+				&:after {
+					position: absolute;
+					content: "";
+					height: 8px;
+					width: 8px;
+					border-radius: 50%;
+					right: 0px;
+					top: 43%;
+				}
+			}
+			li.label-personal {
+				&:after {
+					background-color: $color_86;
+				}
+			}
+			li.label-work {
+				&:after {
+					background-color: $additional-color-3;
+				}
+			}
+			li.label-account {
+				&:after {
+					background-color: $info;
+				}
+			}
+			li.label-social {
+				&:after {
+					background-color: $additional-color-5;
+				}
+			}
+		}
+		/*
+		    User Status
+		*/
+		ul.usr-status {
+			color: $black;
+			li {
+				margin-bottom: 16px;
+			}
+			.media {
+				.usr-img {
+					&:before {
+						content: attr(alt);
+						position: absolute;
+						display: block;
+						right: 17px;
+						top: 0;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						z-index: 5;
+					}
+					img {
+						width: 50px;
+						height: 50px;
+					}
+				}
+				.usr-img.online {
+					&:before {
+						background-color: $color_163;
+					}
+				}
+				.media-body {
+					h5 {
+						font-size: 14px;
+						margin-bottom: 3px;
+					}
+					p {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*
+    Inbox Section
+*/
+.inbox-section {
+	.heading-title {
+		color: $black;
+		margin: $m-0;
+		font-size: 1.125rem;
+	}
+	.search {
+		input {
+			border-radius: 20px;
+			height: 30px;
+			border-color: $light-gray-3;
+		}
+	}
+	padding: 20px 20px 0 20px;
+	position: relative;
+	background-color: $white;
+	.inbox-options {
+		margin-left: 14px;
+		ul.list-inline {
+			li {
+				cursor: pointer;
+				&:hover {
+					i {
+						color: $color_48;
+					}
+				}
+				.dropdown {
+					.d-icon-none.dropdown-toggle {
+						&:after {
+							display: none;
+						}
+					}
+					a.dropdown-item {
+						&:hover {
+							background-color: $white;
+							color: $color_57;
+						}
+						i {
+							vertical-align: $v-align-middle;
+						}
+					}
+				}
+				i {
+					font-size: 17px;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	nav.mail-pagination {
+		ul.pagination {
+			margin: $m-0;
+		}
+	}
+	table.table {
+		border-collapse: separate;
+		border-spacing: 0 0.7em;
+		color: $additional-color-11;
+		tr {
+			background-color: $white;
+			&:hover {
+				box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+				background-color: $color_164;
+				will-change: opacity, transform;
+				transition: all 0.3s ease-out;
+				-webkit-transition: all 0.3s ease-out;
+				td {
+					&:first-child {
+						border-left: $b-width-2 $solid $color_57;
+					}
+				}
+			}
+		}
+		td {
+			&:first-child {
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				border-left: $b-width-2 $solid $white;
+			}
+			border-top: none;
+			vertical-align: $v-align-middle;
+			&:last-child {
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+			}
+			div.mark-star {
+				.custom-control-label {
+					&::before {
+						font-family: $font_family_1;
+						content: "\f2ba";
+						top: 0;
+						left: 0;
+						background-color: $color_none;
+						color: $color_88;
+						font-size: 13px;
+					}
+				}
+			}
+			div.mark-star.custom-checkbox {
+				.custom-control-input {
+					&:checked~.custom-control-label {
+						&::before {
+							font-family: $font_family_1;
+							content: "\f2c8";
+							background-color: $color_none;
+							left: 0;
+							color: $color_88;
+						}
+					}
+				}
+				.custom-control-label {
+					&::after {
+						background-image: none;
+						left: 0;
+					}
+				}
+			}
+		}
+		img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+		.message-new {
+			font-weight: 600;
+			color: $black;
+		}
+	}
+}
+ul.pagination {
+	li.non-hover {
+		a {
+			&:hover {
+				&:not(.active) {
+					background-color: $color_none;
+					color: $color_57;
+				}
+			}
+		}
+	}
+}
+.chk-all {
+	.dropdown {
+		margin-right: 16px;
+		color: $color_57;
+		margin-top: 2px;
+		&:hover {
+			color: $color_48;
+		}
+	}
+}

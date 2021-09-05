@@ -1,0 +1,126 @@
+/*
+  Sales Growth
+*/
+.sales-growth {
+	.sales-growth-header {
+		h6 {
+			color: $color_76;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		.sales-growth-tab.nav-pills {
+			.nav-link.active {
+				    background-image: linear-gradient(-20deg, #3232b7 0%, #1a73e9 100%);
+				    background-color: #1a73e9;
+			}
+			.show {
+				>.nav-link {
+				    background-image: linear-gradient(-20deg, #3232b7 0%, #1a73e9 100%);
+				    background-color: #1a73e9;
+				}
+			}
+			.nav-link {
+				padding: 6px 17px;
+				font-size: 13px;
+				border-radius: 20px;
+			}
+		}
+	}
+	.sales-growth-body {
+		.tab-content {
+			.tab-pane {
+				.t-s-total-stats-1 {
+					position: $pos-rel;
+					font-size: 13px;
+					padding-left: 5px;
+					color: $additional-color-6;
+				}
+				.t-s-total-stats-2 {
+					position: $pos-rel;
+					font-size: 13px;
+					padding-left: 5px;
+					color: $additional-color-6;
+					&:before {
+						position: $pos-abs;
+						content: '';
+						padding: 7px;
+						left: 26px;
+						top: 2.5px;
+						border-radius: 50%;
+					}
+				}
+			}
+			#sales-growth-monthly.tab-pane {
+				.d-m-total-stats-1 {
+					background-color: $primary;
+					height: 13px;
+					width: 13px;
+					padding: 0;
+				}
+				.d-m-total-stats-2 {
+					background-color: $light-primary;
+					height: 13px;
+					width: 13px;
+					padding: 0;
+				}
+			}
+			#sales-growth-monthly {
+				.ct-series-a {
+					.ct-bar {
+						stroke: $primary;
+					}
+				}
+				.ct-series-b {
+					.ct-bar {
+						stroke: $light-primary;
+					}
+				}
+				.ct-label.ct-vertical.ct-start {
+					color: $dark;
+					font-weight: 600;
+				}
+				.ct-label.ct-horizontal.ct-end {
+					color: $dark;
+					font-weight: 600;
+				}
+			}
+			.ct-grid {
+				stroke: #e9ecef;
+			}
+			#sales-growth-yearly.tab-pane {
+				.d-m-total-stats-1 {
+					background-color: $dark;
+					height: 13px;
+					width: 13px;
+					padding: 0;
+				}
+				.d-m-total-stats-2 {
+					background-color: $light-primary;
+					height: 13px;
+					width: 13px;
+					padding: 0;
+				}
+			}
+			#sales-growth-yearly {
+				.ct-series-a {
+					.ct-bar {
+						stroke: $dark;
+					}
+				}
+				.ct-series-b {
+					.ct-bar {
+						stroke: $light-primary;
+					}
+				}
+				.ct-label.ct-vertical.ct-start {
+					color: $dark;
+					font-weight: 600;
+				}
+				.ct-label.ct-horizontal.ct-end {
+					color: $dark;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

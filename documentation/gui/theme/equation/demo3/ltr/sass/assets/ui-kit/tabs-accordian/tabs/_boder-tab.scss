@@ -1,0 +1,18 @@
+/*
+    Border Tab
+*/
+.border-tab {
+	.tab-content {
+		border: $b-width-1 $solid $color_142;
+		border-top: none;
+		padding: 10px;
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+		.media {
+			img.meta-usr-img {
+				margin-left: -30px;
+			}
+		}
+	}
+}

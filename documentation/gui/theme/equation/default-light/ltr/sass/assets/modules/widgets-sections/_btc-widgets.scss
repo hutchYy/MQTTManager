@@ -1,0 +1,138 @@
+/* 
+    BTC Balance
+*/
+.btc-balance {
+	.widget-wrapper {
+		padding: 12px;
+		border-radius: 6px;
+		height: 230px;
+		background-image: $additional-gradient-color-11;
+		.col-md-12 {
+			&:nth-child(2) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		.widget-title {
+			color: $white;
+			font-size: 21px;
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			text-align: center;
+		}
+		.widget-value {
+			color: $white;
+			font-size: 26px;
+			font-weight: 600;
+			text-align: center;
+			span {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+	}
+}
+/*  BTC received   */
+.btc-received {
+	.widget-wrapper {
+		padding: 12px;
+		border-radius: 6px;
+		height: 230px;
+		background-image: $additional-gradient-color-12;
+		.col-md-12 {
+			&:nth-child(2) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		.widget-title {
+			color: $white;
+			font-size: 21px;
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			text-align: center;
+		}
+		.widget-value {
+			color: $white;
+			font-size: 26px;
+			font-weight: 600;
+			text-align: center;
+			span {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+	}
+}
+/*
+    BTC Sent
+*/
+.btc-sent {
+	.widget-wrapper {
+		padding: 12px;
+		border-radius: 6px;
+		height: 230px;
+		background-image: $additional-gradient-color-13;
+		.col-md-12 {
+			&:nth-child(2) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		.widget-title {
+			color: $white;
+			font-size: 21px;
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			text-align: center;
+		}
+		.widget-value {
+			color: $white;
+			font-size: 26px;
+			font-weight: 600;
+			text-align: center;
+			span {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+	}
+}
+/*  
+    BTC Total Transacts
+*/
+.btc-total-transacts {
+	.widget-wrapper {
+		padding: 12px;
+		border-radius: 6px;
+		height: 226px;
+		background-image: $additional-gradient-color-14;
+		.col-md-12 {
+			&:nth-child(2) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+		.widget-title {
+			color: $white;
+			font-size: 21px;
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			text-align: center;
+		}
+		.widget-value {
+			color: $white;
+			font-size: 26px;
+			font-weight: 600;
+			text-align: center;
+			span {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+	}
+}

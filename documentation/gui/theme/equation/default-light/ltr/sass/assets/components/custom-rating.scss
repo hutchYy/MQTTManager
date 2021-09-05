@@ -1,0 +1,133 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+.custom-rating {
+	.card-title {
+		display: inline-flex;
+		color: $dark;
+		font-size: 1.5rem;
+	}
+	i.active {
+		color: $color_88;
+	}
+	i {
+		color: $additional-color-6;
+		vertical-align: $v-align-text-top;
+	}
+	.card-text {
+		color: $additional-color-2;
+	}
+	.media {
+		.numeric-value {
+			color: $dark;
+		}
+		i {
+			color: $color_88;
+			vertical-align: $v-align-baseline;
+		}
+		.progress {
+			margin-top: 7px;
+		}
+		.like-count {
+			color: $dark;
+		}
+	}
+}
+h5 {
+	font-size: 0.875rem;
+}
+.rating {
+	.star {
+		color: $additional-color-6;
+	}
+	&:not(.static) {
+		.star {
+			&:hover {
+				color: $color_88;
+			}
+			&:hover.half {
+				color: $color_88;
+				&:after {
+					color: $color_88;
+				}
+			}
+			&:hover.on.half {
+				color: $color_88;
+				&:after {
+					color: $color_88;
+				}
+			}
+		}
+		&:hover {
+			>.star {
+				color: $color_88;
+				&:after {
+					color: $color_88;
+				}
+			}
+		}
+	}
+	.star.on {
+		color: $color_88;
+	}
+	.star.on.half {
+		&:after {
+			color: $color_88;
+		}
+		color: $additional-color-6;
+	}
+}
+.button {
+	border: $b-width-1 $light-gray $solid;
+	color: $additional-color-6;
+	&:hover {
+		border-color: $additional-color-2;
+	}
+	&:active {
+		background: $white;
+		color: $additional-color-11;
+		box-shadow: none;
+	}
+}
+.input-control {
+	input {
+		&:hover {
+			border-color: $additional-color-2;
+		}
+		border: $b-width-1 $light-gray $solid;
+	}
+}
+.rating.poor {
+	.star.on {
+		color: $color_57;
+	}
+}
+.rating.regular {
+	.star.on {
+		color: $color_55;
+	}
+	.star.on.half {
+		&:after {
+			color: $color_55;
+		}
+		color: $additional-color-6;
+	}
+}
+.rating.good {
+	.star.on.half {
+		color: $additional-color-6;
+		&:after {
+			color: $color_56;
+		}
+	}
+	.star.on {
+		color: $color_56;
+	}
+}

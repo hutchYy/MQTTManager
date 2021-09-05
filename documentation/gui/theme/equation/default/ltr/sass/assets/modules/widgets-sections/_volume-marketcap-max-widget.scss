@@ -1,0 +1,70 @@
+/*
+    volume
+*/
+.widget-content-area.volume {
+	border-radius: 6px;
+}
+.volume {
+	height: 200px;
+	.card-title {
+		color: $color_56;
+		font-weight: 600;
+		font-size: 19px;
+	}
+	.card-pricing {
+		font-size: 16px;
+		color: $additional-color-11;
+	}
+	.card-value {
+		font-size: 16px;
+		color: $additional-color-6;
+	}
+}
+/*
+    Market Cap
+*/
+.widget-content-area.market-cap {
+	border-radius: 6px;
+}
+.market-cap {
+	height: 200px;
+	.card-title {
+		color: $color_56;
+		font-weight: 600;
+		font-size: 19px;
+	}
+	.card-pricing {
+		font-size: 16px;
+		color: $additional-color-11;
+	}
+	.card-value {
+		font-size: 16px;
+		color: $additional-color-6;
+	}
+}
+/*
+    Max Supply
+*/
+.widget-content-area.max-supply {
+	border-radius: 6px;
+}
+.max-supply {
+	height: 200px;
+	.card-title {
+		color: $color_56;
+		font-weight: 600;
+		font-size: 19px;
+	}
+	.card-pricing {
+		font-size: 16px;
+		color: $additional-color-11;
+	}
+	.card-value {
+		font-size: 16px;
+		color: $additional-color-11;
+	}
+	.card-rate {
+		font-size: 16px;
+		color: $additional-color-6;
+	}
+}

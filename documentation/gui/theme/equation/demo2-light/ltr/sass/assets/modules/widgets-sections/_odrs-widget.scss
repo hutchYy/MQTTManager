@@ -1,0 +1,156 @@
+/*
+    Organic
+*/
+.organinc {
+	padding: 35px 20px 35px 5px;
+	.orgainc-stats {
+		font-weight: 700;
+		color: $primary;
+	}
+	.organinc-title {
+		h6 {
+			color: $color_83;
+			font-size: 18px;
+			margin: 0;
+			text-align: center;
+			text-transform: initial;
+		}
+		p {
+			color: $color_2;
+			font-size: 22px;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+	.organinc-body {
+		#linec1 {
+			.amcharts-main-div {
+				.amcharts-chart-div {
+					a {
+						display: none !important;
+					}
+				}
+			}
+			.amcharts-graph-line {
+				filter: url(#dropshadowline1);
+			}
+		}
+	}
+}
+/*
+    Direct
+*/
+.direct {
+	padding: 35px 20px 35px 5px;
+	.direct-stats {
+		font-weight: 700;
+		color: $additional-color-3;
+	}
+	.direct-title {
+		h6 {
+			color: $color_83;
+			font-size: 18px;
+			margin: 0;
+			text-align: center;
+			text-transform: initial;
+		}
+		p {
+			color: $color_2;
+			font-size: 22px;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+	.direct-body {
+		#linec2 {
+			.amcharts-main-div {
+				.amcharts-chart-div {
+					a {
+						display: none !important;
+					}
+				}
+			}
+			.amcharts-graph-line {
+				filter: url(#dropshadowline2);
+			}
+		}
+	}
+}
+/* 
+    Referral
+*/
+.referral {
+	padding: 35px 20px 35px 5px;
+	.referral-stats {
+		font-weight: 700;
+		color: $info;
+	}
+	.referral-title {
+		h6 {
+			color: $color_83;
+			font-size: 18px;
+			margin: 0;
+			text-align: center;
+			text-transform: initial;
+		}
+		p {
+			color: $color_2;
+			font-size: 22px;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+	.referral-body {
+		#linec3 {
+			.amcharts-main-div {
+				.amcharts-chart-div {
+					a {
+						display: none !important;
+					}
+				}
+			}
+			.amcharts-graph-line {
+				filter: url(#dropshadowline3);
+			}
+		}
+	}
+}
+/* 
+    Social
+*/
+.social {
+	padding: 35px 20px 35px 5px;
+	.social-stats {
+		font-weight: 700;
+		color: $additional-color-5;
+	}
+	.social-title {
+		h6 {
+			color: $color_83;
+			font-size: 18px;
+			margin: 0;
+			text-align: center;
+			text-transform: initial;
+		}
+		p {
+			color: $color_2;
+			font-size: 22px;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+	.social-body {
+		#linec4 {
+			.amcharts-main-div {
+				.amcharts-chart-div {
+					a {
+						display: none !important;
+					}
+				}
+			}
+			.amcharts-graph-line {
+				filter: url(#dropshadowline4);
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+/*  
+  Visitors Monthly
+*/
+.visitors-monthly {
+	.v-monthly-header {
+		h6 {
+			color: $color_76;
+			font-weight: 600;
+			font-size: 16px;
+		}
+	}
+	.v-monthly-body {
+		.amcharts-main-div {
+			a {
+				opacity: 0 !important;
+			}
+		}
+		p.v-monthly-percentage {
+			font-weight: 600;
+			font-size: 20px;
+			color: $black;
+		}
+		p.v-monthly-txt {
+			font-size: 14px;
+			font-weight: 600;
+			color: $additional-color-11;
+		}
+	}
+}

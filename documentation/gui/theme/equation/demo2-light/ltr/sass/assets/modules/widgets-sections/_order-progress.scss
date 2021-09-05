@@ -1,0 +1,166 @@
+/*  Progress  */
+/*
+    Progress Order
+*/
+.progress-order {
+	padding: 22px 20px 22px 20px;
+	.progress-order-header {
+		h6 {
+			color: $color_76;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		span.badge {
+			font-size: 12px;
+			padding: 6px 10px;
+			color: $info;
+			background-color: $light-info;
+		}
+	}
+	.progress-order-body {
+		ul {
+			li {
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
+			li.badge-notify {
+				position: relative;
+				.notification {
+					position: absolute;
+					top: -15px;
+					right: -34px;
+					span.badge {
+						background-color: $white;
+						color: $info;
+						box-shadow: 0px 0px 20px 0px #d0d0d0;
+						font-size: 12px;
+						padding: 4px 7px;
+					}
+				}
+			}
+		}
+		.p-o-percentage {
+			font-size: 14px;
+			color: $info;
+		}
+		.progress {
+			height: 6px;
+			border-radius: 30px;
+			.p-o-progress {
+				border-radius: 30px;
+			}
+		}
+	}
+}
+/*
+    Pending Order
+*/
+.pending-order {
+	padding: 22px 20px 22px 20px;
+	.pending-order-header {
+		h6 {
+			color: $color_76;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		span.badge {
+			font-size: 12px;
+			padding: 6px 10px;
+			color: $warning;
+			background-color: $light-warning;
+		}
+	}
+	.pending-order-body {
+		ul {
+			li {
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
+			li.badge-notify {
+				position: relative;
+				.notification {
+					position: absolute;
+					top: -15px;
+					right: -34px;
+					span.badge {
+						background-color: $white;
+						color: $color_76;
+						box-shadow: 0px 0px 20px 0px #d0d0d0;
+						font-size: 12px;
+						padding: 4px 7px;
+					}
+				}
+			}
+		}
+		.p-o-percentage {
+			font-size: 14px;
+			color: $color_76;
+		}
+		.progress {
+			height: 6px;
+			border-radius: 30px;
+			.p-o-progress {
+				border-radius: 30px;
+			}
+		}
+	}
+}
+/*
+    Success Order
+*/
+.success-order {
+	padding: 22px 20px 22px 20px;
+	.success-order-header {
+		h6 {
+			color: $color_76;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		span.badge {
+			font-size: 12px;
+			padding: 6px 10px;
+			color: $success;
+			background-color: $light-success;
+		}
+	}
+	.success-order-body {
+		ul {
+			li {
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
+			li.badge-notify {
+				position: relative;
+				.notification {
+					position: absolute;
+					top: -15px;
+					right: -34px;
+					span.badge {
+						background-color: $white;
+						color: $success;
+						box-shadow: 0px 0px 20px 0px #d0d0d0;
+						font-size: 12px;
+						padding: 4px 7px;
+					}
+				}
+			}
+		}
+		.p-o-percentage {
+			font-size: 14px;
+			color: $success;
+		}
+		.progress {
+			height: 6px;
+			border-radius: 30px;
+			.p-o-progress {
+				border-radius: 30px;
+			}
+		}
+	}
+}

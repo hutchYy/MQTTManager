@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Accounting | Equation - Multipurpose Bootstrap Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="plugins/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/accounting-dashboard/style.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/charts/c3charts/c3.min.css" rel="stylesheet" type="text/css" />    
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+</head>
+<body>
+    <div id="eq-loader">
+      <div class="eq-loader-div">
+          <div class="eq-loading dual-loader mx-auto mb-5"></div>
+      </div>
+    </div>
+    <!--  BEGIN NAVBAR  -->
+    <header class="desktop-nav header navbar fixed-top">
+        <div class="nav-logo mr-sm-5 ml-sm-4">
+            <a href="javascript:void(0);" class="nav-link sidebarCollapse d-inline-block mr-sm-5" data-placement="bottom">
+                <i class="flaticon-menu-line-3"></i>
+            </a>
+            <a href="index.html" class=""> <img src="assets/img/1.png" class="img-fluid" alt="logo"></a>
+        </div>
+        <ul class="navbar-nav flex-row mr-auto">
+            <li class="nav-item ml-4 d-lg-none d-sm-block d-none">
+                <form class="form-inline search-full form-inline search animated-search" role="search">
+                    <i class="flaticon-search-1 d-lg-none d-block"></i>
+                    <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                </form>
+            </li>
+            <li class="nav-item d-lg-block d-none">
+                <form class="form-inline form-inline search animated-search" role="search">
+                    <i class="flaticon-search-1 d-lg-none d-block"></i>
+                    <input type="text" class="form-control search-form-control" placeholder="Search here...">
+                </form>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav flex-row ml-lg-auto">
+
+            <li class="nav-item dropdown language-dropdown ml-4 mr-4 pr-3 pl-3 align-self-center d-lg-inline-block d-none">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="flagDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="">EN</span>
+                </a>
+                <div class="dropdown-menu position-absolute eq-animated eq-fadeInUp" aria-labelledby="flagDropdown">
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/fr.svg" class="flag-width" alt=""> &nbsp;FR</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/jp.svg" class="flag-width" alt=""> &nbsp;JP</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/ru.svg" class="flag-width" alt=""> &nbsp;RU</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/ca.svg" class="flag-width" alt=""> &nbsp;EN</a>
+                </div>
+            </li>
+
+           
+            <li class="nav-item dropdown message-dropdown ml-lg-4 mr-lg-4 d-sm-block d-none align-self-center">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="message-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon flaticon-mail-25"></span><span class="badge badge-primary">13</span>
+                </a>
+                <div class="dropdown-menu  position-absolute p-0 eq-animated eq-fadeInUp" aria-labelledby="message-dropdown">
+                    <div class="">
+                        <a class="dropdown-item">
+                            <div class="">
+                                <div class="media notification-new">
+                                    <div class="usr-img align-self-center mr-3">
+                                        <img class="usr-img rounded-circle" src="assets/img/90x90.jpg" alt="profile">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="meta-user-name mr-3 mb-0">Kara Young</p>
+                                            <p class="meta-time align-self-center mb-0">04.02.19</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Simple and clean! Nice I'd like to </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item">
+                            <div class="">
+                                <div class="media notification-new">
+                                    <div class="notification-icon align-self-center mr-3">
+                                        <i class="flaticon-mailbox"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="meta-title mr-3 mb-0">1 new email</p>
+                                            <p class="meta-time align-self-center mb-0">04.02.19</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Anderson.Daisy@mail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item">
+                            <div class="">
+                                <div class="media">
+                                    <div class="usr-img align-self-center mr-3">
+                                        <img class="usr-img rounded-circle" src="assets/img/90x90.jpg" alt="profile">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="meta-user-name mr-3 mb-0">Oscar Garner</p>
+                                            <p class="meta-time align-self-center mb-0">04.02.19</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Simple and clean! Nice I'd like to </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown notification-dropdown ml-3 mr-lg-4 align-self-center">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notification-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon flaticon-bell-4"></span><span class="badge badge-success">15</span>
+                </a>
+                <div class="dropdown-menu position-absolute eq-animated eq-fadeInUp" aria-labelledby="notification-dropdown">
+                    <div class="notification-scroll">
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Alan Green</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Irene Collins</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Sonia Shaw</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Xavier</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown user-profile-dropdown pl-4 pr-lg-0 pr-2 ml-lg-2 mr-lg-4  align-self-center">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle user">
+                    <div class="user-profile d-lg-block d-none">
+                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                    </div>
+                    <i class="flaticon-user-7 d-lg-none d-block"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <div class="ps-overlay"></div>
+        <div class="search-overlay"></div>
+        
+        <!--  BEGIN MODERN  -->
+        <div class="modernSidebar-nav header navbar">
+            <div class="">
+                <nav id="modernSidebar">
+                    <ul class="menu-categories pl-0 m-0" id="topAccordion">
+                        <li class="menu">
+                            <a href="#dashboard" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                                <div class="">
+                                    <i class="flaticon-computer-6"></i>
+                                    <span>Dashboard</span>
+                                </div>
+                            </a>
+                            <div class="collapse submenu list-unstyled eq-animated eq-fadeInUp" id="dashboard" data-parent="#topAccordion">
+                                <ul class="submenu-scroll">
+                                    <li>
+                                        <ul class="list-unstyled sub-submenu" id="dashboards">
+                                            <li>
+                                                <a href="index.html"> <div><i class="flaticon-computer-4"></i> Default</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="ecommerce_dashboard.html"> <div><i class="flaticon-cart-2"></i> Ecommerce</div> </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="accounting_dashboard.html"> <div><i class="flaticon-chart-line"></i> Accounting</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="analytics_dashboard.html"> <div><i class="flaticon-computer-2"></i> Analytics</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="car_dashboard.html"> <div><i class="flaticon-car"></i> Car</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="classic_dashboard.html"> <div><i class="flaticon-computer-8"></i> Classic</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="stock_market_dashboard.html"> <div><i class="flaticon-up-chart"></i> Stock Market</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="cryptocurrency_dashboard.html"> <div><i class="flaticon-bitcoin-circle"></i> Cryptocurrency</div> </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#uiAndComponents" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-3d-cube"></i>
+                                    <span>Components</span>
+                                </div>
+                            </a>
+                            <div class="submenu list-unstyled collapse eq-animated eq-fadeInUp" id="uiAndComponents" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#ui-features" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">UI KIT</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="ui-features">
+                                                <li>
+                                                    <a href="ui_helper_classes.html"> Helper Classes </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_color_library.html"> Color Library </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_grid.html"> Grid System </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_typography.html"> Typography </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_shadows.html"> Shadow </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_miscellaneous.html"> Miscellaneous </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_pagination.html">Pagination</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_alert.html"> Alerts </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_tooltips_and_popovers.html"> Tooltips And Popovers </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_loader.html"> Loaders </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#ui-buttons" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Buttons <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="ui-buttons" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_buttons.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_creative.html"> Creative </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_switches.html"> Switches </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_social_button.html"> Social </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_sweetalert.html"> Sweet Alerts </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#ui-font-icons" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Font Icons <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="ui-font-icons" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_flaticon_icon.html"> Flaticon </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_linea_icon.html"> Linea </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_themify_icon.html"> Themify </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_pixeden_icon.html"> Pixeden </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_fontawesome_icon.html"> Fontawesome </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_metro_icon.html"> Metro </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_weather_icon.html"> Weather </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_tabs.html"> Tabs </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_accordion.html"> Accordions  </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_modal.html"> Modals </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_sliders.html"> Range Sliders </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_timeline.html"> Timeline </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_tree.html"> Tree View </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#ui-progress" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Progress Bar <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="ui-progress" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_bootstrap_progress_bar.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_material_progress_bar.html"> Custom </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#ui-notification" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Notifications <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="ui-notification" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_toastr.html"> Toastr </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_notification.html"> Creative </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_snackbar.html"> Snackbar </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_session_timeout.html"> Session Timeout </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_media_object.html"> Media Object </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_list_group.html"> List Group </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_nestable_list.html"> Nested List </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#components" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">COMPONENTS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="components">
+                                                <li>
+                                                    <a href="component_portlet.html"> Portlets </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_keypad.html"> Keypad </a>
+                                                </li>
+
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-carousel" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Carousel <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-carousel" data-parent="#components">      
+                                                        <li>
+                                                            <a href="component_bootstrap_carousel.html">Bootstrap</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_carousel.html">Metro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_sliders.html">Swiper</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="component_rating.html"> Rating </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_blockui.html"> Block UI </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_popup.html"> Popup </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_scroll_bars_basic.html"> Scrollbar </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_todo_list.html"> Todo List </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_scrollspy.html"> Scrollspy </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_countdown.html"> Countdown </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="component_counter.html"> Counter </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_datetime_picker.html"> Date &amp; Time Picker </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_lightbox.html"> LightBox </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_color_picker.html"> Color Picker </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-media" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Media <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-media" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_video_player.html"> Video Player </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_audio_player.html"> Audio Player </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="component_clipboard.html"> Clipboard </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_typeahead.html"> Typeahead </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-search" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Search <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-search" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_search_multiple.html"> Multiple </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_search_web.html"> Web </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-animation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Animations <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-animation" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_animation_buttons.html"> Buttons </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_animation_css.html"> CSS </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-img-crop" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Image Cropping <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-img-crop" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_image_cropping_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_image_cropping_advanced.html"> Advanced </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#element" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">ELEMENTS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="element">
+                                                <li>
+                                                    <a href="element_steps.html"> Steps </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_ribbon.html"> Ribbons </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_testimonial.html"> Testimonials </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_team.html"> Team </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_contacts.html"> Contacts </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_blog.html"> Blog Elements </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_pricing_table.html"> Pricing Tables </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#tables-forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-table"></i>
+                                    <span>Tables &amp; Forms</span>
+                                </div>
+                            </a>
+                            <div class="submenu list-unstyled collapse eq-animated eq-fadeInUp" id="tables-forms" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#tables" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">TABLES</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="tables">
+                                                <li>
+                                                    <a href="table_basic.html"> Basic </a>
+                                                </li>
+                                                <li>
+                                                    <a href="table_tablesaw.html"> Tablesaw</a>
+                                                </li>
+                                                <li>
+                                                    <a href="table_sticky_table_header.html"> Sticky Headers</a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#tables-editable" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Editable <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="tables-editable" data-parent="#tables"> 
+                                                        <li>
+                                                            <a href="table_jq_spreadsheet.html"> Spreadsheet </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_jquery_tabledit.html"> TableEdit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_editablegrid.html"> Editable Grid </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#tables-data-tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> DataTables <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="tables-data-tables" data-parent="#tables"> 
+                                                        <li>
+                                                            <a href="table_dt_zero_configuration.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_ordering_sorting.html"> Order Sorting </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_multi-column_ordering.html"> Multi-Column </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_multiple_tables.html"> Multiple Tables</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_alternative_pagination.html"> Alternative Pagination</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_miscellaneous.html"> Miscellaneous </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_custom.html"> Custom </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_scrollable.html"> Scrollable </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_range_search.html"> Range Search </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_html5.html"> HTML5 Export </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_live_dom_ordering.html"> Live DOM ordering </a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#forms" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">FORMS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="forms" style="">
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-bootstrap" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Bootstrap <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-bootstrap" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_bootstrap_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_bootstrap_rounded.html"> Rounded </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-input-group" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Input Group <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-input-group" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_input_group_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_input_group_rounded.html"> Rounded </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="form_bootstrap_material.html"> Material </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-layout" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Layouts <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-layout" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_layouts.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_layouts_rounded.html"> Rounded </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-validation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Validation <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-validation" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_validation.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_jqvalidation.html"> jQuery </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_validation_material.html"> Custom </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="form_input_mask.html"> Input Mask </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_bootstrap_select.html"> Bootstrap Select </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_select2.html"> Select2 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_bootstrap_touchspin.html"> TouchSpin </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_multiselect.html"> Multi Select </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_maxlength.html"> Maxlength </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_repeater.html"> Repeater </a>
+                                                </li>                           
+                                                <li>
+                                                    <a href="form_checkbox_radio.html"> Checkbox and Radio </a>
+                                                </li>
+
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-wizard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Wizards <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-wizard" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_bs_wizard.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_wizard.html"> jQuery Steps </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <a href="form_fileupload.html"> File Upload </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-copy"></i>
+                                    <span>Pages</span>
+                                </div>
+                            </a>
+                            <div class="submenu list-unstyled collapse eq-animated eq-fadeInUp" id="pages" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#ecommerce" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">ECOMMERCE</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="ecommerce">
+                                                <li>
+                                                    <a href="ecommerce_orders.html"> Orders </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_product.html"> Products </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_product_catalog.html"> Product Catalog </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#product-details" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" data-parent="#ecommerce"> Product Details <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="product-details">
+                                                        <li>
+                                                            <a href="ecommerce_product_details_1.html"> Product Details 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_product_details_2.html"> Product Details 2 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_addedit_product.html"> Add/Edit Products </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_addedit_categories.html"> Add/Edit Categories </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_view_cart.html"> View Cart </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_view_payments.html"> View Payments </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_view_customers.html"> View Customers </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_checkout.html"> Checkout </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_invoices.html"> Invoice </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_shipments.html"> Shipments </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_products_cart.html"> Products in Cart </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_coupons.html"> Coupons </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_low_stock.html"> Low Stock </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_best_sellers.html"> Best Sellers </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_refunds.html"> Refunds </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_search_terms.html"> Search Terms </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_newsletters.html"> Newsletters </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_wizards.html"> Payment Wizard </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_reviews.html"> Reviews </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#page" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">PAGES</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="page">
+                                                <li>
+                                                    <a href="pages_blank_page.html"> Blank Page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_helpdesk.html"> Helpdesk </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_contact_us.html"> Contact Form </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_faq.html"> FAQ </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_blog.html"> Blog </a>
+                                                </li>                            
+                                                <li>
+                                                    <a href="pages_privacy.html"> Privacy Policy </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_cookie_consent.html"> Cookie Consent </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_landing_page.html" target="_blank"> Landing Page </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_coming_soon.html"> Coming Soon </a>
+                                                </li>
+
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Error <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="pages-error" data-parent="#pages"> 
+                                                        <li>
+                                                            <a href="pages_error404.html"> 404 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error404-2.html"> 404 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error500.html"> 500 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error500-2.html"> 500 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error503.html"> 503 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error503-2.html"> 503 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_maintenence.html"> Maintanence </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#users" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">USERS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="users"> 
+                                                <li>
+                                                    <a href="user_profile.html"> Profile </a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_account_setting.html"> Account Settings </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-login" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Login <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-login" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_login_1.html"> Login 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_login_2.html"> Login 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_login_3.html"> Login 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-register" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Register <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-register" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_register_1.html"> Register 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_register_2.html"> Register 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_register_3.html"> Register 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-passRecovery" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Password Recovery <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-passRecovery" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_pass_recovery_1.html"> Password Recovery 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_pass_recovery_2.html"> Password Recovery 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_pass_recovery_3.html"> Password Recovery 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-lockscreen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Lockscreen <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-lockscreen" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_lockscreen_1.html"> Lockscreen 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_lockscreen_2.html"> Lockscreen 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_lockscreen_3.html"> Lockscreen 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#app" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-mail-19"></i>
+                                    <span>Apps</span>
+                                </div>
+                            </a>
+                            <div class="collapse submenu list-unstyled eq-animated eq-fadeInUp" id="app" data-parent="#topAccordion">
+                                <ul class="submenu-scroll">
+                                    <li>
+                                        <ul class="list-unstyled mt-4">
+                                            <li>
+                                                <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="apps"> 
+                                                    <li>
+                                                        <a href="apps_chat.html"> Chat </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_mailbox.html"> Mailbox </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_mailbox_with_chat.html"> Mailbox With Chat </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_newsletter.html"> Newsletter </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_scheduler.html"> Scheduler </a>
+                                                    </li>
+                                                    <li class="sub-sub-submenu-list">
+                                                        <a href="#apps-calendars" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Calendar <i class="flaticon-right-arrow"></i> </a>
+                                                        <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="apps-calendars" data-parent="#apps-calendars"> 
+                                                            <li>
+                                                                <a href="apps_basic_calendar.html"> Basic </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="apps_full_calendar.html"> Full Calendar </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="apps_drag_n_drop_calendar.html"> Drag n Drop </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#more" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <div class="">
+                                    <i class="flaticon-plus"></i>
+                                    <span class="">More</span>
+                                </div>
+                            </a>
+                            <div class="collapse submenu list-unstyled eq-animated eq-fadeInUp" id="more" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#modules" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">MODULES</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="modules"> 
+                                                <li>
+                                                    <a href="modules_widgets.html"> Widgets </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_table_and_event.html"> Tables &amp; Events </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_charts_and_maps.html"> Charts &amp; Maps </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_weather_and_calendar.html"> Weather &amp; Calendar </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_cards.html"> Cards </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#dragndrop" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">DRAG AND DROP</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="dragndrop"> 
+                                                <li>
+                                                    <a href="dragndrop_gridstack.html"> Grid Stack</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dragndrop_dragula.html"> Dragula</a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#dragndrop-jqueryui" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> jQuery UI <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="dragndrop-jqueryui" data-parent="#dragndrop"> 
+                                                        <li>
+                                                            <a href="dragndrop_ui_product_cart.html"> Shopping Cart </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="dragndrop_scrumboard.html"> Scrum Task Board</a>
+                                                        </li>                               
+                                                        <li>
+                                                            <a href="dragndrop_scroll_bars.html"> Scrollbar</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#charts" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">CHARTS</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="charts"> 
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#chart-amcharts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> amCharts <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="chart-amcharts" data-parent="#charts"> 
+                                                        <li>
+                                                            <a href="am_column_and_barchart.html"> Column &amp; Bar </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="am_line_and_areachart.html"> Line &amp; Area </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="am_pie_and_donutchart.html"> Pie &amp; Donut </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="am_gauge_and_otherchart.html"> Gauges  &amp; Other </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#chart-c3chart" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> C3 <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="chart-c3chart" data-parent="#charts"> 
+                                                        <li>
+                                                            <a href="charts_c3_chart.html"> Simple</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="charts_c3_api.html"> Api </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="charts_cssplot.html"> CSS Plot </a>
+                                                </li>
+                                                <li>
+                                                    <a href="charts_morris.html"> Morris </a>
+                                                </li>
+                                                <li>
+                                                    <a href="charts_jQuery_sparklines.html"> jQuery Sparklines </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#chart-chartist" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Chartist <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="chart-chartist" data-parent="#charts"> 
+                                                        <li>
+                                                            <a href="charts_chartist_bar.html"> Bar </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="charts_chartist_line.html"> Line &amp; Area </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="charts_chartist_pie.html"> Pie </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#maps" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">MAPS</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="maps">
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#map-jqMapael" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> jquery Mapael <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="map-jqMapael" data-parent="#maps"> 
+                                                        <li>
+                                                            <a href="map_jquerymapael_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="map_jquerymapael_advanced.html"> Advanced </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#map-vMaps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Vector Maps <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="map-vMaps" data-parent="#maps"> 
+                                                        <li>
+                                                            <a href="map_amvector.html"> amVector</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="map_jvector.html"> jVector</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--  END MODERN  -->
+
+        <!--  BEGIN CONTENT PART  -->
+        <div id="content" class="main-content">
+            <div class="container">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h3>Accounting Dashboard</h3>
+                    </div>
+                </div>
+
+                <div class="row layout-spacing accounts-widgets">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-xl-0 mb-4">
+                        <div class="widget-content widget-content-area br-4 accounts-income">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <h6 class="value">$ 82,341</h6>
+                                    <p class="mt-2">Income</p>
+                                </div>
+                                <div class="col-md-6 col-6 text-right">
+                                    <i class="flaticon-currency"></i>
+                                </div>
+                            </div>
+                            <div class="progress br-30 mb-0 mt-5">
+                                <div class="progress-primary bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-xl-0 mb-4">
+                        <div class="widget-content widget-content-area br-4 accounts-cogs">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <h6 class="value">$ 47,641</h6>
+                                    <p class="mt-2">Cogs</p>
+                                </div>
+                                <div class="col-md-6 col-6 text-right">
+                                    <i class="flaticon-dollar-coin"></i>
+                                </div>
+                            </div>
+                            <div class="progress br-30 mb-0 mt-5">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-sm-0 mb-4">
+                        <div class="widget-content widget-content-area br-4 accounts-profit">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <h6 class="value">$ 84,534</h6>
+                                    <p class="mt-2">Profit</p>
+                                </div>
+                                <div class="col-md-6 col-6 text-right">
+                                    <i class="flaticon-money"></i>
+                                </div>
+                            </div>
+                            <div class="progress br-30 mb-0 mt-5">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="widget-content widget-content-area br-4 accounts-expenses">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    <h6 class="value">$ 45,141</h6>
+                                    <p class="mt-2">Expenses</p>
+                                </div>
+                                <div class="col-md-6 col-6 text-right">
+                                    <i class="flaticon-wallet"></i>
+                                </div>
+                            </div>
+                            <div class="progress br-30 mb-0 mt-5">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area product-sales-list-content br-4 p-0">
+                            <div class="product-sales-list">
+                                <div class="product-sales-header">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5 col-6 mb-4 mb-sm-0">
+                                            <h5 class="mb-0">Product Sales</h5>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-6 text-sm-right">
+                                            <ul class="nav justify-content-end product-sales nav-pills" id="product-sales" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="product-sales-monthly-tab" data-toggle="pill" href="#product-sales-monthly" role="tab" aria-controls="product-sales-monthly" aria-selected="true">Monthly</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="product-sales-yearly-tab" data-toggle="pill" href="#product-sales-yearly" role="tab" aria-controls="product-sales-yearly" aria-selected="false">Yearly</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-sales-body">
+
+                                    <div class="tab-content" id="product-salesContent">
+                                        
+                                        <div class="tab-pane fade show active" id="product-sales-monthly" role="tabpanel" aria-labelledby="product-sales-monthly-tab">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Product</th>
+                                                            <th class="text-right">Amount</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="align-self-center">
+                                                                        <div class="d-m-pro-name-1 data-marker"></div>
+                                                                    </div>
+                                                                    <div class="pro-name pro-name-1">Apple</div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="pchart">
+                                                                        <span id="ps1">Loading...</span>
+                                                                    </div>
+                                                                    <div class="pcontent">
+                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="14%">4976.5 $</p>
+                                                                        <p class="montly-inc-1">+265</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="align-self-center">
+                                                                        <div class="d-m-pro-name-2 data-marker"></div>
+                                                                    </div>
+                                                                    <div class="pro-name pro-name-2">HP-Laptop</div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="pchart">
+                                                                        <span id="ps2">Loading...</span>
+                                                                    </div>
+                                                                    <div class="pcontent">
+                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="9%">3081.2 $</p>
+                                                                        <p class="montly-inc-2">+127</p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="align-self-center">
+                                                                        <div class="d-m-pro-name-3 data-marker"></div>
+                                                                    </div>
+                                                                    <div class="pro-name pro-name-3">Samsung Monitor</div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="pchart">
+                                                                        <span id="ps3">Loading...</span>
+                                                                    </div>
+                                                                    <div class="pcontent">
+                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="2%">7376.5 $</p>
+                                                                        <p class="montly-inc-3">+80</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade" id="product-sales-yearly" role="tabpanel" aria-labelledby="product-sales-yearly-tab">
+
+                                            <div class="table-responsive">
+
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Product</th>
+                                                            <th class="text-right">Amount</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="align-self-center">
+                                                                        <div class="d-m-pro-name-1 data-marker"></div>
+                                                                    </div>
+                                                                    <div class="pro-name pro-name-1">Apple</div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="pchart">
+                                                                        <span id="ps4">Loading...</span>
+                                                                    </div>
+                                                                    <div class="pcontent">
+                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="11%">61,712 $</p>
+                                                                        <p class="montly-inc-1">+2080</p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="align-self-center">
+                                                                        <div class="d-m-pro-name-2 data-marker"></div>
+                                                                    </div>
+                                                                    <div class="pro-name pro-name-2">HP-Laptop</div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="pchart">
+                                                                        <span id="ps5">Loading...</span>
+                                                                    </div>
+                                                                    <div class="pcontent">
+                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="11%">37,070 $</p>
+                                                                        <p class="montly-inc-2">+1615</p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="align-self-center">
+                                                                        <div class="d-m-pro-name-3 data-marker"></div>
+                                                                    </div>
+                                                                    <div class="pro-name pro-name-3">Samsung Monitor</div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="pchart">
+                                                                        <span id="ps6">Loading...</span>
+                                                                    </div>
+                                                                    <div class="pcontent">
+                                                                        <p class="p-l-tooltip montly-price mb-0"  data-placement="top" title="3.5%">91,102 $</p>
+                                                                        <p class="montly-inc-3">+1556</p>
+                                                                    </div>
+                                                                </div>
+
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area vendor-expenses-list-content br-4 p-0">
+                            <div class="vendor-expenses-list">                            
+                                <div class="vendor-expenses-header">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5 col-6">
+                                            <h5 class="mb-0">Vendor Expenses</h5>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-6 text-sm-right">
+                                            <ul class="nav justify-content-end vendor-expenses nav-pills" id="vendor-expenses" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="vendor-expenses-monthly-tab" data-toggle="pill" href="#vendor-expenses-monthly" role="tab" aria-controls="vendor-expenses-monthly" aria-selected="true">Monthly</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="vendor-expenses-yearly-tab" data-toggle="pill" href="#vendor-expenses-yearly" role="tab" aria-controls="vendor-expenses-yearly" aria-selected="false">Yearly</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vendor-expenses-body">
+
+                                    <div class="tab-content" id="vendor-expensesContent">
+                                        
+                                        <div class="tab-pane fade show active" id="vendor-expenses-monthly" role="tabpanel" aria-labelledby="vendor-expenses-monthly-tab">
+
+                                            <div class="table-responsive">
+
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Product</th>
+                                                            <th class="text-right">Amount</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pro-name mb-2">Apple</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="progress progress-md w-75">
+                                                                      <div class="progress-bar bg-primary" role="progressbar" style="width: 45.3%" aria-valuenow="45.3" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <span>25.3%</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+                                                                <p class="v-amount mb-0">$ 2,275</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pro-name mb-2">HP-Laptop</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="progress progress-md w-75">
+                                                                      <div class="progress-bar bg-primary" role="progressbar" style="width: 24.6%" aria-valuenow="24.6" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <span>14.6%</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+                                                                <p class="v-amount mb-0">$ 937</p>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pro-name mb-2">Samsung Monitor</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="progress progress-md w-75">
+                                                                      <div class="progress-bar bg-primary" role="progressbar" style="width: 30.85%" aria-valuenow="30.85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                    </div>
+                                                                    <span>19.85%</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="action text-right">
+                                                                <p class="v-amount mb-0">$ 2,384</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="tab-pane fade" id="vendor-expenses-yearly" role="tabpanel" aria-labelledby="vendor-expenses-yearly-tab">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product</th>
+                                                        <th class="text-right">Amount</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pro-name mb-2">Apple</div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="progress progress-md w-75">
+                                                                  <div class="progress-bar bg-info" role="progressbar" style="width: 35.3%" aria-valuenow="24.3" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                                <span>24.8%</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="action text-right">
+                                                            <p class="v-amount mb-0">$ 27,900</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pro-name mb-2">HP-Laptop</div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="progress progress-md w-75">
+                                                                  <div class="progress-bar bg-info" role="progressbar" style="width: 13.4%" aria-valuenow="13.4" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                                <span>13.4%</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="action text-right">
+                                                            <p class="v-amount mb-0">$ 11,277</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="pro-name mb-2">Samsung Monitor</div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="progress progress-md w-75">
+                                                                  <div class="progress-bar bg-info" role="progressbar" style="width: 18.7%" aria-valuenow="18.7" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                                <span>18.7%</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="action text-right">
+                                                            <p class="v-amount mb-0">$ 28,508</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area revenue-content br-4">
+                            <div class="revenue-header">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-6">
+                                        <h6 class="">Revenue</h6>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 col-6 text-sm-right">
+                                        <ul class="nav justify-content-end revenue nav-pills mb-3" id="revenue" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="revenue-monthly-tab" data-toggle="pill" href="#revenue-monthly" role="tab" aria-controls="revenue-monthly" aria-selected="true">Monthly</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="revenue-yearly-tab" data-toggle="pill" href="#revenue-yearly" role="tab" aria-controls="revenue-yearly" aria-selected="false">Yearly</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="revenue-body">
+
+                                <div class="tab-content" id="revenueContent">
+
+                                    <div class="tab-pane fade show active" id="revenue-monthly" role="tabpanel" aria-labelledby="revenue-monthly-tab">
+                                        <p class="r-meta-date">10 Dec, 2018 - 8 Jan, 2019</p>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4 mb-sm-0 mb-3">
+                                                <p class="r-value mt-5 text-center">$7001.25</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4">
+                                                <span id="r-chart" class="float-sm-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="revenue-yearly" role="tabpanel" aria-labelledby="revenue-yearly-tab">
+                                        <p class="r-meta-date">10 Jan, 2018 - 8 Jan, 2019</p>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4 mb-sm-0 mb-3">
+                                                <p class="r-value mt-5 text-center">$87018.79</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4">
+                                                <span id="ry-chart" class="float-sm-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area expanditure-content br-4">
+                            <div class="expanditure-header">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-6">
+                                        <h6 class="">Expenditure</h6>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 col-6 text-sm-right">
+                                        <ul class="nav expanditure justify-content-end nav-pills mb-3" id="expanditure" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="expanditure-monthly-tab" data-toggle="pill" href="#expanditure-monthly" role="tab" aria-controls="expanditure-monthly" aria-selected="true">Monthly</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="expanditure-yearly-tab" data-toggle="pill" href="#expanditure-yearly" role="tab" aria-controls="expanditure-yearly" aria-selected="false">Yearly</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="expanditure-body">
+
+                                <div class="tab-content" id="nav-tabContent">
+
+                                    <div class="tab-pane fade show active" id="expanditure-monthly" role="tabpanel" aria-labelledby="expanditure-monthly-tab">
+                                        <p class="e-meta-date">10 Dec, 2018 - 8 Jan, 2019</p>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4 mb-sm-0 mb-3">
+                                                <p class="e-value mt-5 text-center">$3516.78</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4">
+                                                <span id="e-chart" class="float-sm-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="expanditure-yearly" role="tabpanel" aria-labelledby="expanditure-yearly-tab">
+                                        <p class="e-meta-date">10 Jan, 2018 - 8 Jan, 2019</p>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4 mb-sm-0 mb-3">
+                                                <p class="e-value mt-5 text-center">$55233</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12 mt-4">
+                                                <span id="ey-chart" class="float-sm-right"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-7 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area br-4 p-0">
+                            <div class="calendar"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-12 col-md-12 col-12 layout-spacing">
+
+                        <div class="widget-content widget-content-area br-4 p-0 h-100">
+                            
+                            <div class="latest-activities">
+                                <div class="latest-activities-header">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-12">
+                                            <h5 class="">Latest Activity</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="latest-activities-body">
+                                    <div class="l-a-stats">
+                                        <span class="badge badge-primary badge-pill mr-3">Today</span>
+                                        <span class="latest-activities-stats">Remaining 4 of 12</span>
+                                    </div>
+
+                                    <div class="l-a-list">
+                                        <div class="l-a-scroll">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex mb-3">
+                                                                    <div class=" align-self-center">
+                                                                        <div class="d-m-latest-activities data-marker"></div>
+                                                                    </div>
+                                                                    <p class="latest-activities-txt mb-0">New user registered.</p>
+                                                                </div>
+                                                                <div class="usr-img">
+                                                                    <ul class="list-inline badge-collapsed-img mb-0 mb-0">
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p class="more-usr mb-3">+8</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-right"><i class="flaticon-close-fill remove-latest-activities mt-2"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex mb-3">
+                                                                    <div class=" align-self-center">
+                                                                        <div class="d-m-latest-activities data-marker"></div>
+                                                                    </div>
+                                                                    <p class="latest-activities-txt mb-0">
+                                                                    Metting Scheduled at 4:50pm.</p>
+                                                                </div>
+                                                                <div class="usr-img">
+                                                                    <ul class="list-inline badge-collapsed-img mb-0 mb-0">
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p class="more-usr mb-3">+8</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-right"><i class="flaticon-close-fill remove-latest-activities mt-2"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex mb-3">
+                                                                    <div class=" align-self-center">
+                                                                        <div class="d-m-latest-activities data-marker"></div>
+                                                                    </div>
+                                                                    <p class="latest-activities-txt mb-0">James Tylor added new post.</p>
+                                                                </div>
+                                                                <div class="usr-img">
+                                                                    <ul class="list-inline badge-collapsed-img mb-0 mb-0">
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p class="more-usr mb-3">+8</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-right"><i class="flaticon-close-fill remove-latest-activities mt-2"></i></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex mb-3">
+                                                                    <div class="align-self-center">
+                                                                        <div class="d-m-latest-activities data-marker"></div>
+                                                                    </div>
+                                                                    <p class="latest-activities-txt mb-0">You have one new friend request.</p>
+                                                                </div>
+                                                                <div class="usr-img">
+                                                                    <ul class="list-inline badge-collapsed-img mb-0 mb-0">
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p class="more-usr mb-3">+8</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-right"><i class="flaticon-close-fill remove-latest-activities mt-2"></i></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex mb-3">
+                                                                    <div class=" align-self-center">
+                                                                        <div class="d-m-latest-activities data-marker align-self-center"></div>
+                                                                    </div>
+                                                                    <p class="latest-activities-txt mb-0">Oscar like your post.</p>
+                                                                </div>
+                                                                <div class="usr-img">
+                                                                    <ul class="list-inline badge-collapsed-img mb-0 mb-0">
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p class="more-usr mb-3">+8</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-right"><i class="flaticon-close-fill remove-latest-activities mt-2"></i></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex mb-3">
+                                                                    <div class=" align-self-center">
+                                                                        <div class="d-m-latest-activities data-marker"></div>
+                                                                    </div>
+                                                                    <p class="latest-activities-txt mb-0">20 files Download.</p>
+                                                                </div>
+                                                                <div class="usr-img">
+                                                                    <ul class="list-inline badge-collapsed-img mb-0 mb-0">
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                        <li class="list-inline-item chat-online-usr">
+                                                                            <img alt="admin-profile" src="assets/img/90x90.jpg">
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p class="more-usr mb-3">+8</p>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-right"><i class="flaticon-close-fill remove-latest-activities mt-2"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table> 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="l-a-load-more text-center pt-2 pb-3">
+                                        <button class="btn btn-primary btn-rounded">More +</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12 layout-spacing">
+
+                        <div class="widget-content widget-content-area br-4 p-0">
+
+                            <div class="customer-bal-summary">
+                                <div class="c-b-s-header">
+                                    <div class="row">
+                                        <div class="col-md-6 col-6">
+                                            <h6 class="">Customer Balance Summary</h6>
+                                        </div>
+                                        <div class="col-md-6 col-6 text-sm-right">
+                                            <ul class="nav justify-content-end c-b-s-tab nav-pills" id="c-b-s-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="c-b-s-monthly-tab" data-toggle="pill" href="#c-b-s-monthly" role="tab" aria-controls="c-b-s-monthly" aria-selected="true">Monthly</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="c-b-s-yearly-tab" data-toggle="pill" href="#c-b-s-yearly" role="tab" aria-controls="c-b-s-yearly" aria-selected="false">Yearly</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-b-s-body">
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="c-b-s-monthly" role="tabpanel" aria-labelledby="c-b-s-monthly-tab">
+                                            <div class="table-responsive customer-bal-summary-scroll-monthly">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="" scope="col">Customer</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th class="text-center" scope="col">Status</th>
+                                                            <th class="text-right" scope="col">Receipt</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="customer-name">Andy King</td>
+                                                            <td class="c-b-s-date">10 Jan 2019</td>
+                                                            <td class="customer-price">$ 1,275</td>
+                                                            <td class="text-center"><span class="badge badge-pills outline-badge-dark">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="customer-name">Alma Clarke</td>
+                                                            <td class="c-b-s-date">10 Jan 2019</td>
+                                                            <td class="customer-price">$ 2,344</td>
+                                                            <td class="text-center"><span class="badge badge-pills outline-badge-new">Pending</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="customer-name">Shaun Park</td>
+                                                            <td class="c-b-s-date">10 Jan 2019</td>
+                                                            <td class="customer-price">$ 1,057</td>
+                                                            <td class="text-center"><span class="badge badge-pills outline-badge-dark">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="customer-name">Alan Green</td>
+                                                            <td class="c-b-s-date">10 Jan 2019</td>
+                                                            <td class="customer-price">$ 3,361</td>
+                                                            <td class="text-center"><span class="badge badge-pills outline-badge-dark">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="customer-name">Kristen Beck</td>
+                                                            <td class="c-b-s-date">10 Jan 2019</td>
+                                                            <td class="customer-price">$ 2,895</td>
+                                                            <td class="text-center"><span class="badge badge-pills outline-badge-dark">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="customer-name">Nia Hillyer</td>
+                                                            <td class="c-b-s-date">10 Jan 2019</td>
+                                                            <td class="customer-price">$ 1,713</td>
+                                                            <td class="text-center"><span class="badge badge-pills outline-badge-new">Pending</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="c-b-s-bottom">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-12">
+                                                        <p class="mb-0 mt-1 pagination-stats text-sm-left text-center mb-sm-0 mb-4">Showing 1 to 10 of 24 entries</p>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-12">
+                                                        <ul class="pagination pagination-style-5 pagination-rounded justify-content-sm-end justify-content-center pagination-sm mb-0 mt-0">
+                                                            <li><a href="javascript:void(0);">Previous</a></li>
+                                                            <li><a href="javascript:void(0);">1</a></li>
+                                                            <li><a href="javascript:void(0);">2</a></li>
+                                                            <li><a href="javascript:void(0);">3</a></li>
+                                                            <li><a href="javascript:void(0);">Next</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tab-pane" id="c-b-s-yearly" role="tabpanel" aria-labelledby="c-b-s-yearly-tab">
+                                            <div class="table-responsive customer-bal-summary-scroll-yearly">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="" scope="col">Customer</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Amount</th>
+                                                            <th class="text-center" scope="col">Status</th>
+                                                            <th class="text-right" scope="col">Receipt</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="customer-name">Andy King</td>
+                                                            <td class="c-b-s-date">Jan 2018 - 19</td>
+                                                            <td class="customer-price">$ 24,146</td>
+                                                            <td class="text-center"><span class="badge badge-pills badge-success">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="customer-name">Alma Clarke</td>
+                                                            <td class="c-b-s-date">Jan 2018 - 19</td>
+                                                            <td class="customer-price">$ 46,275</td>
+                                                            <td class="text-center"><span class="badge badge-pills badge-warning">Pending</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="customer-name">Shaun Park</td>
+                                                            <td class="c-b-s-date">Jan 2018 - 19</td>
+                                                            <td class="customer-price">$ 15,275</td>
+                                                            <td class="text-center"><span class="badge badge-pills badge-success">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="customer-name">Alan Green</td>
+                                                            <td class="c-b-s-date">Jan 2018 - 19</td>
+                                                            <td class="customer-price">$ 39,881</td>
+                                                            <td class="text-center"><span class="badge badge-pills badge-success">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="customer-name">Kristen Beck</td>
+                                                            <td class="c-b-s-date">Jan 2018 - 19</td>
+                                                            <td class="customer-price">$ 29,133</td>
+                                                            <td class="text-center"><span class="badge badge-pills badge-success">Paid</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="customer-name">Nia Hillyer</td>
+                                                            <td class="c-b-s-date">Jan 2018 - 19</td>
+                                                            <td class="customer-price">$ 25,794</td>
+                                                            <td class="text-center"><span class="badge badge-pills badge-warning">Pending</span></td>
+                                                            <td class="text-right"><i class="flaticon-download-1 mr-3"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="c-b-s-bottom">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-12">
+                                                        <p class="mb-0 mt-1 pagination-stats text-sm-left text-center mb-sm-0 mb-4">Showing 1 to 10 of 24 entries</p>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-12">
+                                                        <ul class="pagination pagination-style-5 pagination-rounded justify-content-sm-end justify-content-center pagination-sm mb-0 mt-0">
+                                                            <li><a href="javascript:void(0);">Previous</a></li>
+                                                            <li><a href="javascript:void(0);">1</a></li>
+                                                            <li><a href="javascript:void(0);">2</a></li>
+                                                            <li><a href="javascript:void(0);">3</a></li>
+                                                            <li><a href="javascript:void(0);">Next</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area p-0 br-4 file-uploader">
+                            <form class="dropzone-file-area dropzone dropzone-file-area--secondary   d-flex align-self-center h-100  justify-content-center" action="plugins/dropzone/upload.php" id="dropzone-file-area-one">
+                                <div class="d-flex align-self-center">
+                                    <div class="dropzone-file-area__msg dz-message needsclick">
+                                        <h3 class="dropzone-file-area__msg-title">Drop files here.</h3>
+                                        <i class="icon flaticon-cloud-upload mb-5 d-block mt-3 mb-3"></i>
+                                        <div class="d-block text-center">
+                                            <button type="button" class="btn btn-outline-default">Upload</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area p-0 br-4">
+                            <div class="todo-list">
+                                <div class="todo-list-header">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-6 col-10 mb-4 mb-sm-0">
+                                            <h5 class="mb-0">To-do list <span class="badge badge-danger badge-pill ml-4">Today</span></h5>
+                                        </div>
+                                        <div class="col-md-7 col-sm-6 col-2 text-right">
+                                            <i class="flaticon-down-arrow-2 mt-1 js-collapse"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="todo-list-body panel-collapse">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="n-chk">
+                                                            <label class="new-control new-checkbox checkbox-danger">
+                                                                <input type="checkbox" class="new-control-input">
+                                                                <span class="new-control-indicator"></span><span class="todo-text ml-4 mt-1">Send Mail to HR and Admin</span>
+                                                                <span class="flaticon-close-fill remove-task mt-1 ml-3"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="flaticon-edit-5 float-right task-edit"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="n-chk">
+                                                            <label class="new-control new-checkbox checkbox-danger">
+                                                                <input type="checkbox" class="new-control-input" checked>
+                                                                <span class="new-control-indicator"></span><span class="todo-text ml-4 mt-1">Meeting with Shaun Park at 4:50pm</span>
+                                                                <span class="flaticon-close-fill remove-task mt-1  ml-3"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="flaticon-edit-5 float-right task-edit"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="n-chk">
+                                                            <label class="new-control new-checkbox checkbox-danger">
+                                                                <input type="checkbox" class="new-control-input">
+                                                                <span class="new-control-indicator"></span><span class="todo-text ml-4 mt-1">Download Server Logs</span>
+                                                                <span class="flaticon-close-fill remove-task mt-1  ml-3"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="flaticon-edit-5 float-right task-edit"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="n-chk">
+                                                            <label class="new-control new-checkbox checkbox-danger">
+                                                                <input type="checkbox" class="new-control-input">
+                                                                <span class="new-control-indicator"></span><span class="todo-text ml-4 mt-1">Team Meet at 5:30pm</span>
+                                                                <span class="flaticon-close-fill remove-task mt-1  ml-3"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="flaticon-edit-5 float-right task-edit"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="n-chk">
+                                                            <label class="new-control new-checkbox checkbox-danger">
+                                                                <input type="checkbox" class="new-control-input">
+                                                                <span class="new-control-indicator"></span><span class="todo-text ml-4 mt-1">Mailbox Cleanup</span>
+                                                                <span class="flaticon-close-fill remove-task mt-1 ml-3"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="flaticon-edit-5 float-right task-edit"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="n-chk">
+                                                            <label class="new-control new-checkbox checkbox-danger">
+                                                                <input type="checkbox" class="new-control-input">
+                                                                <span class="new-control-indicator"></span><span class="todo-text ml-4 mt-1">Backup and Restore Files EOD</span>
+                                                                <span class="flaticon-close-fill remove-task mt-1  ml-3"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="flaticon-edit-5 float-right task-edit"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="todo-list-bottom text-center">
+                                    <span class="mr-sm-4 d-sm-inline d-block mb-sm-0 mb-3">Add new todo list</span>
+                                    <button class="btn btn-outline-primary">Add</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area r-p-summary br-4 p-0">
+                            <div class="r-p-summary-header">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-5">
+                                        <h6 class="">Profit Summary</h6>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7 col-7 text-sm-right">
+                                        <ul class="nav justify-content-end r-p-summary nav-pills mb-3" id="r-p-summary" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active show" id="r-p-summary-monthly-tab" data-toggle="pill" href="#r-p-summary-monthly" role="tab" aria-controls="r-p-summary-monthly" aria-selected="true">Monthly</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="r-p-summary-yearly-tab" data-toggle="pill" href="#r-p-summary-yearly" role="tab" aria-controls="r-p-summary-yearly" aria-selected="false">Yearly</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="r-p-summary-body">
+
+                                <div class="tab-content">
+                                    
+                                    <div class="tab-pane active" id="r-p-summary-monthly" role="tabpanel" aria-labelledby="r-p-summary-monthly-tab">
+                                        <div class="r-p-summary-montly">
+                                            <div id="r_p_summary" class="mt-5"></div>
+
+                                            <div class="r-p-summary-legend text-center">
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-4">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="align-self-center">
+                                                                <div class="d-m-r_p_sales data-marker"></div>
+                                                            </div>
+                                                            <span class="r_p_sales">Sales</span>
+
+
+                                                            <div class="align-self-center">
+                                                                <div class="d-m-r_p_revenue ml-2 data-marker"></div>
+                                                            </div>
+                                                            <span class="r_p_revenue">Revenue</span>
+
+                                                            <div class="align-self-center">
+                                                                <div class="d-m-r_p_expanditure ml-2 data-marker"></div>
+                                                            </div>
+                                                            <span class="r_p_expanditure">Expenses</span>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    
+                                    <div class="tab-pane" id="r-p-summary-yearly" role="tabpanel" aria-labelledby="r-p-summary-yearly-tab">
+                                        <div class="r-p-summary-yearly">
+                                            <div id="r_p_summary_yearly" class="mt-5"></div>
+
+                                            <div class="r-p-summary-legend text-center">
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-4">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="align-self-center">
+                                                                <div class="d-m-r_p_sales data-marker"></div>
+                                                            </div>
+                                                            <span class="r_p_sales">Sales</span>
+
+
+                                                            <div class="align-self-center">
+                                                                <div class="d-m-r_p_revenue ml-2 data-marker"></div>
+                                                            </div>
+                                                            <span class="r_p_revenue">Revenue</span>
+
+                                                            <div class="align-self-center">
+                                                                <div class="d-m-r_p_expanditure ml-2 data-marker"></div>
+                                                            </div>
+                                                            <span class="r_p_expanditure">Expenses</span>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 layout-spacing">
+                        <div class="row">
+                            
+                            <div class="col-xl-12 mb-4">
+                                <div class="widget-content twitter-widget br-4">
+                                    <div id="social-card-1" class="card br-4">
+                                        <div class="wrapper mt-4">
+
+                                            <div class="usr-meta-info">
+                                                <div class="media">
+                                                    <img alt="admin-profile" src="assets/img/90x90.jpg" class="rounded-circle mr-2">
+                                                    <div class="media-body">
+                                                        <h4 class="usr-name mt-1">Amy Diaz</h4>
+                                                        <p class="usr-occupation">Advisor</p>
+                                                    </div>
+                                                    <span class="twitter-icon">
+                                                        <i class="flaticon-twitter-logo"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mt-4">
+                                                    <p class="usr-tweet">#TEXT (2019) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 mb-4">
+                                <div class="widget-content widget-content-area p-0 br-4">
+                                    <div id="weather-card-1" class="card br-4">
+                                        
+                                        <div class="row">
+
+                                            <div class="col-4 text-center pr-0">
+                                                <div class="day-weather br-4">
+                                                    <i class="flaticon-weather"></i>
+                                                    <p class="mt-2">Monday</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 text-center px-0">
+                                                <div class="city-1">
+                                                    <span class="w-temp mb-0">21</span>
+                                                    <p class="w-city-name">Toronto</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 text-center pl-0">
+                                                <div class="city-2">
+                                                    <span class="w-temp mb-0">-13</span>
+                                                    <p class="w-city-name">Quebec</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area event-widget br-4 text-center">
+                            <div id="event-card-1" class="card br-4">
+                                
+                                <div class="card-title mb-5">
+                                    <span class="badge badge-default badge-pill">Event</span>
+                                </div>
+
+                                <div class="card-event-icon mt-5 mb-5">
+                                    <i class="flaticon-calendar"></i>
+                                </div>
+                                <div class="card-event-list mt-3">
+                                    <p>No event or tasks!</p>
+                                </div>
+
+                                <div class="card-bottom-section">
+                                    <button class="btn btn-secondary btn-rounded">Add new event</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-4 col-12 layout-spacing">
+                        <div class="widget-content widget-content-area br-4 p-0">
+                            <div id="user-profile-card-2" class="card br-4">
+                                <div class="card-top-section br-4">
+                                    <div class="usr-info-meta">
+                                        <p class="usr-name mb-0">Alma Clarke</p>
+                                        <p class="usr-occupation">Developer</p>
+                                    </div>
+                                    <div class="usr-profile-meta">
+                                        <img alt="admin-profile" src="assets/img/120x120.jpg" class="img-fluid usr-profile rounded-circle">
+                                    </div>
+                                </div>
+                                <div class="card-body mt-3">
+                                    <div class="card-bottom-section">
+                                        <div class="row mt-4">
+                                            <div class="col-md-6 col-sm-6 col-6 fb">
+                                                <div class="social-container text-center">
+
+                                                    <div class="s-media-fb">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <i class="flaticon-facebook-logo"></i>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-count mb-0">2.2k</p>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-txt mb-0">Likes</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6 tw">
+
+                                                <div class="social-container text-center">
+                                                    
+                                                    <div class="s-media-twitter">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <i class="flaticon-twitter-logo"></i>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-count mb-0">2.2k</p>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-txt mb-0">Likes</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6 be">
+
+                                                <div class="social-container text-center">
+
+                                                    <div class="s-media-behance">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <i class="flaticon-behance-logo"></i>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-count mb-0">2.2k</p>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-txt mb-0">Likes</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6 insta">
+
+                                                <div class="social-container text-center">
+                                                    <div class="s-media-insta">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <i class="flaticon-instagram-logo"></i>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-count mb-0">2.2k</p>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <p class="s-media-txt mb-0">Likes</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  END CONTENT PART  -->
+                
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!--  BEGIN FOOTER  -->
+    <footer class="footer-section theme-footer">
+
+        <div class="footer-section-1  sidebar-theme">
+            
+        </div>
+
+        <div class="footer-section-2 container-fluid">
+            <div class="row">
+                <div id="toggle-grid" class="col-xl-7 col-md-6 col-sm-6 col-12 text-sm-left text-center">
+                    <ul class="list-inline links ml-sm-5">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://themeforest.net/item/equation-responsive-admin-dashboard-template/23191987">Buy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-5 col-md-6 col-sm-6 col-12">
+                    <ul class="list-inline mb-0 d-flex justify-content-sm-end justify-content-center mr-sm-3 ml-sm-0 mx-3">
+                        <li class="list-inline-item  mr-3">
+                            <p class="bottom-footer">&#xA9; 2019 <a target="_blank" href="https://designreset.com/equation">Equation Admin Theme</a></p>
+                        </li>
+                        <li class="list-inline-item align-self-center">
+                            <div class="scrollTop"><i class="flaticon-up-arrow-fill-1"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  END FOOTER  -->
+
+    <!--  BEGIN PROFILE SIDEBAR  -->
+    <aside class="profile-sidebar text-center">
+        <div class="profile-content profile-content-scroll">
+            <div class="usr-profile">
+                <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+            </div>
+            <p class="user-name mt-4 mb-4">Vincent Carpenter</p>
+            <div class="">
+                <div class="accordion" id="user-stats">
+                    <div class="card">
+                        <div class="card-header pb-4 mb-4" id="status">
+                            <h6 class="mb-0" data-toggle="collapse" data-target="#user-status" aria-expanded="true" aria-controls="user-status"><i class="flaticon-view-3 mr-2"></i> Status <i class="flaticon-down-arrow ml-2"></i> </h6>
+                        </div>
+                        <div id="user-status" class="collapse show" aria-labelledby="status" data-parent="#user-stats">
+                            <div class="card-body text-left">
+                                <ul class="list-unstyled pb-4">
+                                    <li class="status-online"><a href="javascript:void(0);">Online</a></li>
+                                    <li class="status-away"><a href="javascript:void(0);">Away</a></li>
+                                    <li class="status-no-disturb"><a href="javascript:void(0);">Not Disturb</a></li>
+                                    <li class="status-invisible"><a href="javascript:void(0);">Invisible</a></li>
+                                    <li class="status-offline"><a href="javascript:void(0);">Offline</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-links text-left">
+                <ul class="list-unstyled">
+                    <li><a href="apps_mailbox.html"><i class="flaticon-mail-22"></i> Inbox</a></li>
+                    <li><a href="user_profile.html"><i class="flaticon-user-11"></i> My Profile</a></li>
+                    <li><a href="user_login_1.html"><i class="flaticon-power-off"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--  BEGIN PROFILE SIDEBAR  -->
+    
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="plugins/charts/sparklines/jquery.sparkline.min.js"></script>
+    <script src="plugins/charts/d3charts/d3.v3.min.js"></script>
+    <script src="plugins/charts/c3charts/c3.min.js"></script>
+    <script src="plugins/calendar/pignose/moment.latest.min.js"></script>
+    <script src="plugins/calendar/pignose/pignose.calendar.js"></script>
+    <script src="plugins/dropzone/dropzone.min.js"></script>
+    <script src="plugins/progressbar/progressbar.min.js"></script>
+    <script src="assets/js/accounting-dashboard/accounting-custom.js"></script>    
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+   
+</body>
+</html>

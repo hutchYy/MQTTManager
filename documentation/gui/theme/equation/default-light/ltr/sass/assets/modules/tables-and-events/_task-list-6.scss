@@ -1,0 +1,82 @@
+/*TODO LIST*/
+.todo-list {
+	padding: 0px 15px 2px 15px;
+	.todo-title {
+		background-image: $additional-gradient-color-36;
+		border-bottom-left-radius: $br-0 !important;
+		border-bottom-right-radius: $br-0 !important;
+		.title-heading {
+			color: $white;
+			margin-bottom: 0;
+			padding: 10px;
+		}
+	}
+	.to-do-scroll {
+		height: 430px;
+	}
+	.custom-checkbox {
+		.custom-control-input {
+			&:checked~.custom-control-label {
+				&::before {
+					background-color: $color_56;
+				}
+			}
+		}
+	}
+	.table {
+		td {
+			border-top: none;
+		}
+	}
+	.form-check-column {
+		.custom-control-label {
+			&::before {
+				left: 50%;
+			}
+			&::after {
+				left: 50%;
+			}
+		}
+	}
+	.usr-image {
+		img {
+			width: 45px;
+			border-radius: 50%;
+		}
+	}
+	.usr-info {
+		.usr-email {
+			font-weight: 700;
+			color: $additional-color-11;
+			font-size: 15px;
+		}
+	}
+	.usr-btc {
+		color: $color_53;
+	}
+	.usr-deal {
+		font-size: 13px;
+		color: $additional-color-6;
+	}
+	.mCSB_container_wrapper {
+		margin-right: 0;
+		margin-bottom: 0;
+		>.mCSB_container {
+			padding-right: 0;
+		}
+	}
+	.mCSB_scrollTools {
+		.mCSB_dragger {
+			.mCSB_dragger_bar {
+				background-color: $color_100 !important;
+			}
+		}
+		.mCSB_draggerRail {
+			background-color: $color_none;
+		}
+	}
+}
+p.usr-deal-number {
+	font-size: 14px;
+	color: $additional-color-6;
+}

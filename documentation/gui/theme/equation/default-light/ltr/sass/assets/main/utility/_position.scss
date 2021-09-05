@@ -1,0 +1,20 @@
+
+/*-----transform-position------*/
+.position-absolute {
+	position: $pos-abs;
+}
+.position-static {
+	position: $pos-static;
+}
+.position-fixed {
+	position: $pos-fix;
+}
+.position-inherit {
+	position: $pos-inherit;
+}
+.position-initial {
+	position: $pos-initial;
+}
+.position-relative {
+	position: $pos-rel;
+}

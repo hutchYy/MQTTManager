@@ -1,0 +1,38 @@
+/*
+    Top sale
+*/
+#top-sale {
+	#t-s-chart {
+		.ct-series-a {
+			.ct-line {
+				stroke: $success;
+				stroke-width: 2px;
+			}
+		}
+		.ct-grid {
+			stroke: $color_none;
+		}
+	}
+	h6 {
+		font-weight: 600;
+		color: $black;
+		font-size: 20px;
+	}
+	p.t-s-stats {
+		color: $additional-color-6;
+		font-size: 22px;
+	}
+	.media {
+		i {
+			color: $success;
+			font-size: 20px;
+		}
+		.media-body {
+			p {
+				font-weight: 600;
+				color: $black;
+				font-size: 15px;
+			}
+		}
+	}
+}

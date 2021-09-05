@@ -1,0 +1,49 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+body.error500 {
+	background-color: $white;
+	>.error-content {
+		min-height: 90vh;
+		display: flex;
+		align-items: $align-center;
+		justify-content: $align-center;
+		text-align: $align-center;
+		padding: $p-30;
+	}
+}
+.error500 {
+	.mini-text {
+		font-size: 25px;
+		font-weight: 600;
+		color: $color_1;
+		margin-bottom: $m-0;
+	}
+	.error-number {
+		font-size: 170px;
+		color: $color_247;
+		font-weight: 600;
+		margin-top: 8px;
+		margin-bottom: $m-20;
+	}
+	.error-des {
+		font-size: 30px;
+		color: $color_248;
+		font-weight: 600;
+	}
+	.error-text {
+		font-size: 20px;
+	}
+	a.btn {
+		width: 205px;
+		padding: 11px;
+		font-size: 20px;
+	}
+}

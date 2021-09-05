@@ -1,0 +1,188 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+@-webkit-keyframes "animate-positive" {
+	0% {
+		width: 0%;
+	}
+}
+@keyframes "animate-positive" {
+	0% {
+		width: 0%;
+	}
+}
+@-webkit-keyframes "progress" {
+	0% {
+		width: 0%;
+	}
+}
+@keyframes "progress" {
+	0% {
+		width: 0%;
+	}
+}
+/* Defining custom css for classsic progress bar */
+.progress-title-rain {
+	font-size: 15px;
+	font-weight: 600;
+	color: $additional-color-6;
+	margin: $m-10 $m-0 $m-20;
+}
+.progress-rain {
+	height: 5px;
+	background: $color_357;
+	border-radius: $br-0;
+	box-shadow: none;
+	margin-bottom: $m-30;
+	overflow: visible;
+	.progress-bar {
+		position: $pos-rel;
+		height: 5px;
+		-webkit-animation: animate-positive 2s;
+		-moz-animation: animate-positive 2s;
+		-ms-animation: animate-positive 2s;
+		-o-animation: animate-positive 2s;
+		animation: animate-positive 2s;
+		&:after {
+			content: "\f1f1";
+			font-family: $font_family_1;
+			font-size: $fs-20;
+			position: $pos-abs;
+			top: -23px;
+			right: -9px;
+		}
+	}
+	.progress-value {
+		position: $pos-abs;
+		top: -30px;
+		right: 13px;
+		font-size: 14px;
+		font-weight: 600;
+		font-style: italic;
+		color: $color_2;
+	}
+}
+.progress-title-arrow {
+	font-size: 15px;
+	font-weight: 600;
+	color: $additional-color-6;
+	margin: $m-0 $m-0 $m-10;
+}
+.progress-arrow {
+	height: 10px;
+	line-height: 15px;
+	background: $color_54;
+	border-radius: $br-0;
+	margin-bottom: $m-50;
+	padding: 4px;
+	box-shadow: none;
+	overflow: visible;
+	&:last-child {
+		margin-bottom: $m-0;
+	}
+	.progress-bar {
+		position: $pos-rel;
+		height: 2px;
+		-webkit-animation: animate-positive 2s;
+		-moz-animation: animate-positive 2s;
+		-ms-animation: animate-positive 2s;
+		-o-animation: animate-positive 2s;
+		animation: animate-positive 2s;
+		&:after {
+			content: "\f191";
+			font-family: $font_family_1;
+			font-size: $fs-15;
+			position: $pos-abs;
+			top: -6px;
+			right: -12px;
+		}
+	}
+	.progress-value {
+		font-size: 12px;
+		color: $white;
+		border-radius: $br-4;
+		padding: 3px 7px;
+		background: $additional-color-6;
+		position: $pos-abs;
+		top: -50px;
+		right: -35px;
+		&:after {
+			content: "";
+			border: $b-width-5 $solid $color_none;
+			border-top: $b-width-5 $solid $additional-color-6;
+			border-left: $b-width-5 $solid $additional-color-6;
+			position: $pos-abs;
+			bottom: -6px;
+			left: 0;
+		}
+	}
+}
+.progressbar-title-bg {
+	position: $pos-rel;
+	margin-bottom: $m-10;
+	border-radius: 5px;
+	padding: $p-30 $p-10 $p-30 $p-80;
+	.progressbar-value {
+		position: $pos-abs;
+		left: 15px;
+		top: 14px;
+		color: $white;
+		font-weight: bold;
+		padding: $p-10 15px;
+		border-radius: 5px;
+	}
+}
+.progress-bg {
+	height: 10px;
+	border-radius: $br-10;
+	box-shadow: none;
+	line-height: 35px;
+	margin: $m-0;
+	.progress-bar {
+		background: $light-gray;
+		-webkit-animation: progress 6s;
+		-moz-animation: progress 6s;
+		-ms-animation: progress 6s;
+		-o-animation: progress 6s;
+		animation: progress 6s;
+	}
+}
+.progressbar-title-bg.red {
+	background: $color_416;
+	.progressbar-value {
+		background: $color_417;
+	}
+	.progress-bg {
+		background: $color_417;
+	}
+}
+.progressbar-title-bg.orange {
+	background: $color_419 !important;
+	.progressbar-value {
+		background: $color_418;
+	}
+	.progress-bg {
+		background: $color_418;
+	}
+}
+.classic {
+	.progress-bar {
+		height: 0.625rem;
+	}
+}

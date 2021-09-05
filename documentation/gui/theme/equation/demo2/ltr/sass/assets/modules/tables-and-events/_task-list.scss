@@ -1,0 +1,82 @@
+/*  
+    Task List
+*/
+.task-scroll {
+	height: 270px;
+}
+.task-container {
+	.task-list {
+		.task-header {
+			padding: 20px;
+			border-bottom: 1px solid $light-gray;
+			h6 {
+				color: $additional-color-11;
+				font-size: 16px;
+				font-weight: 600;
+			}
+		}
+		.task-body {
+			table {
+				>tbody {
+					tr {
+						td {
+							padding: 26px 20px 0;
+						}
+					}
+					td {
+						.task-item {
+							.task-title {
+								font-size: 17px;
+								font-weight: 600;
+								color: $color_76;
+							}
+							ul {
+								li {
+									img {
+										width: 35px;
+										height: 35px;
+									}
+									.txt-profile {
+										font-size: 18px;
+										display: inline-flex;
+										width: 36px;
+										height: 36px;
+										color: $white;
+										border-radius: 50%;
+										background-color: $color_119;
+										align-items: center;
+										justify-content: center;
+										cursor: default;
+									}
+									.txt-profile-success {
+										color: $success;
+										background-color: $light-success;
+									}
+								}
+							}
+						}
+					}
+					td.action {
+						i {
+							font-size: 16px;
+							color: $additional-color-6;
+							margin-bottom: 14px;
+						}
+						.meta-info {
+							font-size: 14px;
+							color: $additional-color-6;
+						}
+					}
+				}
+			}
+			.action-button {
+				border-top: 1px solid $light-gray;
+				button {
+					font-size: 15px;
+					font-weight: 600;
+					color: $secondary;
+				}
+			}
+		}
+	}
+}

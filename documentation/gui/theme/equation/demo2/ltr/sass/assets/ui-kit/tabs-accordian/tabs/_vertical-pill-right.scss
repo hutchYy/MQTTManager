@@ -1,0 +1,15 @@
+/*
+    Vertical Pill Right
+*/
+.vertical-pill-right {
+	.nav-pills {
+		.nav-link.active {
+			background-color: $color_83;
+		}
+		.show {
+			>.nav-link {
+				background-color: $color_83;
+			}
+		}
+	}
+}

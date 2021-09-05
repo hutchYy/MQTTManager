@@ -1,0 +1,86 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+.checkbox {
+	position: $pos-rel;
+	display: block;
+	cursor: pointer;
+}
+.radio {
+	position: $pos-rel;
+	display: block;
+	cursor: pointer;
+}
+.checkbox-inline {
+	position: $pos-rel;
+	display: inline-block;
+	vertical-align: $v-align-middle;
+	cursor: pointer;
+}
+.radio-inline {
+	position: $pos-rel;
+	display: inline-block;
+	vertical-align: $v-align-middle;
+	cursor: pointer;
+}
+.form-horizontal {
+	.checkbox {
+		padding-top: 7px;
+		margin-top: $m-0;
+		margin-bottom: $m-0;
+		min-height: 27px;
+	}
+	.checkbox-inline {
+		padding-top: 7px;
+		margin-top: $m-0;
+		margin-bottom: $m-0;
+	}
+	.radio {
+		padding-top: 7px;
+		margin-top: $m-0;
+		margin-bottom: $m-0;
+		min-height: 27px;
+	}
+	.radio-inline {
+		padding-top: 7px;
+		margin-top: $m-0;
+		margin-bottom: $m-0;
+	}
+}
+.form-control {
+	border: $b-width-1 $solid $color_103;
+	color: $additional-color-6;
+	font-size: 15px;
+	border-radius: 2px;
+	&::-webkit-input-placeholder {
+		color: $additional-color-6;
+		font-size: 15px;
+	}
+	&::-ms-input-placeholder {
+		color: $additional-color-6;
+		font-size: 15px;
+	}
+	&::-moz-placeholder {
+		color: $additional-color-6;
+		font-size: 15px;
+	}
+	&:focus {
+		border-color: $color_6;
+		border-left: $solid $b-width-3 $color_57;
+	}
+}
+label {
+	color: $additional-color-11;
+	margin-bottom: 14px;
+}
+.input-group-text {
+	background-color: $color_160;
+	border-color: $light-gray;
+	color: $color_47;
+}

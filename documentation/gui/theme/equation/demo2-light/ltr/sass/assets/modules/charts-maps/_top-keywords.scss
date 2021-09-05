@@ -1,0 +1,48 @@
+/*
+    Top Keywords
+*/
+#top-keyword {
+	width: 100%;
+	max-width: 350px;
+	height: 400px;
+	margin: auto;
+}
+.top-keyword-body {
+	position: $pos-rel;
+	#top-keyword {
+		.amcharts-main-div {
+			a {
+				display: none !important;
+			}
+		}
+	}
+}
+.top-keyword {
+	.top-keyword-title {
+		h6 {
+			color: $additional-color-11;
+			font-size: 19px;
+			font-weight: 600;
+		}
+	}
+	.top-keyword-body {
+		.top-keyword-label {
+			.data-marker {
+				width: 14px;
+				height: 14px;
+			}
+			.d-m-top-keyword-1 {
+				background-color: $color_52;
+			}
+			.d-m-top-keyword-2 {
+				background-color: $color_83;
+			}
+			.d-m-top-keyword-3 {
+				background-color: $color_91;
+			}
+			.d-m-top-keyword-4 {
+				background-color: $additional-color-3;
+			}
+		}
+	}
+}

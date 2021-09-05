@@ -1,0 +1,353 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../assets/base/color_variables';   	// Color Variables
+@import '../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../assets/base/urls';   				// URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+.minicolors {
+	position: $pos-rel;
+	input[type=hidden] {
+		&+.minicolors-swatch {
+			width: 28px;
+			position: $pos-static;
+			cursor: pointer;
+		}
+	}
+	input[type=hidden][disabled] {
+		&+.minicolors-swatch {
+			cursor: default;
+		}
+	}
+	.minicolors-grid {
+		position: $pos-rel;
+		top: 1px;
+		left: 1px;
+		width: 150px;
+		height: 150px;
+		background-position: -120px 0;
+		cursor: crosshair;
+	}
+	.minicolors-grid-inner {
+		position: $pos-abs;
+		top: 0;
+		left: 0;
+		width: 150px;
+		height: 150px;
+	}
+}
+.minicolors-sprite {
+	background-image: url(jquery.minicolors.png);
+}
+.minicolors-swatch {
+	position: $pos-abs;
+	vertical-align: $v-align-middle;
+	background-position: -80px 0;
+	border: $solid $b-width-1 $color_103;
+	cursor: text;
+	padding: $p-0;
+	margin: 0;
+	display: inline-block;
+}
+.minicolors-swatch-color {
+	position: $pos-abs;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/* Panel */
+.minicolors-panel {
+	position: $pos-abs;
+	width: 173px;
+	background: $white;
+	border: $solid $b-width-1 $color_103;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+	z-index: 99999;
+	box-sizing: content-box;
+	display: none;
+}
+.minicolors-panel.minicolors-visible {
+	display: block;
+}
+/* Panel positioning */
+.minicolors-position-top {
+	.minicolors-panel {
+		top: -154px;
+	}
+}
+.minicolors-position-right {
+	.minicolors-panel {
+		right: 0;
+	}
+}
+.minicolors-position-bottom {
+	.minicolors-panel {
+		top: auto;
+	}
+}
+.minicolors-position-left {
+	.minicolors-panel {
+		left: 0;
+	}
+}
+.minicolors-with-opacity {
+	.minicolors-panel {
+		width: 194px;
+	}
+	.minicolors-opacity-slider {
+		display: block;
+	}
+	.minicolors-swatches {
+		.minicolors-swatch {
+			margin-right: 7px;
+		}
+	}
+}
+.minicolors-slider-saturation {
+	.minicolors-grid {
+		background-position: -420px 0;
+	}
+	.minicolors-grid-inner {
+		background-position: -270px 0;
+		background-image: inherit;
+	}
+	.minicolors-slider {
+		background-position: -60px 0;
+	}
+}
+.minicolors-slider-brightness {
+	.minicolors-grid {
+		background-position: -570px 0;
+	}
+	.minicolors-grid-inner {
+		background-color: $black;
+	}
+	.minicolors-slider {
+		background-position: -20px 0;
+	}
+}
+.minicolors-slider-wheel {
+	.minicolors-grid {
+		background-position: -720px 0;
+	}
+	.minicolors-slider {
+		background-position: -20px 0;
+	}
+}
+.minicolors-slider {
+	position: $pos-abs;
+	top: 1px;
+	left: 152px;
+	width: 20px;
+	height: 150px;
+	background-color: $white;
+	background-position: 0 0;
+	cursor: row-resize;
+}
+.minicolors-opacity-slider {
+	position: $pos-abs;
+	top: 1px;
+	left: 152px;
+	width: 20px;
+	height: 150px;
+	background-color: $white;
+	background-position: 0 0;
+	cursor: row-resize;
+	left: 173px;
+	background-position: -40px 0;
+	display: none;
+}
+/* Pickers */
+.minicolors-grid {
+	.minicolors-picker {
+		position: $pos-abs;
+		top: 70px;
+		left: 70px;
+		width: 12px;
+		height: 12px;
+		border: $solid $b-width-1 $black;
+		border-radius: $br-10;
+		margin-top: -6px;
+		margin-left: -6px;
+		background: none;
+		>div {
+			position: $pos-abs;
+			top: 0;
+			left: 0;
+			width: 8px;
+			height: 8px;
+			border-radius: 8px;
+			border: $solid $b-width-2 $white;
+			box-sizing: content-box;
+		}
+	}
+}
+.minicolors-picker {
+	position: $pos-abs;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 2px;
+	background: $white;
+	border: $solid $b-width-1 $black;
+	margin-top: -2px;
+	box-sizing: content-box;
+}
+/* Swatches */
+.minicolors-swatches {
+	margin: $m-5 $m-0 3px $m-5;
+	padding: $p-0;
+	list-style: none;
+	overflow: hidden;
+	li {
+		margin: $m-5 $m-0 3px $m-5;
+		padding: $p-0;
+		list-style: none;
+		overflow: hidden;
+	}
+	.minicolors-swatch {
+		position: $pos-rel;
+		float: $align-left;
+		cursor: pointer;
+		margin: $m-0 4px $m-0 $m-0;
+	}
+}
+.minicolors-swatch.selected {
+	border-color: $black;
+}
+/* Inline controls */
+.minicolors-inline {
+	display: inline-block;
+	.minicolors-input {
+		display: none !important;
+	}
+	.minicolors-panel {
+		position: $pos-rel;
+		top: auto;
+		left: auto;
+		box-shadow: none;
+		z-index: auto;
+		display: inline-block;
+	}
+}
+
+/* Default theme */
+.minicolors-theme-default {
+	.minicolors-swatch {
+		top: 5px;
+		left: 5px;
+		width: 18px;
+		height: 18px;
+	}
+	.minicolors-swatches {
+		.minicolors-swatch {
+			margin-bottom: 2px;
+			top: 0;
+			left: 0;
+			width: 18px;
+			height: 18px;
+		}
+	}
+	.minicolors-input {
+		height: 20px;
+		width: auto;
+		display: inline-block;
+		padding-left: 26px;
+	}
+}
+.minicolors-theme-default.minicolors-position-right {
+	.minicolors-swatch {
+		left: auto;
+		right: 5px;
+	}
+	.minicolors-input {
+		padding-right: 26px;
+		padding-left: inherit;
+	}
+}
+.minicolors-theme-default.minicolors {
+	width: auto;
+	display: inline-block;
+}
+.minicolors-theme-bootstrap {
+	.minicolors-swatch {
+		z-index: 2;
+		top: 3px;
+		left: 3px;
+		width: 28px;
+		height: 28px;
+		border-radius: 100%;
+	}
+	.minicolors-swatches {
+		.minicolors-swatch {
+			margin-bottom: 2px;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.minicolors-swatch-color {
+		border-radius: inherit;
+	}
+	.minicolors-input {
+		float: none;
+		padding-left: 44px !important;
+	}
+	.minicolors-input.input-lg {
+		&+.minicolors-swatch {
+			top: 4px;
+			left: 4px;
+			width: 37px;
+			height: 37px;
+			border-radius: 5px;
+		}
+	}
+	.minicolors-input.input-sm {
+		&+.minicolors-swatch {
+			width: 24px;
+			height: 24px;
+		}
+	}
+	.minicolors-input.input-xs {
+		&+.minicolors-swatch {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+/* Bootstrap theme */
+.minicolors-theme-bootstrap.minicolors-position-right {
+	>.minicolors-swatch {
+		left: auto;
+		right: 3px;
+	}
+	.minicolors-input {
+		padding-right: 44px;
+		padding-left: 12px;
+	}
+}
+.input-group {
+	.minicolors-theme-bootstrap {
+		&:not(:first-child) {
+			.minicolors-input {
+				border-top-left-radius: $br-0;
+				border-bottom-left-radius: $br-0;
+			}
+		}
+	}
+}
+/* Semantic Ui theme */
+.minicolors-theme-semanticui {
+	.minicolors-swatch {
+		top: 0;
+		left: 0;
+		padding: 18px;
+	}
+	input {
+		text-indent: 30px;
+	}
+}

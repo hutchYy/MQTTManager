@@ -1,0 +1,47 @@
+/*
+    Event Card
+*/
+#event-card-1.card {
+	position: $pos-rel;
+	border: none;
+	height: 452px;
+	.card-title {
+		.badge {
+			padding: 6px 20px;
+			font-size: 19px;
+			border: none;
+			color: $color_76;
+			background-color: $color_123;
+		}
+	}
+	.card-event-icon {
+		i {
+			font-size: 81px;
+			color: $color_122;
+		}
+	}
+	.card-event-list {
+		p {
+			font-size: 18px;
+			font-weight: 600;
+			color: $black;
+		}
+	}
+	.card-bottom-section {
+		position: $pos-abs;
+		bottom: 30px;
+		right: 0;
+		left: 0;
+		button.btn {
+			background-image: $additional-gradient-color-25;
+			border: none;
+			box-shadow: 2px 3px 15px 0px #6055ce;
+			padding: 12px 29px;
+			font-size: 17px;
+			font-weight: normal;
+			&:hover {
+				background-image: $additional-gradient-color-26;
+			}
+		}
+	}
+}

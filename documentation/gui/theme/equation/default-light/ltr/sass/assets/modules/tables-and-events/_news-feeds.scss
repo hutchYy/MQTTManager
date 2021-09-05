@@ -1,0 +1,86 @@
+/*
+    News Feeds
+*/
+.news-feeds {
+	.news-feeds-header {
+		padding: 20px;
+		h6 {
+			margin-bottom: 0;
+			font-weight: 600;
+			color: $additional-color-11;
+		}
+		div {
+			color: $color_47;
+		}
+	}
+	.news-feeds-body {
+		table {
+			td {
+				border-color: $light-gray;
+				padding-left: 24px;
+				padding-right: 24px;
+				.n-chk {
+					.new-control-indicator {
+						border: $b-width-1 $solid $light-gray;
+						background-color: $color_none;
+						width: 1.2rem;
+						height: 1.2rem;
+					}
+				}
+				.new-control.new-checkbox.checkbox-danger {
+					>input {
+						&:checked~span.new-control-indicator {
+							border: #e7515a;
+							&:after {
+								margin-left: -3px;
+								margin-top: -6px;
+							}
+						}
+					}
+				}
+				.new-control {
+					.d-flex {
+						.media {
+							.usr-icon {
+								i {
+									padding: 8px;
+									border-radius: 50%;
+									font-size: 28px;
+								}
+							}
+							.media-body {
+								flex: auto;
+								.news-feeds-text {
+									color: $additional-color-11;
+									font-weight: 600;
+									.user-name {
+										color: $color_47;
+										font-size: 15px;
+										font-weight: 300;
+									}
+									.action {
+										color: $color_47;
+										font-size: 15px;
+										font-weight: 300;
+									}
+								}
+								.meta-time {
+									font-size: 12px;
+									font-weight: 600;
+								}
+							}
+						}
+					}
+				}
+				i.task-delete {
+					font-size: 18px;
+					color: $color_38;
+					cursor: pointer;
+					&:hover {
+						color: $dark;
+					}
+				}
+			}
+		}
+	}
+}

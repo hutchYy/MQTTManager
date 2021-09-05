@@ -1,0 +1,85 @@
+/* 
+  Monthly Chart
+*/
+#chartdiv {
+	height: 339px;
+}
+.monthly-chart {
+	h3 {
+	    color: $color_11;
+	    font-size: 16px;
+	    font-weight: 600;
+	    margin: 0;
+	}
+	.monthly-chart-tab.nav-pills {
+		.nav-link.active {
+			background-image: linear-gradient(-20deg, #3232b7 0%, #1a73e9 100%);
+		}
+		.show {
+			>.nav-link {
+				background-image: linear-gradient(-20deg, #3232b7 0%, #1a73e9 100%);
+			}
+		}
+		.nav-link {
+			padding: 6px 19px;
+			font-size: 13px;
+			border-radius: 20px;
+		}
+	}
+}
+.ct-series-a {
+	.ct-bar {
+		stroke: $primary;
+		stroke-width: 6px;
+	}
+	.ct-point {
+		stroke: $primary;
+	}
+	.ct-line {
+		stroke: $primary;
+		stroke-width: 2px;
+	}
+	.ct-area {
+		fill: $primary;
+	}
+}
+.ct-series-b {
+	.ct-bar {
+		stroke: $light-primary;
+		stroke-width: 4px;
+	}
+	.ct-point {
+		stroke: $light-primary;
+	}
+	.ct-line {
+		stroke: $light-primary;
+		stroke-width: 2px;
+	}
+	.ct-area {
+		fill: $light-primary;
+	}
+}
+.d-m-visitors {
+	background-color: $light-primary;
+	height: 8px;
+	width: 8px;
+}
+.visitors {
+	font-weight: 600;
+	text-transform: $transform-capital;
+	color: $color_2;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.d-m-page-view {
+	background-color: $primary;
+	height: 8px;
+	width: 8px;
+}
+.page-view {
+	font-weight: 600;
+	text-transform: $transform-capital;
+	color: $color_2;
+	font-size: 14px;
+	margin-left: 10px;
+}

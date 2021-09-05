@@ -1,0 +1,29 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../base/color_variables';      // Color Variables
+@import '../base/fonticons';            // Fonticons Variables
+@import '../base/urls';                 // URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+#product-catalog-container.container {
+	max-width: 1800px;
+	padding: $p-0;
+}
+
+
+//  =======================================
+//      Imports Products Catalog Cards
+//  =======================================
+
+@import 'product-catalog/product-catalog-1';
+@import 'product-catalog/product-catalog-2';
+@import 'product-catalog/product-catalog-3';
+@import 'product-catalog/product-catalog-4';
+@import 'product-catalog/product-catalog-5';
+@import 'product-catalog/product-catalog-6';
+@import 'product-catalog/product-catalog-7';
+@import 'product-catalog/product-catalog-8';
+@import 'product-catalog/product-catalog-10';
+@import 'product-catalog/product-catalog-11';

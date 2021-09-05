@@ -1,0 +1,68 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+.notify.notify-theme-flat {
+	box-shadow: none;
+	.notify-body {
+		background-color: $color_52;
+		* {
+			font-weight: 300;
+		}
+		.notify-body-title {
+			font-size: 16px;
+			margin-bottom: 7px;
+		}
+		.notify-body-text {
+			font-size: 14px;
+		}
+	}
+	.notify-action-buttons {
+		.notify-square-button.notify-close-button {
+			background-size: 10px;
+		}
+	}
+}
+.notify.notify-theme-flat.notify-success {
+	.notify-body {
+		* {
+			color: $color_420;
+		}
+	}
+	.notify-action-buttons {
+		.notify-square-button.notify-close-button {
+			background-image: $url_17;
+		}
+	}
+}
+.notify.notify-theme-flat.notify-error {
+	.notify-body {
+		* {
+			color: $color_421;
+		}
+	}
+	.notify-action-buttons {
+		.notify-square-button.notify-close-button {
+			background-image: $url_18;
+		}
+	}
+}
+.notify.notify-theme-flat.notify-default {
+	border-color: $color_52;
+	.notify-body {
+		* {
+			color: $white;
+		}
+	}
+	.notify-action-buttons {
+		.notify-square-button.notify-close-button {
+			background-image: $url_19;
+		}
+	}
+}

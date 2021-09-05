@@ -1,0 +1,115 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+.border-default {
+	border-color: $color_142 !important;
+}
+.widget-content-area {
+	padding-bottom: 32px;
+}
+.nav-tabs {
+	.nav-link.active {
+		color: $additional-color-5;
+		background-color: $white;
+		border-color: $color_142 $color_142 $white;
+		&:after {
+			color: $additional-color-5;
+		}
+	}
+	border-bottom: 1px solid $light-gray;
+	.nav-link {
+		&:hover {
+			border-color: $light-gray $light-gray $color_6;
+		}
+	}
+	.dropdown-item {
+		&:hover {
+			background-color: $color_54;
+			color: $color_2;
+		}
+	}
+}
+.dropdown-menu {
+	box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.1);
+}
+.nav-pills {
+	.nav-link.active {
+		background-color: $additional-color-5;
+		border-color: $color_none;
+		&:after {
+			color: $white;
+		}
+	}
+	.nav-link {
+		color: $color_11;
+	}
+	.show {
+		>.nav-link {
+			background-color: $additional-color-5;
+		}
+	}
+}
+h4 {
+	color: $additional-color-5;
+	font-size: 1.125rem;
+}
+blockquote.blockquote {
+	color: $color_11;
+	border-left: 2px solid #e95f2b;
+	background-color: $color_94;
+}
+
+//    ====================================
+//        	Tabs Imports 
+//    ====================================
+
+
+@import 'tabs/simple-tab';
+@import 'tabs/simple-pills';
+
+@import 'tabs/icon-tab';
+@import 'tabs/icon-pills';
+
+@import 'tabs/dropdown-tab';
+@import 'tabs/dropdown-pills';
+
+@import 'tabs/underline-tab';
+@import 'tabs/animated-underline-tab';
+
+@import 'tabs/justified-tab';
+@import 'tabs/justified-pill';
+
+@import 'tabs/justified-centered-tab';
+@import 'tabs/justified-centered-pill';
+
+@import 'tabs/justified-right-tab';
+@import 'tabs/justified-right-pill';
+
+@import 'tabs/rounded-pills';
+@import 'tabs/rounded-pills-with-background';
+
+
+@import 'tabs/rounded-circle-icon';
+@import 'tabs/vertical-icon-tab';
+
+@import 'tabs/rounded-pills-icons';
+@import 'tabs/rounded-vertical-icon-tab';
+
+@import 'tabs/vertical-pill';
+@import 'tabs/vertical-pill-right';
+
+@import 'tabs/creative';
+@import 'tabs/creative_vertical-pill';
+
+@import 'tabs/vertical-line-pill';
+@import 'tabs/boder-tab';
+
+@import 'tabs/vertical-border-tab';
+@import 'tabs/border-top-tab';

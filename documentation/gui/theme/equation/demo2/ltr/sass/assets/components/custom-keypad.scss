@@ -1,0 +1,61 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+.additional-usage {
+	.dropdown-toggle {
+		&::after {
+			display: none;
+		}
+	}
+	h5 {
+		color: $additional-color-2;
+		font-size: 0.875rem;
+	}
+}
+.keypad-usage {
+	h6 {
+		color: $additional-color-2;
+		font-size: 0.75rem;
+	}
+}
+.input-control {
+	input {
+		border: $b-width-1 $color_622 $solid;
+		color: $additional-color-11;
+		&:hover {
+			border-color: $color_55;
+			border-radius: 2px;
+		}
+	}
+}
+.keypad {
+	.key {
+		border: $b-width-1 $light-gray $solid;
+		color: $additional-color-5;
+		&:hover {
+			background-color: $color_59;
+			color: $white;
+		}
+	}
+}
+.button {
+	&:hover {
+		border-color: $color_55;
+	}
+	color: $additional-color-6;
+	&:active {
+		color: $additional-color-11;
+		background-color: $white;
+		box-shadow: none;
+	}
+}
+.debug {
+	border: $b-width-1 $dash $color_56;
+}

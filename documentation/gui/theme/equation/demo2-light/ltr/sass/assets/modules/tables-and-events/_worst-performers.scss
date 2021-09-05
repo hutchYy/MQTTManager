@@ -1,0 +1,79 @@
+/*  Worst Performers      */
+.worst-performers {
+	.worst-performers-header {
+		padding: 20px;
+		border-bottom: $b-width-1 $solid $light-gray;
+		h6 {
+			color: $color_76;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		.worst-performers-tab.nav-pills {
+			.nav-link.active {
+				background-image: linear-gradient(to right, #3862f5 0%, #00b1f4 100%);
+			}
+			.show {
+				>.nav-link {
+					background-image: linear-gradient(to right, #3862f5 0%, #00b1f4 100%);
+				}
+			}
+			.nav-link {
+				padding: 6px 17px;
+				font-size: 13px;
+				border-radius: 20px;
+			}
+		}
+	}
+	.worst-performers-body {
+		.tab-content {
+			.tab-pane {
+				table {
+					tbody {
+						tr {
+							cursor: pointer;
+							td {
+								vertical-align: middle;
+								border-top: none;
+								color: $additional-color-11;
+								font-size: 14px;
+								font-weight: 600;
+								padding: 20px 15px;
+								p {
+									color: $color_76;
+									font-weight: 600;
+									font-size: 15px;
+								}
+								span {
+									font-size: 13px;
+									font-weight: 600;
+									color: $additional-color-6;
+								}
+								.progress {
+									width: 140px;
+									height: 7px;
+									border-radius: 30px;
+									.progress-bar {
+										border-radius: 30px;
+										background-color: $additional-color-3 !important;
+									}
+								}
+								i {
+									font-size: 22px;
+									color: $color_38;
+									cursor: pointer;
+								}
+							}
+							&:hover {
+								td {
+									i {
+										color: $color_56;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

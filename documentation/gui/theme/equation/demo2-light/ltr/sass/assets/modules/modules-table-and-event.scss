@@ -1,0 +1,93 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+.table {
+	td {
+		padding: .75rem;
+		vertical-align: $v-align-top;
+		border-top: none;
+	}
+	>thead {
+		&:first-child {
+			>tr {
+				&:first-child {
+					>th {
+						border-top: none;
+						border-top: $b-width-1 $solid $color_64;
+						border-top: none;
+					}
+				}
+			}
+		}
+	}
+}
+.title-heading {
+	color: $color_76;
+	text-transform: initial;
+	font-weight: 600;
+	font-size: 18px;
+	margin: 0 0 20px 0;
+	text-transform: $transform-upper;
+}
+
+//  ==============================================
+//	     Modules Table and Events Imports 
+//  ==============================================
+
+
+@import 'tables-and-events/active-task';
+@import 'tables-and-events/all-coins-table';
+@import 'tables-and-events/available-cars-list';
+@import 'tables-and-events/best-mechanics';
+@import 'tables-and-events/best-performers';
+@import 'tables-and-events/booked-cars';
+@import 'tables-and-events/browser-statistics';
+@import 'tables-and-events/buy-sell-cryptocurrency';
+@import 'tables-and-events/chat-1';
+@import 'tables-and-events/chat-2';
+@import 'tables-and-events/chat-3';
+
+@import 'tables-and-events/commodity-prices';
+@import 'tables-and-events/customer-balance-summary';
+@import 'tables-and-events/customer-feedback';
+@import 'tables-and-events/customer-feedback-2';
+@import 'tables-and-events/driver-list';
+@import 'tables-and-events/event-card';
+@import 'tables-and-events/file-upload';
+@import 'tables-and-events/investors';
+@import 'tables-and-events/latest-activities';
+
+@import 'tables-and-events/latest-invoice';
+@import 'tables-and-events/latest-transactions';
+@import 'tables-and-events/media-query';
+@import 'tables-and-events/most-active-shares';
+@import 'tables-and-events/new-product';
+@import 'tables-and-events/news-feeds';
+@import 'tables-and-events/product-sales-list';
+@import 'tables-and-events/recent-activity';
+@import 'tables-and-events/recent-activity-2';
+
+@import 'tables-and-events/recent-sales';
+@import 'tables-and-events/task-list';
+@import 'tables-and-events/task-list-2';
+@import 'tables-and-events/task-list-3';
+@import 'tables-and-events/task-list-4';
+@import 'tables-and-events/task-list-5';
+@import 'tables-and-events/task-list-6';
+@import 'tables-and-events/task-list-7';
+@import 'tables-and-events/tickets';
+@import 'tables-and-events/timeline';
+@import 'tables-and-events/top-coins-trends';
+@import 'tables-and-events/top-exchange-rate';
+@import 'tables-and-events/top-rented-cars';
+@import 'tables-and-events/traffic-sources';
+@import 'tables-and-events/unique-visitors';
+@import 'tables-and-events/user-list';
+@import 'tables-and-events/vendor-expenses-list';
+@import 'tables-and-events/worst-performers';

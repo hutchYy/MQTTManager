@@ -1,0 +1,31 @@
+/*
+    Icon Tab
+*/
+.nav-tabs {
+	li {
+		a {
+			color: $additional-color-11;
+		}
+	}
+}
+.icon-tab {
+	.nav-tabs {
+		.nav-item.show {
+			.nav-link {
+				color: $color_55;
+				background-color: $white;
+				border-color: $color_142 $color_142 $white;
+			}
+		}
+		.nav-link.active {
+			color: $color_55;
+			background-color: $white;
+			border-color: $color_142 $color_142 $white;
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../../assets/base/color_variables';   	// Color Variables
+@import '../../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../../assets/base/urls';   				// URLS Variables
+@import '../../../../assets/base/utilities_variables';  // Utilities Variables
+
+.content {
+	overflow: auto;
+	position: $pos-rel;
+	padding: $p-20;
+	background: $white;
+	border-radius: $br-4;
+	width: 100%;
+	max-width: 97%;
+	height: 400px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: $white;
+}
+hr {
+	border-top: $b-width-1 $solid $light-gray-3;
+}
+h5 {
+	color: $color_47;
+}
+#sortable {
+	ul {
+		margin-top: 20px;
+		margin-bottom: $m-10;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		margin: $m-10 $m-40;
+		background: $color_372;
+		border-radius: $br-4;
+		padding: 11px $p-10;
+		color: $additional-color-11;
+	}
+	.ui-sortable-helper {
+		background: $color_47;
+		color: $white;
+	}
+}
+#sortable2 {
+	ul {
+		margin-top: 20px;
+		margin-bottom: $m-10;
+		overflow: hidden;
+		margin: $m-0;
+		padding: $p-0;
+		list-style: none;
+	}
+	li {
+		margin: $m-10 13px;
+		background: $color_372;
+		padding: 12px $p-10;
+		color: $additional-color-11;
+		border-radius: $br-4;
+		.media {
+			img {
+				width: 40px;
+				height: 40px;
+				border: $solid $b-width-3 #d1ccff;
+			}
+		}
+	}
+	.ui-sortable-helper {
+		background: $color_47;
+		color: $white;
+	}
+}

@@ -1,0 +1,129 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../../base/color_variables';    // Color Variables
+@import '../../../base/fonticons';        // Fonticons Variables
+@import '../../../base/urls';           // URLS Variables
+@import '../../../base/utilities_variables';  // Utilities Variables
+
+.btn-fill {
+	padding: 0.4375rem 1.25rem;
+	border: $b-width-1 $solid $color_290;
+	position: $pos-rel;
+	z-index: 2;
+	overflow: hidden;
+	&:hover {
+		color: $white;
+		&:after {
+			background: $color_290;
+			height: 100%;
+		}
+	}
+	&:after {
+		content: '';
+		width: 100%;
+		height: 0;
+		position: $pos-abs;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: -2;
+		-webkit-transition: linear 0.3s all;
+		-moz-transition: linear 0.3s all;
+		-ms-transition: linear 0.3s all;
+		-o-transition: linear 0.3s all;
+		transition: linear 0.3s all;
+	}
+}
+.btn-fill[class*="btn-fill-"] {
+	background-color: $color_none;
+}
+.btn-fill-default {
+	border: $b-width-1 $solid $light-gray !important;
+	color: $additional-color-11 !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $light-gray;
+		}
+		color: $additional-color-11 !important;
+	}
+}
+.btn-fill-primary {
+	border: $b-width-1 $solid $primary !important;
+	color: $primary !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $primary;
+		}
+		color: $white !important;
+	}
+}
+.btn-fill-info {
+	border: $b-width-1 $solid $info !important;
+	color: $info !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $info;
+		}
+		color: $white !important;
+	}
+}
+.btn-fill-success {
+	border: $b-width-1 $solid $success !important;
+	color: $success !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $success;
+		}
+		color: $white !important;
+	}
+}
+.btn-fill-danger {
+	border: $b-width-1 $solid $danger !important;
+	color: $danger !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $danger;
+		}
+		color: $white !important;
+	}
+}
+.btn-fill-warning {
+	border: $b-width-1 $solid $warning !important;
+	color: $warning !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $warning;
+		}
+		color: $white !important;
+	}
+}
+.btn-fill-secondary {
+	border: $b-width-1 $solid $secondary !important;
+	color: $secondary !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $secondary;
+		}
+		color: $white !important;
+	}
+}
+.btn-fill-dark {
+	border: $b-width-1 $solid $dark !important;
+	color: $dark !important;
+	box-shadow: none;
+	&:hover {
+		&:after {
+			background-color: $dark;
+		}
+		color: $white !important;
+	}
+}

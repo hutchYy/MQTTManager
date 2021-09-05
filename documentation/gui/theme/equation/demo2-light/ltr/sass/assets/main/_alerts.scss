@@ -1,0 +1,290 @@
+/*      Alert       */
+.alert {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 0.9375rem;
+    .btn {
+        padding: 3px 12px;
+    }
+    .alert-icon {
+        i {
+            font-size: 32px;
+            vertical-align: middle;
+        }
+    }
+    .close {
+        font-size: 14px;
+        line-height: 22px;
+        color: $white;
+        text-shadow: none;
+        opacity: 1;
+    }
+}
+
+
+
+/*      Default Alerts    */
+
+.alert-default {
+    color: $color_43;
+    background-color: $default;
+    border-color: $default;
+}
+.alert-primary {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+.alert-warning {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+}
+.alert-success {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+.alert-info {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+.alert-danger {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+.alert-dark {
+    color: $white;
+    background-color: $dark;
+    border-color: $dark;
+}
+
+
+/*      Outline Alerts    */
+
+.alert-outline-default {
+    border-color: $default;
+    border-radius: 5px;
+    background: transparent;
+}
+.alert-outline-primary {
+    border-color: $color_25;
+    border-radius: 5px;
+}
+.alert-outline-warning {
+    border-color: $color_13;
+    border-radius: 5px;
+}
+.alert-outline-success {
+    border-color: $color_22;
+    border-radius: 5px;
+}
+.alert-outline-info {
+    border-color: $color_45;
+    border-radius: 5px;
+}
+.alert-outline-danger {
+    border-color: $color_16;
+    border-radius: 5px;
+}
+.alert-outline-dark {
+    border-color: $color_20;
+    border-radius: 5px;
+}
+
+
+/*      Light Alert         */
+
+.alert-light-default {
+    color: $dark;
+    background-color: $light-default;
+    border-color: $color_50;
+    i.close {
+        color: $dark;
+    }
+}
+.alert-light-primary {
+    color: $primary;
+    background-color: $light-primary;
+    border-color: $primary;
+    i.close {
+        color: $primary;
+    }
+}
+.alert-light-warning {
+    color: $warning;
+    background-color: $light-warning;
+    border-color: $warning;
+    i.close {
+        color: $warning;
+    }
+}
+.alert-light-success {
+    color: $success;
+    background-color: $light-success;
+    border-color: $success;
+    i.close {
+        color: $success;
+    }
+}
+.alert-light-info {
+    color: $info;
+    background-color: $light-info;
+    border-color: $info;
+    i.close {
+        color: $info;
+    }
+}
+.alert-light-danger {
+    color: $danger;
+    background-color: $light-danger;
+    border-color: $danger;
+    i.close {
+        color: $danger;
+    }
+}
+.alert-light-dark {
+    color: $dark;
+    background-color: $light-dark;
+    border-color: $dark;
+    i.close {
+        color: $dark;
+    }
+}
+
+
+
+/*  Background Alerts      */
+
+.alert-background {
+    color: $white;
+    background: $white $url_1 no-repeat center center;
+    background-size: cover;
+}
+
+
+/*  Gradient Alerts      */
+
+.alert-gradient {
+    color: $white;
+    border: none;
+    background-size: cover;
+    background-image: linear-gradient(135deg, #bc1a4e 0%, #004fe6 100%);
+}
+
+
+
+/* Custom Alerts */
+
+/*       Default       */
+
+.custom-alert-1 {
+    background-color: $color_52;
+    border-color: $color_47;
+    border-radius: 5px;
+    color: $white;
+}
+.custom-alert-2 {
+    background-color: $additional-color-7;
+    border-color: $additional-color-7;
+    border-radius: 5px;
+    color: $white;
+}
+.custom-alert-3 {
+    background-color: $color_51;
+    border-color: $color_51;
+    border-radius: 5px;
+    color: $white;
+}
+
+
+/*      Outline       */
+
+.custom-alert-outline-1 {
+    border-color: $color_53;
+    border-radius: 5px;
+    color: $additional-color-11;
+}
+.custom-alert-outline-2 {
+    border-color: $additional-color-7;
+    border-radius: 5px;
+    color: $additional-color-11;
+}
+.custom-alert-outline-3 {
+    border-radius: 5px;
+    color: $additional-color-11;
+    border: solid 1px $color_51;
+}
+
+
+
+
+/*  Alert with Icon */
+
+.alert-icon-left {
+    border-left: 64px solid;
+    i {
+        &:not(.close) {
+            color: $white;
+            width: 4rem;
+            left: -4rem;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+}
+.alert-icon-right {
+    border-right: 64px solid;
+    i {
+        &:not(.close) {
+            color: $white;
+            width: 4rem;
+            right: -4rem;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        float: left;
+        margin-right: 7px;
+    }
+}
+.alert[class*=alert-arrow-] {
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border-left: 8px solid;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left-color: inherit;
+        margin-top: -8px;
+    }
+}
+.alert.alert-arrow-right {
+    &:before {
+        left: auto;
+        right: 0;
+        border-left: 0;
+        border-right: 8px solid;
+        border-right-color: inherit;
+    }
+}

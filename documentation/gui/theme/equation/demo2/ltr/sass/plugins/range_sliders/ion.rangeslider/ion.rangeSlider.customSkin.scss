@@ -1,0 +1,179 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../../assets/base/color_variables';    // Color Variables
+@import '../../../assets/base/fonticons';              // Fonticons Variables
+@import '../../../assets/base/urls';                   // URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+
+/* Ion.RangeSlider, Modern Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+/* =====================================================================================================================
+// Skin details */
+.irs-line-mid {
+	background: $url_33 repeat-x;
+	height: 6px;
+	background-position: 0 -7px;
+}
+.irs-line-left {
+	background: $url_33 repeat-x;
+	height: 6px;
+	background-position: 0 -37px;
+}
+.irs-line-right {
+	background: $url_33 repeat-x;
+	height: 6px;
+	background-position: 122px -37px;
+}
+.irs-bar {
+	background: $url_33 repeat-x;
+	height: 6px;
+	top: 20px;
+	background-position: 0 -66px;
+}
+.irs-bar-edge {
+	background: $url_33 repeat-x;
+	top: 19px;
+	height: 6px;
+	width: 6px;
+	background-position: 0 -95px;
+}
+.irs-slider {
+	background: $url_33 repeat-x;
+	width: 11px;
+	height: 18px;
+	top: 31px;
+	background-position: 0px -126px;
+	&:hover {
+		background-position: 0px -126px;
+	}
+}
+.irs {
+	height: 50px;
+}
+.irs-with-grid {
+	height: 70px;
+}
+.irs-line {
+	height: 6px;
+	top: 20px;
+}
+.irs-shadow {
+	height: 5px;
+	top: 20px;
+	background: $color_375;
+	opacity: 0.35;
+}
+.lt-ie9 {
+	.irs-shadow {
+		filter: alpha(opacity=25);
+	}
+}
+.irs-slider.state_hover {
+	background-position: 0px -126px;
+}
+.irs-min {
+	color: $white;
+	font-size: $fs-10;
+	line-height: 1.333;
+	text-shadow: none;
+	top: 0;
+	padding: 1px 3px;
+	background: $color_117;
+	-moz-border-radius: $br-4;
+	border-radius: $br-4;
+}
+.irs-max {
+	color: $white;
+	font-size: $fs-10;
+	line-height: 1.333;
+	text-shadow: none;
+	top: 0;
+	padding: 1px 3px;
+	background: $color_117;
+	-moz-border-radius: $br-4;
+	border-radius: $br-4;
+}
+.irs-from {
+	color: $white;
+	font-size: $fs-10;
+	line-height: 1.333;
+	text-shadow: none;
+	padding: 1px $p-5;
+	background: $color_47;
+	-moz-border-radius: $br-4;
+	border-radius: $br-4;
+	&:after {
+		position: $pos-abs;
+		display: block;
+		content: "";
+		bottom: -6px;
+		left: 50%;
+		width: 0;
+		height: 0;
+		margin-left: -3px;
+		overflow: hidden;
+		border: $b-width-3 $solid $color_none;
+		border-top-color: $color_47;
+	}
+}
+.irs-to {
+	color: $white;
+	font-size: $fs-10;
+	line-height: 1.333;
+	text-shadow: none;
+	padding: 1px $p-5;
+	background: $color_47;
+	-moz-border-radius: $br-4;
+	border-radius: $br-4;
+	&:after {
+		position: $pos-abs;
+		display: block;
+		content: "";
+		bottom: -6px;
+		left: 50%;
+		width: 0;
+		height: 0;
+		margin-left: -3px;
+		overflow: hidden;
+		border: $b-width-3 $solid $color_none;
+		border-top-color: $color_47;
+	}
+}
+.irs-single {
+	color: $white;
+	font-size: $fs-10;
+	line-height: 1.333;
+	text-shadow: none;
+	padding: 1px $p-5;
+	background: $color_47;
+	-moz-border-radius: $br-4;
+	border-radius: $br-4;
+	&:after {
+		position: $pos-abs;
+		display: block;
+		content: "";
+		bottom: -6px;
+		left: 50%;
+		width: 0;
+		height: 0;
+		margin-left: -3px;
+		overflow: hidden;
+		border: $b-width-3 $solid $color_none;
+		border-top-color: $color_47;
+	}
+}
+.irs-grid {
+	height: $br-4;
+}
+.irs-grid-pol {
+	background: $color_585;
+}
+.irs-grid-text {
+	bottom: 12px;
+	color: $color_117;
+}

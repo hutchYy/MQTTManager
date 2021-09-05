@@ -1,0 +1,95 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+	background-image: $additional-gradient-color-41;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+}
+.form-login {
+	margin: auto;
+	.form-l {
+		width: 300px;
+		box-shadow: $shadow-3;
+		max-width: 100%;
+		background-color: $white;
+		padding: 35px;
+		border-radius: 10px;
+	}
+	.form-control {
+		&::-webkit-input-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-ms-input-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-moz-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		position: $pos-rel;
+		box-sizing: border-box;
+		height: auto;
+		color: $dark;
+		padding: 3px;
+		font-size: 16px;
+		border: none;
+		background: $color_none;
+		border-bottom: $b-width-1 $solid $light-gray;
+	}
+	label {
+		color: $additional-color-11;
+		text-transform: $transform-upper;
+		font-size: 13px;
+	}
+	.division {
+		float: none;
+		margin: 0 auto 18px;
+		overflow: hidden;
+		position: $pos-rel;
+		text-align: $align-center;
+		width: 100%;
+		color: $dark;
+		.line {
+			border-top: $b-width-1 $solid $light-gray;
+			position: $pos-abs;
+			top: 10px;
+			width: 34%;
+		}
+		.line.line-left {
+			left: 0;
+		}
+		.line.line-right {
+			right: 0;
+		}
+	}
+	.login-text {
+		a {
+			color: $white;
+		}
+	}
+}

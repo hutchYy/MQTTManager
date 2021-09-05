@@ -1,0 +1,249 @@
+/*-----Button Gradient Colors------*/
+.btn[class*="btn-gradient"] {
+	border: none;
+}
+.btn-gradient-default {
+	color: $dark;
+	background: $gradient-default;
+	background-blend-mode: normal,color-burn;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background: $gradient-default;
+			background-blend-mode: normal,color-burn;
+		}
+		&:not(.disabled) {
+			&:active {
+				background: $gradient-default;
+				background-blend-mode: normal,color-burn;
+			}
+		}
+	}
+	&:hover {
+		color: $dark;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $dark;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $dark;
+		box-shadow: $shadow-7;
+	}
+}
+.btn-gradient-primary {
+	color: $white;
+	background-image: $gradient-primary;
+	background-color: $color_31;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background-image: $gradient-primary;
+		}
+		&:not(.disabled) {
+			&:active {
+				background-image: $gradient-primary;
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+}
+.btn-gradient-success {
+	color: $white;
+	background-image: $gradient-success;
+	background-color: $color_37;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background-image: $gradient-success;
+		}
+		&:not(.disabled) {
+			&:active {
+				background-image: $gradient-success;
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+}
+.btn-gradient-info {
+	color: $white !important;
+	background-image: $gradient-info;
+	background-color: $color_36;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background-image: $gradient-info;
+		}
+		&:not(.disabled) {
+			&:active {
+				background-image: $gradient-info;
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+}
+.btn-gradient-danger {
+	color: $white;
+	background-image: $gradient-danger;
+	background-color: $color_35;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background-image: $gradient-danger;
+		}
+		&:not(.disabled) {
+			&:active {
+				background-image: $gradient-danger;
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+}
+.btn-gradient-warning {
+	color: $white;
+	background-image: $gradient-warning;
+	background-color: $color_34;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background-image: $gradient-warning;
+		}
+		&:not(.disabled) {
+			&:active {
+				background-image: $gradient-warning;
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+}
+.btn-gradient-secondary {
+	color: $white;
+	background-image: $gradient-secondary;
+	background-color: $color_33;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background-image: $gradient-secondary;
+		}
+		&:not(.disabled) {
+			&:active {
+				background-image: $gradient-secondary;
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+}
+.btn-gradient-dark {
+	color: $white !important;
+	background-image: $gradient-dark;
+	background-color: $color_32;
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			background-image: $gradient-dark;
+		}
+		&:not(.disabled) {
+			&:active {
+				background-image: $gradient-dark;
+			}
+		}
+	}
+	&:hover {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:focus {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+	&:active {
+		color: $white;
+		box-shadow: $shadow-7;
+	}
+}
+.show {
+	>.btn-gradient-default.dropdown-toggle {
+		background: $gradient-default;
+		background-blend-mode: normal,color-burn;
+	}
+	>.btn-gradient-primary.dropdown-toggle {
+		background-image: $gradient-primary;
+	}
+	>.btn-gradient-success.dropdown-toggle {
+		background-image: $gradient-success;
+	}
+	>.btn-gradient-info.dropdown-toggle {
+		background-image: $gradient-info;
+	}
+	>.btn-gradient-danger.dropdown-toggle {
+		background-image: $gradient-danger;
+	}
+	>.btn-gradient-warning.dropdown-toggle {
+		background-image: $gradient-warning;
+	}
+	>.btn-gradient-secondary.dropdown-toggle {
+		background-image: $gradient-secondary;
+	}
+	>.btn-gradient-dark.dropdown-toggle {
+		background-image: $gradient-dark;
+	}
+}

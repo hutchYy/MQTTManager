@@ -1,0 +1,88 @@
+/*
+    Available Cars List
+*/
+
+.available-cars-list {
+	.available-cars-list-header {
+		padding: 20px;
+		border-bottom: $b-width-1 $solid $light-gray;
+		h6 {
+			font-weight: 600;
+			color: $additional-color-11;
+			font-size: 20px;
+		}
+		span.badge {
+			padding: 4px 30px;
+			font-size: 14px;
+			background-image: $additional-gradient-color-20;
+		}
+	}
+	.available-cars-list-body {
+		.available-car-scroll {
+			.mCSB_horizontal.mCSB_inside {
+				>.mCSB_container {
+					margin-bottom: 2px;
+				}
+			}
+		}
+		p.a-c-l-text {
+			padding: 12px 10px 0px 20px;
+			color: $color_55;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		table.table {
+			thead {
+				tr {
+					th {
+						vertical-align: $v-align-middle;
+						color: $color_76;
+						font-size: 17px;
+						border: none;
+						padding-bottom: 11px;
+						padding-top: 18px;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						vertical-align: $v-align-middle;
+						color: $black;
+						border-top: $b-width-1 $solid $light-gray;
+						.media {
+							span {
+								padding: 3px 0;
+								background-color: $color_47;
+								border-radius: 50%;
+								height: 35px;
+								width: 35px;
+								text-align: center;
+								color: $white;
+								font-size: 20px;
+							}
+							.media-body {
+								p {
+									margin-top: 7px;
+								}
+							}
+						}
+						span.badge {
+							font-weight: 600;
+							padding: 5px 19px;
+						}
+					}
+					&:last-child {
+						td {
+							border-bottom: $b-width-1 $solid $light-gray;
+						}
+					}
+					td.a-c-l-rating {
+						font-weight: 600;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}

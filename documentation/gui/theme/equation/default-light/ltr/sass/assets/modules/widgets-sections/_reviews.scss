@@ -1,0 +1,51 @@
+/*
+    Reviews
+*/
+.reviews {
+	.reviews-header {
+		padding: 20px;
+		h6 {
+			color: $color_76;
+			font-weight: 600;
+			font-size: 16px;
+		}
+	}
+	.reviews-body {
+		padding: 20px;
+		.r-positive-txt {
+			font-size: 14px;
+			color: $color_76;
+			font-weight: 600;
+		}
+		img.icon-positive {
+			width: 87px;
+		}
+		.r-positive-percentage {
+			font-size: 25px;
+			font-weight: 600;
+			color: $color_76;
+		}
+		.r-negative-txt {
+			font-size: 14px;
+			color: $color_76;
+			font-weight: 600;
+		}
+		img.icon-negative {
+			width: 87px;
+		}
+		.r-negative-percentage {
+			font-size: 25px;
+			font-weight: 600;
+			color: $color_76;
+		}
+		button {
+			background-image: linear-gradient(to right, #3862f5 0%, #00d1c1 100%);
+			border: none;
+			font-size: 14px;
+			padding: 9px 18px;
+			&:hover {
+				background-image: linear-gradient(to right, #00d1c1 0%, #3862f5 100%);
+			}
+		}
+	}
+}

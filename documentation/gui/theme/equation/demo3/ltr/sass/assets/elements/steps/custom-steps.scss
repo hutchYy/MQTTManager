@@ -1,0 +1,371 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+/*
+    =============
+     Arrow Steps
+    =============
+*/
+.arrow-steps {
+	.step-item-arrow {
+		position: $pos-rel;
+		text-align: $align-center;
+		>a {
+			display: block;
+			height: 71px;
+			padding: 6px 15px;
+			font-size: 14px;
+			color: $color_263;
+			border: $b-width-1 $solid $light-gray;
+			background-color: $default;
+			i {
+				width: 28px;
+				height: 28px;
+				padding: 5px 5px;
+				margin-bottom: 7px;
+				font-size: 17px;
+				border-radius: 25px;
+			}
+			span {
+				display: block;
+			}
+		}
+		&:not(:last-child) {
+			>a {
+				&:before {
+					right: -45px;
+					border-left-color: $light-gray;
+					border-left: 45px $solid $color_none;
+				}
+			}
+		}
+	}
+	.step-item-arrow.active {
+		>a {
+			cursor: default;
+			background-color: $color_86;
+			color: $white;
+			&:after {
+				border-left-color: $color_86;
+			}
+		}
+		i.onactive {
+			display: inline-block !important;
+		}
+		i {
+			&:not(.onactive) {
+				display: none !important;
+			}
+		}
+	}
+}
+.step-item-arrow {
+	&:not(:last-child) {
+		>a {
+			&:after {
+				right: -44px;
+				border-left: 45px $solid $color_none;
+				border-left-color: $default;
+			}
+		}
+	}
+}
+/*
+    ====================
+     Rectangular Steps
+    ====================
+*/
+.rectangular-steps.list-steps-success {
+	>.step-item-rect.active {
+		>a {
+			color: $white;
+			background-color: $color_84;
+		}
+	}
+}
+.rectangular-steps {
+	.step-item-rect {
+		>a {
+			display: block;
+			padding: 10px;
+			font-size: 15px;
+			color: $additional-color-11;
+			border-radius: 4px;
+			border: $b-width-1 $solid $color_6;
+			span {
+				&:first-child {
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					margin-right: 15px;
+					font-size: 17px;
+					color: $additional-color-11;
+					text-align: $align-center;
+					border: $b-width-1 $solid #f1f2f1;
+					border-radius: 100%;
+					background-color: $white;
+				}
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+/*
+    ============
+     Line Steps
+    ============
+*/
+.step-item-line {
+	margin-bottom: $m-20;
+	font-size: 17px;
+	text-align: $align-center;
+	>a {
+		display: inline-block;
+		position: $pos-rel;
+		width: 20px;
+		height: 20px;
+		margin-top: 18px;
+		border-radius: 25px;
+		border: 5px $solid $color_none;
+		top: 1px;
+	}
+	&:not(:last-child) {
+		&:before {
+			left: 50%;
+			right: -50%;
+			content: "";
+			height: 3px;
+			position: $pos-abs;
+			bottom: 14px;
+		}
+	}
+}
+.step-item-line.active {
+	>a {
+		cursor: default;
+		border-width: 3px;
+	}
+	>i.onactive {
+		display: block !important;
+	}
+	>i {
+		&:not(.onactive) {
+			display: none !important;
+		}
+	}
+}
+.d-block {
+	color: $additional-color-11;
+}
+.list-steps-primary {
+	>.step-item-line {
+		i {
+			color: $color_57;
+		}
+		&:before {
+			background-color: $color_57;
+		}
+		a {
+			border-color: $color_261;
+			background: $color_57;
+		}
+	}
+	>.step-item-line.active {
+		>a {
+			border-color: $color_57;
+			background: $white;
+		}
+	}
+}
+/*
+    ===============
+     Circle Steps
+    ===============
+*/
+.circle-step {
+	.step-item-circle {
+		text-align: $align-center;
+		&:not(:last-child) {
+			&:before {
+				left: 50%;
+				right: 0;
+				content: "";
+				height: 3px;
+				position: $pos-abs;
+				top: 17px;
+				background-color: $color_262;
+			}
+			&:after {
+				content: "";
+				height: 3px;
+				position: $pos-abs;
+				top: 17px;
+				background-color: $color_262;
+				left: 100%;
+				right: -50%;
+			}
+		}
+		.step {
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			position: $pos-rel;
+			z-index: 1;
+			line-height: 200%;
+			font-size: 19px;
+			text-align: $align-center;
+			color: $color_49;
+			border-radius: 100%;
+			background-color: $light-gray;
+			margin: $m-0 $m-0 $m-10 $m-0;
+		}
+		.step-heading {
+			margin-top: 25px;
+			color: $additional-color-11;
+			font-size: 17px;
+		}
+	}
+	.step-item-circle.active {
+		&:before {
+			background-color: $additional-color-5 !important;
+		}
+		&:after {
+			background-color: $additional-color-5 !important;
+		}
+		>a {
+			cursor: default;
+		}
+		.step {
+			color: $white;
+			background-color: $additional-color-5;
+		}
+		.step-heading {
+			color: $additional-color-5;
+		}
+	}
+	.step-item-circle.done {
+		&:before {
+			background-color: $additional-color-5 !important;
+		}
+		&:after {
+			background-color: $additional-color-5 !important;
+		}
+		.step {
+			color: $white;
+			background-color: $additional-color-5;
+		}
+	}
+}
+.step-item-circle.done {
+	.step-heading {
+		color: $additional-color-5;
+	}
+}
+@media (min-width: 576px) {
+	.arrow-steps {
+		.step-item-arrow.active {
+			&:not(:last-child) {
+				>a {
+					border-right: $b-width-1 $solid $white;
+				}
+			}
+			>a {
+				&:before {
+					border-left-color: $white !important;
+				}
+			}
+		}
+		.step-item-arrow {
+			&:not(:last-child) {
+				>a {
+					&:before {
+						content: "";
+						position: $pos-abs;
+						top: 0;
+						z-index: 1;
+						border-top: 35px $solid $color_none;
+						border-bottom: 35px $solid $color_none;
+					}
+					&:after {
+						content: "";
+						position: $pos-abs;
+						top: 0;
+						z-index: 1;
+						border-top: 35px $solid $color_none;
+						border-bottom: 35px $solid $color_none;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 575px) {
+	.step-item-line {
+		&:before {
+			left: 0 !important;
+			right: 0 !important;
+		}
+		&:not(:last-child) {
+			&:before {
+				left: 50%;
+				right: -50%;
+				content: "";
+				height: 3px;
+				position: $pos-abs;
+				bottom: 12px;
+			}
+		}
+		&:last-child {
+			&:before {
+				left: 50%;
+				right: -50%;
+				content: "";
+				height: 3px;
+				position: $pos-abs;
+				bottom: 12px;
+			}
+		}
+	}
+	.circle-step {
+		.step-item-circle {
+			&:last-child {
+				&:after {
+					left: 0;
+					right: 0;
+					content: "";
+					height: 3px;
+					position: $pos-abs;
+					top: 17px;
+					background-color: $color_262;
+				}
+				&:before {
+					left: 0;
+					right: 0;
+					content: "";
+					height: 3px;
+					position: $pos-abs;
+					top: 17px;
+					background-color: $color_262;
+				}
+			}
+			&:not(:last-child) {
+				&:after {
+					left: 100%;
+					right: 0;
+				}
+				&:before {
+					left: 0;
+					right: 0;
+				}
+			}
+		}
+	}
+}

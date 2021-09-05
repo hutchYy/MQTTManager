@@ -1,0 +1,28 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../assets/base/color_variables';   	// Color Variables
+@import '../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../assets/base/urls';   				// URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+td.number {
+	text-align: $align-right;
+	font-weight: bold;
+	padding-right: $p-5;
+	white-space: nowrap;
+}
+td.number.nan {
+	font-weight: normal;
+	color: $color_286;
+}
+th.number {
+	text-align: $align-right;
+}
+td.boolean {
+	text-align: $align-center;
+}
+th.boolean {
+	text-align: $align-center;
+}

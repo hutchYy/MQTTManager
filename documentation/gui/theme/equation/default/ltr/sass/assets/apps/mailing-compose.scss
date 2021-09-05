@@ -1,0 +1,430 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+/* 
+    Inbox Section
+*/
+.compose-section {
+	.heading-title {
+		color: $black;
+		margin: 0;
+	}
+	.search {
+		input {
+			background-color: $white;
+			border-radius: 20px;
+			height: 30px;
+			border-color: $light-gray;
+		}
+	}
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	/*
+	    Modal
+	*/
+	form {
+		label[for="messageto"] {
+			color: $color_57;
+		}
+		label[for="subject"] {
+			color: $color_57;
+		}
+		input {
+			border: $b-width-1 $solid $light-gray;
+		}
+	}
+}
+h4 {
+	font-size: 1.125rem;
+}
+
+/*
+    Options
+*/
+.options {
+	.card.mail-actions {
+		border: none;
+		.media {
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+			.media-body {
+				h5 {
+					font-size: 20px;
+					text-transform: uppercase;
+					color: $color_47;
+					font-weight: 600;
+				}
+				a {
+					font-size: 13px;
+					color: $additional-color-6;
+					&:hover {
+						color: $color_48;
+					}
+					i {
+						font-size: 14px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		ul {
+			color: $black;
+			li {
+				margin-bottom: 30px;
+				font-size: 15px;
+				padding: 10px;
+				a {
+					color: $additional-color-11;
+				}
+				i {
+					font-size: 22px;
+					vertical-align: middle;
+					padding-right: 5px;
+					color: $additional-color-11;
+				}
+				span.badge {
+					font-weight: 600;
+					line-height: 1.4;
+					padding: 3px 6px;
+					font-size: 10px;
+				}
+				&:not(.active) {
+					a {
+						&:hover {
+							color: $additional-color-5;
+							i {
+								color: $additional-color-5;
+							}
+						}
+					}
+				}
+			}
+			li.active {
+				a {
+					color: $color_57;
+				}
+				i {
+					color: $color_57;
+				}
+			}
+		}
+		/*
+		    Mail Labels
+		*/
+		ul.mail-labels {
+			color: $black;
+			li {
+				position: relative;
+				margin-bottom: 16px;
+				font-size: 15px;
+				cursor: pointer;
+				i {
+					font-size: 18px;
+					vertical-align: middle;
+					padding-right: 5px;
+				}
+			}
+			li.label {
+				&:after {
+					position: absolute;
+					content: "";
+					height: 8px;
+					width: 8px;
+					border-radius: 50%;
+					right: 0px;
+					top: 43%;
+				}
+			}
+			li.label-personal {
+				&:after {
+					background-color: $color_86;
+				}
+			}
+			li.label-work {
+				&:after {
+					background-color: $additional-color-3;
+				}
+			}
+			li.label-account {
+				&:after {
+					background-color: $info;
+				}
+			}
+			li.label-social {
+				&:after {
+					background-color: $additional-color-5;
+				}
+			}
+		}
+		/*
+		    User Status
+		*/
+		ul.usr-status {
+			color: $black;
+			span.viewall {
+				color: $color_55;
+				cursor: pointer;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			li {
+				margin-bottom: 16px;
+			}
+			.media {
+				.usr-img {
+					&:before {
+						content: attr(alt);
+						position: absolute;
+						display: block;
+						right: 17px;
+						top: 0;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						z-index: 5;
+					}
+					img {
+						width: 50px;
+						height: 50px;
+					}
+				}
+				.usr-img.online {
+					&:before {
+						background-color: $color_163;
+					}
+				}
+				.media-body {
+					h5 {
+						font-size: 14px;
+						margin-bottom: 3px;
+					}
+					p {
+						font-size: 12px;
+						background-color: $white !important;
+
+					}
+				}
+			}
+		}
+	}
+}
+/*
+    MCE Editor
+*/
+.mce-btn {
+	background-color: $white !important;
+
+	&:hover {
+		border-color: $light-gray;
+	}
+	&:focus {
+		border-color: $light-gray;
+	}
+	button {
+		border: none !important;
+	}
+}
+.mce-menu-item {
+	&:hover {
+		background-color: $color_57 !important;
+		i {
+			color: $white !important;
+		}
+		.mce-text {
+			color: $white !important;
+		}
+	}
+	&:focus {
+		background-color: $color_57 !important;
+		i {
+			color: $white !important;
+		}
+		.mce-text {
+			color: $white !important;
+		}
+	}
+}
+.mce-menu-item.mce-selected {
+	background-color: $color_57 !important;
+	i {
+		color: $white !important;
+	}
+	.mce-text {
+		color: $white !important;
+	}
+}
+.mce-menu-item-normal.mce-active {
+	background-color: $color_57 !important;
+}
+.mce-ico {
+	color: $color_57 !important;
+}
+.mce-btn-group {
+	&:not(:first-child) {
+		border-left: none !important;
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+	}
+	.mce-btn {
+		margin-left: 9px !important;
+	}
+}
+.mce-stack-layout-item.mce-first {
+	border: $b-width-1 $solid $color_6;
+	padding: 5px;
+}
+.mce-stack-layout-item.mce-last {
+	border-bottom: $b-width-1 $solid $color_6 !important;
+}
+.mce-panel {
+	border: none !important;
+}
+.compose-message {
+	.mail-actions {
+		border: none;
+	}
+	.search {
+		input {
+			border-radius: 20px;
+			height: 30px;
+			border-color: $light-gray;
+		}
+	}
+	.heading-title {
+		margin: 0;
+		font-weight: 600;
+		color: $additional-color-11;
+	}
+	.inbox-options {
+		ul.list-inline {
+			li {
+				cursor: pointer;
+				.dropdown {
+					.d-icon-none.dropdown-toggle {
+						&:after {
+							display: none;
+						}
+					}
+				}
+				i {
+					font-size: 17px;
+					vertical-align: super;
+					margin-right: 5px;
+				}
+				&:hover {
+					i {
+						color: $color_48;
+					}
+					div.dropdown {
+								background-color: $white;
+						color
+						: $color_48;
+					}
+				}
+				div.dropdown {
+					.dropdown-menu {
+						.dropdown-item {
+							&:hover {
+								color: $color_57;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	nav.mail-pagination {
+		ul.pagination {
+			margin: 0;
+		}
+	}
+	.messages-section {
+		.media {
+			cursor: pointer;
+			&:not(:last-child) {
+				border-bottom: $b-width-1 $solid $color_6;
+			}
+			.media-body {
+				h5.message-usr-name {
+					font-weight: 600;
+					color: $color_56;
+					font-size: 13px;
+					margin-bottom: 5px;
+				}
+				h6.message-meta-time {
+					font-weight: 600;
+					color: $additional-color-6;
+					margin-bottom: 17px;
+					font-size: 12px;
+				}
+				h5.message-title {
+					font-weight: 600;
+					color: $additional-color-11;
+					margin-bottom: 5px;
+					font-size: 15px;
+				}
+				p.message-body {
+					color: $additional-color-6;
+					font-size: 13px;
+				}
+			}
+			&:hover {
+				.media-body {
+					h5.message-usr-name {
+						color: $color_57;
+					}
+					h5.message-title {
+						color: $color_57;
+					}
+				}
+			}
+		}
+	}
+	div.search {
+		input {
+			&::-webkit-input-placeholder {
+				color: $color_38;
+			}
+			&::-ms-input-placeholder {
+				color: $color_38;
+			}
+			&::-moz-placeholder {
+				color: $color_38;
+			}
+		}
+	}
+}
+.d-icon-none.dropdown-toggle {
+	&:after {
+		display: none;
+	}
+}
+ul.pagination {
+	li.non-hover {
+		a {
+			padding-left: 0;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_none;
+					color: $color_57;
+				}
+			}
+		}
+	}
+	li {
+		a.page-link {
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+}

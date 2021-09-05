@@ -1,0 +1,277 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+body.example2 {
+	background: $color_238;
+	background: $additional-gradient-color-44;
+}
+body.example3 {
+	background: $color_239;
+	background: $additional-gradient-color-45;
+}
+body.example4 {
+	background: $color_239;
+	background: $additional-gradient-color-46;
+}
+body.example5 {
+	background: $color_240;
+	background: $additional-gradient-color-47;
+}
+body.example6 {
+	background: $color_241;
+	background: $additional-gradient-color-48;
+}
+body.example7 {
+	background: $color_242;
+	background: $additional-gradient-color-49;
+}
+pre {
+	border-radius: 5px;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: $align-left;
+	background: $black;
+	padding: $p-20;
+	max-height: 300px;
+	width: 60%;
+	margin: $m-0 20% $m-30 20%;
+	overflow: auto;
+	.alert {
+		color: $color_236;
+	}
+}
+p {
+	a {
+		text-decoration: none;
+		border-bottom: $b-width-1 $solid rgba(255, 255, 255, 0.3);
+	}
+	line-height: 1.4em;
+}
+em {
+	opacity: 0.7;
+	font-style: normal;
+}
+h1 {
+	span {
+		font-weight: lighter;
+		opacity: 0.6;
+	}
+}
+h3 {
+	opacity: 0.9;
+	font-weight: normal;
+}
+
+/**************** Page switcher ****************/
+
+.page-switcher {
+	background: $color_243;
+	color: $color_237;
+	text-decoration: none;
+	transition: all 0.25s;
+	position: $pos-fix;
+	top: 50%;
+	height: 100px;
+	width: 100px;
+	margin-top: -50px;
+	font-size: 40px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		background: $color_244;
+	}
+}
+.page-switcher-prev {
+	left: 0;
+	&:hover {
+		left: -10px;
+	}
+}
+.page-switcher-next {
+	right: 0;
+	&:hover {
+		right: -10px;
+	}
+}
+
+/**************** JavaScript API examples ****************/
+
+#console {
+	height: 100px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin: $m-0 $m-0 $m-30 $m-0;
+}
+
+/******************** Example window ********************/
+
+.example-window {
+	text-align: $align-center;
+	display: inline-block;
+	padding: $p-40 $p-0;
+	h1 {
+		margin: $m-0 $m-0 .5em $m-0;
+	}
+	p {
+		margin: $m-0 $m-0 1em $m-0;
+	}
+	button {
+		margin: $m-0;
+		padding: .5em;
+		font-size: 1em;
+	}
+}
+
+/******************** Forms ********************/
+
+.form-controls {
+	margin: $m-40;
+	label {
+		display: block;
+		text-align: $align-center;
+		opacity: 0.5;
+		margin-bottom: $m-10;
+	}
+}
+.btn-group {
+	margin-bottom: $m-10;
+}
+.btn {
+	display: inline-block;
+	background: $white;
+	color: $black;
+	border: 0;
+	padding: 0.5em 1.4em;
+	text-decoration: none;
+	border-radius: 0.2em;
+	transition: all 0.25s;
+	margin: $m-0 0.25em;
+	&:visited {
+		display: inline-block;
+		background: $white;
+		color: $black;
+		border: 0;
+		padding: 0.5em 1.4em;
+		text-decoration: none;
+		border-radius: 0.2em;
+		transition: all 0.25s;
+		margin: 0 0.25em;
+	}
+	&:hover {
+		background: #DDD;
+		color: $black;
+	}
+}
+
+
+/******************** Table ********************/
+
+table {
+	th {
+		text-align: $align-right;
+		font-weight: normal;
+		opacity: 0.5;
+	}
+}
+
+/******************** Example selector ********************/
+
+ul {
+	list-style: none;
+	padding: $p-0;
+}
+.example-selector {
+	>li {
+		display: inline-block;
+		color: $color_92;
+		background: $color_47;
+		text-align: $align-center;
+		cursor: pointer;
+		margin: 0.5em;
+		padding: 0.5em;
+		overflow: hidden;
+		transition: all 0.25s;
+		height: 3em;
+		width: 10em;
+		border-radius: $br-30;
+		&:hover {
+			color: $white;
+		}
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: $v-align-middle;
+			height: 100%;
+		}
+		>span {
+			display: inline-block;
+			vertical-align: $v-align-middle;
+			padding: 3px 5px;
+			font-size: 16px;
+		}
+	}
+}
+
+/******************** SelectBox ********************/
+
+.selectbox {
+	text-align: $align-center;
+	font-size: inherit;
+	max-width: 20em;
+	padding: .2em .4em;
+}
+
+/******************** Layout ********************/
+
+.center-outer {
+	display: table;
+}
+.center-inner {
+	display: table-cell;
+	vertical-align: $v-align-middle;
+	text-align: $align-center;
+}
+.fit {
+	width: 100%;
+	height: 100%;
+	background-color: $color_54;
+}
+
+/******************** Code ********************/
+
+#options {
+	display: none;
+}
+
+/******************** Responsiveness ********************/
+
+@media (min-width : 820px) and (max-width: 1000px) {
+	.example-window {
+		margin: $m-0 $m-100;
+	}
+}
+@media (max-width: 819px) {
+	.example-window {
+		margin: $m-0;
+	}
+	.page-switcher {
+		position: inherit;
+		display: inline-block;
+		padding: $p-10 $p-10;
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+		border-radius: 50%;
+		margin: $m-20 $m-0;
+	}
+}

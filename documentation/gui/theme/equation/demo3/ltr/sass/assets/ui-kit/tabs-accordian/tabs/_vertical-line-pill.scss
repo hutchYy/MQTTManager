@@ -1,0 +1,72 @@
+/*
+    Vertical Line pill
+*/
+.vertical-line-pill {
+	.nav-pills {
+		border-bottom: $b-width-1 $solid $color_none;
+		width: 92px;
+		border-right: $b-width-1 $solid $color_142;
+		a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			position: $pos-rel;
+		}
+		.nav-link {
+			padding: .5rem 0;
+			&:focus {
+				border-color: $color_none;
+			}
+			&:hover {
+				border-color: $color_none;
+			}
+			&:before {
+				content: "";
+				height: 100%;
+				position: $pos-abs;
+				width: 1px;
+				right: -1px;
+				background-color: $additional-color-2;
+				-webkit-transform: scale(0);
+				transform: scale(0);
+				transition: all .3s;
+			}
+		}
+		.nav-link.active {
+			position: $pos-rel;
+			background-color: $color_none;
+			border-color: $color_none;
+			color: $additional-color-2;
+			font-weight: 600;
+			&:before {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				bottom: 0;
+			}
+		}
+		.show {
+			>.nav-link {
+				position: $pos-rel;
+				background-color: $color_none;
+				border-color: $color_none;
+				color: $additional-color-2;
+				font-weight: 600;
+			}
+		}
+	}
+	#v-line-pills-tabContent {
+		h4 {
+			color: $color_90;
+		}
+		p {
+			color: $additional-color-6;
+		}
+	}
+}
+.media {
+	img {
+		border-radius: 50%;
+		border: solid 5px $light-gray;
+		width: 80px;
+		height: 80px;
+	}
+}

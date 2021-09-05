@@ -1,0 +1,61 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../../../assets/base/color_variables';    // Color Variables
+@import '../../../../assets/base/fonticons';              // Fonticons Variables
+@import '../../../../assets/base/urls';                   // URLS Variables
+@import '../../../../assets/base/utilities_variables';  // Utilities Variables
+
+.values1 {
+	margin-top: $m-10;
+}
+.values2 {
+	margin-top: $m-10;
+}
+.btn-sm {
+	margin-bottom: $m-10;
+}
+.custom-btn {
+	position: $pos-abs;
+	left: 20px;
+}
+.right-custom-btn {
+	position: $pos-abs;
+	right: 80px;
+}
+@media (max-width: 767px) {
+	.population {
+		position: $pos-rel;
+		overflow: hidden;
+		display: block;
+	}
+	.density {
+		position: $pos-rel;
+		overflow: hidden;
+		display: block;
+	}
+	.myLegend {
+		position: $pos-rel;
+		overflow: hidden;
+		display: block;
+	}
+	.areaLegend {
+		position: $pos-rel;
+		overflow: hidden;
+		display: block;
+	}
+	.plotLegend {
+		position: $pos-rel;
+		overflow: hidden;
+		display: block;
+	}
+	.custom-btn {
+		position: $pos-rel;
+		left: auto;
+	}
+	.right-custom-btn {
+		position: $pos-rel;
+		right: auto;
+	}
+}

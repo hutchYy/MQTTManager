@@ -1,0 +1,39 @@
+/*
+    ======================
+            Header
+    =======================
+*/
+.container.newsletter {
+	background-color: $white;
+	border-top: $b-width-3 $solid $additional-color-5;
+}
+.newsletter {
+	#headerWrapper {
+		h3 {
+			font-size: 30px;
+			color: $additional-color-11;
+			margin-top: $m-80 !important;
+			margin-bottom: 22px;
+		}
+		img.logo-img {
+			width: 180px;
+			margin-bottom: $m-30;
+		}
+		h2 {
+			color: $black;
+			font-weight: 600;
+		}
+		p {
+			color: $additional-color-6;
+			font-weight: 600;
+			margin-bottom: 75px !important;
+			font-size: 16px;
+		}
+		img.header-img {
+			width: 950px !important;
+		}
+	}
+}
+h2 {
+	font-size: 1.875rem;
+}

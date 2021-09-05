@@ -1,0 +1,77 @@
+/*
+    Traffic Sources
+*/
+.traffic-sources {
+	.traffic-sources-header {
+		h6 {
+			color: $color_76;
+			font-size: 18px;
+			font-weight: 600;
+			padding: 20px;
+			border-bottom: $b-width-1 $solid $light-gray;
+		}
+	}
+	table {
+		tbody {
+			tr {
+				td {
+					color: $additional-color-11;
+					font-size: 16px;
+					font-weight: 600;
+					vertical-align: $v-align-middle;
+					padding: 16px 16px;
+					border-top: none;
+					span.t-s-name {
+						color: $additional-color-6;
+						padding-left: 13px;
+						font-weight: normal;
+						font-size: 16px;
+					}
+					.d-m-traffic-sources {
+						background-color: $color_57;
+					}
+				}
+			}
+		}
+	}
+	.table-responsive {
+		&::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+		&::-webkit-scrollbar-button {
+			&:start {
+				&:decrement {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+			&:end {
+				&:increment {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+		}
+		&::-webkit-scrollbar-track-piece {
+			background-color: $white;
+			-webkit-border-radius: 6px;
+		}
+		&::-webkit-scrollbar-thumb {
+			&:vertical {
+				height: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 6px;
+			}
+			&:horizontal {
+				width: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 3px;
+			}
+		}
+	}
+}

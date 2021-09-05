@@ -1,0 +1,107 @@
+/*
+	================
+		Tooltip 
+	================
+*/
+
+
+/*
+	Tooltip Inner
+*/
+
+.tooltip-primary {
+	.tooltip-inner {
+		color: $primary;
+		background-color: $light-primary;
+	}
+}
+.tooltip-success {
+	.tooltip-inner {
+		color: $success;
+		background-color: $light-success;
+	}
+}
+.tooltip-info {
+	.tooltip-inner {
+		color: $info;
+		background-color: $light-info;
+	}
+}
+.tooltip-danger {
+	.tooltip-inner {
+		color: $danger;
+		background-color: $light-danger;
+	}
+}
+.tooltip-warning {
+	.tooltip-inner {
+		color: $warning;
+		background-color: $light-warning;
+	}
+}
+.tooltip-secondary {
+	.tooltip-inner {
+		color: $secondary;
+		background-color: $light-secondary;
+	}
+}
+.tooltip-dark {
+	.tooltip-inner {
+		color: $dark;
+		background-color: $light-dark;
+	}
+}
+
+
+/* 
+	Tooltip arrow
+*/
+.tooltip-primary {
+	.arrow {
+		&:before {
+			border-top-color: $light-primary;
+		}
+	}
+}
+.tooltip-success {
+	.arrow {
+		&:before {
+			border-top-color: $light-success;
+		}
+	}
+}
+.tooltip-info {
+	.arrow {
+		&:before {
+			border-top-color: $light-info;
+		}
+	}
+}
+.tooltip-danger {
+	.arrow {
+		&:before {
+			border-top-color: $light-danger;
+		}
+	}
+}
+.tooltip-warning {
+	.arrow {
+		&:before {
+			border-top-color: $light-warning;
+		}
+	}
+}
+.tooltip-secondary {
+	.arrow {
+		&:before {
+			border-top-color: $light-secondary;
+		}
+	}
+}
+.tooltip-dark {
+	.arrow {
+		&:before {
+			border-top-color: $light-dark;
+		}
+	}
+}

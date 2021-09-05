@@ -1,0 +1,166 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+/*
+	Helpdesk Header Wrapper
+*/
+.hd-header-wrapper {
+	padding: 106px $p-0;
+	background-color: $color_231;
+	border-radius: .25rem;
+	h4 {
+		color: $white;
+		font-size: 36px;
+		padding: $p-0 8px;
+	}
+	span.input-group-text {
+		background-color: $color_86;
+		border-color: $color_86;
+		padding: 11px $p-20;
+		border-radius: $br-30;
+		font-size: 22px;
+		font-weight: normal !important;
+		i {
+			font-weight: 600;
+			color: $white;
+		}
+	}
+	input {
+		border: none;
+		border-radius: $br-30;
+		padding: 11px 16px;
+		color: $color_76;
+	}
+}
+
+/*
+	Tab Section
+*/
+.hd-tab-section {
+	/* 	Nav Pills 	*/
+	ul.nav-pills {
+		li {
+			a {
+				padding: 25px 16px;
+				background-color: $white !important;
+				border: $b-width-1 $solid $white;
+				color: $additional-color-11;
+			}
+			i {
+				font-size: 45px;
+			}
+			h6 {
+				font-weight: 600;
+				font-size: 18px;
+			}
+			p {
+				font-size: 13px;
+			}
+		}
+		.nav-link.active {
+			background-color: $color_232 !important;
+			color: $white;
+			border-color: $color_232;
+		}
+		.show {
+			>.nav-link {
+				background-color: $color_232 !important;
+				color: $white;
+				border-color: $color_232;
+			}
+		}
+	}
+	/* 	Tab Content 	*/
+	.tab-content {
+		margin-top: 95px;
+		.accordion {
+			.card {
+				border: none;
+				margin-bottom: 15px;
+				border-radius: $br-6;
+				.card-header {
+					background-color: $white;
+					color: $additional-color-11;
+					border-color: $color_none;
+					padding: $p-0;
+					border-radius: $br-6;
+					div {
+						>div {
+							padding: 25px $p-30;
+							cursor: pointer;
+							font-size: 16px;
+							font-weight: 600;
+							&:not(.collapsed) {
+								background-image: $additional-gradient-color-43;
+								color: $white;
+								border-top-right-radius: $br-6;
+								border-top-left-radius: $br-6;
+							}
+						}
+					}
+				}
+				.card-body {
+					padding: $p-20 $p-30;
+					p {
+						line-height: 2.2;
+						font-size: 14px;
+						letter-spacing: 1px;
+						color: $color_76;
+					}
+				}
+			}
+		}
+	}
+}
+/*  Contact Content     */
+.hd-contact-section {
+	padding: 38px $p-20;
+	background-color: $white;
+	border-radius: .25rem;
+	.hd-contact-header {
+		h5 {
+			font-weight: 600;
+			color: $color_3;
+			text-transform: $transform-upper;
+		}
+	}
+	form {
+		input {
+			padding: 17px 15px;
+			color: $color_76;
+			font-size: 15px;
+			&:focus {
+				border-color: $color_57;
+				color: $color_76;
+			}
+		}
+		button {
+			border: none;
+			padding: 14px 42px;
+		}
+	}
+	.form-group {
+		textarea {
+			padding: 15px $p-20;
+			color: $color_76;
+			font-size: 15px;
+			border: $solid $b-width-1 $light-gray;
+			resize: none;
+			&:-ms-input-placeholder {
+				color: $color_230;
+			}
+			&:focus {
+				background-color: $white;
+				border-color: $color_57;
+				color: $color_76;
+			}
+		}
+	}
+}

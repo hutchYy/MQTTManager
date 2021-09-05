@@ -1,0 +1,92 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+
+body {
+	background-color: $white;
+}
+.h5 {
+	font-size: 1.25rem;
+}
+h5 {
+	font-size: 1.25rem;
+}
+.h4 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+.h6 {
+	font-size: 1rem;
+}
+h6 {
+	font-size: 1rem;
+}
+#headerWrapper {
+	padding: $p-30 $p-50;
+	background-color: $color_47;
+	.main-heading {
+		color: $white;
+		margin: $m-0;
+		i {
+			font-size: 50px;
+			vertical-align: $v-align-sub;
+		}
+	}
+}
+#privacyWrapper {
+	padding: $p-80 $p-0;
+	h5 {
+		color: $color_56;
+		margin: $m-0;
+	}
+	p {
+		color: $additional-color-6;
+		text-align: $align-justify;
+	}
+	ul.policy-list {
+		li {
+			color: $additional-color-6;
+			text-align: $align-justify;
+			margin-bottom: 35px;
+		}
+		strong {
+			color: $additional-color-11;
+		}
+	}
+	p.policy-info-ques {
+		color: $color_47;
+	}
+}
+#footerWrapper.footer-section {
+	position: $pos-unset;
+	margin: $m-0;
+	background-color: $white;
+	box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.3);
+	border-top: $solid $b-width-1 $color_6;
+}
+#footerWrapper {
+	.bottom-footer {
+		color: $color_47;
+		a {
+			color: $color_47;
+		}
+	}
+	ul {
+		padding: 12px $p-0;
+		li {
+			a {
+				color: $color_56;
+				font-weight: 600;
+			}
+		}
+	}
+}

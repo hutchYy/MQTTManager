@@ -1,0 +1,26 @@
+/*
+    Live Traffic
+*/
+.live-traffic {
+    .live-traffic-title {
+        h6 {
+            color: $additional-color-11;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .live-traffic-body {
+        i {
+            font-size: 40px;
+            text-align: center;
+            display: block;
+            font-weight: 600;
+            color: $dark;
+        }
+        .js-r-t-traffic {
+            color: $color_57;
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+}

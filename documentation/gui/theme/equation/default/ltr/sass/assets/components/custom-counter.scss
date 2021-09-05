@@ -1,0 +1,66 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+/*
+    Simple Counter
+*/
+.simple-counter-container {
+	.s-counter {
+		font-size: 2.60rem;
+		font-weight: 600;
+		color: $additional-color-3;
+	}
+	.s-counter-text {
+		color: $additional-color-11;
+		font-size: 15px;
+		font-weight: 600;
+	}
+}
+/*
+    With Icon
+*/
+.icon-counter-container {
+	.counter-ico {
+		color: $color_57;
+		font-size: 35px;
+	}
+	.ico-counter {
+		font-size: 2.60rem;
+		font-weight: 600;
+		color: $additional-color-11;
+	}
+	.ico-counter-text {
+		color: $color_57;
+		font-size: 15px;
+		font-weight: 600;
+	}
+}
+/*
+    Circle
+*/
+.circle-counter-container {
+	.circle-counter {
+		border: $b-width-2 $solid $additional-color-8;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		padding: 36px 14px;
+		.c-counter {
+			font-size: 2rem;
+			font-weight: 600;
+			color: $additional-color-8;
+		}
+		.c-counter-text {
+			color: $additional-color-11;
+			font-size: 15px;
+			font-weight: 600;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+/*  Best Performers      */
+.best-performers {
+	.best-performers-header {
+		padding: 20px;
+		border-bottom: 1px solid $light-gray;
+		h6 {
+			color: $color_76;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		.best-performers-tab.nav-pills {
+			.nav-link.active {
+				background-image: $additional-gradient-color-30;
+			}
+			.show {
+				>.nav-link {
+					background-image: $additional-gradient-color-30;
+				}
+			}
+			.nav-link {
+				padding: 6px 17px;
+				font-size: 13px;
+				border-radius: 20px;
+			}
+		}
+	}
+	.best-performers-body {
+		.tab-content {
+			.tab-pane {
+				table {
+					tbody {
+						tr {
+							cursor: pointer;
+							td {
+								vertical-align: $v-align-middle;
+								border-top: none;
+								color: $additional-color-11;
+								font-size: 14px;
+								font-weight: 600;
+								padding: 1.3rem;
+								p {
+									color: $color_53;
+									font-weight: 600;
+									font-size: 15px;
+								}
+								span {
+									font-size: 13px;
+									font-weight: 600;
+									color: $additional-color-6;
+								}
+								i {
+									font-size: 22px;
+									color: $color_38;
+									cursor: pointer;
+								}
+							}
+							&:hover {
+								td {
+									i {
+										color: $color_56;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

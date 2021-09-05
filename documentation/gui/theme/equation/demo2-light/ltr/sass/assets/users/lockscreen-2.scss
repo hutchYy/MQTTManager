@@ -1,0 +1,98 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+	background: $color_222 $url_11 no-repeat fixed center;
+	background-size: cover;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+}
+.form-lockscreen {
+	width: 410px;
+	max-width: 410px;
+	padding: 35px;
+	margin: 0 auto;
+	border-radius: 10px;
+	width: 100%;
+	margin: auto;
+	img.usr-profile {
+		color: $black;
+		border-radius: 50%;
+		width: 105px;
+		border: $solid $b-width-4 rgba(255, 255, 255, 0.5);
+	}
+	.input-group {
+		.form-control {
+			position: $pos-rel;
+			box-sizing: border-box;
+			height: auto;
+			padding: 12px 45px 12px 0;
+			font-size: 16px;
+			border-left: none;
+			border-bottom-right-radius: $br-30;
+			border-top-right-radius: $br-30;
+			color: $white;
+			background: $color_221;
+			border: none;
+		}
+		.input-group-prepend {
+			margin-right: 0;
+			.input-group-text {
+				border-bottom-left-radius: $br-30;
+				border-top-left-radius: $br-30;
+				background: $color_221;
+				border: none;
+				color: $white;
+				border-right: none;
+			}
+		}
+	}
+	.form-control {
+		&::-webkit-input-placeholder {
+			color: $white;
+			font-size: 13px;
+			text-transform: $transform-upper;
+		}
+		&::-ms-input-placeholder {
+			color: $white;
+			font-size: 13px;
+			text-transform: $transform-upper;
+		}
+		&::-moz-placeholder {
+			color: $white;
+			font-size: 13px;
+			text-transform: $transform-upper;
+		}
+		&:focus {
+			z-index: 2;
+			border-color: $white;
+		}
+	}
+	.forgot-pass {
+		a {
+			color: $white;
+			font-size: 13px;
+			font-weight: 600;
+		}
+	}
+}
+.btn-gradient-warning {
+	padding: 12px 15px 12px 15px;
+}

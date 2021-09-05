@@ -1,0 +1,43 @@
+/*
+    ========================
+        Nav Tabs Sections
+    ========================
+*/
+.nav-tab-section {
+	background-color: $white;
+	padding: $p-20 $p-30 $p-20 $p-20;
+	.usr-loc-join {
+		h4 {
+			margin: 9px 0 0 13px;
+			color: $black;
+			font-size: 15px;
+		}
+		p {
+			font-size: 13px;
+		}
+	}
+	.nav-pills {
+		.nav-item {
+			margin: $m-0 $m-10;
+		}
+		.nav-link {
+			color: $additional-color-6;
+			i {
+				margin-left: 2px;
+				vertical-align: $v-align-middle;
+			}
+		}
+		.nav-link.active {
+			background-color: $color_none;
+			color: $color_57;
+			font-weight: 600;
+		}
+		.show {
+			>.nav-link {
+				background-color: $color_none;
+				color: $color_57;
+				font-weight: 600;
+			}
+		}
+	}
+}

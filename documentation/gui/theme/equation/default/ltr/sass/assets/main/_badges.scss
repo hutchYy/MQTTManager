@@ -1,0 +1,373 @@
+/*
+    ===========================
+            Badge
+    ===========================
+*/
+
+.badge {
+	font-weight: 600;
+	line-height: 1.4;
+	padding: 3px 6px;
+	font-size: 12px;
+	font-weight: 600;
+}
+.badge-pills {
+	border-radius: 30px;
+}
+.badge-classic {
+	border-radius: 0;
+}
+.badge-default {
+	color: $color_1;
+	border: 1px solid $color_38;
+	background-color: $default;
+	&:focus {
+		color: $color_43;
+		background-color: $light-gray;
+	}
+	&:hover {
+		color: $color_43;
+		background-color: $light-gray;
+	}
+}
+.badge-primary {
+	color: $white;
+	background-color: $primary;
+	&:focus {
+		background-color: $color_25;
+	}
+	&:hover {
+		background-color: $color_25;
+	}
+}
+.badge-info {
+	color: $white;
+	background-color: $info;
+	&:focus {
+		color: $white;
+		background-color: $color_45;
+	}
+	&:hover {
+		color: $white;
+		background-color: $color_45;
+	}
+}
+.badge-success {
+	color: $white;
+	background-color: $success;
+	&:focus {
+		color: $white;
+		background-color: $color_22;
+	}
+	&:hover {
+		color: $white;
+		background-color: $color_22;
+	}
+}
+.badge-danger {
+	color: $white;
+	background-color: $danger;
+	&:focus {
+		color: $white;
+		background-color: $color_16;
+	}
+	&:hover {
+		color: $white;
+		background-color: $color_16;
+	}
+}
+.badge-warning {
+	color: $white;
+	background-color: $warning;
+	&:focus {
+		color: $white;
+		background-color: $color_13;
+	}
+	&:hover {
+		color: $white;
+		background-color: $color_13;
+	}
+}
+.badge-dark {
+	color: $white;
+	background-color: $dark;
+	&:focus {
+		color: $white;
+		background-color: $color_20;
+	}
+	&:hover {
+		color: $white;
+		background-color: $color_20;
+	}
+}
+.badge-secondary {
+	background-color: $secondary;
+	&:focus {
+		color: $white;
+		background-color: $color_30;
+	}
+	&:hover {
+		color: $white;
+		background-color: $color_30;
+	}
+}
+.badge-new {
+	color: $white;
+	background-color: $additional-color-3;
+	&:focus {
+		color: $white;
+		background-color: $color_44;
+	}
+	&:hover {
+		color: $white;
+		background-color: $color_44;
+	}
+}
+
+
+/* Outline Badge */
+
+
+.outline-badge-default {
+	color: $additional-color-11;
+	border: 1px solid $light-gray;
+	background-color: $color_none;
+	&:focus {
+		color: $color_43;
+		background-color: $light-default;
+	}
+	&:hover {
+		color: $color_43;
+		background-color: $light-default;
+	}
+}
+.outline-badge-primary {
+	color: $primary;
+	background-color: $color_none;
+	border: 1px solid $primary;
+	&:focus {
+		background-color: $light-primary;
+		color: $primary;
+	}
+	&:hover {
+		background-color: $light-primary;
+		color: $primary;
+	}
+}
+.outline-badge-info {
+	color: $info;
+	background-color: $color_none;
+	border: 1px solid $info;
+	&:focus {
+		color: $info;
+		background-color: $light-info;
+	}
+	&:hover {
+		color: $info;
+		background-color: $light-info;
+	}
+}
+.outline-badge-success {
+	color: $success;
+	background-color: $color_none;
+	border: 1px solid $success;
+	&:focus {
+		color: $success;
+		background-color: $light-success;
+	}
+	&:hover {
+		color: $success;
+		background-color: $light-success;
+	}
+}
+.outline-badge-danger {
+	color: $danger;
+	background-color: $color_none;
+	border: 1px solid $danger;
+	&:focus {
+		color: $danger;
+		background-color: $light-danger;
+	}
+	&:hover {
+		color: $danger;
+		background-color: $light-danger;
+	}
+}
+.outline-badge-warning {
+	color: $warning;
+	background-color: $color_none;
+	border: 1px solid $warning;
+	&:focus {
+		color: $warning;
+		background-color: $light-warning;
+	}
+	&:hover {
+		color: $warning;
+		background-color: $light-warning;
+	}
+}
+.outline-badge-dark {
+	color: $dark;
+	background-color: $color_none;
+	border: 1px solid $dark;
+	&:focus {
+		color: $dark;
+		background-color: $light-dark;
+	}
+	&:hover {
+		color: $dark;
+		background-color: $light-dark;
+	}
+}
+.outline-badge-secondary {
+	color: $secondary;
+	background-color: $color_none;
+	border: 1px solid $secondary;
+	&:focus {
+		color: $secondary;
+		background-color: $light-secondary;
+	}
+	&:hover {
+		color: $secondary;
+		background-color: $light-secondary;
+	}
+}
+.outline-badge-new {
+	color: $additional-color-3;
+	background-color: $color_none;
+	border: 1px solid $additional-color-3;
+	&:focus {
+		color: $additional-color-3;
+		background-color: $additional-color-17;
+	}
+	&:hover {
+		color: $additional-color-3;
+		background-color: $additional-color-17;
+	}
+}
+
+
+
+
+/*      Link     */
+
+.badge[class*="link-badge-"] {
+	cursor: pointer;
+}
+.link-badge-default {
+	color: $color_38;
+	border: 1px solid transparent;
+	background-color: $color_none;
+	&:focus {
+		color: $color_46;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_46;
+		background-color: $color_none;
+	}
+}
+.link-badge-primary {
+	color: $primary;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_25;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_25;
+		background-color: $color_none;
+	}
+}
+.link-badge-info {
+	color: $info;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_45;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_45;
+		background-color: $color_none;
+	}
+}
+.link-badge-success {
+	color: $success;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_22;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_22;
+		background-color: $color_none;
+	}
+}
+.link-badge-danger {
+	color: $danger;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_16;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_16;
+		background-color: $color_none;
+	}
+}
+.link-badge-warning {
+	color: $warning;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_13;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_13;
+		background-color: $color_none;
+	}
+}
+.link-badge-dark {
+	color: $dark;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_20;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_20;
+		background-color: $color_none;
+	}
+}
+.link-badge-secondary {
+	color: $secondary;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_30;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_30;
+		background-color: $color_none;
+	}
+}
+.link-badge-new {
+	color: $additional-color-3;
+	background-color: $color_none;
+	border: 1px solid transparent;
+	&:focus {
+		color: $color_44;
+		background-color: $color_none;
+	}
+	&:hover {
+		color: $color_44;
+		background-color: $color_none;
+	}
+}

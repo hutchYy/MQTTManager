@@ -1,0 +1,127 @@
+/*  Calendar Section    */
+.calendar-section {
+	.card {
+		.card-body {
+			padding: $p-0;
+		}
+	}
+}
+#calendar {
+	color: $white;
+	min-width: 50px;
+	>div {
+		background-color: $success;
+		background-image: $additional-gradient-color-19;
+		&:nth-child(2) {
+			margin-top: 25px;
+		}
+		&:first-child {
+			padding-bottom: 5rem;
+		}
+	}
+	div#monthrow {
+		text-align: $align-center;
+		padding: 6px 5px;
+		font-size: 30px;
+		font-size: 22px;
+	}
+	.daysoftheweek {
+		padding: 1px;
+		color: $color_76;
+		margin-top: 1px;
+		margin-bottom: 0;
+		padding: 0px 0px;
+		font-size: 15px;
+		div {
+			float: left;
+			width: 14.28%;
+			height: 2.5em;
+			text-align: $align-center;
+			line-height: 6.5em;
+			font-size: 115%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			color: $white;
+			margin-top: -1px;
+		}
+	}
+	.week {
+		div {
+			float: left;
+			display: block;
+			height: 2.4em;
+			width: 14.28%;
+			text-align: $align-center;
+			line-height: 2.6em;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			color: $additional-color-11;
+			font-size: 15px;
+		}
+	}
+	div {
+		text-align: $align-center;
+		padding: 0;
+	}
+}
+#prev {
+	color: $white;
+	font-size: 16px;
+	padding: 3px 8px;
+	background: none;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	float: left;
+	&:disabled {
+		color: $color_113 !important;
+	}
+	&:hover {
+		&:enabled {
+			color: $additional-color-11 !important;
+		}
+	}
+}
+#next {
+	color: $white;
+	font-size: 16px;
+	padding: 3px 8px;
+	background: none;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	float: right;
+	&:disabled {
+		color: $color_113 !important;
+	}
+	&:hover {
+		&:enabled {
+			color: $additional-color-11 !important;
+		}
+	}
+}
+#monthrow {
+	div {
+		color: $white !important;
+		background-color: $success !important;
+		font: 30px sans-serif !important;
+		border-radius: 5px;
+		text-align: $align-center;
+		padding: 14px 20px 14px;
+		font-size: 16px;
+		font-weight: normal;
+		width: 300px;
+	}
+}
+.daysoftheweek {
+	div {
+		text-align: $align-center;
+	}
+}
+.current-date {
+	border-radius: 6px;
+	color: $color_94 !important;
+	background-color: $color_83;
+}

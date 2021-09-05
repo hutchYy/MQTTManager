@@ -1,0 +1,46 @@
+/*  Small Accordion       */
+.small-accordion-content {
+	.card-header {
+		background-color: $color_101;
+		color: $color_51;
+		border-color: $color_none;
+		h5 {
+			>div {
+				padding: 8px 16px 8px 20px;
+				cursor: pointer;
+				font-size: 13px;
+				text-transform: $transform-upper;
+				font-weight: 600;
+				position: $pos-rel;
+				overflow: hidden;
+				z-index: 2;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+	#smallCollapseOne {
+		.card-body {
+			h4 {
+				color: $additional-color-5;
+			}
+			color: $color_48;
+		}
+	}
+	#smallCollapseThree {
+		.card-body {
+			h4 {
+				color: $additional-color-5;
+			}
+			color: $color_48;
+		}
+	}
+	#smallCollapseTwo {
+		.card-body {
+			color: $color_48;
+		}
+	}
+}

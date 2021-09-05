@@ -1,0 +1,147 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+
+/*********************************
+* Slideshow Styling
+*********************************/
+#slideshow {
+	width: 100%;
+	height: 100%;
+	position: $pos-rel;
+	overflow: hidden;
+	.img-wrapper.active {
+		z-index: 10;
+	}
+	.img-wrapper.last-active {
+		z-index: 9;
+	}
+}
+#slideshow.fullscreen {
+	position: $pos-rel;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 410px 0px;
+	overflow: hidden;
+}
+.img-wrapper {
+	min-width: 100%;
+	min-height: 100%;
+	position: $pos-abs;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+	z-index: 8;
+	background-size: cover;
+	background-position: $align-center $align-center;
+}
+
+/*********************************
+* Thumbnail Styling
+*********************************/
+
+.thumbs-container {
+	width: 100%;
+	height: 110px;
+	position: $pos-abs;
+	left: 0;
+	z-index: 11;
+	background: $color_353;
+	opacity: .7;
+}
+.thumbs-container.top {
+	top: 0;
+}
+.thumbs-container.bottom {
+	bottom: 0;
+}
+.prev {
+	width: 4%;
+	min-width: 40px;
+	height: 48px;
+	color: $color_189;
+	cursor: pointer;
+	float: $align-left;
+	&:hover {
+		color: $color_197;
+	}
+}
+.next {
+	width: 4%;
+	min-width: 40px;
+	height: 48px;
+	color: $color_189;
+	cursor: pointer;
+	float: $align-right;
+	&:hover {
+		color: $color_197;
+	}
+}
+.fa-3x {
+	font-size: 2em;
+}
+ul.thumbs {
+	position: $pos-abs;
+	top: 5px;
+	left: 5%;
+	right: 5%;
+	height: 110px;
+	padding: $p-0;
+	margin: 0 5%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: $align-center;
+	.thumb {
+		display: inline-block;
+		width: 120px;
+		height: 80px;
+		margin: $m-10;
+		overflow: hidden;
+		background-size: cover;
+		background-position: $align-center $align-center;
+		cursor: pointer;
+		background-color: $white;
+		opacity: 0.7;
+		&:first-of-type {
+			margin-left: $m-0;
+		}
+	}
+	.thumb.active {
+		width: 116px;
+		height: 80px;
+		border: $b-width-1 $solid $color_449;
+		background-color: $white;
+		opacity: 1;
+		border-radius: 2px;
+	}
+}
+/*********************************
+* Thumbnail Styling
+*********************************/
+.multi-purpose {
+	h5 {
+		font-size: 14px;
+	}
+}
+@media (max-width: 767px) {
+	#slideshow.fullscreen {
+		padding: $p-150 $p-0;
+	}
+}
+@media (max-width: 768px) {
+	#slideshow.fullscreen {
+		padding: 170px $p-0;
+	}
+}

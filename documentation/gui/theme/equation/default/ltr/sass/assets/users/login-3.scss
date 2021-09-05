@@ -1,0 +1,117 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+	background-image: $additional-gradient-color-41;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+	background-color: $color_223;
+}
+h5 {
+	font-size: 0.875rem;
+}
+
+.form-login {
+	width: 410px;
+	max-width: 410px;
+	padding: 35px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: $white;
+	box-shadow: 0 10px 60px 0 rgba(29,29,31,.09);
+	width: 100%;
+	margin: auto;
+	.social {
+		h5 {
+			color: $color_47;
+		}
+	}
+	.form-control {
+		&::-webkit-input-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-ms-input-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-moz-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		position: $pos-rel;
+		box-sizing: border-box;
+		height: auto;
+		color: $dark;
+		padding: 3px;
+		font-size: 16px;
+		border: none;
+		background: $color_none;
+		border-bottom: $b-width-1 $solid $light-gray;
+	}
+	label {
+		color: $additional-color-11;
+		text-transform: $transform-upper;
+		font-size: 13px;
+	}
+	.division {
+		float: none;
+		margin: 0 auto 18px;
+		overflow: hidden;
+		position: $pos-rel;
+		text-align: $align-center;
+		width: 100%;
+		color: $additional-color-5;
+		.line {
+			border-top: $b-width-1 $solid $light-gray;
+			position: $pos-abs;
+			top: 10px;
+			width: 34%;
+		}
+		.line.line-left {
+			left: 0;
+			border-top: $b-width-1 $solid $color_84;
+		}
+		.line.line-right {
+			right: 0;
+			border-top: $b-width-1 $solid $color_84;
+		}
+	}
+	.checkbox {
+		.custom-control {
+			label {
+				text-transform: initial;
+				font-size: 14px;
+				color: $additional-color-5;
+			}
+		}
+	}
+}
+.login-text {
+	a {
+		color: $color_227;
+	}
+}

@@ -1,0 +1,200 @@
+/*-----Button Light Colors------*/
+/*-----/Button Light Colors------*/
+.btn-light-primary {
+	background: $white;
+	color: $primary;
+	&:hover {
+		border: 1px solid $color_25;
+		color: $color_25;
+	}
+	&:focus {
+		border: 1px solid $color_25;
+		color: $color_25;
+	}
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			border: 1px solid $color_25;
+			color: $color_25;
+		}
+		&:not(.disabled) {
+			&:active {
+				border: 1px solid $color_25;
+				color: $color_25;
+			}
+		}
+	}
+}
+.show {
+	>.btn-light-primary.dropdown-toggle {
+		border: 1px solid $color_25;
+		color: $color_25;
+	}
+	>.btn-light-success.dropdown-toggle {
+		border: 1px solid $color_22;
+		color: $color_22;
+	}
+	>.btn-light-warning.dropdown-toggle {
+		border: 1px solid $color_13;
+		color: $color_13;
+	}
+	>.btn-light-danger.dropdown-toggle {
+		border: 1px solid $color_16;
+		color: $color_16;
+	}
+	>.btn-light-info.dropdown-toggle {
+		border: 1px solid $color_29;
+		color: $color_29;
+	}
+	>.btn-light-dark.dropdown-toggle {
+		border: 1px solid $color_20;
+		color: $color_20;
+	}
+	>.btn-light-secondary.dropdown-toggle {
+		border: 1px solid $color_30;
+		color: $color_30;
+	}
+}
+.btn-light-success {
+	background: $white;
+	color: $success;
+	&:hover {
+		border: 1px solid $color_22;
+		color: $color_22;
+	}
+	&:focus {
+		border: 1px solid $color_22;
+		color: $color_22;
+	}
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			border: 1px solid $color_22;
+			color: $color_22;
+		}
+		&:not(.disabled) {
+			&:active {
+				border: 1px solid $color_22;
+				color: $color_22;
+			}
+		}
+	}
+}
+.btn-light-warning {
+	background: $white;
+	color: $warning;
+	&:hover {
+		border: 1px solid $color_13;
+		color: $color_13;
+	}
+	&:focus {
+		border: 1px solid $color_13;
+		color: $color_13;
+	}
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			border: 1px solid $color_13;
+			color: $color_13;
+		}
+		&:not(.disabled) {
+			&:active {
+				border: 1px solid $color_13;
+				color: $color_13;
+			}
+		}
+	}
+}
+.btn-light-danger {
+	background: $white;
+	color: $danger;
+	&:hover {
+		border: 1px solid $color_16;
+		color: $color_16;
+	}
+	&:focus {
+		border: 1px solid $color_16;
+		color: $color_16;
+	}
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			border: 1px solid $color_16;
+			color: $color_16;
+		}
+		&:not(.disabled) {
+			&:active {
+				border: 1px solid $color_16;
+				color: $color_16;
+			}
+		}
+	}
+}
+.btn-light-info {
+	background: $white;
+	color: $info;
+	&:hover {
+		border: 1px solid $color_29;
+		color: $color_29;
+	}
+	&:focus {
+		border: 1px solid $color_29;
+		color: $color_29;
+	}
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			border: 1px solid $color_29;
+			color: $color_29;
+		}
+		&:not(.disabled) {
+			&:active {
+				border: 1px solid $color_29;
+				color: $color_29;
+			}
+		}
+	}
+}
+.btn-light-dark {
+	background: $white;
+	color: $dark;
+	&:hover {
+		border: 1px solid $color_20;
+		color: $color_20;
+	}
+	&:focus {
+		border: 1px solid $color_20;
+		color: $color_20;
+	}
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			border: 1px solid $color_20;
+			color: $color_20;
+		}
+		&:not(.disabled) {
+			&:active {
+				border: 1px solid $color_20;
+				color: $color_20;
+			}
+		}
+	}
+}
+.btn-light-secondary {
+	background: $white;
+	color: $secondary;
+	&:hover {
+		border: 1px solid $color_30;
+		color: $color_30;
+	}
+	&:focus {
+		border: 1px solid $color_30;
+		color: $color_30;
+	}
+	&:not(:disabled) {
+		&:not(.disabled).active {
+			border: 1px solid $color_30;
+			color: $color_30;
+		}
+		&:not(.disabled) {
+			&:active {
+				border: 1px solid $color_30;
+				color: $color_30;
+			}
+		}
+	}
+}

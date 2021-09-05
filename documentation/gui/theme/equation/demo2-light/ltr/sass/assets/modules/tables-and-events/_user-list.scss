@@ -1,0 +1,74 @@
+/*    
+    User List
+*/
+.usr-list {
+	.usr-list-title {
+		padding: 20px;
+		border-bottom: $b-width-1 $solid $light-gray;
+		h6 {
+			color: $additional-color-11;
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+	.usr-list-body {
+		.table-responsive {
+			padding: 0 24px;
+		}
+		table {
+			tbody {
+				tr {
+					cursor: pointer;
+					&:hover {
+						td {
+							i.flaticon-fill-tick {
+								color: $primary;
+							}
+							i.flaticon-close-fill {
+								color: $danger;
+							}
+						}
+					}
+				}
+				td {
+					border-top: none;
+					.d-flex {
+						.f-header {
+							img {
+								width: 45px;
+							}
+						}
+						.f-body {
+							h6 {
+								margin-bottom: 0;
+								color: $additional-color-11;
+							}
+							p {
+								margin-bottom: 0;
+								font-size: 13px;
+								font-weight: 600;
+							}
+						}
+					}
+				}
+				td.action {
+					i {
+						font-size: 23px;
+						cursor: pointer;
+						color: $color_38;
+					}
+				}
+			}
+		}
+		.u-l-add-new {
+			padding: 15px;
+			border-top: $b-width-1 $solid $light-gray;
+			button {
+				background-image: $additional-gradient-color-39;
+				border: none;
+				font-size: 14px;
+				padding: 12px 30px;
+			}
+		}
+	}
+}

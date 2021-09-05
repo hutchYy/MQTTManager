@@ -1,0 +1,92 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+/*      Map     */
+
+#basic_map1 {
+	width: 100%;
+	height: 500px;
+}
+/* 	Contact Content 	*/
+.cu-contact-section {
+	padding: 25px $p-20;
+	background-color: $white;
+	border-radius: $br-6;
+	.cu-contact-header {
+		h5 {
+			font-weight: 600;
+			color: $color_57;
+			font-size: 26px;
+			text-transform: $transform-upper;
+			margin-bottom: $m-50 !important;
+			margin-top: 25px;
+		}
+	}
+	form {
+		input {
+			border: $solid $b-width-1 $color_622;
+			padding: 18px 15px;
+			color: $color_76;
+			font-size: 17px;
+			background-color: $white;
+			margin-bottom: 12px;
+			&:focus {
+				background-color: $white;
+				border-color: $additional-color-11;
+			}
+		}
+		button {
+			border: none;
+			padding: 15px 45px;
+			border-radius: $br-30;
+		}
+	}
+	.form-group {
+		textarea {
+			padding: 15px $p-20;
+			color: $color_76;
+			font-size: 17px;
+			background-color: $white;
+			resize: none;
+			border: $solid $b-width-1 $color_622;
+			margin-top: 15px;
+			margin-bottom: 38px;
+			&:-ms-input-placeholder {
+				color: $color_230;
+			}
+		}
+	}
+	/* 	Contact Content info	*/
+	.cu-contact-info {
+		.media {
+			i {
+				font-size: 34px;
+				vertical-align: $v-align-middle;
+				color: $primary;
+				background: $light-primary;
+				border-radius: 50%;
+				width: 25px;
+				height: 25px;
+				line-height: 1.5;
+				margin-right: 25px !important;
+				margin-bottom: 15px;
+			}
+			h6 {
+				color: $color_76;
+				font-weight: 600;
+				font-size: 18px;
+			}
+			p {
+				color: $color_2;
+				font-size: 15px;
+			}
+		}
+	}
+}

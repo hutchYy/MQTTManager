@@ -1,0 +1,148 @@
+/*
+    Customer Balance Summary
+*/
+
+.customer-bal-summary {
+	.c-b-s-header {
+		padding: 20px;
+		border-bottom: none;
+		h6 {
+			font-weight: 600;
+			color: $additional-color-11;
+			font-size: 20px;
+		}
+		.nav.c-b-s-tab {
+			.nav-link {
+				padding: 6px 17px;
+				font-size: 13px;
+				border-radius: 30px;
+			}
+			.nav-link.active {
+				background-image: $additional-gradient-color-23;
+			}
+			.show {
+				>.nav-link {
+					background-image: $additional-gradient-color-23;
+				}
+			}
+		}
+	}
+	.c-b-s-body {
+		.table {
+			>thead {
+				>tr {
+					>th {
+						color: $color_53;
+						font-size: 18px;
+					}
+				}
+			}
+			>tbody {
+				>tr {
+					>td.customer-name {
+						color: $additional-color-5;
+						font-weight: 600;
+						font-size: 16px;
+					}
+					>td.c-b-s-date {
+						color: $additional-color-11;
+						font-weight: 600;
+						font-size: 16px;
+						padding: $p-0;
+					}
+					>td.customer-price {
+						color: $color_57;
+						font-weight: 600;
+						font-size: 16px;
+					}
+					>td {
+						span.badge {
+							padding: 7px 17px;
+							width: 91px;
+						}
+						i {
+							font-size: 27px;
+							color: $additional-color-6;
+						}
+					}
+				}
+			}
+			td {
+				vertical-align: $v-align-middle;
+				padding: 15px 30px;
+				border-top: $b-width-1 $solid $light-gray;
+			}
+			th {
+				vertical-align: $v-align-middle;
+				padding: 15px 30px;
+				border-top: $b-width-1 $solid $light-gray;
+			}
+		}
+		.c-b-s-bottom {
+			padding: 20px;
+			border-top: $b-width-1 $solid $light-gray;
+			.pagination-stats {
+				font-size: 13px;
+				color: $color_76;
+				font-weight: 600;
+			}
+			ul.pagination {
+				li {
+					margin-right: 5px;
+					a {
+						background-color: $white;
+						font-size: 13px;
+						color: $color_76;
+						font-weight: 600;
+						&:hover {
+							&:not(.active) {
+								background-color: $secondary;
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.table-responsive {
+		&::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+		&::-webkit-scrollbar-button {
+			&:start {
+				&:decrement {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+			&:end {
+				&:increment {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+		}
+		&::-webkit-scrollbar-track-piece {
+			background-color: $white;
+			-webkit-border-radius: 6px;
+		}
+		&::-webkit-scrollbar-thumb {
+			&:vertical {
+				height: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 6px;
+			}
+			&:horizontal {
+				width: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 3px;
+			}
+		}
+	}
+}

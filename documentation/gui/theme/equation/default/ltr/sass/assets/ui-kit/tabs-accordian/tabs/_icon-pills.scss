@@ -1,0 +1,86 @@
+/*
+    Icon Pill
+*/
+.icon-pill {
+	.nav-pills {
+		li {
+			a {
+				color: $additional-color-11;
+			}
+		}
+		.nav-link.active {
+			background-color: $color_55;
+			border-color: $color_none;
+		}
+		.show {
+			>.nav-link {
+				background-color: $color_55;
+				border-color: $color_none;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}
+.dropdown-tab {
+	.dropdown-toggle {
+		&:before {
+			display: none;
+		}
+		&:after {
+			color: $black;
+			margin-left: 17px;
+		}
+	}
+	.dropdown-menu {
+		.dropdown-toggle {
+			position: $pos-abs;
+		}
+		.nav-pills {
+			.nav-link.active {
+				background-color: $color_none;
+			}
+			.show {
+				>.nav-link {
+					background-color: $color_none;
+				}
+			}
+		}
+	}
+}
+.dropdown-pill {
+	.dropdown-toggle {
+		&:before {
+			display: none;
+		}
+		&:after {
+			color: $black;
+			margin-left: 17px;
+		}
+	}
+	.dropdown-menu {
+		.dropdown-toggle {
+			position: $pos-abs;
+		}
+		.nav-pills {
+			.nav-link.active {
+				background-color: $color_none;
+			}
+			.show {
+				>.nav-link {
+					background-color: $color_none;
+				}
+			}
+		}
+	}
+	.nav-item.dropdown.show {
+		.dropdown-toggle {
+			&:after {
+				color: $white;
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+/*
+  Map*/
+.widget.box {
+	.widget-content {
+		.top-searches {
+			padding: 0px;
+			height: 541px;
+			background-color: $white;
+		}
+	}
+}
+.top-searches {
+	background-color: $white;
+	.map-title {
+		color: $additional-color-11;
+		font-size: 17px;
+		font-weight: 600;
+		padding: 12px 18px;
+		text-transform: uppercase;
+	}
+	.table {
+		margin-bottom: 0px;
+		>thead {
+			>tr {
+				>th {
+					position: $pos-rel;
+					color: $color_76;
+					font-size: 14px;
+					font-weight: 600;
+					text-transform: initial;
+					border-bottom: 1px solid $color_6;
+					[class*="d-m-data-"] {
+						width: 6px;
+						height: 6px;
+					}
+					.d-m-data-1 {
+						background-color: $color_87;
+					}
+					.d-m-data-2 {
+						background-color: $color_86;
+					}
+					.d-m-data-3 {
+						background-color: $color_55;
+					}
+					.d-m-data-4 {
+						background-color: $additional-color-3;
+					}
+					.d-m-data-5 {
+						background-color: $additional-color-10;
+					}
+					.d-m-data-6 {
+						background-color: $color_38;
+					}
+				}
+			}
+		}
+		>tbody {
+			>tr {
+				>td {
+					font-size: 14px;
+					color: $additional-color-11;
+				}
+			}
+		}
+	}
+	.table-highlight-head {
+		thead {
+			background-color: $color_none;
+		}
+		tbody {
+			background-color: $color_none;
+		}
+	}
+	.mCS-light-thin.mCSB_scrollTools_horizontal {
+		.mCSB_dragger {
+			.mCSB_dragger_bar {
+				height: 4px;
+				margin: -15px auto;
+			}
+		}
+	}
+	.mCS-dark-thin.mCSB_scrollTools_horizontal {
+		.mCSB_dragger {
+			.mCSB_dragger_bar {
+				height: 4px;
+				margin: -15px auto;
+			}
+		}
+	}
+	.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+		.mCSB_draggerRail {
+			width: 100%;
+			height: 2px;
+			margin: -14px 0;
+		}
+	}
+	.mCS-dark-thin.mCSB_scrollTools {
+		.mCSB_draggerRail {
+			background-color: $white;
+		}
+	}
+}
+.jvectormap-zoomin {
+	background: $color_57;
+}
+.jvectormap-zoomout {
+	background: $color_57;
+}

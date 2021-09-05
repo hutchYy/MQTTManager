@@ -1,0 +1,262 @@
+/*  
+    ======================
+        MEDIA QUERIES
+    ======================
+*/
+
+@media (min-width: 992px) {
+    .desktop-nav.header {
+        .navbar-nav {
+            .user-profile-dropdown {
+                border-left: 1px solid #e9ecef;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    /*
+    ===============
+        Desktop Nav
+    ===============
+    */
+    .desktop-nav.header {
+        .navbar-nav {
+            .message-dropdown {
+                a {
+                    span.icon {
+                        border-radius: 0;
+                        border: none;
+                        font-size: 21px;
+                        padding: 12px 12px 12px;
+                    }
+                    span.badge {
+                        margin-top: -20px;
+                        right: -7px;
+                        padding: 2px;
+                    }
+                }
+                .dropdown-menu {
+                    right: auto;
+                    left: -120px;
+                    max-width: 18rem;
+                }
+            }
+            .notification-dropdown {
+                a {
+                    span.icon {
+                        border-radius: 0;
+                        border: none;
+                        font-size: 21px;
+                        padding: 12px 12px 12px;
+                    }
+                    span.badge {
+                        margin-top: -20px;
+                        right: -4px;
+                        padding: 2px;
+                    }
+                }
+                .dropdown-menu {
+                    right: auto;
+                    left: -120px;
+                    max-width: 18rem;
+                }
+            }
+            .cs-toggle {
+                a {
+                    span.icon {
+                        font-size: 21px;
+                        padding: 16px 12px 16px;
+                    }
+                }
+            }
+            .form-inline.search {
+                width: 0;
+                padding: 11px 0;
+                position: inherit;
+                i {
+                    font-size: 21px;
+                    padding: 4px 12px 4px;
+                    color: $color_60;
+                }
+                &:before {
+                    display: none;
+                    position: absolute;
+                    font-family: $font_family_1;
+                    right: 20px;
+                    left: auto;
+                    content: "";
+                    top: 17px;
+                    z-index: 6;
+                    font-size: 21px;
+                    color: $color_60;
+                    pointer-events: none;
+                }
+                input {
+                    display: none;
+                    &::-webkit-input-placeholder {
+                        color: $color_60;
+                    }
+                    &::-moz-placeholder {
+                        color: $color_60;
+                    }
+                    &:-ms-input-placeholder {
+                        color: $color_60;
+                    }
+                    &:-moz-placeholder {
+                        color: $color_60;
+                    }
+                }
+            }
+            .form-inline.animated-search.search {
+                .form-control {
+                    &:focus {
+                        width: 100%;
+                    }
+                }
+                .form-control.input-focused {
+                    width: 100%;
+                }
+            }
+            .form-inline.search.input-focused {
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                background: #fff;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                right: 0;
+                z-index: 32;
+                border-radius: 0;
+                i {
+                    display: none !important;
+                }
+                &:before {
+                    display: block;
+                    top: 32px;
+                }
+                input {
+                    display: inline-block;
+                    width: 100%;
+                    color: $color_60;
+                }
+            }
+        }
+    }
+    .search-overlay {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #e6e6e6 !important;
+        z-index: 998 !important;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .search-overlay.show {
+        display: block;
+        opacity: .7;
+    }
+    /*
+    ======================
+        Control Sidebar
+    ======================
+    */
+    .control-sidebar {
+        top: 84px;
+    }
+    .sidebar-noneoverflow {
+        overflow: hidden;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #e6e6e6 !important;
+        z-index: 998 !important;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+    .overlay.show {
+        display: block;
+        opacity: .7;
+        transition: all 1s ease-in-out;
+    }
+    .main-container {
+        &:not(.sbar-open) {
+            .modernSidebar-nav {
+                width: 0;
+                left: -112px;
+            }
+        }
+    }
+    /*
+    ====================
+        Layout Modern
+    ====================
+    */
+    .modernSidebar-nav.header {
+        top: 91px;
+        nav#modernSidebar {
+            ul.menu-categories {
+                li.menu {
+                    .submenu {
+                        top: 91px;
+                    }
+                }
+            }
+        }
+    }
+    #content {
+        margin-top: 91px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .desktop-nav.header {
+        .nav-logo {
+            a {
+                img {
+                    width: 65px;
+                }
+            }
+            a.sidebarCollapse {
+                padding: 8px 8px;
+            }
+        }
+        .navbar-nav {
+            .message-dropdown {
+                a {
+                    span.icon {
+                        border-radius: 0;
+                        border: none;
+                        font-size: 21px;
+                    }
+                }
+            }
+            .notification-dropdown {
+                a {
+                    span.icon {
+                        border-radius: 0;
+                        border: none;
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+    .modernSidebar-nav.header {
+        nav#modernSidebar {
+            ul.menu-categories {
+                li.menu {
+                    .submenu {
+                        width: 190px;
+                    }
+                }
+            }
+        }
+    }
+}

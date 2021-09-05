@@ -1,0 +1,44 @@
+/* 	Switches	*/
+.m-o-switches {
+	.media {
+		&:first-child {
+			border-top: none;
+		}
+		padding: 1.5rem;
+		border-top: 1px solid $color_6;
+		.media-body {
+			label.switch {
+				width: 45px;
+				height: 20px;
+				.slider {
+					&:before {
+						height: 16px;
+						width: 16px;
+					}
+				}
+			}
+			.switch {
+				input {
+					&:checked {
+						&+.slider {
+							&:before {
+								-webkit-transform: translateX(25px);
+								-ms-transform: translateX(25px);
+								transform: translateX(25px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.switch.s-primary {
+	input {
+		&:checked {
+			&+.slider {
+				background-color: $color_150;
+			}
+		}
+	}
+}

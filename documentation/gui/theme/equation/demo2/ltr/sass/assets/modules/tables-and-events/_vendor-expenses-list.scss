@@ -1,0 +1,75 @@
+/*
+    Vendor Expenses List
+*/
+.vendor-expenses-list-content {
+	height: 100%;
+}
+.vendor-expenses-list {
+	.vendor-expenses-header {
+		padding: 20px;
+		h5 {
+			font-weight: 600;
+			color: $additional-color-11;
+		}
+		.nav.vendor-expenses {
+			.nav-link {
+				padding: 6px 17px;
+				font-size: 13px;
+				border-radius: 30px;
+			}
+			.nav-link.active {
+				background-image: $additional-gradient-color-21;
+			}
+			.show {
+				>.nav-link {
+					background-image: $additional-gradient-color-21;
+				}
+			}
+		}
+	}
+	.vendor-expenses-body {
+		.table {
+			>thead {
+				>tr {
+					>th {
+						padding: 20px;
+						color: $additional-color-11;
+						font-size: 17px;
+					}
+				}
+			}
+			>tbody {
+				>tr {
+					>td {
+						vertical-align: bottom;
+						padding: 12px 22px;
+						border-top: 1px solid $color_6;
+						.pro-name {
+							color: $additional-color-11;
+							font-weight: 600;
+							font-size: 17px;
+						}
+						.progress {
+							border-radius: 20px;
+							margin-top: 8px;
+							margin-right: .25rem !important;
+							.progress-bar {
+								border-radius: 20px;
+							}
+						}
+						span {
+							font-weight: 600;
+							color: $additional-color-11;
+							font-size: 17px;
+						}
+						.v-amount {
+							font-weight: 600;
+							color: $additional-color-11;
+							font-size: 17px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

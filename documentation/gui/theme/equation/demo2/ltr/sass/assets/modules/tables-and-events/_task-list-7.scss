@@ -1,0 +1,149 @@
+/*  
+    Todo list   
+*/
+.todo-list-advance {
+	height: 100%;
+	.todo-list-header {
+		padding: 20px;
+		border-bottom: $b-width-1 $solid $light-gray;
+		h5 {
+			font-weight: 600;
+			color: $additional-color-11;
+			font-size: 20px;
+		}
+		i.remove-todo-close {
+			vertical-align: $v-align-middle;
+			-webkit-background-clip: text;
+			cursor: pointer;
+			position: $pos-abs;
+			top: -14px;
+			right: 7px;
+			color: $color_38;
+			font-size: 19px;
+			&:hover {
+				color: $danger;
+			}
+		}
+		i.add-task {
+			background-color: $additional-color-8;
+			border-radius: 50%;
+			position: $pos-abs;
+			bottom: -40px;
+			color: $white;
+			right: 25px;
+			font-size: 19px;
+			padding: 12px;
+		}
+	}
+	.todo-list-body {
+		.table {
+			tbody {
+				tr {
+					&:first-child {
+						td {
+							border: none;
+						}
+					}
+					td {
+						border-color: $light-gray;
+						padding: 14px 20px 14px 20px;
+						vertical-align: $v-align-middle;
+					}
+				}
+			}
+		}
+		.new-control.new-checkbox.checkbox-success {
+			.new-control-indicator {
+				width: 1.7rem;
+				height: 1.7rem;
+				background-color: $color_none;
+				border: $b-width-1 $solid $light-gray;
+				border-radius: 50px;
+			}
+			>input {
+				&:checked~span.new-control-indicator {
+					background-color: $success;
+					border: none;
+				}
+				&:checked~span.d-sm-flex {
+					span.todo-text {
+						text-decoration: line-through;
+					}
+				}
+				&:checked~span.todo-item {
+					.remove-task {
+						visibility: visible;
+					}
+					.task-edit {
+						visibility: visible;
+					}
+					img {
+						opacity: .4;
+					}
+				}
+			}
+			span.todo-text {
+				color: $color_76;
+				font-size: 16px;
+			}
+		}
+		.new-control.new-checkbox {
+			span.new-control-indicator {
+				&:after {
+					margin-left: -4px;
+					margin-top: -7px;
+					width: 7px;
+					height: 12px;
+				}
+			}
+		}
+		.n-chk {
+			.remove-task {
+				font-size: 25px;
+				color: $danger;
+				visibility: hidden;
+				vertical-align: $v-align-middle;
+			}
+		}
+		.task-edit {
+			font-size: 25px;
+			visibility: hidden;
+			color: $dark;
+			vertical-align: $v-align-middle;
+		}
+		table {
+			tbody {
+				tr {
+					.task-edit {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		span.todo-item {
+			img {
+				width: 39px;
+				border-radius: 50%;
+			}
+		}
+	}
+	.todo-list-bottom {
+		padding: 15px 22px;
+		border-top: $b-width-1 $solid $light-gray;
+		span {
+			font-weight: 600;
+			font-size: 17px;
+			vertical-align: $v-align-middle;
+		}
+		button {
+			padding: 13px 17px;
+			font-weight: 600;
+			font-size: 16px;
+			border-radius: 50%;
+			&:hover {
+				background-color: $danger;
+				color: $white !important;
+			}
+		}
+	}
+}

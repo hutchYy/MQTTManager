@@ -1,0 +1,10 @@
+/* 	With Labels	*/
+.m-o-label {
+	.media {
+		&:first-child {
+			border-top: none;
+		}
+		padding: 1.5rem;
+		border-top: $b-width-1 $solid $color_6;
+	}
+}

@@ -1,0 +1,244 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../base/color_variables';   	// Color Variables
+@import '../../../base/fonticons';   			// Fonticons Variables
+@import '../../../base/urls';   				// URLS Variables
+@import '../../../base/utilities_variables';  // Utilities Variables
+
+@-webkit-keyframes "animFlipFront" {
+	0% {
+		-webkit-transform: perspective(1000px) rotate3d(1,0,0,-90deg);
+	}
+	100% {
+		-webkit-transform: perspective(1000px);
+	}
+}
+@keyframes "animFlipFront" {
+	0% {
+		-webkit-transform: perspective(1000px) rotate3d(1,0,0,-90deg);
+		transform: perspective(1000px) rotate3d(1,0,0,-90deg);
+	}
+	100% {
+		-webkit-transform: perspective(1000px);
+		transform: perspective(1000px);
+	}
+}
+@-webkit-keyframes "animFlipBack" {
+	0% {
+		-webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
+	}
+	100% {
+		-webkit-transform: perspective(1000px);
+	}
+}
+@keyframes "animFlipBack" {
+	0% {
+		-webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
+		transform: perspective(1000px) rotate3d(1,0,0,90deg);
+	}
+	100% {
+		-webkit-transform: perspective(1000px);
+		transform: perspective(1000px);
+	}
+}
+/* Bouncy Flip adapted from animate.css by Dan Eden: http://daneden.github.io/animate.css/ */
+@-webkit-keyframes "flipInX" {
+	0% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-90deg);
+		-webkit-transition-timing-function: ease-in;
+	}
+	40% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,20deg);
+		-webkit-transition-timing-function: ease-out;
+	}
+	60% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-10deg);
+		-webkit-transition-timing-function: ease-in;
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,5deg);
+		-webkit-transition-timing-function: ease-out;
+	}
+	100% {
+		-webkit-transform: perspective(400px);
+	}
+}
+@keyframes "flipInX" {
+	0% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-90deg);
+		transform: perspective(400px) rotate3d(1,0,0,-90deg);
+		-webkit-transition-timing-function: ease-in;
+		transition-timing-function: ease-in;
+	}
+	40% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,20deg);
+		transform: perspective(400px) rotate3d(1,0,0,20deg);
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	60% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,-10deg);
+		transform: perspective(400px) rotate3d(1,0,0,-10deg);
+		-webkit-transition-timing-function: ease-in;
+		transition-timing-function: ease-in;
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: perspective(400px) rotate3d(1,0,0,5deg);
+		transform: perspective(400px) rotate3d(1,0,0,5deg);
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	100% {
+		-webkit-transform: perspective(400px);
+		transform: perspective(400px);
+	}
+}
+@-webkit-keyframes "flipInXSimple" {
+	0% {
+		-webkit-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+		-webkit-transition-timing-function: ease-in;
+	}
+	100% {
+		-webkit-transform: perspective(400px);
+	}
+}
+@keyframes "flipInXSimple" {
+	0% {
+		-webkit-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+		transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+		-webkit-transition-timing-function: ease-in;
+		transition-timing-function: ease-in;
+	}
+	100% {
+		-webkit-transform: perspective(400px);
+		transform: perspective(400px);
+	}
+}
+/* Growl-style notifications */
+.ns-attached {
+	left: 30px;
+	max-width: 300px;
+}
+[class^="ns-effect-"].ns-attached.ns-hide {
+	-webkit-animation-direction: reverse;
+	animation-direction: reverse;
+}
+[class*=" ns-effect-"].ns-attached.ns-hide {
+	-webkit-animation-direction: reverse;
+	animation-direction: reverse;
+}
+/* Individual effects */
+/* Flip */
+.ns-effect-flip {
+	background: $info;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	bottom: 0px;
+	font-size: 1.15em;
+	padding: 1.5em;
+	max-width: 280px;
+	backface-visibility: hidden;
+	color: $white;
+	box-shadow: $shadow-7;
+	.ns-close {
+		&::before {
+			background: $light-gray;
+		}
+		&::after {
+			background: $light-gray;
+		}
+		&:hover {
+			&::before {
+				background: $white;
+			}
+			&::after {
+				background: $white;
+			}
+		}
+	}
+}
+.ns-effect-flip.ns-show {
+	-webkit-animation-name: animFlipFront;
+	animation-name: animFlipFront;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+}
+.ns-effect-flip.ns-hide {
+	-webkit-animation-name: animFlipFront;
+	animation-name: animFlipFront;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-name: animFlipBack;
+	animation-name: animFlipBack;
+}
+.ns-effect-bouncyflip {
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+	background: $color_57;
+	color: $white;
+	top: 0;
+	box-shadow: $shadow-7;
+	.icon {
+		position: $pos-abs;
+		display: block;
+		top: 2em;
+		left: 2em;
+	}
+	p {
+		padding: 0.5em 0.8em 0.8em 3.5em;
+		a {
+			color: $color_38;
+		}
+	}
+	.ns-close {
+		&::after {
+			background: $light-gray;
+		}
+		&::before {
+			background: $light-gray;
+		}
+		&:hover {
+			&::after {
+				background: $white;
+			}
+			&::before {
+				background: $white;
+			}
+		}
+	}
+}
+.ns-effect-bouncyflip.ns-show {
+	-webkit-animation-name: flipInX;
+	animation-name: flipInX;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	z-index: 1350;
+}
+.ns-effect-bouncyflip.ns-hide {
+	-webkit-animation-name: flipInX;
+	animation-name: flipInX;
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	z-index: 1350;
+	-webkit-animation-name: flipInXSimple;
+	animation-name: flipInXSimple;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+}
+/*      C U S T O M      G L O B A L    C S S       */
+.ns-box-inner {
+	i {
+		font-size: $fs-30;
+	}
+}
+@media screen and (max-width: 25em) {
+	.ns-attached {
+		left: 30px;
+		max-width: none;
+		right: 30px;
+	}
+}

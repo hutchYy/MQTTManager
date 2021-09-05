@@ -1,0 +1,84 @@
+/*  
+    Page Views
+*/
+.page-views {
+	.nav-pills {
+		border-bottom: 1px solid $light-gray;
+		.nav-link {
+			color: $additional-color-6;
+			font-size: 17px !important;
+		}
+		.nav-link.active {
+			background-color: $color_none;
+			color: $color_76;
+		}
+		.show {
+			>.nav-link {
+				background-color: $color_none;
+				color: $color_76;
+			}
+		}
+	}
+	.tab-content {
+		padding: 17px;
+		.tab-pane {
+			#daily {
+				margin: 35px auto 35px auto;
+				width: 110px;
+				height: 110px;
+				position: relative;
+			}
+			#weekly {
+				margin: 35px auto 35px auto;
+				width: 110px;
+				height: 110px;
+				position: relative;
+			}
+			#month {
+				margin: 35px auto 35px auto;
+				width: 110px;
+				height: 110px;
+				position: relative;
+			}
+			.daily {
+				margin: 34px auto 34px auto;
+				.d-count {
+					font-size: 52px;
+					font-weight: normal;
+					color: $color_76;
+				}
+				p {
+					text-transform: $transform-upper;
+					color: $additional-color-6;
+					font-size: 14px;
+				}
+			}
+			.weekly {
+				margin: 34px auto 34px auto;
+				.w-count {
+					font-size: 46px;
+					font-weight: 100;
+					color: $additional-color-11;
+				}
+				p {
+					text-transform: $transform-upper;
+					font-weight: 600;
+					color: $additional-color-6;
+				}
+			}
+			.month {
+				margin: 34px auto 34px auto;
+				.m-count {
+					font-size: 46px;
+					font-weight: 100;
+					color: $additional-color-11;
+				}
+				p {
+					text-transform: $transform-upper;
+					font-weight: 600;
+					color: $additional-color-6;
+				}
+			}
+		}
+	}
+}

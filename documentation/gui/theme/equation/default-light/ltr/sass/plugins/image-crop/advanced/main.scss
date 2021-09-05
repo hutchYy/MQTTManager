@@ -1,0 +1,338 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../../assets/base/color_variables';    // Color Variables
+@import '../../../assets/base/fonticons';              // Fonticons Variables
+@import '../../../assets/base/urls';                   // URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+/* Basic */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.dropdown-menu {
+    border: $b-width-1 $solid $light-gray;
+    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+    color: $color_53;
+}
+.form-control {
+    color: $color_57;
+    border: $b-width-1 $solid $light-gray;
+    border-radius: 2px;
+    &:focus {
+        color: $additional-color-11;
+        border-color: $light-gray;
+        border-radius: 2px;
+    }
+}
+.input-group-addon {
+    background-color: $white;
+    color: $additional-color-11;
+    border-radius: 0;
+    font-size: 13px;
+    padding: 6px 10px;
+}
+.browserupgrade {
+    margin: 0;
+    padding: .5rem 1rem;
+    background-color: $color_569;
+    text-align: center;
+}
+.btn {
+    padding: 6px .75rem;
+    font-size: 1rem;
+    text-transform: $transform-capital;
+    -webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,.16),0 0px 0px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 0px 0px 0 rgba(0,0,0,.16),0 0px 0px 0 rgba(0,0,0,.12);
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,.16),0 0px 0px 0 rgba(0,0,0,.12);
+}
+label.btn {
+    margin-bottom: 0;
+}
+.d-flex {
+    >.btn {
+        flex-grow: 1;
+    }
+}
+blockquote {
+    small {
+        display: inline-block;
+    }
+}
+/* Jumbotron */
+.docs-jumbotron {
+    background-color: $color_570;
+    border-radius: $br-0;
+    color: $white;
+    .version {
+        font-size: .875rem;
+        color: $white;
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+}
+.docs-carbonads-container {
+    position: $pos-rel;
+}
+.docs-carbonads {
+    font-size: .875rem;
+    max-width: 360px;
+    padding: 1rem;
+    border: $b-width-1 $solid $color_103;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+.carbon-wrap {
+    overflow: hidden;
+}
+.carbon-img {
+    clear: left;
+    float: left;
+    display: block;
+}
+.carbon-text {
+    display: block;
+    margin-left: 140px;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+    &:focus {
+        color: $white;
+        text-decoration: none;
+    }
+}
+.carbon-poweredby {
+    display: block;
+    margin-left: 140px;
+    color:$color_118;
+    text-decoration: none;
+    &:hover {
+        color:$color_118;
+        text-decoration: none;
+    }
+    &:focus {
+        color:$color_118;
+        text-decoration: none;
+    }
+}
+/* Content */
+.img-container {
+    background-color: $color_128;
+    width: 100%;
+    text-align: center;
+    min-height: 200px;
+    max-height: 469px;
+    margin-bottom: 1rem;
+    >img {
+        max-width: 100%;
+    }
+}
+.img-preview {
+    background-color: $color_128;
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    overflow: hidden;
+    >img {
+        max-width: 100%;
+    }
+}
+.docs-preview {
+    margin-right: -1rem;
+}
+.preview-lg {
+    width: 16rem;
+    height: 9rem;
+}
+.preview-md {
+    width: 8rem;
+    height: 4.5rem;
+}
+.preview-sm {
+    width: 4rem;
+    height: 2.25rem;
+}
+.preview-xs {
+    width: 2rem;
+    height: 1.125rem;
+    margin-right: 0;
+}
+.docs-data {
+    >.input-group {
+        margin-bottom: .5rem;
+        >label {
+            min-width: 5rem;
+        }
+        >span {
+            min-width: 3rem;
+        }
+    }
+}
+.docs-buttons {
+    >.btn {
+        margin-right: .25rem;
+        margin-bottom: .5rem;
+    }
+    >.btn-group {
+        margin-right: .25rem;
+        margin-bottom: .5rem;
+    }
+    >.form-control {
+        margin-right: .25rem;
+        margin-bottom: .5rem;
+    }
+}
+.docs-toggles {
+    >.btn {
+        margin-bottom: .5rem;
+    }
+    >.btn-group {
+        margin-bottom: .5rem;
+    }
+    >.dropdown {
+        margin-bottom: .5rem;
+    }
+}
+.btn-group {
+    >.btn {
+        padding: 8px 8px;
+    }
+    .btn {
+        padding: 8px 8px;
+    }
+}
+.docs-tooltip {
+    display: block;
+    >.icon {
+        margin: 0 -.25rem;
+        vertical-align: top;
+    }
+}
+.tooltip-inner {
+    white-space: normal;
+}
+.btn-upload {
+    .tooltip-inner {
+        white-space: nowrap;
+    }
+}
+.btn-toggle {
+    .tooltip-inner {
+        white-space: nowrap;
+    }
+    padding: .5rem;
+    >.docs-tooltip {
+        margin: -.5rem;
+        padding: .5rem;
+    }
+}
+.docs-options {
+    .dropdown-menu {
+        width: 100%;
+        >li {
+            font-size: .875rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            &:hover {
+                background-color: $color_128;
+            }
+            >label {
+                display: block;
+            }
+        }
+    }
+}
+.docs-cropped {
+    .modal-body {
+        text-align: center;
+        >img {
+            max-width: 100%;
+        }
+        >canvas {
+            max-width: 100%;
+        }
+    }
+}
+
+/* Footer */
+.docs-footer {
+    font-size: .875rem;
+    overflow: hidden;
+    .nav {
+        margin-bottom: 1rem;
+    }
+}
+.heart {
+    position: $pos-rel;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color:$color_118;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    &:hover {
+        color: $color_568;
+    }
+    &:before {
+        position: $pos-abs;
+        top: 50%;
+        right: 0;
+        left: 0;
+        display: block;
+        height: 0;
+        border-top: $b-width-1 $solid #eee;
+        content: " ";
+    }
+    &:after {
+        position: $pos-rel;
+        z-index: 1;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        background-color: $white;
+        content: "♥";
+    }
+}
+@media (min-width: 992px) {
+    .docs-jumbotron {
+        h1 {
+            margin-right: 380px;
+        }
+        p {
+            margin-right: 380px;
+        }
+    }
+    .docs-carbonads {
+        position: $pos-abs;
+        right: 0;
+        bottom: -1.25rem;
+    }
+}
+@media (min-width: 768px) {
+    .img-container {
+        min-height: 469px;
+    }
+}
+@media (max-width: 400px) {
+    .btn-group-crop {
+        >.btn {
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+        .docs-tooltip {
+            margin-left: -.5rem;
+            margin-right: -.5rem;
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+    }
+}

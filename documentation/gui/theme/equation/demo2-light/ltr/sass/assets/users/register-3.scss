@@ -1,0 +1,103 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+	background-image: $additional-gradient-color-41;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+}
+.form-login {
+	width: 410px;
+	max-width: 410px;
+	padding: 50px;
+	margin: 0 auto;
+	background-color: $white;
+	border-radius: 6px;
+	box-shadow: 0 10px 60px 0 rgba(29,29,31,.09);
+	width: 100%;
+	margin: auto;
+	.form-control {
+		&::-webkit-input-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-ms-input-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-moz-placeholder {
+			color: $white;
+			font-size: 14px;
+			opacity: 0;
+		}
+		position: $pos-rel;
+		box-sizing: border-box;
+		height: auto;
+		color: $dark;
+		padding: 3px;
+		font-size: 16px;
+		border: none;
+		background: $color_none;
+		border-bottom: $b-width-1 $solid $light-gray;
+	}
+	label {
+		color: $additional-color-11;
+		font-size: 13px;
+	}
+	.division {
+		float: none;
+		margin: 0 auto 18px;
+		overflow: hidden;
+		position: $pos-rel;
+		text-align: center;
+		width: 100%;
+		color: $dark;
+		.line {
+			border-top: $b-width-1 $solid $light-gray;
+			position: $pos-abs;
+			top: 10px;
+			width: 34%;
+		}
+		.line.line-left {
+			left: 0;
+		}
+		.line.line-right {
+			right: 0;
+		}
+	}
+	.terms-conditions-chkbox {
+		.custom-control {
+			label {
+				color: $color_47;
+				p {
+					margin-top: 3px;
+				}
+				a {
+					color: $additional-color-5;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}

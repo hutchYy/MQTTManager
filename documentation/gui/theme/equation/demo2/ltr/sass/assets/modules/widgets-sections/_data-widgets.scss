@@ -1,0 +1,58 @@
+/*  
+    Data Widgets
+*/
+.data-widgets {
+	height: 100%;
+	.widget {
+		.media {
+			.icon {
+				flex: 1;
+				font-size: 0;
+				i {
+					padding: 10px;
+					font-size: 28px;
+					border-radius: 50%;
+				}
+			}
+			.media-body {
+				.widget-text {
+					font-size: 20px;
+					font-weight: 600;
+					color: $color_82;
+					word-wrap: break-word;
+				}
+				.widget-numeric-value {
+					font-size: 22px;
+					color: $color_82;
+				}
+			}
+		}
+		.widget-total-stats {
+			font-size: 16px;
+		}
+	}
+	.widget.t-sales-widget {
+		i {
+			background-color: $light-secondary;
+			color: $secondary;
+		}
+	}
+	.widget.t-order-widget {
+		i {
+			background-color: $additional-color-17;
+			color: $additional-color-3;
+		}
+	}
+	.widget.t-customer-widget {
+		i {
+			background-color: $light-success;
+			color: $success;
+		}
+	}
+	.widget.t-income-widget {
+		i {
+			background-color: $light-warning;
+			color: $warning;
+		}
+	}
+}

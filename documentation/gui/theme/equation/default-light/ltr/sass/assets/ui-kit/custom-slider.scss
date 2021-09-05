@@ -1,0 +1,21 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+h5 {
+	color: $additional-color-5;
+	font-size: 0.875rem;
+}
+.example-val {
+	font: 400 12px Arial;
+	color: $color_75;
+	&:before {
+		content: "Value: ";
+		font: 700 12px Arial;
+	}
+}

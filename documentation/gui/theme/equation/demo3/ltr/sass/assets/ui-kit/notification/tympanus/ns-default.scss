@@ -1,0 +1,91 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../base/color_variables';   	// Color Variables
+@import '../../../base/fonticons';   			// Fonticons Variables
+@import '../../../base/urls';   				// URLS Variables
+@import '../../../base/utilities_variables';  // Utilities Variables
+
+
+/* Common, default styles for the notification box */
+.ns-box {
+	position: $pos-fix;
+	background: $additional-color-8;
+	padding: 22px;
+	line-height: 1.4;
+	z-index: 1000;
+	pointer-events: none;
+	color: $color_434;
+	font-size: 90%;
+	font-family: $font_family_2;
+	a {
+		color: inherit;
+		font-weight: 700;
+		color: $dark;
+		&:hover {
+			color: $white;
+		}
+		&:focus {
+			color: $white;
+		}
+	}
+	p {
+		margin: $m-0;
+	}
+}
+.ns-box.ns-show {
+	pointer-events: auto;
+	z-index: 1031;
+}
+.ns-box.ns-visible {
+	pointer-events: auto;
+	z-index: 1031;
+}
+.ns-close {
+	width: 20px;
+	height: 20px;
+	position: $pos-abs;
+	right: 4px;
+	top: 4px;
+	overflow: hidden;
+	text-indent: 100%;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	&:hover {
+		outline: none;
+		&::before {
+			background: $white;
+		}
+		&::after {
+			background: $white;
+		}
+	}
+	&:focus {
+		outline: none;
+	}
+	&::before {
+		content: '';
+		position: $pos-abs;
+		width: 3px;
+		height: 60%;
+		top: 50%;
+		left: 50%;
+		background: $color_435;
+		-webkit-transform: translate(-50%,-50%) $rotate-45deg;
+		transform: translate(-50%,-50%) $rotate-45deg;
+	}
+	&::after {
+		content: '';
+		position: $pos-abs;
+		width: 3px;
+		height: 60%;
+		top: 50%;
+		left: 50%;
+		background: $color_435;
+		-webkit-transform: translate(-50%,-50%) rotate(-45deg);
+		transform: translate(-50%,-50%) rotate(-45deg);
+	}
+}

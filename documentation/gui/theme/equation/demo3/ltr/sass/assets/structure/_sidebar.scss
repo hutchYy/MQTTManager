@@ -1,0 +1,308 @@
+/*
+    ====================
+        Modern
+    ====================
+*/
+
+.main-container.hide-sub {
+	.modernSidebar-nav.header {
+		nav#modernSidebar {
+			ul.menu-categories {
+				li.menu {
+					>.submenu {
+						width: 0;
+						left: -90px;
+					}
+				}
+			}
+		}
+	}
+}
+.modernSidebar-nav.header {
+	position: fixed;
+	background-color: $color_28;
+	padding: 0;
+	top: 91px;
+	width: 125px;
+	z-index: 1030;
+	left: 0;
+	box-shadow: 1px 1px 20px -2px rgba(22,30,42,0.16);
+	transition: all .24s ease-in-out;
+	>div {
+		height: 100vh;
+	}
+	.collapsing {
+		-webkit-transition: none;
+		transition: none;
+		display: none;
+	}
+	nav#modernSidebar {
+		text-align: center;
+		width: 125px;
+		height: 100vh;
+		ul.menu-categories {
+			li.menu {
+				position: relative;
+				list-style: none;
+				>a {
+					height: 110px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 13px;
+					font-style: normal;
+					font-weight: 400;
+					border-bottom: 1px solid #f1f3f1;
+					color: $color_78;
+					transition: color .3s;
+					transition: background .3s;
+					i {
+						display: block;
+						font-size: 25px;
+						color: $color_35;
+						display: inline-block;
+					}
+					span {
+						display: block;
+						font-size: 13px;
+						color: $color_35;
+						margin-top: 10px;
+					}
+				}
+				>a[aria-expanded="true"] {
+					div {
+						i {
+							position: relative;
+							&:after {
+								position: absolute;
+								content: '';
+								height: 12px;
+								width: 12px;
+								background-color: $color_60;
+								border-radius: 50%;
+								top: -3px;
+								right: -3px;
+								z-index: 1;
+								border: 2px solid #e9ecef;
+							}
+						}
+					}
+				}
+				a {
+					&:after {
+						display: none;
+					}
+				}
+				.submenu {
+					position: fixed;
+					top: 91px;
+					background-color: $color_28;
+					color: $color_35;
+					text-align: left;
+					box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+					margin-right: auto;
+					margin-left: auto;
+					left: 125px;
+					width: 255px;
+					height: 100vh;
+					.submenu-scroll {
+						height: 100vh;
+						padding: 0;
+					}
+					.sub-submenu {
+						>li {
+							>a {
+								padding: 14px 14px 14px 14px;
+								display: block;
+								color: $color_35;
+								font-weight: 600;
+							}
+						}
+						>li.active {
+							>a {
+								color: $color_10;
+							}
+						}
+					}
+					.list-unstyled {
+						>li {
+							&:first-child {
+								>a {
+									padding-top: 0;
+									margin-top: 28px;
+								}
+							}
+							>a {
+								padding: 10px 14px 0 14px;
+								display: block;
+								color: $color_35;
+								font-weight: 600;
+								display: flex;
+								justify-content: space-between;
+								font-size: 13px;
+								font-weight: 100;
+								>div {
+									>i {
+										font-size: 18px;
+										margin-right: 8px;
+										vertical-align: middle;
+										padding: 9px;
+										border-radius: 50%;
+									}
+								}
+							}
+							>a.dropdown-toggle {
+								margin-bottom: 28px;
+								span {
+									display: inline-block;
+									line-height: 1.4;
+									border-radius: 30px;
+									padding: 3px 6px;
+									color: $color_8;
+									background-color: $color_21;
+									border: 1px solid #4f5163;
+									font-size: 11px;
+									font-weight: 700;
+								}
+							}
+							>.sub-submenu {
+								a {
+									padding: 20px 14px 0px 22px;
+									margin-top: 0;
+									color: $color_33;
+									font-size: 13px;
+									i {
+										font-size: 9px;
+										font-weight: 600;
+										align-self: center;
+									}
+								}
+								li {
+									&:first-child {
+										a {
+											padding-top: 0;
+										}
+									}
+									&:last-child {
+										a {
+											padding-bottom: 40px;
+										}
+										a[aria-expanded="false"] {
+											padding-bottom: 40px;
+										}
+										a[aria-expanded="true"] {
+											padding-bottom: 0;
+										}
+									}
+								}
+								li.active {
+									a {
+										color: $color_10;
+									}
+								}
+								a[aria-expanded="true"] {
+									i {
+										transform: rotate(90deg);
+									}
+								}
+								li.sub-sub-submenu-list {
+									ul.sub-submenu {
+										li {
+											a {
+												position: relative;
+												padding: 20px 14px 0px 24px;
+												margin-left: 10px;
+												margin-top: 0;
+												color: $color_8;
+												font-size: 12px;
+												&:before {
+													content: '';
+													background-color: $color_8;
+													position: absolute;
+													top: 27px;
+													left: 13px;
+													border-radius: 50%;
+													padding: 2px;
+												}
+											}
+										}
+										li.active {
+											a {
+												color: $color_10;
+												&:before {
+													background-color: $color_10;
+												}
+											}
+										}
+									}
+									a.dropdown-toggle {
+										margin-bottom: 0;
+									}
+								}
+							}
+						}
+						&:last-child {
+							>li {
+								>.sub-submenu {
+									li.sub-sub-submenu-list {
+										&:last-child {
+											ul.sub-submenu {
+												li {
+													&:last-child {
+														a {
+															padding-bottom: 40px;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.sidebar-closed {
+	>.modernSidebar-nav {
+		left: -135px;
+	}
+	>#content {
+		margin-left: 0;
+	}
+}
+
+
+@-webkit-keyframes "eq-fadeInUp" {
+	0% {
+		opacity: 0;
+		margin-top: 10px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+@keyframes "eq-fadeInUp" {
+	0% {
+		opacity: 0;
+		margin-top: 10px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+.eq-animated {
+	-webkit-animation-duration: 0.6s;
+	animation-duration: 0.6s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.eq-fadeInUp {
+	-webkit-animation-name: eq-fadeInUp;
+	animation-name: eq-fadeInUp;
+}

@@ -1,0 +1,94 @@
+/*  Most Active Shares      */
+.most-active-shares {
+	.most-active-shares-title {
+		h6 {
+			color: $color_76;
+			font-size: 16px;
+			font-weight: 600;
+			padding: 20px;
+			border-bottom: $b-width-1 $solid $light-gray;
+		}
+	}
+	.most-active-shares-body {
+		table {
+			thead {
+				tr {
+					th {
+						border-top: none;
+						color: $color_76;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						border-top: $b-width-1 $solid $color_6;
+						font-weight: 600;
+						color: $color_2;
+						vertical-align: middle;
+						span.badge.badge-primary {
+							padding: 5px 15px;
+							font-weight: 600;
+							background-color: $light-primary;
+							color: $color_57;
+							box-shadow: none;
+						}
+						p.m-a-s-company-name {
+							color: $color_57;
+							font-weight: normal;
+							font-size: 14px;
+							font-weight: 600;
+						}
+						i.flaticon-down-arrow-3 {
+							color: $danger;
+						}
+						i.flaticon-up-arrow-3 {
+							color: $color_55;
+						}
+					}
+				}
+			}
+		}
+	}
+	.table-responsive {
+		&::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+		&::-webkit-scrollbar-button {
+			&:start {
+				&:decrement {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+			&:end {
+				&:increment {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+		}
+		&::-webkit-scrollbar-track-piece {
+			background-color: $white;
+			-webkit-border-radius: 6px;
+		}
+		&::-webkit-scrollbar-thumb {
+			&:vertical {
+				height: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 6px;
+			}
+			&:horizontal {
+				width: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 3px;
+			}
+		}
+	}
+}
+

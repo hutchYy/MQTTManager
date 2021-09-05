@@ -1,0 +1,666 @@
+.ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+ul.pagination {
+	li {
+		display: inline;
+		a {
+			float: left;
+			padding: 5px 12px;
+			text-decoration: none;
+			border: 0px solid #ddd;
+			font-size: 15px;
+			margin-left: 0px;
+			transition: all .3s linear;
+			-webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .16), 0 0px 0px 0 rgba(0, 0, 0, .12);
+			-moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .16), 0 0px 0px 0 rgba(0, 0, 0, .12);
+			box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .16), 0 0px 0px 0 rgba(0, 0, 0, .12);
+			&:hover {
+				&:not(.active) {
+					background-color: $primary;
+					color: $white;
+				}
+			}
+		}
+		a.page-link {
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		a.active {
+			background-color: $primary;
+			color: $white;
+			border-color: $primary;
+		}
+	}
+	>.disabled {
+		>a {
+			cursor: not-allowed;
+			color: $additional-color-6;
+		}
+	}
+}
+.pagination {
+	>.disabled {
+		>a.page-link {
+			color: $color_48;
+			cursor: not-allowed;
+			background-color: $color_54;
+			border-color: $color_6;
+			&:focus {
+				color: $color_48;
+				cursor: not-allowed;
+				background-color: $color_54;
+				border-color: $color_6;
+			}
+			&:hover {
+				color: $color_48;
+				cursor: not-allowed;
+				background-color: $color_54;
+				border-color: $color_6;
+			}
+		}
+		>span {
+			color: $color_48;
+			cursor: not-allowed;
+			background-color: $color_54;
+			border-color: $color_6;
+			&:focus {
+				color: $color_48;
+				cursor: not-allowed;
+				background-color: $color_54;
+				border-color: $color_6;
+			}
+			&:hover {
+				color: $color_48;
+				cursor: not-allowed;
+				background-color: $color_54;
+				border-color: $color_6;
+			}
+		}
+		>a {
+			&:hover {
+				cursor: not-allowed;
+				color: $additional-color-6;
+			}
+		}
+	}
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	margin: 1.25rem 0;
+	>li {
+		&:first-child {
+			>a {
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+			}
+			>span {
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+			}
+		}
+		&:last-child {
+			>a {
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+			}
+			>span {
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+			}
+		}
+	}
+	>.active {
+		>a {
+			background-color: $additional-color-11;
+			border-color: $additional-color-11;
+			color: $white;
+			&:hover {
+				background-color: $additional-color-11;
+				border-color: $additional-color-11;
+				color: $white;
+			}
+			&:focus {
+				background-color: $additional-color-11;
+				border-color: $additional-color-11;
+				color: $white;
+			}
+		}
+		>span {
+			background-color: $additional-color-11;
+			border-color: $additional-color-11;
+			color: $white;
+			&:hover {
+				background-color: $additional-color-11;
+				border-color: $additional-color-11;
+				color: $white;
+			}
+			&:focus {
+				background-color: $additional-color-11;
+				border-color: $additional-color-11;
+				color: $white;
+			}
+		}
+	}
+}
+ul.pagination-sm {
+	>li {
+		>a {
+			padding: 4px 10px;
+			font-size: 12px;
+		}
+	}
+}
+ul.pagination-lg {
+	>li {
+		>a {
+			padding: 7px 15px;
+			font-size: 20px;
+		}
+	}
+}
+.pagination.pagination-bordered {
+	>li {
+		>a {
+			color: $primary;
+		}
+		>span {
+			color: $primary;
+		}
+	}
+	li {
+		a {
+			border: 1px solid #e6e6e6;
+		}
+	}
+}
+.pagination.pagination-rounded {
+	li {
+		a {
+			&:hover {
+				border-radius: 22px;
+			}
+		}
+		a.active {
+			border-radius: 22px;
+		}
+	}
+}
+.pagination.pagination-semi-rounded {
+	li {
+		a {
+			border-radius: 6px;
+		}
+	}
+}
+
+
+/*  Pagination Style 1  */
+ul.pagination.pagination-style-1 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_47;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_47;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_47;
+			color: $white;
+			border-color: $color_47;
+		}
+	}
+}
+
+/*  Pagination Style 2  */
+ul.pagination.pagination-style-2 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_55;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_55;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_55;
+			color: $white;
+			border-color: $color_55;
+		}
+	}
+}
+
+/*  Pagination Style 3     */
+ul.pagination.pagination-style-3 {
+	li {
+		a {
+			background-color: $white;
+			color: $additional-color-3;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-3;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-3;
+			color: $white;
+			border-color: $additional-color-3;
+		}
+	}
+}
+
+/*  Pagination Style 4  */
+ul.pagination.pagination-style-4 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_56;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_56;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_56;
+			color: $white;
+			border-color: $color_56;
+		}
+	}
+}
+
+/*  Pagination Style 5  */
+ul.pagination.pagination-style-5 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_57;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_57;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_57;
+			color: $white;
+			border-color: $color_57;
+		}
+	}
+}
+
+/*  Pagination Style 6  */
+ul.pagination.pagination-style-6 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_58;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_58;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_58;
+			color: $white;
+			border-color: $color_58;
+		}
+	}
+}
+
+/*  Pagination Style 7  */
+ul.pagination.pagination-style-7 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_59;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_59;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_59;
+			color: $white;
+			border-color: $color_59;
+		}
+	}
+}
+
+/*  Pagination Style 8  */
+ul.pagination.pagination-style-8 {
+	li {
+		a {
+			background-color: $white;
+			color: $warning;
+			&:hover {
+				&:not(.active) {
+					background-color: $warning;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $warning;
+			color: $white;
+			border-color: $warning;
+		}
+	}
+}
+
+/*  Pagination Style 9  */
+ul.pagination.pagination-style-9 {
+	li {
+		a {
+			background-color: $white;
+			color: $success;
+			&:hover {
+				&:not(.active) {
+					background-color: $success;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $success;
+			color: $white;
+			border-color: $success;
+		}
+	}
+}
+
+/*  Pagination Style 10  */
+ul.pagination.pagination-style-10 {
+	li {
+		a {
+			background-color: $white;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-6;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-6;
+			color: $white;
+			border-color: $additional-color-6;
+		}
+	}
+}
+
+/*  Pagination Style 11     */
+ul.pagination.pagination-style-11 {
+	li {
+		a {
+			background-color: $white;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-6;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-6;
+			color: $white;
+			border-color: $additional-color-6;
+		}
+	}
+}
+
+/*  Pagination Style 12     */
+ul.pagination.pagination-style-12 {
+	li {
+		a {
+			background-color: $white;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-6;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-6;
+			color: $white;
+			border-color: $additional-color-6;
+		}
+	}
+}
+
+/*  Pagination Style 13     */
+ul.pagination.pagination-style-13 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_56;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_56;
+					color: $white;
+					border-color: $color_56;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_56;
+			color: $white;
+			border-color: $color_56;
+		}
+	}
+}
+
+/*  Pagination Style 14     */
+ul.pagination.pagination-style-14 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_60;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_60;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_60;
+			color: $white;
+			border-color: $color_60;
+		}
+	}
+}
+
+/*  Pagination Style 15     */
+ul.pagination.pagination-style-15 {
+	li {
+		a {
+			background-color: $white;
+			color: $additional-color-8;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-8;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-8;
+			color: $white;
+			border-color: $additional-color-8;
+		}
+	}
+}
+
+/*  Pagination Style 16     */
+ul.pagination.pagination-style-16 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_61;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_61;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_61;
+			color: $white;
+			border-color: $color_61;
+		}
+	}
+}
+
+/*  Pagination Style 17     */
+ul.pagination.pagination-style-17 {
+	li {
+		a {
+			background-color: $white;
+			color: $info;
+			&:hover {
+				&:not(.active) {
+					background-color: $info;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $info;
+			color: $white;
+			border-color: $info;
+		}
+	}
+}
+
+/*  Pagination Style 18     */
+ul.pagination.pagination-style-18 {
+	li {
+		a {
+			background-color: $white;
+			color: $additional-color-13;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-13;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-13;
+			color: $white;
+			border-color: $additional-color-13;
+		}
+	}
+}
+
+/*  Pagination Style 19     */
+ul.pagination.pagination-style-19 {
+	li {
+		a {
+			background-color: $white;
+			color: $additional-color-2;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-2;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-2;
+			color: $white;
+			border-color: $additional-color-2;
+		}
+	}
+}
+
+/*  Pagination Style 20     */
+ul.pagination.pagination-style-20 {
+	li {
+		a {
+			background-color: $white;
+			color: $additional-color-2;
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-2;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $additional-color-2;
+			color: $white;
+			border-color: $additional-color-2;
+		}
+	}
+}
+
+/*  Pagination Style 21     */
+ul.pagination.pagination-style-21 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_16;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_16;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_16;
+			color: $white;
+			border-color: $color_16;
+		}
+	}
+}
+
+/*  Pagination Style 22     */
+ul.pagination.pagination-style-22 {
+	li {
+		a {
+			background-color: $white;
+			color: $color_16;
+			&:hover {
+				&:not(.active) {
+					background-color: $color_16;
+					color: $white;
+				}
+			}
+		}
+		a.active {
+			background-color: $color_16;
+			color: $white;
+			border-color: $color_16;
+		}
+	}
+}

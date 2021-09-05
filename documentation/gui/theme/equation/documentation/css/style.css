@@ -1,0 +1,160 @@
+h6 {
+    color: #1a73e9;
+    font-weight: 600;
+}
+p {
+    color: #3b3f5c;
+}
+.widget-content-area {
+    padding: 60px 40px;
+}
+.header:not(.tabMobileView) a {
+    line-height: 2.75rem;
+    padding: 0.42rem 0.6rem;
+    text-transform: initial;
+    position: unset;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar {
+    border-bottom: 0.01rem solid #e6e6e6;
+}
+
+#sidebar ul.menu-categories li.menu a {
+    cursor: pointer;
+    font-size: 15.32px;
+    color: #beb3b6;
+    padding: 30px 5px 30px 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 12px 15px 48px;
+    font-weight: 200;
+}
+
+.html-preview {
+    line-height: 1!important;
+    font-weight: normal!important;
+    font-size: 15px!important;
+}
+
+
+.footer-section .links a {
+    color: #6424c9;
+    font-weight: 600;
+}
+
+
+/*  Tree View   */
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+  color: #1f212d;
+    font-weight: 600;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  font-size: 13px;
+  color: #020333;
+  text-transform: capitalize;
+}
+.caret::before {
+    content: "\e9b9";
+    color: #1abc9c;
+    display: inline-block;
+    margin-right: 6px;
+    font-family: flaticon;
+    font-size: 20px;
+    vertical-align: sub;
+}
+.nested {
+    display: none;
+    padding-left: 28px;
+}
+.nested li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #5c1ac3;
+  font-size: 13px;
+}
+
+.active {
+  display: block;
+}
+@media all and (-ms-high-contrast:none)
+ {
+ *::-ms-backdrop, .sidebar-wrapper.ie-fix {
+    width: 255px;
+    height: 100vh;
+  } /* IE11 */
+
+
+ }
+
+
+/*
+    =========================
+        Admin Structure
+    =========================
+*/
+
+.code-snippet {
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.code-snippet pre {
+  background-color: #020333;
+  background-color: #1f212d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+.code-snippet pre:hover {
+  box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2)
+}
+
+
+
+.code-snippet pre code {
+  display: block;
+}
+
+
+
+/*
+    ===================
+        Changelog
+    ==================
+*/
+
+.changelogs {
+
+}
+.changelogs .log-version {
+  font-weight: 600;
+}
+.changelogs .log-relese-date {
+    font-weight: 600;
+}
+
+.changelogs .log {
+
+}
+.changelogs .log .log-change .badge {
+    padding: 2px 7px;
+    font-size: 11px;
+}
+.changelogs .log .log-change .change {
+  font-weight: 600;
+}

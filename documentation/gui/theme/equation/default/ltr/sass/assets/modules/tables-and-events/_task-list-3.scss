@@ -1,0 +1,131 @@
+/*
+    Task
+*/
+.todo-list {
+    .todo-list-header {
+        padding: 20px;
+        border-bottom: 1px solid $light-gray;
+        h6 {
+            font-weight: 600;
+            color: $additional-color-11;
+            font-size: 20px;
+        }
+        .time.time-style {
+            font-size: 15px;
+            font-weight: 600;
+            color: $dark;
+            padding: 2px 11px;
+            background-color: $color_3;
+            border-radius: 30px;
+        }
+        .time {
+            #hour {
+                color: $light-default;
+            }
+            #minut {
+                color: $light-default;
+            }
+            #date {
+                color: $white;
+                font-weight: 700;
+            }
+        }
+    }
+    .todo-list-body {
+        table.table {
+            thead {
+                tr {
+                    th {
+                        border: none;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        border: none;
+                        vertical-align: middle;
+                        padding: 20px 20px 0;
+                        .media {
+                            .media-body {
+                                flex: none;
+                            }
+                        }
+                        label.new-control {
+                            span.new-control-indicator {
+                                background-color: $color_none;
+                                border: 1px solid $light-gray;
+                            }
+                            .todo-item {
+                                position: relative;
+                                .media {
+                                    .usr-img {
+                                        border-radius: 8px;
+                                        width: 40px;
+                                        img {
+                                            padding: 4px 5px;
+                                        }
+                                    }
+                                    .usr-img.bg-success {
+                                        background-color: $additional-color-7 !important;
+                                    }
+                                    .usr-img.bg-primary {
+                                        background-color: $color_57 !important;
+                                    }
+                                }
+                            }
+                            .d-m-todo-item {
+                                background-color: $color_90;
+                                border: 3px solid $light-gray;
+                                height: 12px;
+                                width: 12px;
+                            }
+                        }
+                        label.new-control.new-checkbox.checkbox-success {
+                            >input {
+                                &:checked~span.new-control-indicator {
+                                    background: $color_59;
+                                    border: none;
+                                }
+                            }
+                        }
+                        .todo-text {
+                            color: $color_76;
+                            font-size: 16px;
+                        }
+                        .meta-time {
+                            font-size: 12px;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        }
+                        i.task-delete {
+                            font-size: 18px;
+                            color: $dark;
+                        }
+                    }
+                    &:hover {
+                        td {
+                            i.task-delete {
+                                color: $color_59;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .new-control.new-checkbox.checkbox-success {
+            >input {
+                &:checked~div.todo-item {
+                    .todo-text {
+                        text-decoration: line-through;
+                    }
+                    .meta-time {
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+}

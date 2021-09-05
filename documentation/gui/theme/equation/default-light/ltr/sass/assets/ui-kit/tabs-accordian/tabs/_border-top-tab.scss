@@ -1,0 +1,52 @@
+/*
+    Border Top Tab
+*/
+.border-top-tab {
+	.nav-tabs {
+		border-bottom: $b-width-1 $solid $color_none;
+		li {
+			a {
+				border-radius: 0px;
+				padding: 12px 30px;
+				background: $color_145;
+				color: $color_143;
+				border-right: $b-width-1 $solid $color_none;
+			}
+		}
+		.nav-item.show {
+			.nav-link {
+				color: $color_144;
+				border-radius: 0px;
+				padding: 12px 30px;
+				background: $color_145;
+				color: $color_130;
+				border: $b-width-1 $solid $color_none;
+				border-top: $b-width-2 $solid $color_130;
+			}
+		}
+		.nav-link.active {
+			color: $color_144;
+			border-radius: 0px;
+			padding: 12px 30px;
+			background: $color_145;
+			color: $color_130;
+			border: $b-width-1 $solid $color_none;
+			border-top: $b-width-2 $solid $color_130;
+		}
+		.nav-link {
+			&:focus {
+				border: $b-width-1 $solid $color_none;
+				border-top: $b-width-2 $solid $color_130;
+			}
+			&:hover {
+				border: $b-width-1 $solid $color_none;
+				border-top: $b-width-2 $solid $color_130;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

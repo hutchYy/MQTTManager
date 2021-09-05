@@ -1,0 +1,49 @@
+/*
+    Total Reviews
+*/
+#total-reviews {
+	h6 {
+		font-weight: 600;
+		color: $additional-color-11;
+		font-size: 20px;
+	}
+	#t-r-chart {
+		position: $pos-rel;
+		width: 115px;
+		height: 115px;
+		.t-r-progress-value {
+			font-weight: 600;
+			font-size: 27px;
+		}
+	}
+	.media.positive-stats {
+		word-break: break-all;
+		img {
+			width: 40px;
+		}
+		h6 {
+			color: $color_57;
+			font-weight: normal;
+			font-size: 18px;
+		}
+		p {
+			color: $color_76;
+			font-size: 14px;
+		}
+	}
+	.media.negative-stats {
+		word-break: break-all;
+		img {
+			width: 40px;
+		}
+		h6 {
+			color: $color_56;
+			font-weight: normal;
+			font-size: 18px;
+		}
+		p {
+			color: $color_76;
+			font-size: 14px;
+		}
+	}
+}

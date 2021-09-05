@@ -1,0 +1,39 @@
+$additional-color-11: #3b3f5c;
+$color_57: #3862f5;
+$white: #fff;
+
+
+/*
+    Simple Tab
+*/
+.simple-tab {
+	.nav-tabs {
+		li {
+			a {
+				color: $additional-color-11;
+			}
+		}
+		.nav-item.show {
+			.nav-link {
+				color: $color_57;
+				font-weight: 600;
+				background-color: $white;
+				border-color: $color_142 $color_142 $color_142;
+			}
+		}
+		.nav-link.active {
+			color: $color_57;
+			font-weight: 600;
+			background-color: $white;
+			border-color: $color_142 $color_142 $color_142;
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}
+.nav-tabs {
+	border-bottom: 1px solid $color_142;
+}

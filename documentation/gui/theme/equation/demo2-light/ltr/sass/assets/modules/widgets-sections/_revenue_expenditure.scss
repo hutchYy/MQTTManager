@@ -1,0 +1,81 @@
+/*
+    Revenue
+*/
+
+.revenue-content {
+	height: 100%;
+	.revenue-header {
+		h6 {
+			font-weight: 600;
+			color: $additional-color-11;
+			font-size: 20px;
+		}
+		.nav.revenue {
+			.nav-link {
+				padding: 6px 17px;
+				font-size: 13px;
+				border-radius: 30px;
+			}
+			.nav-link.active {
+				background-image: linear-gradient(to right, #816cfd 0%, #24ccda 100%);
+			}
+			.show {
+				>.nav-link {
+					background-image: linear-gradient(to right, #816cfd 0%, #24ccda 100%);
+				}
+			}
+		}
+	}
+	.revenue-body {
+		.r-meta-date {
+			font-size: 15px;
+			font-weight: 600;
+			color: $additional-color-11;
+		}
+		.r-value {
+			font-size: 35px;
+			color: $color_82;
+			font-weight: 600;
+		}
+	}
+}
+/*
+    expanditure
+*/
+.expanditure-content {
+	height: 100%;
+	.expanditure-header {
+		h6 {
+			font-weight: 600;
+			color: $additional-color-11;
+			font-size: 20px;
+		}
+		.nav.expanditure {
+			.nav-link {
+				padding: 6px 17px;
+				font-size: 13px;
+				border-radius: 30px;
+			}
+			.nav-link.active {
+				background-image: linear-gradient(to right, #00d1c1 0%, #24ccda 100%);
+			}
+			.show {
+				>.nav-link {
+					background-image: linear-gradient(to right, #00d1c1 0%, #24ccda 100%);
+				}
+			}
+		}
+	}
+	.expanditure-body {
+		.e-meta-date {
+			font-size: 15px;
+			font-weight: 600;
+			color: $additional-color-11;
+		}
+		.e-value {
+			font-size: 35px;
+			color: $additional-color-11;
+			font-weight: 600;
+		}
+	}
+}

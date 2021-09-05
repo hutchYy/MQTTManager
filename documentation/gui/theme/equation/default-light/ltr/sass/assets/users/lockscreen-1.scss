@@ -1,0 +1,103 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding-top: $p-40;
+	padding-bottom: $p-40;
+	background-image: $additional-gradient-color-39;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.form-lockscreen {
+	.usr-img {
+		position: $pos-abs;
+		top: -75px;
+		left: 0;
+		right: 0;
+		text-align: $align-center;
+	}
+	img.usr-profile {
+		color: $black;
+		border-radius: 50%;
+		border: $b-width-6 $solid rgba(255, 255, 255, 0.08);
+	}
+	margin: auto;
+	.form-l {
+		width: 286px;
+		box-shadow: $shadow-3;
+		max-width: 286px;
+		background-color: $white;
+		padding: 35px;
+		border-radius: 10px;
+	}
+	label {
+		color: $additional-color-6;
+		text-transform: $transform-upper;
+		font-size: 13px;
+	}
+	.form-control {
+		position: $pos-rel;
+		box-sizing: border-box;
+		height: auto;
+		padding: 3px;
+		font-size: 16px;
+		border: none;
+		background: $color_none;
+		border-bottom: $b-width-1 $solid $light-gray;
+		&::-webkit-input-placeholder {
+			color: $color_57;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-ms-input-placeholder {
+			color: $color_57;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&::-moz-placeholder {
+			color: $color_57;
+			font-size: 14px;
+			opacity: 0;
+		}
+		&:focus {
+			z-index: 2;
+		}
+	}
+	.checkbox {
+		.custom-control {
+			label {
+				color: $additional-color-11;
+				text-transform: $transform-capital;
+				margin-left: -12px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+.lockscreen-text {
+	p {
+		a {
+			color: $color_220;
+			&:hover {
+				color: $color_35;
+			}
+		}
+	}
+}

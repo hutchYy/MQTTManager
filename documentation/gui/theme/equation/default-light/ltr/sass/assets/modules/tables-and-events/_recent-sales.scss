@@ -1,0 +1,100 @@
+/*
+    Recent Sales
+*/
+.recent-sales {
+	.recent-sales-header {
+		padding: 20px;
+		h6 {
+			color: $color_76;
+			font-size: 18px;
+			font-weight: 600;
+		}
+		i {
+			font-size: 30px;
+			vertical-align: $v-align-middle;
+			color: $color_41;
+			cursor: pointer;
+			&:hover {
+				color: $color_130;
+			}
+		}
+	}
+	.recent-sales-body {
+		.table {
+			thead {
+				tr {
+					th {
+						border-top: none;
+						color: $color_47;
+						vertical-align: $v-align-middle;
+						padding: 18px 20px;
+						font-size: 15px;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						border-top: $b-width-1 $solid $light-gray;
+						border-top: $b-width-1 $solid $color_6;
+						vertical-align: $v-align-middle;
+						color: $color_76;
+						font-size: 14px;
+						padding: 20px 20px;
+					}
+				}
+			}
+		}
+		.r-s-bottom-section {
+			padding: 20px;
+			border-top: $b-width-1 $solid $color_6;
+			a {
+				font-size: 17px;
+				color: $color_47;
+				&:hover {
+					color: $color_5;
+				}
+			}
+		}
+	}
+	.table-responsive {
+		&::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+		&::-webkit-scrollbar-button {
+			&:start {
+				&:decrement {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+			&:end {
+				&:increment {
+					height: 0px;
+					display: block;
+					background-color: $color_100;
+					width: 0;
+				}
+			}
+		}
+		&::-webkit-scrollbar-track-piece {
+			background-color: $white;
+			-webkit-border-radius: 6px;
+		}
+		&::-webkit-scrollbar-thumb {
+			&:vertical {
+				height: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 6px;
+			}
+			&:horizontal {
+				width: 50px;
+				background-color: $color_100;
+				-webkit-border-radius: 3px;
+			}
+		}
+	}
+}

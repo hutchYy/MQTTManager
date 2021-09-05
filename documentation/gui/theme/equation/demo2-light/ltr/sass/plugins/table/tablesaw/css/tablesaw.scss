@@ -1,0 +1,783 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../../assets/base/color_variables';   	// Color Variables
+@import '../../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../../assets/base/urls';   				// URLS Variables
+@import '../../../../assets/base/utilities_variables';  // Utilities Variables
+
+/*! Tablesaw - v3.0.1-beta.18 - 2017-04-14
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2017 Filament Group; Licensed MIT */
+
+.tablesaw {
+	width: 100%;
+	max-width: 100%;
+	empty-cells: show;
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	* {
+		box-sizing: border-box;
+	}
+	th {
+		padding: .6em .7em;
+		text-align: left;
+		vertical-align: middle;
+	}
+	td {
+		padding: .6em .7em;
+		text-align: left;
+		vertical-align: middle;
+	}
+	thead {
+		th {
+			text-align: left;
+			font-weight: normal;
+		}
+	}
+	caption {
+		text-align: left;
+		margin: .59375em 0;
+	}
+	.tablesaw-sortable-head {
+		padding: 0;
+	}
+}
+.tablesaw-btn {
+	border: 1px solid #ccc;
+	border-radius: .25em;
+	background: none;
+	box-shadow: 0 1px 0 rgba(255,255,255,1);
+	color: $color_504;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	padding: .5em .85em .4em .85em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 0;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	&:hover {
+		text-decoration: none;
+	}
+	/* Default radio/checkbox styling horizonal controlgroups. */
+	&:active {
+		background-color: $color_118;
+	}
+	select {
+		option {
+			background: #fff;
+			color: $black;
+		}
+	}
+}
+a.tablesaw-btn {
+	color: $color_505;
+}
+.tablesaw-btn-select {
+	select {
+		background: none;
+		border: none;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		min-height: 1em;
+		opacity: 0;
+		color: $color_none;
+	}
+	padding-right: 1.5em;
+	text-align: left;
+	display: inline-block;
+	color: $color_1;
+	padding-right: 2.5em;
+	min-width: 7.25em;
+	text-align: left;
+	margin-bottom: 0;
+	&:after {
+		content: " ";
+		position: absolute;
+		background: none;
+		background-repeat: no-repeat;
+		background-position: .25em .45em;
+		content: "\25bc";
+		font-size: .55em;
+		padding-top: 1.2em;
+		padding-left: 1em;
+		left: auto;
+		right: 0;
+		margin: 0;
+		top: 0;
+		bottom: 0;
+		width: 1.8em;
+	}
+}
+.tablesaw-btn.btn-small {
+	font-size: 1.0625em;
+	line-height: 19px;
+	padding: .3em 1em .3em 1em;
+}
+.tablesaw-btn.btn-micro {
+	font-size: .8125em;
+	padding: .4em .7em .25em .7em;
+}
+.tablesaw-btn-select.btn-small {
+	&:after {
+		width: 1.2em;
+		font-size: .5em;
+		padding-top: 1em;
+		padding-right: .5em;
+		line-height: 1.65;
+		background: none;
+		box-shadow: none;
+		border-left-width: 0;
+	}
+}
+.tablesaw-btn-select.btn-micro {
+	&:after {
+		width: 1.2em;
+		font-size: .5em;
+		padding-top: 1em;
+		padding-right: .5em;
+		line-height: 1.65;
+		background: none;
+		box-shadow: none;
+		border-left-width: 0;
+	}
+}
+
+/* Column navigation buttons for swipe and columntoggle tables */
+.tablesaw-advance {
+	.tablesaw-btn {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		box-sizing: border-box;
+		text-shadow: 0 1px 0 #fff;
+		border-radius: .25em;
+	}
+	.tablesaw-btn.btn-micro {
+		font-size: .8125em;
+		padding: .3em .7em .25em .7em;
+	}
+	a.tablesaw-nav-btn {
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		display: inline-block;
+		overflow: hidden;
+		width: 1.8em;
+		height: 1.8em;
+		background-position: 50% 50%;
+		margin-left: .25em;
+		margin-right: .25em;
+		position: relative;
+	}
+	a.tablesaw-nav-btn.left {
+		&:before {
+			content: "\0020";
+			overflow: hidden;
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: .45em;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			left: .6em;
+			border-right: 5px solid #808080;
+		}
+	}
+	a.tablesaw-nav-btn.right {
+		&:before {
+			content: "\0020";
+			overflow: hidden;
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: .45em;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			left: .7em;
+			border-left: 5px solid #808080;
+		}
+	}
+	a.tablesaw-nav-btn.down {
+		&:before {
+			content: "\0020";
+			overflow: hidden;
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: .5em;
+			top: .65em;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 5px solid #808080;
+		}
+	}
+	a.tablesaw-nav-btn.up {
+		&:before {
+			content: "\0020";
+			overflow: hidden;
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: .5em;
+			top: .65em;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-bottom: 5px solid #808080;
+		}
+	}
+	a.tablesaw-nav-btn.disabled {
+		opacity: .25;
+		cursor: default;
+		pointer-events: none;
+	}
+	float: right;
+}
+
+/* Table Toolbar */
+.tablesaw-bar {
+	clear: both;
+	* {
+		box-sizing: border-box;
+	}
+	/* TODO */
+	.tablesaw-bar-section {
+		.tablesaw-btn {
+			margin-left: .4em;
+			margin-top: 4px;
+			text-transform: uppercase;
+			border: none;
+			box-shadow: none;
+			background: transparent;
+			font-size: 1em;
+			padding-left: .3em;
+		}
+		.btn-select {
+			min-width: 0;
+			&:after {
+				padding-top: .9em;
+			}
+		}
+		select {
+			color: $color_75;
+			text-transform: none;
+			background: transparent;
+		}
+	}
+}
+.tablesaw-bar-section {
+	float: left;
+	label {
+		font-size: .875em;
+		padding: .5em 0;
+		clear: both;
+		display: block;
+		color: $color_75;
+		margin-right: .5em;
+		text-transform: uppercase;
+	}
+	&~table {
+		clear: both;
+	}
+	.a11y-sm {
+		clip: rect(0 0 0 0);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		width: 1px;
+	}
+}
+.tablesaw-enhanced {
+	.tablesaw-btn {
+		margin-top: .5em;
+		margin-bottom: .5em;
+	}
+	.tablesaw-btn-select {
+		margin-bottom: 0;
+	}
+}
+/* Table rows have a gray bottom stroke by default */
+.tablesaw-row-border {
+	tr {
+		border-bottom: 1px solid #dfdfdf;
+	}
+}
+/* Zebra striping */
+.tablesaw-row-zebra {
+	tr {
+		&:nth-child(2n) {
+			background-color: $color_136;
+		}
+	}
+}
+.tablesaw-swipe {
+	.tablesaw-cell-persist {
+		border-right: 2px solid #e4e1de;
+	}
+}
+.tablesaw-swipe-shadow {
+	.tablesaw-cell-persist {
+		border-right-width: 1px;
+		box-shadow: 3px 0 4px -1px #e4e1de;
+	}
+}
+.tablesaw-stack {
+	td {
+		.tablesaw-cell-label {
+			display: none;
+		}
+	}
+	th {
+		.tablesaw-cell-label {
+			display: none;
+		}
+	}
+}
+.tablesaw-fix-persist {
+	table-layout: fixed;
+}
+.tablesaw-overflow {
+	position: relative;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	>.tablesaw {
+		margin-top: 2px;
+	}
+}
+.tablesaw-columntoggle-btn {
+	span {
+		text-indent: -9999px;
+		display: inline-block;
+	}
+}
+.tablesaw-columntoggle-btnwrap {
+	position: relative;
+	.dialog-content {
+		padding: .5em;
+		top: 0 !important;
+		right: 1em;
+		left: auto !important;
+		width: 12em;
+		max-width: 18em;
+		margin: -.5em auto 0;
+		&:focus {
+			outline-style: none;
+		}
+	}
+}
+.tablesaw-columntoggle {
+	tbody {
+		td {
+			line-height: 1.5;
+		}
+	}
+}
+.tablesaw-columntoggle-popup {
+	display: none;
+	fieldset {
+		margin: 0;
+	}
+	.btn-group {
+		>label {
+			display: block;
+			padding: .2em 0;
+			white-space: nowrap;
+			cursor: default;
+			input {
+				margin-right: .8em;
+			}
+		}
+	}
+}
+.tablesaw-columntoggle-btnwrap.visible {
+	.tablesaw-columntoggle-popup {
+		display: block;
+		position: absolute;
+		top: 2em;
+		right: 0;
+		background-color: $white;
+		padding: .5em .8em;
+		border: 1px solid #ccc;
+		box-shadow: 0 1px 2px #ccc;
+		border-radius: .2em;
+		z-index: 1;
+	}
+}
+.tablesaw-sortable-head {
+	position: relative;
+	vertical-align: top;
+}
+.tablesaw-sortable-btn {
+	min-width: 100%;
+	color: inherit;
+	background: transparent;
+	border: 0;
+	padding: .5em .7em;
+	text-align: inherit;
+	font: inherit;
+	text-transform: inherit;
+}
+.tablesaw-sortable-arrow {
+	&:after {
+		display: inline-block;
+		width: 10px;
+		height: 14px;
+		content: " ";
+		margin-left: .3125em;
+	}
+}
+.tablesaw-sortable-ascending {
+	.tablesaw-sortable-arrow {
+		&:after {
+			content: "\0020";
+			content: "\2191";
+		}
+	}
+}
+.tablesaw-sortable-descending {
+	.tablesaw-sortable-arrow {
+		&:after {
+			content: "\0020";
+			content: "\2193";
+		}
+	}
+}
+.tablesaw-advance.minimap {
+	margin-right: .4em;
+}
+.tablesaw-advance-dots {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: table-cell;
+		margin: 0;
+		padding: .4em .2em;
+		i {
+			width: .25em;
+			height: .25em;
+			background: #555;
+			border-radius: 100%;
+			display: inline-block;
+		}
+	}
+}
+.tablesaw-advance-dots-hide {
+	opacity: .25;
+	cursor: default;
+	pointer-events: none;
+}
+@media (min-width: 24em) {
+	.tablesaw-bar-section {
+		.a11y-sm {
+			clip: none;
+			height: auto;
+			width: auto;
+			position: static;
+			overflow: visible;
+		}
+	}
+}
+
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+/* Support note IE9+: @media only all */
+@media only all {
+	/* Show the table cells as a block level element */
+	.tablesaw-stack {
+		clear: both;
+		/* Make the label elements a percentage width */
+		td {
+			text-align: left;
+			display: block;
+			.tablesaw-cell-label {
+				display: block;
+				padding: 0 .6em 0 0;
+				width: 30%;
+				display: inline-block;
+			}
+			/* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+			.tablesaw-cell-label-top {
+				display: block;
+				padding: .4em 0;
+				margin: .4em 0;
+			}
+		}
+		/* Make the label elements a percentage width */
+		th {
+			text-align: left;
+			display: block;
+			.tablesaw-cell-label {
+				display: block;
+				padding: 0 .6em 0 0;
+				width: 30%;
+				display: inline-block;
+			}
+			/* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+			.tablesaw-cell-label-top {
+				display: block;
+				padding: .4em 0;
+				margin: .4em 0;
+			}
+		}
+		tr {
+			clear: both;
+			display: table-row;
+		}
+		/* Avoid double strokes when stacked */
+		tbody {
+			th.group {
+				margin-top: -1px;
+			}
+		}
+		th.group {
+			b.tablesaw-cell-label {
+				display: none !important;
+			}
+		}
+	}
+	.tablesaw-cell-label {
+		display: block;
+	}
+	.tablesaw-swipe {
+		th.tablesaw-cell-hidden {
+			display: none;
+		}
+		td.tablesaw-cell-hidden {
+			display: none;
+		}
+	}
+	.tablesaw-columntoggle {
+		th.tablesaw-priority-6 {
+			display: none;
+		}
+		td.tablesaw-priority-6 {
+			display: none;
+		}
+		th.tablesaw-priority-5 {
+			display: none;
+		}
+		td.tablesaw-priority-5 {
+			display: none;
+		}
+		th.tablesaw-priority-4 {
+			display: none;
+		}
+		td.tablesaw-priority-4 {
+			display: none;
+		}
+		th.tablesaw-priority-3 {
+			display: none;
+		}
+		td.tablesaw-priority-3 {
+			display: none;
+		}
+		th.tablesaw-priority-2 {
+			display: none;
+		}
+		td.tablesaw-priority-2 {
+			display: none;
+		}
+		th.tablesaw-priority-1 {
+			display: none;
+		}
+		td.tablesaw-priority-1 {
+			display: none;
+		}
+		th.tablesaw-priority-0 {
+			display: none;
+		}
+		td.tablesaw-priority-0 {
+			display: none;
+		}
+		th.tablesaw-cell-hidden {
+			display: none;
+		}
+		td.tablesaw-cell-hidden {
+			display: none;
+		}
+		th.tablesaw-cell-visible {
+			display: table-cell;
+		}
+		td.tablesaw-cell-visible {
+			display: table-cell;
+		}
+	}
+}
+@media (max-width: 39.9375em) {
+	/* Table rows have a gray bottom stroke by default */
+	/* Show the table header rows */
+	.tablesaw-stack {
+		tbody {
+			tr {
+				display: block;
+				width: 100%;
+				border-bottom: 1px solid #dfdfdf;
+			}
+			td {
+				display: block;
+				float: left;
+				clear: left;
+				width: 100%;
+			}
+			th {
+				display: block;
+				float: left;
+				clear: left;
+				width: 100%;
+			}
+		}
+		thead {
+			td {
+				display: none;
+			}
+			th {
+				display: none;
+			}
+		}
+		td {
+			&:empty {
+				display: none;
+			}
+		}
+		th {
+			&:empty {
+				display: none;
+			}
+		}
+	}
+	.tablesaw-cell-label {
+		vertical-align: top;
+	}
+	.tablesaw-cell-content {
+		max-width: 67%;
+		display: inline-block;
+	}
+}
+/* Preset breakpoints if "" class added to table */
+
+/* Media query to show as a standard table at 560px (35em x 16px) or wider */
+@media (min-width: 40em) {
+	/* Show the table header rows */
+	.tablesaw-stack {
+		tr {
+			display: table-row;
+		}
+		td {
+			display: table-cell;
+			margin: 0;
+			.tablesaw-cell-label {
+				display: none !important;
+			}
+		}
+		th {
+			display: table-cell;
+			margin: 0;
+			.tablesaw-cell-label {
+				display: none !important;
+			}
+		}
+		thead {
+			td {
+				display: table-cell;
+				margin: 0;
+			}
+			th {
+				display: table-cell;
+				margin: 0;
+			}
+		}
+	}
+	.tablesaw-columntoggle {
+		th.tablesaw-priority-3 {
+			display: table-cell;
+		}
+		td.tablesaw-priority-3 {
+			display: table-cell;
+		}
+		tbody {
+			td {
+				line-height: 2;
+			}
+		}
+	}
+}
+
+/* Show priority 1 at 320px (20em x 16px) */
+@media (min-width: 20em) {
+	.tablesaw-columntoggle {
+		th.tablesaw-priority-1 {
+			display: table-cell;
+		}
+		td.tablesaw-priority-1 {
+			display: table-cell;
+		}
+	}
+}
+/* Show priority 2 at 480px (30em x 16px) */
+@media (min-width: 30em) {
+	.tablesaw-columntoggle {
+		th.tablesaw-priority-2 {
+			display: table-cell;
+		}
+		td.tablesaw-priority-2 {
+			display: table-cell;
+		}
+	}
+}
+/* Show priority 4 at 800px (50em x 16px) */
+@media (min-width: 50em) {
+	.tablesaw-columntoggle {
+		th.tablesaw-priority-4 {
+			display: table-cell;
+		}
+		td.tablesaw-priority-4 {
+			display: table-cell;
+		}
+	}
+}
+/* Show priority 5 at 960px (60em x 16px) */
+@media (min-width: 60em) {
+	.tablesaw-columntoggle {
+		th.tablesaw-priority-5 {
+			display: table-cell;
+		}
+		td.tablesaw-priority-5 {
+			display: table-cell;
+		}
+	}
+}
+/* Show priority 6 at 1,120px (70em x 16px) */
+@media (min-width: 70em) {
+	.tablesaw-columntoggle {
+		th.tablesaw-priority-6 {
+			display: table-cell;
+		}
+		td.tablesaw-priority-6 {
+			display: table-cell;
+		}
+	}
+}

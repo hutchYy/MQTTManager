@@ -1,0 +1,47 @@
+/*
+    =====================
+        Profile Header
+    =====================
+*/
+#profile-header {
+	padding: 220px 100px;
+	.profile-section {
+		position: $pos-abs;
+		bottom: -44px;
+		z-index: 2;
+		right: 0;
+		.media {
+			img.usr-img {
+				border-radius: 50%;
+				border: $b-width-4 $solid $white;
+				width: 140px;
+				height: 140px;
+			}
+			.media-body {
+				h5 {
+					margin: 34px 0 0 0;
+					font-size: 25px;
+					font-weight: 600;
+					color: $white;
+				}
+			}
+		}
+		.social-contacts {
+			margin-top: 40px;
+			color: $white;
+			ul {
+				li {
+					text-align: center;
+					span.s-m-name {
+						font-size: 15px;
+					}
+					span.s-m-count {
+						display: block;
+						font-weight: 600;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}

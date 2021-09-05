@@ -1,0 +1,44 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+.custom-col-lg-3 {
+	margin-top: 25px;
+	div {
+		text-align: center;
+		height: 150px;
+		.wi {
+			&:hover {
+				color: $color_57;
+				border: $b-width-1 $solid $color_6;
+				&+p {
+					color: $color_57;
+				}
+			}
+		}
+		p {
+			margin-top: $m-20;
+			margin-bottom: $m-0;
+			font-size: 14px;
+		}
+	}
+}
+h4 {
+	color: $color_56;
+	font-weight: 600;
+	margin: $m-0;
+	padding: 16px 15px;
+	font-size: 1.3rem;
+}
+.wi {
+	font-size: $fs-30;
+	padding: 25px;
+	border: $b-width-1 $solid $color_6;
+	border-radius: $br-10;
+	box-shadow: $shadow-4;
+}

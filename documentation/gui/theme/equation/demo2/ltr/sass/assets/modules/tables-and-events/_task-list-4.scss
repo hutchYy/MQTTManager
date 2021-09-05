@@ -1,0 +1,89 @@
+/*  Tasks     */
+.tasks {
+	.tasks-header {
+		padding: 20px;
+		border-bottom: $b-width-1 $solid $light-gray;
+		h6 {
+			color: $color_76;
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+	.tasks-body {
+		table {
+			tr {
+				td {
+					border-top: none;
+					.task-item {
+						position: $pos-rel;
+						padding-left: 20px;
+						.task-meta-time {
+							display: block;
+							font-weight: 600;
+							color: $additional-color-6;
+							margin-bottom: 4px;
+						}
+						.task-txt {
+							font-weight: 600;
+							color: $additional-color-6;
+							span.task-marked-text {
+								color: $color_76;
+							}
+						}
+					}
+					.d-m-todo {
+						border: $b-width-2 $solid $color_124;
+						background-color: $white;
+						width: 14px;
+						height: 14px;
+					}
+					.badge.badge-danger {
+						background-color: $additional-color-17 !important;
+						color: $danger !important;
+					}
+				}
+				&:hover {
+					cursor: pointer;
+					td {
+						.d-m-todo {
+							border-color: $color_53;
+						}
+						.task-item {
+							.task-meta-time {
+								color: $additional-color-2;
+							}
+							.task-txt {
+								color: $additional-color-2;
+								span.task-marked-text {
+									color: $additional-color-2;
+								}
+							}
+						}
+					}
+				}
+			}
+			.badge {
+				padding: 5px 15px;
+				font-weight: 600;
+				box-shadow: none;
+			}
+			.badge.badge-success {
+				background-color: $light-success !important;
+				color: $success !important;
+			}
+		}
+		.task-load-more {
+			padding: 24px;
+			button {
+				background-image: $additional-gradient-color-32;
+				border: none;
+				box-shadow: 2px 2px 13px 1px rgb(164, 139, 217);
+				font-size: 13px;
+				padding: 10px 26px;
+				&:hover {
+					background-image: $additional-gradient-color-33;
+				}
+			}
+		}
+	}
+}

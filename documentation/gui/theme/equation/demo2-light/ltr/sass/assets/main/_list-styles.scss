@@ -1,0 +1,183 @@
+
+/*List styles*/
+/*Simple List*/
+/*Numberic List*/
+/*  Icon List   */
+/*      List Colors     */
+ul.list-icon {
+    i {
+        vertical-align: text-top;
+        font-size: 20px;
+    }
+}
+ul.inline-ordered-list {
+    counter-reset: hcount;
+    li {
+        &:before {
+            counter-increment: hcount;
+            content: counter(hcount)'.';
+            color: $color_1;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+    }
+}
+.simple-list {
+    counter-reset: li;
+    padding-left: 0;
+    list-style: none;
+    li {
+        position: relative;
+        color: $color_2;
+        padding-left: 20px;
+        padding: 4px 12px 4px 19px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 5px;
+            color: $color_3;
+            font-size: 2rem;
+            width: 6px;
+            height: 6px;
+            background-color: $light-gray;
+            border-radius: 50%;
+        }
+    }
+}
+.numeric-list {
+    counter-reset: li;
+    padding-left: 0;
+    list-style: none;
+    li {
+        position: relative;
+        color: $color_2;
+        padding-left: 20px;
+        padding: 4px 12px 4px 25px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 5px;
+            color: $color_3;
+            font-size: 2rem;
+            width: 6px;
+            height: 6px;
+            background-color: $light-gray;
+            border-radius: 50%;
+        }
+    }
+    >li {
+        &:before {
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 16px;
+            content: counter(li);
+            counter-increment: li;
+            font-size: 0.8125rem;
+            color: $dark;
+            border-radius: 50%;
+            text-align: center;
+            margin-top: -0.65rem;
+        }
+    }
+}
+.simple-list.large-bullet {
+    li {
+        padding: 4px 12px 4px 25px;
+        &:before {
+            width: 12px;
+            height: 12px;
+            top: 9px;
+        }
+    }
+}
+.numeric-list.square-marker {
+    li {
+        &:before {
+            border-radius: 0;
+        }
+    }
+}
+.numeric-list.large-bullet {
+    li {
+        &:before {
+            width: 26px;
+            height: 26px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        padding: 6px 12px 6px 35px;
+    }
+}
+.icon-list {
+    li {
+        padding: 4px 12px 4px 6px;
+        &:before {
+            display: none;
+        }
+        i {
+            font-size: 20px;
+            color: $color_5;
+            padding: 7px;
+            vertical-align: middle;
+        }
+    }
+}
+.bullet-primary {
+    >li {
+        &:before {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+.bullet-success {
+    >li {
+        &:before {
+            background-color: $success;
+            color: $white;
+        }
+    }
+}
+.bullet-info {
+    >li {
+        &:before {
+            background-color: $info;
+            color: $white;
+        }
+    }
+}
+.bullet-danger {
+    >li {
+        &:before {
+            background-color: $danger;
+            color: $white;
+        }
+    }
+}
+.bullet-warning {
+    >li {
+        &:before {
+            color: $white;
+            background-color: $warning;
+        }
+    }
+}
+.bullet-secondary {
+    >li {
+        &:before {
+            background-color: $secondary;
+            color: $white;
+        }
+    }
+}
+.bullet-dark {
+    >li {
+        &:before {
+            background-color: $dark;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/*
+    ====================
+        Footer
+    ====================
+*/
+.footer-section {
+	background-color: $color_28;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	width: 100%;
+	.footer-section-2 {
+		width: 50%;
+		background: #fefefe;
+		flex-grow: 8;
+	}
+	.links {
+		margin: 15.3px 0;
+		a {
+			color: $color_59;
+			font-size: 15px;
+		}
+	}
+	.bottom-footer {
+		margin: 0px;
+		color: $color_59;
+		font-size: 14px;
+		padding: 15.5px 0;
+		a {
+			color: $color_67;
+			border: none;
+		}
+	}
+}
+.scrollTop {
+	i {
+		color: $color_16;
+		font-size: 29px;
+		background: $color_51;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}
+

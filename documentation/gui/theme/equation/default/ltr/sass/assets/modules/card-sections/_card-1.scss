@@ -1,0 +1,30 @@
+/*
+    CARD 1
+*/
+.card-1 {
+	max-width: 100%;
+	height: 458px;
+	background-image: linear-gradient(to top, rgba(38, 112, 138, 0.43137254901960786) 0%, #6d8ec7 100%);
+	color: $white;
+	padding: 30px 25px;
+	button {
+		color: $white !important;
+		border-width: $b-width-2 !important;
+		&:hover {
+			color: $additional-color-11 !important;
+		}
+		&:focus {
+			color: $additional-color-11 !important;
+		}
+	}
+	.badge-collapsed-img {
+		position: $pos-abs;
+		bottom: 10px;
+		right: 0;
+		left: 0;
+		img {
+			width: 42px;
+			height: 42px;
+		}
+	}
+}

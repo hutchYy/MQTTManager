@@ -1,0 +1,103 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../assets/base/color_variables';   	// Color Variables
+@import '../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../assets/base/urls';   				// URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+
+.table {
+	>thead {
+		>tr {
+			>th {
+				color: $additional-color-5;
+				font-weight: 600;
+			}
+		}
+	}
+	>tfoot {
+		>tr {
+			>th {
+				color: $additional-color-11;
+				font-weight: 600;
+			}
+		}
+	}
+	td {
+		border-top: $b-width-1 $solid $color_6;
+		color: $color_57;
+	}
+	th {
+		border-top: $b-width-1 $solid $color_6;
+		color: $color_57;
+	}
+}
+.form-control {
+		border-color: $color_57;
+	border: $b-width-1 $solid $light-gray;
+	&:focus {
+	}
+}
+table.dataTable {
+	.form-control {
+		color: $color_2;
+		font-size: 15px;
+	}
+}
+.dataTables_filter {
+	input {
+		margin-left: 5px;
+		border-radius: $br-30;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		border: $solid $b-width-1 $additional-color-6;
+	}
+}
+.page-item.active {
+		background-color: $color_57;
+		border-color: $color_57;
+		
+	.page-link {
+		border-radius: 4px;
+	}
+}
+ul.pagination {
+	li {
+		a {
+			&:hover {
+				&:not(.active) {
+					background-color: $additional-color-5;
+					border-top-left-radius: 4px;
+					border-bottom-left-radius: 4px;
+				}
+			}
+		}
+	}
+}
+.pagination {
+	>li {
+		>a {
+			border-radius: 4px;
+			color: $color_2;
+		}
+		>span {
+			border-radius: 4px;
+			color: $color_2;
+		}
+	}
+}
+.page-link {
+	&:focus {
+		box-shadow: none;
+	}
+}
+.page-item {
+	&:first-child {
+		.page-link {
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+	}
+}

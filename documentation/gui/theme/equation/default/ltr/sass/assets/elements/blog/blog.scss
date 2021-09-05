@@ -1,0 +1,406 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+/*
+	==============================
+			Author Box 		
+	==============================
+
+*/
+.author-box {
+	h4 {
+		margin: $m-0;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		color: $color_57;
+		border-bottom: $b-width-1 $solid $light-gray-3;
+	}
+	.media {
+		img {
+			width: 100px;
+		}
+		.media-body {
+			h5 {
+				font-size: 20px;
+				color: $color_258;
+				font-weight: 600;
+			}
+			ul {
+				li {
+					i {
+						background-color: $white;
+						padding: 8px;
+						border-radius: 25px;
+						cursor: pointer;
+						box-shadow: $shadow-3;
+					}
+					i.tweet {
+						color: $info;
+					}
+					i.fb {
+						color: $additional-color-2;
+					}
+					i.g-plus {
+						color: $color_149;
+					}
+				}
+			}
+			p {
+				color: $color_257;
+			}
+		}
+	}
+}
+
+/*
+	==============================
+	 		Comments List 		
+	==============================
+*/
+.comments-list {
+	h3 {
+		margin: $m-0;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		color: $black;
+		border-bottom: $b-width-1 $solid $light-gray;
+	}
+	.media {
+		word-break: break-word;
+		img {
+			width: 64px;
+			margin-right: 6px;
+		}
+		.media-body {
+			h5 {
+				font-size: 19px;
+				color: $black;
+			}
+			.media-notation {
+				a {
+					color: $additional-color-5;
+					font-size: 13px;
+					font-weight: 600;
+					i {
+						font-size: 16px;
+						color: $color_116;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+	h4 {
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		color: $color_57;
+		border-bottom: $b-width-1 $solid $light-gray-3;
+	}
+	/* 		Comment Input Section 	*/
+	.media.comment-input-section {
+		textarea {
+			resize: none;
+			border: none;
+			border-bottom: $b-width-1 $solid $light-gray-3;
+			padding: 0;
+			&::-webkit-input-placeholder {
+				color: $additional-color-6;
+				font-size: 14px;
+			}
+			&::-ms-input-placeholder {
+				color: $additional-color-6;
+				font-size: 14px;
+			}
+			&::-moz-placeholder {
+				color: $additional-color-6;
+				font-size: 14px;
+			}
+		}
+	}
+}
+/*
+	==============================
+ 			Blog Listing 1
+	==============================
+
+*/
+.blog-list-1 {
+	.post-content {
+		img {
+			width: 445px;
+			height: 293px;
+			border-radius: 4px;
+		}
+		p.post-category {
+
+			color: $color_56;
+			font-weight: 600;
+		}
+		.post-heading {
+			color: $additional-color-7;
+		}
+		.post-text {
+			color: $color_257;
+		}
+		.meta-info {
+			strong {
+				color: $color_259;
+			}
+		}
+		&:nth-child(even) {
+			p.post-category {
+				color: $color_149;
+			}
+		}
+	}
+}
+
+/*
+	==============================
+			Blog Listing 2
+	==============================
+*/
+.blog-list-2 {
+	.blog-content {
+		.card {
+			border: none;
+			box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+		}
+		.card-body {
+			strong.card-category {
+				color: $additional-color-4;
+			}
+			.card-title {
+				color: $color_57;
+			}
+			.meta-info.meta-time {
+				small {
+					color: $additional-color-6;
+					font-weight: 600;
+				}
+			}
+			p.card-text {
+				color: $color_257;
+			}
+		}
+		/* 	Blog List card 2 	*/
+		.card.b-l-card-2 {
+			.card-body {
+				.media {
+					img {
+						width: 50px;
+						flex: 0 0 auto;
+					}
+					.media-body {
+						flex: 1 1 auto;
+						h6.usr-name {
+							color: $additional-color-11;
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+		/* 	Blog List card 3 	*/
+		.card.b-l-card-3 {
+			.card-body {
+				div.meta-usr-info {
+					img.meta-usr-profile {
+						width: 50px;
+					}
+					p.meta-usr-name {
+						color: $black;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+}
+.post-content {
+	img.img-fluid.mb-md-0.mb-4 {
+		border-radius: 4px;
+	}
+}
+
+
+/*
+	==============================
+ 			Blog Listing 3 	
+	==============================
+*/
+.blog-list-3.post-content {
+	p.post-category {
+	}
+	.post-heading {
+		color: $color_47;
+		font-weight: 600;
+		color: $additional-color-11;
+	}
+	.post-text {
+		color: $color_257;
+	}
+	.meta-info {
+		strong {
+			color: $additional-color-5;
+		}
+		span.meta-date {
+			color: $black;
+		}
+	}
+	&:nth-child(even) {
+		p.post-category {
+			color: $color_149;
+		}
+	}
+	/* 	Blog List card 2 	*/
+	.b-l-card-2 {
+		.meta-usr-info {
+			img.meta-usr-profile {
+				width: 47px;
+			}
+			p.meta-usr-name {
+				color: $additional-color-5;
+				font-weight: 600;
+			}
+		}
+	}
+	/* 	Blog List card 3 	*/
+	.b-l-card-3 {
+		ul {
+			li {
+				i {
+					background-color: $white;
+					padding: 8px;
+					border-radius: 25px;
+					cursor: pointer;
+					box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+				}
+				i.tweet {
+					color: $info;
+				}
+				i.fb {
+					color: $color_57;
+				}
+				i.g-plus {
+					color: $color_149;
+				}
+			}
+		}
+	}
+}
+
+/*
+	==============================
+		Masonry Blog Style 
+	==============================
+*/
+.masonry-blog-style {
+	.card {
+		border: none;
+		box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+	}
+	.card-body {
+		strong.card-category {
+			color: $additional-color-5;
+		}
+		.card-title {
+		}
+		.meta-info.meta-time {
+			color: $color_47;
+			font-weight: 600;
+			small {
+				color: $additional-color-6;
+				font-weight: 600;
+			}
+		}
+		p.card-text {
+			color: $color_257;
+		}
+	}
+	/* 	Masonry Blog 2 	*/
+	.card.m-b-card-2 {
+		.card-body {
+			.media {
+				img {
+					width: 50px;
+					flex: 0 0 auto;
+				}
+				.media-body {
+					flex: 1 1 auto;
+					h5.usr-name {
+						color: $black;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	/* 	Masonry Blog 3 	*/
+	.card.m-b-card-3 {
+		.card-body {
+			div.meta-usr-info {
+				img.meta-usr-profile {
+					width: 50px;
+				}
+				p.meta-usr-name {
+					color: $black;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	/* 	Masonry Blog Blockquote */
+	.card.m-b-blockquote {
+		blockquote {
+			small {
+				display: block;
+				font-size: 80%;
+				line-height: 1.42857143;
+			}
+		}
+				color: $color_66;
+		.blockquote-footer {
+			&::before {
+				display: none;
+			}
+		}
+	}
+	/* 	Masonry Blog Background Text card */
+	.m-b-background-text-card {
+		background: #fff url(../../../../assets/img/400x300.jpg) no-repeat center;
+		background-size: cover;
+		.card-title {
+
+
+			color: $white !important;
+		}
+		.card-text {
+
+
+			color: $white !important;
+		}
+	}
+}
+
+blockquote.blockquote {
+	color: $additional-color-11;
+	background-color: $white;
+	border-left: 5px $solid #ee3d50;
+}
+
+@media (max-width: 767px) {
+	.card-columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}

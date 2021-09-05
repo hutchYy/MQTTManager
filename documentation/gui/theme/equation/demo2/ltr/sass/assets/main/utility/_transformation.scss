@@ -1,0 +1,11 @@
+/*-----text-transformation-----*/
+
+.t-lowercase {
+	text-transform: $transform-lower;
+}
+.t-uppercase {
+	text-transform: $transform-upper;
+}
+.t-capital {
+	text-transform: $transform-capital;
+}

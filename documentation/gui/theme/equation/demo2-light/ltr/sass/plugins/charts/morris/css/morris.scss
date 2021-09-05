@@ -1,0 +1,32 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../../assets/base/color_variables';   	// Color Variables
+@import '../../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../../assets/base/urls';   				// URLS Variables
+@import '../../../../assets/base/utilities_variables';  // Utilities Variables
+
+
+.morris-hover {
+	position: $pos-abs;
+	z-index: 1000;
+}
+.morris-hover.morris-default-style {
+	border-radius: $br-10;
+	padding: 6px;
+	color: $color_321;
+	background: rgba(255,255,255,0.8);
+	border: $solid $b-width-2 rgba(230,230,230,0.8);
+	font-family: $font_family_8;
+	font-size: 12px;
+	text-align: $align-center;
+	.morris-hover-row-label {
+		font-weight: bold;
+		margin: 0.25em 0;
+	}
+	.morris-hover-point {
+		white-space: nowrap;
+		margin: 0.1em 0;
+	}
+}

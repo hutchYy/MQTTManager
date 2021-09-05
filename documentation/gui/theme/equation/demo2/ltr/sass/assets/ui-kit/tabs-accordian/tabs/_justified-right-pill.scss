@@ -1,0 +1,20 @@
+/*
+    Justify Right Pill
+*/
+.pill-justify-right {
+	.nav-pills {
+		.nav-link.active {
+			background-color: $additional-color-8;
+		}
+		.show {
+			>.nav-link {
+				background-color: $additional-color-8;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

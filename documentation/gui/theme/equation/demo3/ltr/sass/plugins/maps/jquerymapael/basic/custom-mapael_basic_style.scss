@@ -1,0 +1,115 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../../../assets/base/color_variables';    // Color Variables
+@import '../../../../assets/base/fonticons';              // Fonticons Variables
+@import '../../../../assets/base/urls';                   // URLS Variables
+@import '../../../../assets/base/utilities_variables';  // Utilities Variables
+
+.mapael {
+	.map {
+		position: $pos-rel;
+	}
+	.mapTooltip {
+		position: $pos-abs;
+		background-color: $white;
+		moz-opacity: 0.70;
+		opacity: 0.70;
+		filter: alpha(opacity=70);
+		border-radius: $br-10;
+		padding: $p-10;
+		z-index: 1000;
+		max-width: 200px;
+		display: none;
+		color: $color_612;
+	}
+	/* For all zoom buttons */
+	.zoomButton {
+		background-color: $white;
+		border: $b-width-1 $solid $color_103;
+		color: $black;
+		width: 15px;
+		height: 15px;
+		line-height: 15px;
+		text-align: $align-center;
+		border-radius: 3px;
+		cursor: pointer;
+		position: $pos-abs;
+		top: 0;
+		font-weight: bold;
+		left: 10px;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+	/* Reset Zoom button first */
+	.zoomReset {
+		top: 10px;
+	}
+	/* Then Zoom In button */
+	.zoomIn {
+		top: 30px;
+	}
+	/* Then Zoom Out button */
+	.zoomOut {
+		top: 50px;
+	}
+}
+@media (max-width: 767px) {
+	.margin-bottom-37 {
+		margin-bottom: $m-20;
+	}
+	.margin-bottom-154 {
+		margin-bottom: $m-20;
+	}
+	.margin-bottom-337 {
+		margin-bottom: $m-20;
+	}
+	.areaLegend {
+		position: $pos-rel;
+		overflow: hidden;
+		display: block;
+	}
+	.plotLegend {
+		position: $pos-rel;
+		overflow: hidden;
+		display: block;
+	}
+	.mapael {
+		.myLegend {
+			position: $pos-rel;
+			overflow: hidden;
+			display: block;
+		}
+	}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+	.margin-bottom-37 {
+		margin-bottom: $m-20;
+	}
+	.margin-bottom-154 {
+		margin-bottom: $m-20;
+	}
+	.margin-bottom-337 {
+		margin-bottom: $m-20;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.margin-bottom-37 {
+		margin-bottom: $m-20;
+	}
+	.margin-bottom-337 {
+		margin-bottom: 213px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1459px) {
+	.margin-bottom-37 {
+		margin-bottom: $m-30;
+	}
+	.margin-bottom-337 {
+		margin-bottom: 288px;
+	}
+}

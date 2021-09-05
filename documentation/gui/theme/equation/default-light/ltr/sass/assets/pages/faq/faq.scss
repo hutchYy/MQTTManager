@@ -1,0 +1,166 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+/*      Header Wrapper      */
+#headerWrapper {
+	padding: $p-30 $p-50;
+	background-color: $white;
+	.main-heading {
+		color: $color_57;
+		margin: $m-0;
+		i {
+			font-size: 50px;
+			vertical-align: $v-align-sub;
+		}
+	}
+}
+h2 {
+	font-size: 1.875rem;
+}
+/*      FAQ Wrapper        */
+#faqWrapper {
+	.faq-nav-list {
+		transition: top 2s;
+		a {
+			border: none;
+			border-radius: 4px;
+			box-shadow: $shadow-3;
+			-webkit-transition: all 0.35s ease;
+			transition: all 0.35s ease;
+			&:hover {
+				background: $white;
+			}
+			.media {
+				i {
+					font-size: 15px;
+					color: $color_47;
+				}
+				.media-body {
+					h6 {
+						font-size: 13px;
+						color: $color_47;
+						margin: $m-0;
+					}
+					p {
+						display: none;
+					}
+				}
+			}
+		}
+		a.list-group-item.active {
+			-webkit-transform: scale(1.05);
+			transform: scale(1.05);
+			box-shadow: $shadow-3;
+			background-color: $white;
+			color: $black;
+			background-color: $color_86;
+			.media {
+				i {
+					color: $white;
+
+				}
+				.media-body {
+					h6 {
+						color: $white;
+
+					}
+				}
+			}
+		}
+		a.list-group-item {
+			.media {
+				.media-body {
+					flex: 1 1 auto;
+				}
+			}
+		}
+	}
+	.fixed-nav-list {
+		position: $pos-fix;
+		top: 40px;
+	}
+	#faq-content {
+		.faq-section {
+			background-color: $white;
+			border-radius: 4px;
+			padding: 35px $p-20;
+			box-shadow: $shadow-19;
+			.faq-content-header {
+				i {
+					font-size: 22px;
+					color: $color_56;
+				}
+				h3 {
+					color: $color_56;
+					display: inline;
+					font-size: 1.5rem;
+				}
+				p {
+					margin-left: 36px;
+				}
+			}
+			.faq-container {
+				margin-top: 65px;
+				.card {
+					border: none;
+					.card-header {
+						background-color: $color_none;
+						padding: $p-0;
+						border-bottom: none;
+						div {
+							div {
+								padding: 15px;
+								color: $additional-color-11;
+								font-weight: 600;
+								font-size: 16px;
+								cursor: pointer;
+								i {
+									color: $color_233;
+								}
+							}
+							div.collapsed {
+								border-bottom: $b-width-1 $solid $color_6;
+							}
+						}
+					}
+					.card-body {
+						p {
+							color: $color_234;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*      Footer Wrapper      */
+#footerWrapper.footer-section {
+	position: $pos-unset;
+	margin: $m-0;
+	background-color: $white;
+}
+#footerWrapper {
+	.bottom-footer {
+		color: $color_57;
+		a {
+			color: $color_57;
+		}
+	}
+	ul {
+		padding: 12px $p-0;
+		li {
+			a {
+				color: $color_57;
+				font-weight: 600;
+			}
+		}
+	}
+}

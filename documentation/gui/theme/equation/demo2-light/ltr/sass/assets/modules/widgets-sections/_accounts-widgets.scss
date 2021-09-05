@@ -1,0 +1,97 @@
+/*
+    Accounts Widgets
+*/
+.accounts-widgets {
+	.accounts-income {
+		i {
+			padding: $p-10;
+			font-size: 28px;
+			border-radius: $br-4;
+			color: $primary;
+			background-color: $light-primary;
+			vertical-align: $v-align-text-top;
+		}
+		.value {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $color_74;
+		}
+		p {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $primary;
+		}
+		div.progress {
+			height: 8px;
+		}
+	}
+	.accounts-cogs {
+		i {
+			padding: $p-10;
+			font-size: 28px;
+			border-radius: $br-4;
+			color: $success;
+			background-color: $light-success;
+			vertical-align: $v-align-text-top;
+		}
+		.value {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $color_74;
+		}
+		p {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $success;
+		}
+		div.progress {
+			height: 8px;
+		}
+	}
+	.accounts-profit {
+		i {
+			padding: $p-10;
+			font-size: 28px;
+			border-radius: $br-4;
+			color: $warning;
+			background-color: $light-warning;
+			vertical-align: $v-align-text-top;
+		}
+		.value {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $color_74;
+		}
+		p {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $warning;
+		}
+		div.progress {
+			height: 8px;
+		}
+	}
+	.accounts-expenses {
+		i {
+			padding: $p-10;
+			font-size: 28px;
+			border-radius: $br-4;
+			color: $danger;
+			background-color: $light-danger;
+			vertical-align: $v-align-text-top;
+		}
+		.value {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $color_74;
+		}
+		p {
+			font-weight: 600;
+			margin-bottom: $m-0;
+			color: $danger;
+		}
+		div.progress {
+			height: 8px;
+		}
+	}
+}

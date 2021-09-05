@@ -1,0 +1,15 @@
+
+/*----alignment classes----*/
+.align-center {
+	text-align: $align-center !important;
+	margin: 0 auto;
+}
+.align-left {
+	text-align: $align-left !important;
+}
+.align-right {
+	text-align: $align-right !important;
+}
+.align-justify {
+	text-align: $align-justify !important;
+}

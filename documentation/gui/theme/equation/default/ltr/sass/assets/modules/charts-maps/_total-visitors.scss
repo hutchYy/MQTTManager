@@ -1,0 +1,152 @@
+/*
+  Total Visitors
+*/
+@-moz-keyframes "pulse" {
+	0% {
+		-moz-transform: scale(0);
+		opacity: 0.0;
+	}
+	25% {
+		-moz-transform: scale(0);
+		opacity: 0.1;
+	}
+	50% {
+		-moz-transform: scale(0.1);
+		opacity: 0.3;
+	}
+	75% {
+		-moz-transform: scale(0.5);
+		opacity: 0.5;
+	}
+	100% {
+		-moz-transform: scale(1);
+		opacity: 0.0;
+	}
+}
+@-webkit-keyframes "pulse" {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;
+	}
+	25% {
+		-webkit-transform: scale(0);
+		opacity: 0.1;
+	}
+	50% {
+		-webkit-transform: scale(0.1);
+		opacity: 0.3;
+	}
+	75% {
+		-webkit-transform: scale(0.5);
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 0.0;
+	}
+}
+@keyframes "pulse" {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;
+	}
+	25% {
+		-webkit-transform: scale(0);
+		opacity: 0.1;
+	}
+	50% {
+		-webkit-transform: scale(0.1);
+		opacity: 0.3;
+	}
+	75% {
+		-webkit-transform: scale(0.5);
+		opacity: 0.5;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 0.0;
+	}
+}
+.total-visitors {
+	.t-visitors-header {
+		padding: 20px;
+		h6 {
+			color: $color_76;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		span {
+			position: relative;
+			font-weight: 600;
+			font-size: 14px;
+			color: $additional-color-11;
+		}
+		.d-m-total-visits {
+			background-color: $color_57;
+			height: 11px;
+			width: 11px;
+		}
+	}
+	.t-visitors-body {
+		padding: 30px;
+		#mapdiv {
+			width: 100%;
+			height: 600px;
+			.amcharts-main-div {
+				a {
+					opacity: 0 !important;
+				}
+			}
+		}
+		.map-marker {
+			margin-left: -8px;
+			margin-top: -8px;
+			.dot {
+				border: 10px solid $color_57;
+				background: transparent;
+				-webkit-border-radius: 60px;
+				-moz-border-radius: 60px;
+				border-radius: 60px;
+				height: 50px;
+				width: 50px;
+				-webkit-animation: pulse 3s ease-out;
+				-moz-animation: pulse 3s ease-out;
+				animation: pulse 3s ease-out;
+				-webkit-animation-iteration-count: infinite;
+				-moz-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+				position: absolute;
+				top: -19px;
+				left: -19px;
+				z-index: 1;
+				opacity: 0;
+			}
+		}
+		.map-marker.map-clickable {
+			cursor: pointer;
+		}
+		.locator {
+			width: 12px;
+			height: 12px;
+			border: 3px solid $color_59;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+			background-color: $color_57;
+			z-index: 10;
+			position: absolute;
+		}
+	}
+}
+#v-monthly-chart {
+	width: 200px;
+	height: 200px;
+	font-size: 11px;
+	margin: 0 auto;
+}
+#v-weekly-chart {
+	width: 200px;
+	height: 200px;
+	font-size: 11px;
+	margin: 0 auto;
+}

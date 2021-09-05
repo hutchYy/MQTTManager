@@ -1,0 +1,122 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+.dropcap {
+	&:first-letter {
+		font-size: 3em;
+		float: $align-left;
+		margin-top: .15em;
+		padding: 2px $p-20;
+		border: $b-width-1 $solid $color_3;
+		border-radius: $br-6;
+		margin-right: 15px;
+	}
+}
+.img-fluid {
+	border-radius: $br-4;
+}
+.accordion {
+	>.frame.active {
+		>.heading {
+			background-color: $color_83;
+			border-color: $color_83;
+		}
+	}
+	>.frame {
+		>.heading {
+			background-color: $color_141;
+		}
+	}
+}
+h5 {
+	font-size: 15px;
+}
+.card {
+	border: $b-width-1 $solid $color_6;
+}
+.card-header {
+	padding: 0;
+	h5 {
+		>span {
+			padding: .75rem 1.25rem;
+			cursor: pointer;
+			display: block;
+		}
+	}
+}
+.simple-accordion-content {
+	.card-header {
+		background-color: $color_50;
+		color: $additional-color-11;
+		border-color: $color_none;
+	}
+}
+.media {
+	img {
+		border-radius: $br-4;
+		width: 70px;
+		height: 70px;
+	}
+}
+.card-body {
+	h4.mb-4 {
+		color: $color_47;
+		font-size: 18px;
+	}
+}
+.between-space-content {
+	.card-header {
+		border-color: $color_none;
+		background-color: $color_84;
+		color: $white;
+	}
+}
+.icon-accordion-content {
+	.card-header {
+		background-color: $white;
+		background-color: $color_57;
+		color: $white;
+	}
+}
+.icon-change-content {
+	.card-header {
+		background-color: $white;
+		color: $additional-color-3;
+		border-color: $color_none;
+	}
+}
+i.float-right.flaticon-caret-up {
+	color: $additional-color-3;
+}
+.toggle-false-content {
+	.card-header {
+		background-color: $white;
+		color: $color_53;
+		border-color: $color_none;
+	}
+	.card-body {
+		background-color: $color_50;
+		color: $additional-color-11;
+	}
+}
+
+
+
+//    ====================================
+//        	Accordions Imports 
+//    ====================================
+
+
+@import 'accordion/creative-accordion-1';
+@import 'accordion/creative-accordion-2';
+@import 'accordion/creative-accordion-3';
+@import 'accordion/small-accordion';
+@import 'accordion/pure-css-accordion';
+@import 'accordion/media-query';

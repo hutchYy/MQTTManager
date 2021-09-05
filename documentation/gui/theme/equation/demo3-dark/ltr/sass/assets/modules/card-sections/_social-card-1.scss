@@ -1,0 +1,46 @@
+/*
+    Social Card 1
+*/
+#social-card-1.card {
+    height: 334px;
+    padding: 0 20px 20px 20px;
+    background-image: linear-gradient(to top, #00b1f4 0%, #1a73e9 100%);
+    border: none;
+    .wrapper {
+        .usr-meta-info {
+            .media {
+                img {
+                    width: 70px;
+                    border: solid 4px #c2d5ff;
+                    background: #1a73e9;
+                }
+                .media-body {
+                    .usr-name {
+                        color: $white;
+                        font-size: 20px;
+                        text-transform: $transform-upper;
+                    }
+                    .usr-occupation {
+                        color: $light-gray;
+                        font-weight: 600;
+                        font-size: 15px;
+                        text-transform: $transform-upper;
+                    }
+                }
+                .twitter-icon {
+                    i {
+                        font-size: 50px;
+                        color: #e9ecef;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .usr-tweet {
+            color: $white;
+            margin-top: 24px;
+            font-size: 16px;
+            text-align: $align-center;
+        }
+    }
+}

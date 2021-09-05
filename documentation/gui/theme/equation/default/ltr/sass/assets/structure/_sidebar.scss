@@ -1,0 +1,289 @@
+/* 
+===============
+    Sidebar
+===============
+*/
+.sidebar-wrapper {
+    width: 255px;
+}
+.sidebar-theme {
+    background: $color_16;
+}
+.sidebar-closed {
+    >.sidebar-wrapper {
+        width: 0;
+        left: -35px;
+    }
+    >#content {
+        margin-left: 0px;
+    }
+}
+#sidebar {
+    .theme-brand {
+        background-color: $color_35;
+        box-shadow: -8px -4px 6px 1px rgb(15, 14, 32);
+        padding: 0.9px;
+        li.theme-text {
+            a {
+                font-size: 21px !important;
+                color: $color_5 !important;
+                line-height: 2.75rem;
+                padding: 0.39rem 0.8rem;
+                text-transform: initial;
+                position: unset;
+            }
+        }
+    }
+    .navbar-brand {
+        .img-fluid {
+            display: inline;
+            width: 44px;
+            height: auto;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+    }
+    .border-underline {
+        border-left: 1px solid #ccc;
+        height: 20px;
+        margin-top: 18px;
+        margin-left: 0px;
+        margin-right: 8px;
+    }
+    * {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    ul.menu-categories {
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        li {
+            >.dropdown-toggle[aria-expanded="true"] {
+                i.flaticon-right-arrow {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        li.menu {
+            &:first-child {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                >a {
+                    background-color: $color_36;
+                    color: $color_29;
+                    border-radius: 30px;
+                    margin-bottom: 30px;
+                    span.badge {
+                        vertical-align: middle;
+                        padding: 3px 15px;
+                        line-height: 1.3;
+                    }
+                }
+                >.dropdown-toggle {
+                    i {
+                        color: $color_30;
+                        padding: 0;
+                        border-radius: 0;
+                    }
+                }
+                >.dropdown-toggle[aria-expanded="true"] {
+                    color: $color_5;
+                    i {
+                        background-color: $color_21;
+                        color: $color_5;
+                        font-size: 21px;
+                    }
+                }
+                ul.submenu {
+                    >li {
+                        a {
+                            justify-content: flex-start;
+                            padding: 12px 12px 12px 35px;
+                            padding: 12px 12px 12px 2px;
+                            i {
+                                align-self: center;
+                                margin-right: 12px;
+                                font-size: 19px;
+                                width: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                padding-bottom: 40px;
+            }
+            >.dropdown-toggle {
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 4px;
+                height: 44px;
+                cursor: pointer;
+                font-size: 15.32px;
+                font-weight: 200;
+                color: $color_31;
+                padding: 30px 5px 30px 0px;
+                >div {
+                    align-self: center;
+                }
+                i {
+                    color: $color_31;
+                    font-size: 21px;
+                    margin-right: 6px;
+                    vertical-align: middle;
+                    padding: 7px;
+                    border-radius: 50%;
+                }
+                &:hover {
+                    color: $color_5;
+                    i {
+                        color: $color_5;
+                    }
+                }
+                i.flaticon-right-arrow {
+                    font-size: 11px;
+                    vertical-align: middle;
+                    margin-right: 0;
+                }
+                i.flaticon-down-arrow {
+                    font-size: 11px;
+                    vertical-align: middle;
+                    margin-right: 0;
+                }
+            }
+            .dropdown-toggle {
+                &:after {
+                    display: none;
+                }
+            }
+            >.dropdown-toggle[aria-expanded="true"] {
+                i {
+                    background-color: $color_37;
+                    color: $color_5;
+                }
+                span {
+                    color: $color_5;
+                }
+                i.flaticon-right-arrow {
+                    background-color: $color_21;
+                }
+                i.flaticon-down-arrow {
+                    background-color: $color_21;
+                }
+            }
+            >a {
+                span {
+                    &:not(.badge) {
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &:not(:first-child) {
+                ul.submenu {
+                    >li {
+                        a {
+                            &:before {
+                                content: '';
+                                background-color: $color_38;
+                                position: absolute;
+                                height: 1px;
+                                width: 5px;
+                                top: 27px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        ul.submenu {
+            >li {
+                a {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 15px 12px 15px 48px;
+                    padding: 17px 12px 17px 48px;
+                    padding-left: 14px;
+                    margin-left: 46px;
+                    font-size: 13.32px;
+                    font-weight: 200;
+                    color: $color_32;
+                    color: $color_33;
+                    &:hover {
+                        color: $color_5;
+                        &:before {
+                            background-color: $color_39;
+                        }
+                    }
+                    i {
+                        align-self: center;
+                        font-size: 9px;
+                    }
+                }
+                ul.sub-submenu {
+                    >li {
+                        a {
+                            position: relative;
+                            padding: 12px 12px 12px 48px;
+                            padding-left: 14px;
+                            margin-left: 55px;
+                            font-size: 13px;
+                            color: $color_34;
+                            &:hover {
+                                color: $color_5;
+                                &:before {
+                                    background-color: $color_39;
+                                }
+                            }
+                            &:before {
+                                content: '';
+                                background-color: $color_40;
+                                padding: 2px;
+                                position: absolute;
+                                top: 20px !important;
+                                border-radius: 50%;
+                                left: 0;
+                            }
+                        }
+                    }
+                    >li.active {
+                        a {
+                            color: $color_5;
+                            &:before {
+                                background-color: $color_39;
+                            }
+                        }
+                    }
+                }
+            }
+            >li.active {
+                a {
+                    color: $color_5;
+                }
+            }
+            li {
+                >[aria-expanded="true"] {
+                    i {
+                        color: $color_5;
+                    }
+                }
+                >a[aria-expanded="true"] {
+                    color: $color_5;
+                }
+            }
+        }
+    }
+}
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #3b3f5c !important;
+    z-index: 998 !important;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}

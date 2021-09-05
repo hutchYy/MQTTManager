@@ -1,0 +1,29 @@
+/* 	Status Indicator Right	*/
+.m-o-status-indicator-right {
+	.media {
+		&:first-child {
+			border-top: none;
+		}
+		padding: 1.5rem;
+		border-top: $b-width-1 $solid $color_6;
+		.media-heading {
+			span.status {
+				position: $pos-abs;
+				top: 8px;
+				right: 0;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+			}
+			span.online {
+				background-color: $additional-color-7;
+			}
+			span.offline {
+				background-color: $additional-color-8;
+			}
+			span.stand-by {
+				background-color: $color_47;
+			}
+		}
+	}
+}

@@ -1,0 +1,399 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../../assets/base/color_variables';   	// Color Variables
+@import '../../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../../assets/base/urls';   				// URLS Variables
+@import '../../../assets/base/utilities_variables';  // Utilities Variables
+
+
+/*
+ * This combined file was created by the DataTables downloader builder:
+ *   https://datatables.net/download
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#bs4/dt-1.10.16
+ *
+ * Included libraries:
+ *   DataTables 1.10.16
+ */
+table.dataTable {
+	clear: both;
+	width: 100% !important;
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+	max-width: none !important;
+	border-collapse: separate !important;
+	td {
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		padding: 12px 7px;
+	}
+	th {
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		padding: 12px 7px;
+	}
+	td.dataTables_empty {
+		text-align: $align-center;
+	}
+	th.dataTables_empty {
+		text-align: $align-center;
+	}
+	.form-control {
+		color: $additional-color-6;
+		font-size: 0.875rem;
+		&::-webkit-input-placeholder {
+			color: $additional-color-6;
+			font-size: 0.875rem;
+		}
+		&::-ms-input-placeholder {
+			color: $additional-color-6;
+			font-size: 0.875rem;
+		}
+		&::-moz-placeholder {
+			color: $additional-color-6;
+			font-size: 0.875rem;
+		}
+	}
+	thead {
+		>tr {
+			>th.sorting_asc {
+				padding-right: $p-30;
+			}
+			>th.sorting_desc {
+				padding-right: $p-30;
+			}
+			>th.sorting {
+				padding-right: $p-30;
+			}
+			>td.sorting_asc {
+				padding-right: $p-30;
+			}
+			>td.sorting_desc {
+				padding-right: $p-30;
+			}
+			>td.sorting {
+				padding-right: $p-30;
+			}
+			>th {
+				&:active {
+					outline: none;
+				}
+			}
+			>td {
+				&:active {
+					outline: none;
+				}
+			}
+		}
+		.sorting {
+			cursor: pointer;
+			position: $pos-rel;
+			&:before {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 1em;
+				content: "\2191";
+			}
+			&:after {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 0.5em;
+				content: "\2193";
+			}
+		}
+		.sorting_asc {
+			cursor: pointer;
+			position: $pos-rel;
+			&:before {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 1em;
+				content: "\2191";
+				opacity: 1;
+			}
+			&:after {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 0.5em;
+				content: "\2193";
+			}
+		}
+		.sorting_desc {
+			cursor: pointer;
+			position: $pos-rel;
+			&:before {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 1em;
+				content: "\2191";
+			}
+			&:after {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 0.5em;
+				content: "\2193";
+				opacity: 1;
+			}
+		}
+		.sorting_asc_disabled {
+			cursor: pointer;
+			position: $pos-rel;
+			&:before {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 1em;
+				content: "\2191";
+				opacity: 0;
+			}
+			&:after {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 0.5em;
+				content: "\2193";
+			}
+		}
+		.sorting_desc_disabled {
+			cursor: pointer;
+			position: $pos-rel;
+			&:before {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 1em;
+				content: "\2191";
+			}
+			&:after {
+				position: $pos-abs;
+				bottom: 0.9em;
+				display: block;
+				opacity: 0.4;
+				right: 0.5em;
+				content: "\2193";
+				opacity: 0;
+			}
+		}
+	}
+}
+table.dataTable.nowrap {
+	th {
+		white-space: nowrap;
+	}
+	td {
+		white-space: nowrap;
+	}
+}
+div.dataTables_wrapper {
+	div.dataTables_length {
+		label {
+			font-weight: normal;
+			text-align: $align-left;
+			white-space: nowrap;
+		}
+		select {
+			width: 75px;
+			display: inline-block;
+		}
+	}
+	div.dataTables_filter {
+		text-align: $align-right;
+		label {
+			font-weight: normal;
+			white-space: nowrap;
+			text-align: $align-left;
+		}
+		input {
+			margin-left: 0.5em;
+			display: inline-block;
+			width: auto;
+		}
+	}
+	div.dataTables_info {
+		padding-top: 0.85em;
+		white-space: nowrap;
+	}
+	div.dataTables_paginate {
+		margin: $m-0;
+		white-space: nowrap;
+		text-align: $align-right;
+		ul.pagination {
+			margin: 2px $m-0;
+			white-space: nowrap;
+			justify-content: flex-end;
+		}
+	}
+	div.dataTables_processing {
+		position: $pos-abs;
+		top: 50%;
+		left: 50%;
+		width: 200px;
+		margin-left: -$m-100;
+		margin-top: -26px;
+		text-align: $align-center;
+		padding: 1em $p-0;
+	}
+}
+div.dataTables_scrollHead {
+	table.dataTable {
+		margin-bottom: $m-0 !important;
+	}
+	table.table-bordered {
+		border-bottom-width: 0;
+	}
+}
+div.dataTables_scrollBody {
+	table {
+		border-top: none;
+		margin-top: $m-0 !important;
+		margin-bottom: $m-0 !important;
+		thead {
+			.sorting {
+				&:after {
+					display: none;
+				}
+			}
+			.sorting_asc {
+				&:after {
+					display: none;
+				}
+			}
+			.sorting_desc {
+				&:after {
+					display: none;
+				}
+			}
+		}
+		tbody {
+			tr {
+				&:first-child {
+					th {
+						border-top: none;
+					}
+					td {
+						border-top: none;
+					}
+				}
+			}
+		}
+	}
+}
+div.dataTables_scrollFoot {
+	>.dataTables_scrollFootInner {
+		box-sizing: content-box;
+		>table {
+			margin-top: 0 !important;
+			border-top: none;
+		}
+	}
+}
+table.dataTable.table-sm {
+	>thead {
+		>tr {
+			>th {
+				padding-right: $p-20;
+			}
+		}
+	}
+	.sorting {
+		&:before {
+			top: 5px;
+			right: 0.85em;
+		}
+		&:after {
+			top: 5px;
+		}
+	}
+	.sorting_asc {
+		&:before {
+			top: 5px;
+			right: 0.85em;
+		}
+		&:after {
+			top: 5px;
+		}
+	}
+	.sorting_desc {
+		&:before {
+			top: 5px;
+			right: 0.85em;
+		}
+		&:after {
+			top: 5px;
+		}
+	}
+}
+table.table-bordered.dataTable {
+	th {
+		border-left-width: 0;
+		&:last-child {
+			border-right-width: 0;
+			border-right-width: 0;
+		}
+	}
+	td {
+		border-left-width: 0;
+		&:last-child {
+			border-right-width: 0;
+			border-right-width: 0;
+		}
+	}
+	tbody {
+		th {
+			border-bottom-width: 0;
+		}
+		td {
+			border-bottom-width: 0;
+		}
+	}
+}
+div.table-responsive {
+	>div.dataTables_wrapper {
+		>div.row {
+			margin: $m-0;
+			>div[class^="col-"] {
+				&:first-child {
+					padding-left: $p-0;
+				}
+				&:last-child {
+					padding-right: $p-0;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	div.dataTables_wrapper {
+		div.dataTables_length {
+			text-align: $align-center;
+		}
+		div.dataTables_filter {
+			text-align: $align-center;
+		}
+		div.dataTables_info {
+			text-align: $align-center;
+		}
+		div.dataTables_paginate {
+			text-align: $align-center;
+		}
+	}
+}

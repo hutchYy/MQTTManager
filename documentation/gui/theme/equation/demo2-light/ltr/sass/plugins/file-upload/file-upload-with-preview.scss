@@ -1,0 +1,90 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../../assets/base/color_variables';   	// Color Variables
+@import '../../assets/base/fonticons';   			// Fonticons Variables
+@import '../../assets/base/urls';   				// URLS Variables
+@import '../../assets/base/utilities_variables';  // Utilities Variables
+
+.custom-file-container {
+	box-sizing: border-box;
+	position: $pos-rel;
+	display: block;
+}
+.custom-file-container__custom-file {
+	box-sizing: border-box;
+	position: $pos-rel;
+	display: inline-block;
+	width: 100%;
+	height: calc(2.25rem + 2px);
+	margin-bottom: $m-0;
+	margin-top: $m-5;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.custom-file-container__custom-file__custom-file-input {
+	box-sizing: border-box;
+	min-width: 14rem;
+	max-width: 100%;
+	height: calc(2.25rem + 2px);
+	margin: $m-0;
+	opacity: 0;
+}
+.custom-file-container__custom-file__custom-file-control {
+	box-sizing: border-box;
+	position: $pos-abs;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 5;
+	height: calc(2.25rem + 2px);
+	padding: .5rem .75rem;
+	overflow: hidden;
+	line-height: 1.5;
+	color: $color_2;
+	user-select: none;
+	background-color: $white;
+	background-clip: padding-box;
+	border: $b-width-1 $solid $color_47;
+	border-radius: .25rem;
+	&:empty {
+		&::after {
+			box-sizing: border-box;
+			content: "Choose file...";
+		}
+	}
+	&::before {
+		box-sizing: border-box;
+		position: $pos-abs;
+		top: 0;
+		right: 0;
+		z-index: 6;
+		display: block;
+		height: calc(2.25rem + 2px);
+		padding: .5rem .75rem;
+		line-height: 1.25;
+		color: $white;
+		background-color: $color_47;
+		border-left: $b-width-1 $solid $color_47;
+		box-sizing: border-box;
+		content: "Browse";
+	}
+}
+.custom-file-container__image-preview {
+	box-sizing: border-box;
+	transition: all 0.6s ease;
+	margin-top: $m-20;
+	margin-bottom: $m-40;
+	height: 250px;
+	width: 100%;
+	border-radius: $br-4;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+label {
+	margin-bottom: 14px;
+	color: $additional-color-5;
+}

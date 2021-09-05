@@ -1,0 +1,27 @@
+/*
+    Simple Pills
+*/
+.simple-pills {
+	.nav-pills {
+		li {
+			a {
+				color: $additional-color-11;
+			}
+		}
+		.nav-link.active {
+			background-color: $color_57;
+			border-color: $color_none;
+		}
+		.show {
+			>.nav-link {
+				background-color: $color_57;
+				border-color: $color_none;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

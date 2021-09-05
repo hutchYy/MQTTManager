@@ -1,0 +1,39 @@
+/*
+    Rounded Pills with Background   
+*/
+.rounded-background-pills {
+	padding: 0;
+	ul#rounded-background-pills-tab {
+		background-color: $color_86;
+		padding: 24px 0;
+	}
+	div#rounded-background-pills-tabContent {
+		padding: $p-20;
+	}
+	.nav-pills {
+		li {
+			a {
+				color: $light-gray;
+			}
+		}
+		.nav-link.active {
+			box-shadow: $shadow-10;
+			background-color: $white;
+			color: $color_47;
+			border-color: $color_none;
+		}
+		.show {
+			>.nav-link {
+				box-shadow: $shadow-10;
+				background-color: $white;
+				color: $color_47;
+				border-color: $color_none;
+			}
+		}
+	}
+	.tab-content {
+		>.tab-pane {
+			padding: 25px 18px 29px 25px;
+		}
+	}
+}

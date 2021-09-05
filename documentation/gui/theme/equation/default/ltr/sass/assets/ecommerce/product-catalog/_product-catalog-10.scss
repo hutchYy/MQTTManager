@@ -1,0 +1,94 @@
+/*
+    Procut-catalog 10
+*/
+.product-cat10 {
+	.card {
+		padding: $p-0;
+		height: 473px;
+		border: none;
+		.wrapper {
+			background-color: $white;
+			min-height: 473px;
+			position: $pos-rel;
+			overflow: hidden;
+			background: $url_15;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: auto;
+			&:hover {
+				.card-content-container {
+					-ms-transform: translateY(13px) translateY(1em);
+					-webkit-transform: translateY(13px) translateY(1em);
+					-moz-transform: translateY(13px) translateY(1em);
+					transform: translateY(13px) translateY(1em);
+					.content {
+						height: 500px;
+						transition: width 0.3s;
+					}
+				}
+			}
+		}
+		.card-content-container {
+			position: $pos-abs;
+			bottom: 0;
+			width: 101%;
+			-ms-transform: translateY(195px) translateY(1em);
+			-webkit-transform: translateY(195px) translateY(1em);
+			-moz-transform: translateY(195px) translateY(1em);
+			transform: translateY(195px) translateY(1em);
+			transition: transform 0.3s;
+			.content {
+				padding: 1em;
+				position: $pos-rel;
+				z-index: 1;
+				background-color: $color_402;
+				background-color: $color_403;
+				color: $white !important;
+				transition: width 0.3s;
+				button {
+					padding: $p-5 $p-10;
+					background: $white;
+					color: $additional-color-11;
+					border-radius: 25px;
+				}
+			}
+		}
+		.card-text {
+			height: 115px;
+			margin: $m-0;
+			margin-top: 32px;
+			font-size: 13px;
+		}
+		.title {
+			margin-top: $m-10;
+			font-size: 18px;
+			text-align: $align-center;
+			font-weight: 200;
+			padding-right: $p-0;
+			text-transform: none;
+			padding-top: $p-0;
+			line-height: 1.5;
+			a {
+				color: $white;
+			}
+		}
+		.wishlist {
+			width: 42px;
+			height: 42px;
+			padding: 11px;
+			color: $white;
+			background-color: $color_53;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.zoom {
+			width: 42px;
+			height: 42px;
+			padding: 11px;
+			color: $white;
+			background-color: $color_53;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+	}
+}

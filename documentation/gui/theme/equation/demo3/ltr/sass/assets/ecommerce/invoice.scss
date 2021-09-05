@@ -1,0 +1,141 @@
+//	=================
+//    	Imports
+//	=================
+
+@import '../base/color_variables';   	// Color Variables
+@import '../base/fonticons';   			// Fonticons Variables
+@import '../base/urls';   				// URLS Variables
+@import '../base/utilities_variables';  // Utilities Variables
+
+
+/*
+=================
+    Invoice
+=================
+*/
+
+.invoice {
+	.widget-content-area.head-section {
+		padding: $p-20 $p-40 $p-20 $p-40;
+	}
+	h3.in-heading {
+		font-size: 24px;
+		font-weight: 500;
+		color: $color_375;
+		margin: $m-0;
+		line-height: 1;
+	}
+	.widget-content-area {
+		padding: $p-40;
+	}
+	.invoice-top-section {
+		border-bottom: $b-width-1 $solid $light-gray;
+	}
+	h5.invoice-info-title {
+		font-size: 20px;
+		font-weight: 500;
+		color: $black;
+		margin: $m-0 $m-0 5px;
+		line-height: 1;
+	}
+	.invoice-serial-number {
+		font-size: 17px;
+		color: $color_86;
+	}
+	.invoice-order-status {
+		font-size: 14px;
+		color: $color_2;
+		margin: $m-0 $m-0 5px;
+	}
+	.invoice-order-date {
+		font-size: 14px;
+		color: $color_2;
+		margin: $m-0 $m-0 5px;
+	}
+	/*    invoice-form    */
+	.invoice-from {
+		font-size: 14px;
+		margin: $m-0 $m-0 5px;
+		.invoice-from-title {
+			font-size: 15px;
+			font-size: 19px;
+			color: $additional-color-11;
+		}
+		p {
+			margin-bottom: $m-0;
+			color: $color_2;
+			font-size: 14px;
+		}
+	}
+	/*    invoice-to    */
+	.invoice-to {
+		font-size: 14px;
+		margin: $m-0 $m-0 5px;
+		.invoice-to-title {
+			font-size: 15px;
+			font-size: 19px;
+			color: $additional-color-11;
+			margin: $m-0 $m-0 5px;
+		}
+		p {
+			margin-bottom: $m-0;
+			color: $color_2;
+			font-size: 14px;
+		}
+	}
+	.table {
+		.thead-light {
+			th {
+				font-size: 17px;
+				background-color: $color_372;
+				border-color: $color_6;
+				color: $color_47;
+				font-weight: normal;
+			}
+		}
+		>tbody {
+			>tr {
+				>td {
+					font-size: 15px;
+					color: $color_2;
+					border-top: none;
+					border-bottom: $solid $b-width-1 $light-gray;
+					padding: 17px;
+				}
+			}
+		}
+	}
+	.invoice-total-amounts {
+		p {
+			font-size: 16px;
+			color: $color_2;
+			margin-right: 5px;
+		}
+		h4 {
+			font-size: 18px;
+			color: $color_398;
+			font-weight: 600;
+		}
+	}
+}
+@media print {
+	.crumbs {
+		display: none;
+	}
+	.page-header {
+		display: none;
+	}
+	#sidebar {
+		display: none;
+	}
+	.invoice {
+		.buttons {
+			display: none;
+		}
+	}
+	#content {
+		margin-left: $m-0 !important;
+		margin-right: $m-0 !important;
+		width: 100% !important;
+	}
+}

@@ -1,0 +1,2589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Weather Icon | Equation - Multipurpose Bootstrap Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link rel="stylesheet" type="text/css" href="plugins/font-icons/weather-icons/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/font-icons/weather-icons/weather-icons-wind.min.css">
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link href="assets/css/ui-kit/custom-weather_icon.css" rel="stylesheet" type="text/css" />
+    <!--  END CUSTOM STYLE FILE  -->
+</head>
+<body>
+    <div id="eq-loader">
+      <div class="eq-loader-div">
+          <div class="eq-loading dual-loader mx-auto mb-5"></div>
+      </div>
+    </div>
+
+    <!--  BEGIN NAVBAR  -->
+    <header class="desktop-nav header navbar fixed-top">
+        <div class="nav-logo mr-sm-5 ml-sm-4">
+            <a href="javascript:void(0);" class="nav-link sidebarCollapse d-inline-block mr-sm-5" data-placement="bottom">
+                <i class="flaticon-menu-line-3"></i>
+            </a>
+            <a href="index.html" class=""> <img src="assets/img/1.png" class="img-fluid" alt="logo"></a>
+        </div>
+        <ul class="navbar-nav flex-row mr-auto">
+            <li class="nav-item ml-4 d-lg-none d-sm-block d-none">
+                <form class="form-inline search-full form-inline search animated-search" role="search">
+                    <i class="flaticon-search-1 d-lg-none d-block"></i>
+                    <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                </form>
+            </li>
+            <li class="nav-item d-lg-block d-none">
+                <form class="form-inline form-inline search animated-search" role="search">
+                    <i class="flaticon-search-1 d-lg-none d-block"></i>
+                    <input type="text" class="form-control search-form-control" placeholder="Search here...">
+                </form>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav flex-row ml-lg-auto">
+
+            <li class="nav-item dropdown language-dropdown ml-4 mr-4 pr-3 pl-3 align-self-center d-lg-inline-block d-none">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="flagDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="">EN</span>
+                </a>
+                <div class="dropdown-menu position-absolute eq-animated eq-fadeInUp" aria-labelledby="flagDropdown">
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/fr.svg" class="flag-width" alt=""> &nbsp;FR</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/jp.svg" class="flag-width" alt=""> &nbsp;JP</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/ru.svg" class="flag-width" alt=""> &nbsp;RU</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/ca.svg" class="flag-width" alt=""> &nbsp;EN</a>
+                </div>
+            </li>
+
+           
+            <li class="nav-item dropdown message-dropdown ml-lg-4 mr-lg-4 d-sm-block d-none align-self-center">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="message-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon flaticon-mail-25"></span><span class="badge badge-primary">13</span>
+                </a>
+                <div class="dropdown-menu  position-absolute p-0 eq-animated eq-fadeInUp" aria-labelledby="message-dropdown">
+                    <div class="">
+                        <a class="dropdown-item">
+                            <div class="">
+                                <div class="media notification-new">
+                                    <div class="usr-img align-self-center mr-3">
+                                        <img class="usr-img rounded-circle" src="assets/img/90x90.jpg" alt="profile">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="meta-user-name mr-3 mb-0">Kara Young</p>
+                                            <p class="meta-time align-self-center mb-0">04.02.19</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Simple and clean! Nice I'd like to </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item">
+                            <div class="">
+                                <div class="media notification-new">
+                                    <div class="notification-icon align-self-center mr-3">
+                                        <i class="flaticon-mailbox"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="meta-title mr-3 mb-0">1 new email</p>
+                                            <p class="meta-time align-self-center mb-0">04.02.19</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Anderson.Daisy@mail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item">
+                            <div class="">
+                                <div class="media">
+                                    <div class="usr-img align-self-center mr-3">
+                                        <img class="usr-img rounded-circle" src="assets/img/90x90.jpg" alt="profile">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="meta-user-name mr-3 mb-0">Oscar Garner</p>
+                                            <p class="meta-time align-self-center mb-0">04.02.19</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Simple and clean! Nice I'd like to </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown notification-dropdown ml-3 mr-lg-4 align-self-center">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notification-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon flaticon-bell-4"></span><span class="badge badge-success">15</span>
+                </a>
+                <div class="dropdown-menu position-absolute eq-animated eq-fadeInUp" aria-labelledby="notification-dropdown">
+                    <div class="notification-scroll">
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Alan Green</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Irene Collins</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Sonia Shaw</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="">
+                                <div class="media">
+                                    <div class="user-profile">
+                                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                                    </div>
+                                    <div class="media-body">
+                                        <span>Xavier</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown user-profile-dropdown pl-4 pr-lg-0 pr-2 ml-lg-2 mr-lg-4  align-self-center">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle user">
+                    <div class="user-profile d-lg-block d-none">
+                        <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+                    </div>
+                    <i class="flaticon-user-7 d-lg-none d-block"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <div class="ps-overlay"></div>
+        <div class="search-overlay"></div>
+        
+        <!--  BEGIN MODERN  -->
+        <div class="modernSidebar-nav header navbar">
+            <div class="">
+                <nav id="modernSidebar">
+                    <ul class="menu-categories pl-0 m-0" id="topAccordion">
+                        <li class="menu">
+                            <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <div class="">
+                                    <i class="flaticon-computer-6"></i>
+                                    <span>Dashboard</span>
+                                </div>
+                            </a>
+                            <div class="collapse submenu list-unstyled eq-animated eq-fadeInUp" id="dashboard" data-parent="#topAccordion">
+                                <ul class="submenu-scroll">
+                                    <li>
+                                        <ul class="list-unstyled sub-submenu" id="dashboards">
+                                            <li>
+                                                <a href="index.html"> <div><i class="flaticon-computer-4"></i> Default</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="ecommerce_dashboard.html"> <div><i class="flaticon-cart-2"></i> Ecommerce</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="accounting_dashboard.html"> <div><i class="flaticon-chart-line"></i> Accounting</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="analytics_dashboard.html"> <div><i class="flaticon-computer-2"></i> Analytics</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="car_dashboard.html"> <div><i class="flaticon-car"></i> Car</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="classic_dashboard.html"> <div><i class="flaticon-computer-8"></i> Classic</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="stock_market_dashboard.html"> <div><i class="flaticon-up-chart"></i> Stock Market</div> </a>
+                                            </li>
+                                            <li>
+                                                <a href="cryptocurrency_dashboard.html"> <div><i class="flaticon-bitcoin-circle"></i> Cryptocurrency</div> </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#uiAndComponents" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-3d-cube"></i>
+                                    <span>Components</span>
+                                </div>
+                            </a>
+                            <div class="submenu list-unstyled collapse eq-animated eq-fadeInUp" id="uiAndComponents" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#ui-features" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">UI KIT</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="ui-features">
+                                                <li>
+                                                    <a href="ui_helper_classes.html"> Helper Classes </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_color_library.html"> Color Library </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_grid.html"> Grid System </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_typography.html"> Typography </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_shadows.html"> Shadow </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_miscellaneous.html"> Miscellaneous </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_pagination.html">Pagination</a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_alert.html"> Alerts </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_tooltips_and_popovers.html"> Tooltips And Popovers </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_loader.html"> Loaders </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#ui-buttons" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Buttons <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="ui-buttons" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_buttons.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_creative.html"> Creative </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_switches.html"> Switches </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_social_button.html"> Social </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_sweetalert.html"> Sweet Alerts </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list active">
+                                                    <a href="#ui-font-icons" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> Font Icons <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp show" id="ui-font-icons" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_flaticon_icon.html"> Flaticon </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_linea_icon.html"> Linea </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_themify_icon.html"> Themify </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_pixeden_icon.html"> Pixeden </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_fontawesome_icon.html"> Fontawesome </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_metro_icon.html"> Metro </a>
+                                                        </li>
+                                                        <li class="active">
+                                                            <a href="ui_weather_icon.html"> Weather </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_tabs.html"> Tabs </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_accordion.html"> Accordions  </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_modal.html"> Modals </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_sliders.html"> Range Sliders </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_timeline.html"> Timeline </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_tree.html"> Tree View </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#ui-progress" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Progress Bar <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="ui-progress" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_bootstrap_progress_bar.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_material_progress_bar.html"> Custom </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#ui-notification" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Notifications <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="ui-notification" data-parent="#ui-features">
+                                                        <li>
+                                                            <a href="ui_toastr.html"> Toastr </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_notification.html"> Creative </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ui_snackbar.html"> Snackbar </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_session_timeout.html"> Session Timeout </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_media_object.html"> Media Object </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_list_group.html"> List Group </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ui_nestable_list.html"> Nested List </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#components" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">COMPONENTS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="components">
+                                                <li>
+                                                    <a href="component_portlet.html"> Portlets </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_keypad.html"> Keypad </a>
+                                                </li>
+
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-carousel" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Carousel <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-carousel" data-parent="#components">      
+                                                        <li>
+                                                            <a href="component_bootstrap_carousel.html">Bootstrap</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_carousel.html">Metro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_sliders.html">Swiper</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="component_rating.html"> Rating </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_blockui.html"> Block UI </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_popup.html"> Popup </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_scroll_bars_basic.html"> Scrollbar </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_todo_list.html"> Todo List </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_scrollspy.html"> Scrollspy </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_countdown.html"> Countdown </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="component_counter.html"> Counter </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_datetime_picker.html"> Date &amp; Time Picker </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_lightbox.html"> LightBox </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_color_picker.html"> Color Picker </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-media" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Media <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-media" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_video_player.html"> Video Player </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_audio_player.html"> Audio Player </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="component_clipboard.html"> Clipboard </a>
+                                                </li>
+                                                <li>
+                                                    <a href="component_typeahead.html"> Typeahead </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-search" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Search <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-search" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_search_multiple.html"> Multiple </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_search_web.html"> Web </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-animation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Animations <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-animation" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_animation_buttons.html"> Buttons </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_animation_css.html"> CSS </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#component-img-crop" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Image Cropping <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="component-img-crop" data-parent="#components"> 
+                                                        <li>
+                                                            <a href="component_image_cropping_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="component_image_cropping_advanced.html"> Advanced </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#element" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">ELEMENTS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="element">
+                                                <li>
+                                                    <a href="element_steps.html"> Steps </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_ribbon.html"> Ribbons </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_testimonial.html"> Testimonials </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_team.html"> Team </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_contacts.html"> Contacts </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_blog.html"> Blog Elements </a>
+                                                </li>
+                                                <li>
+                                                    <a href="element_pricing_table.html"> Pricing Tables </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#tables-forms" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-table"></i>
+                                    <span>Tables &amp; Forms</span>
+                                </div>
+                            </a>
+                            <div class="submenu list-unstyled collapse eq-animated eq-fadeInUp" id="tables-forms" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#tables" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">TABLES</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="tables">
+                                                <li>
+                                                    <a href="table_basic.html"> Basic </a>
+                                                </li>
+                                                <li>
+                                                    <a href="table_tablesaw.html"> Tablesaw</a>
+                                                </li>
+                                                <li>
+                                                    <a href="table_sticky_table_header.html"> Sticky Headers</a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#tables-editable" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Editable <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="tables-editable" data-parent="#tables"> 
+                                                        <li>
+                                                            <a href="table_jq_spreadsheet.html"> Spreadsheet </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_jquery_tabledit.html"> TableEdit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_editablegrid.html"> Editable Grid </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#tables-data-tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> DataTables <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="tables-data-tables" data-parent="#tables"> 
+                                                        <li>
+                                                            <a href="table_dt_zero_configuration.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_ordering_sorting.html"> Order Sorting </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_multi-column_ordering.html"> Multi-Column </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_multiple_tables.html"> Multiple Tables</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_alternative_pagination.html"> Alternative Pagination</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_miscellaneous.html"> Miscellaneous </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_custom.html"> Custom </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_scrollable.html"> Scrollable </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_range_search.html"> Range Search </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_html5.html"> HTML5 Export </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="table_dt_live_dom_ordering.html"> Live DOM ordering </a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#forms" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">FORMS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="forms" style="">
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-bootstrap" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Bootstrap <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-bootstrap" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_bootstrap_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_bootstrap_rounded.html"> Rounded </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-input-group" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Input Group <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-input-group" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_input_group_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_input_group_rounded.html"> Rounded </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="form_bootstrap_material.html"> Material </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-layout" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Layouts <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-layout" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_layouts.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_layouts_rounded.html"> Rounded </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-validation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Validation <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-validation" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_validation.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_jqvalidation.html"> jQuery </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_validation_material.html"> Custom </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="form_input_mask.html"> Input Mask </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_bootstrap_select.html"> Bootstrap Select </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_select2.html"> Select2 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_bootstrap_touchspin.html"> TouchSpin </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_multiselect.html"> Multi Select </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_maxlength.html"> Maxlength </a>
+                                                </li>
+                                                <li>
+                                                    <a href="form_repeater.html"> Repeater </a>
+                                                </li>                           
+                                                <li>
+                                                    <a href="form_checkbox_radio.html"> Checkbox and Radio </a>
+                                                </li>
+
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#forms-wizard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Wizards <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="forms-wizard" data-parent="#forms"> 
+                                                        <li>
+                                                            <a href="form_bs_wizard.html"> Bootstrap </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="form_wizard.html"> jQuery Steps </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <a href="form_fileupload.html"> File Upload </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-copy"></i>
+                                    <span>Pages</span>
+                                </div>
+                            </a>
+                            <div class="submenu list-unstyled collapse eq-animated eq-fadeInUp" id="pages" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#ecommerce" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">ECOMMERCE</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="ecommerce">
+                                                <li>
+                                                    <a href="ecommerce_orders.html"> Orders </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_product.html"> Products </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_product_catalog.html"> Product Catalog </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#product-details" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" data-parent="#ecommerce"> Product Details <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="product-details">
+                                                        <li>
+                                                            <a href="ecommerce_product_details_1.html"> Product Details 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_product_details_2.html"> Product Details 2 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_addedit_product.html"> Add/Edit Products </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_addedit_categories.html"> Add/Edit Categories </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_view_cart.html"> View Cart </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_view_payments.html"> View Payments </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_view_customers.html"> View Customers </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_checkout.html"> Checkout </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_invoices.html"> Invoice </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_shipments.html"> Shipments </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_products_cart.html"> Products in Cart </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_coupons.html"> Coupons </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_low_stock.html"> Low Stock </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_best_sellers.html"> Best Sellers </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_refunds.html"> Refunds </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_search_terms.html"> Search Terms </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_newsletters.html"> Newsletters </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_wizards.html"> Payment Wizard </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ecommerce_reviews.html"> Reviews </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#page" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">PAGES</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="page">
+                                                <li>
+                                                    <a href="pages_blank_page.html"> Blank Page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_helpdesk.html"> Helpdesk </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_contact_us.html"> Contact Form </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_faq.html"> FAQ </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_blog.html"> Blog </a>
+                                                </li>                            
+                                                <li>
+                                                    <a href="pages_privacy.html"> Privacy Policy </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_cookie_consent.html"> Cookie Consent </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_landing_page.html" target="_blank"> Landing Page </a>
+                                                </li>
+                                                <li>
+                                                    <a href="pages_coming_soon.html"> Coming Soon </a>
+                                                </li>
+
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Error <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="pages-error" data-parent="#pages"> 
+                                                        <li>
+                                                            <a href="pages_error404.html"> 404 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error404-2.html"> 404 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error500.html"> 500 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error500-2.html"> 500 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error503.html"> 503 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_error503-2.html"> 503 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="pages_maintenence.html"> Maintanence </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#users" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">USERS</span> </a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="users"> 
+                                                <li>
+                                                    <a href="user_profile.html"> Profile </a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_account_setting.html"> Account Settings </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-login" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Login <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-login" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_login_1.html"> Login 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_login_2.html"> Login 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_login_3.html"> Login 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-register" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Register <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-register" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_register_1.html"> Register 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_register_2.html"> Register 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_register_3.html"> Register 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-passRecovery" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Password Recovery <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-passRecovery" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_pass_recovery_1.html"> Password Recovery 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_pass_recovery_2.html"> Password Recovery 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_pass_recovery_3.html"> Password Recovery 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#user-lockscreen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Lockscreen <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="user-lockscreen" data-parent="#users"> 
+                                                        <li>
+                                                            <a href="user_lockscreen_1.html"> Lockscreen 1 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_lockscreen_2.html"> Lockscreen 2 </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="user_lockscreen_3.html"> Lockscreen 3 </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#app" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                                <div class="">
+                                    <i class="flaticon-mail-19"></i>
+                                    <span>Apps</span>
+                                </div>
+                            </a>
+                            <div class="collapse submenu list-unstyled eq-animated eq-fadeInUp" id="app" data-parent="#topAccordion">
+                                <ul class="submenu-scroll">
+                                    <li>
+                                        <ul class="list-unstyled mt-4">
+                                            <li>
+                                                <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="apps"> 
+                                                    <li>
+                                                        <a href="apps_chat.html"> Chat </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_mailbox.html"> Mailbox </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_mailbox_with_chat.html"> Mailbox With Chat </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_newsletter.html"> Newsletter </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="apps_scheduler.html"> Scheduler </a>
+                                                    </li>
+                                                    <li class="sub-sub-submenu-list">
+                                                        <a href="#apps-calendars" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Calendar <i class="flaticon-right-arrow"></i> </a>
+                                                        <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="apps-calendars" data-parent="#apps-calendars"> 
+                                                            <li>
+                                                                <a href="apps_basic_calendar.html"> Basic </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="apps_full_calendar.html"> Full Calendar </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="apps_drag_n_drop_calendar.html"> Drag n Drop </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu">
+                            <a href="#more" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <div class="">
+                                    <i class="flaticon-plus"></i>
+                                    <span class="">More</span>
+                                </div>
+                            </a>
+                            <div class="collapse submenu list-unstyled eq-animated eq-fadeInUp" id="more" data-parent="#topAccordion">
+                                <div class="submenu-scroll">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#modules" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">MODULES</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="modules"> 
+                                                <li>
+                                                    <a href="modules_widgets.html"> Widgets </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_table_and_event.html"> Tables &amp; Events </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_charts_and_maps.html"> Charts &amp; Maps </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_weather_and_calendar.html"> Weather &amp; Calendar </a>
+                                                </li>
+                                                <li>
+                                                    <a href="modules_cards.html"> Cards </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#dragndrop" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">DRAG AND DROP</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="dragndrop"> 
+                                                <li>
+                                                    <a href="dragndrop_gridstack.html"> Grid Stack</a>
+                                                </li>
+                                                <li>
+                                                    <a href="dragndrop_dragula.html"> Dragula</a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#dragndrop-jqueryui" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> jQuery UI <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="dragndrop-jqueryui" data-parent="#dragndrop"> 
+                                                        <li>
+                                                            <a href="dragndrop_ui_product_cart.html"> Shopping Cart </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="dragndrop_scrumboard.html"> Scrum Task Board</a>
+                                                        </li>                               
+                                                        <li>
+                                                            <a href="dragndrop_scroll_bars.html"> Scrollbar</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#charts" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">CHARTS</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="charts"> 
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#chart-amcharts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> amCharts <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="chart-amcharts" data-parent="#charts"> 
+                                                        <li>
+                                                            <a href="am_column_and_barchart.html"> Column &amp; Bar </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="am_line_and_areachart.html"> Line &amp; Area </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="am_pie_and_donutchart.html"> Pie &amp; Donut </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="am_gauge_and_otherchart.html"> Gauges  &amp; Other </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#chart-c3chart" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> C3 <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="chart-c3chart" data-parent="#charts"> 
+                                                        <li>
+                                                            <a href="charts_c3_chart.html"> Simple</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="charts_c3_api.html"> Api </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="charts_cssplot.html"> CSS Plot </a>
+                                                </li>
+                                                <li>
+                                                    <a href="charts_morris.html"> Morris </a>
+                                                </li>
+                                                <li>
+                                                    <a href="charts_jQuery_sparklines.html"> jQuery Sparklines </a>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#chart-chartist" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Chartist <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="chart-chartist" data-parent="#charts"> 
+                                                        <li>
+                                                            <a href="charts_chartist_bar.html"> Bar </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="charts_chartist_line.html"> Line &amp; Area </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="charts_chartist_pie.html"> Pie </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#maps" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> <span class="">MAPS</span></a>
+                                            <ul class="list-unstyled sub-submenu collapse show eq-animated eq-fadeInUp" id="maps">
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#map-jqMapael" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> jquery Mapael <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="map-jqMapael" data-parent="#maps"> 
+                                                        <li>
+                                                            <a href="map_jquerymapael_basic.html"> Basic </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="map_jquerymapael_advanced.html"> Advanced </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-sub-submenu-list">
+                                                    <a href="#map-vMaps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Vector Maps <i class="flaticon-right-arrow"></i> </a>
+                                                    <ul class="collapse list-unstyled sub-submenu eq-animated eq-fadeInUp" id="map-vMaps" data-parent="#maps"> 
+                                                        <li>
+                                                            <a href="map_amvector.html"> amVector</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="map_jvector.html"> jVector</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--  END MODERN  -->
+
+        <!--  BEGIN CONTENT PART  -->
+        <div id="content" class="main-content">
+            <div class="container">
+                <div class="page-header">
+                    <div class="page-title">
+                         <h3>Weather</h3>
+                    </div>
+                </div>
+                
+                <div class="row margin-bottom-120">
+                    <div class="col-lg-12">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-content widget-content-area bx-top-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+                                                <h4>Daytime</h4>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-sunny"></i>
+                                                    <p>wi-day-sunny</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-fog"></i>
+                                                    <p>wi-day-fog</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-rain"></i>
+                                                    <p>wi-day-rain</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-sleet"></i>
+                                                    <p>wi-day-sleet</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-snow-wind"></i>
+                                                    <p>wi-day-snow-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-thunderstorm"></i>
+                                                    <p>wi-day-thunderstorm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-cloudy-high"></i>
+                                                    <p>wi-day-cloudy-high</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-cloudy"></i>
+                                                    <p>wi-day-cloudy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-hail"></i>
+                                                    <p>wi-day-hail</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-rain-mix"></i>
+                                                    <p>wi-day-rain-mix</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-sleet-storm"></i>
+                                                    <p>wi-day-sleet-storm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-sprinkle"></i>
+                                                    <p>wi-day-sprinkle</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-windy"></i>
+                                                    <p>wi-day-windy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-light-wind"></i>
+                                                    <p>wi-day-light-wind</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-cloudy-gusts"></i>
+                                                    <p>wi-day-cloudy-gusts</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-haze"></i>
+                                                    <p>wi-day-haze</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-rain-wind"></i>
+                                                    <p>wi-day-rain-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-snow"></i>
+                                                    <p>wi-day-snow</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-storm-showers"></i>
+                                                    <p>wi-day-storm-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-solar-eclipse"></i>
+                                                    <p>wi-solar-eclipse</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-cloudy-windy"></i>
+                                                    <p>wi-day-cloudy-windy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-lightning"></i>
+                                                    <p>wi-day-lightning</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-showers"></i>
+                                                    <p>wi-day-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-snow-thunderstorm"></i>
+                                                    <p>wi-day-snow-thunderstrom</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-day-sunny-overcast"></i>
+                                                    <p>wi-day-sunny-overcast</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-hot"></i>
+                                                    <p>wi-hot</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Night Time</h4>
+                                            </div>                                        
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-clear"></i>
+                                                    <p>wi-night-clear</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-hail"></i>
+                                                    <p>wi-night-alt-hail</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-rain-wind"></i>
+                                                    <p>wi-night-alt-rain-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-snow"></i>
+                                                    <p>wi-night-alt-snow</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-storm-showers"></i>
+                                                    <p>wi-night-alt-storm-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-cloudy-windy"></i>
+                                                    <p>wi-night-cloudy-windy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-partly-cloudy"></i>
+                                                    <p>wi-night-partly-cloudy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-showers"></i>
+                                                    <p>wi-night-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-snow-thunderstorm"></i>
+                                                    <p>wi-night-snow-thunderstorm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-thunderstorm"></i>
+                                                    <p>wi-night-thunderstrom</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-thunderstorm"></i>
+                                                    <p>wi-thunderstrom</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-cloudy"></i>
+                                                    <p>wi-night-alt-cloudy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-lightning"></i>
+                                                    <p>wi-night-alt-lightning</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-showers"></i>
+                                                    <p>wi-night-alt-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-snow-thunderstorm"></i>
+                                                    <p>wi-night-alt-snow-thunderstorm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-thunderstorm"></i>
+                                                    <p>wi-night-alt-thunderstorm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-fog"></i>
+                                                    <p>wi-night-fog</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-rain"></i>
+                                                    <p>wi-night-rain</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-sleet"></i>
+                                                    <p>wi-night-slett</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-snow-wind"></i>
+                                                    <p>wi-night-snow-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-lunar-eclipse"></i>
+                                                    <p>wi-lunar-eclipse</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-cloudy-high"></i>
+                                                    <p>wi-night-alt-cloudy-high</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-cloudy-gusts"></i>
+                                                    <p>wi-night-alt-cloudy-gusts</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-rain"></i>
+                                                    <p>wi-night-alt-rain</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-sleet"></i>
+                                                    <p>wi-night-alt-sleet</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-snow-wind"></i>
+                                                    <p>wi-night-alt-snow-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-cloudy"></i>
+                                                    <p>wi-night-cloudy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-hail"></i>
+                                                    <p>wi-night-hail</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-rain-mix"></i>
+                                                    <p>wi-night-rain-mix</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-sleet-storm"></i>
+                                                    <p>wi-night-sleet-storm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-sprinkle"></i>
+                                                    <p>wi-night-sprinkle</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-stars"></i>
+                                                    <p>wi-stars</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-cloudy-high"></i>
+                                                    <p>wi-night-cloudy-high</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-cloudy-windy"></i>
+                                                    <p>wi-night-alt-cloudy-windy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-rain-mix"></i>
+                                                    <p>wi-night-alt-rain-mix</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-sleet-storm"></i>
+                                                    <p>wi-night-alt-sleet-storm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-sprinkle"></i>
+                                                    <p>wi-night-alt-sprinkle</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-cloudy-gusts"></i>
+                                                    <p>wi-night-cloudy-gusts</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-lightning"></i>
+                                                    <p>wi-night-lightning</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-rain-wind"></i>
+                                                    <p>wi-night-rain-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-snow"></i>
+                                                    <p>wi-night-snow</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-storm-showers"></i>
+                                                    <p>wi-night-storm-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-storm-showers"></i>
+                                                    <p>wi-storm-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-night-alt-partly-cloudy"></i>
+                                                    <p>wi-night-alt-partly-cloudy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Neutral</h4>
+                                            </div>                                     
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-cloud"></i>
+                                                    <p>wi-cloud</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-fog"></i>
+                                                    <p>wi-fog</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-rain-wind"></i>
+                                                    <p>wi-ranin-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-sprinkle"></i>
+                                                    <p>wi-sprinkle</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-snow"></i>
+                                                    <p>wi-snow</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-raindrops"></i>
+                                                    <p>wi-raindrops</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-windy"></i>
+                                                    <p>wi-windy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-fire"></i>
+                                                    <p>wi-fire</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-volcano"></i>
+                                                    <p>wi-volcano</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-gale-warning"></i>
+                                                    <p>wi-gale-warning</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-cloudy"></i>
+                                                    <p>wi-cloudy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-hail"></i>
+                                                    <p>wi-hail</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-showers"></i>
+                                                    <p>wi-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-storm-showers"></i>
+                                                    <p>wi-storm-showers</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-smog"></i>
+                                                    <p>wi-storm-smog</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-raindrop"></i>
+                                                    <p>wi-raindrop</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-strong-wind"></i>
+                                                    <p>wi-strong-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-flood"></i>
+                                                    <p>wi-flood</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-hurricane"></i>
+                                                    <p>wi-hurricane</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-storm-warning"></i>
+                                                    <p>wi-strom-warning</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-cloudy-gusts"></i>
+                                                    <p>wi-cloudy-gusts</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-rain"></i>
+                                                    <p>wi-rain</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-sleet"></i>
+                                                    <p>wi-sleet</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-thunderstorm"></i>
+                                                    <p>wi-thunderstorm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-smoke"></i>
+                                                    <p>wi-smoke</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-dust"></i>
+                                                    <p>wi-dust</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-sandstorm"></i>
+                                                    <p>wi-sandstorm</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-meteor"></i>
+                                                    <p>wi-meteor</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-tornado"></i>
+                                                    <p>wi-tornado</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-hurricane-warning"></i>
+                                                    <p>wi-hurricane-warning</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-cloudy-windy"></i>
+                                                    <p>wi-cloudy-windy</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-rain-mix"></i>
+                                                    <p>wi-rain-mix</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-snow"></i>
+                                                    <p>wi-snow</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-snow-wind"></i>
+                                                    <p>wi-snow-wind</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-lightning"></i>
+                                                    <p>wi-snow-lightning</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-snowflake-cold"></i>
+                                                    <p>wi-snowflake-cold</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-earthquake"></i>
+                                                    <p>wi-earthquake</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-tsunami"></i>
+                                                    <p>wi-tsunami</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-small-craft-advisory"></i>
+                                                    <p>wi-small-craft-advisory</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-direction"></i>
+                                                    <p>wi-wind-direction</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Miscellaneous</h4>
+                                            </div>                                   
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-alien"></i>
+                                                    <p>wi-alien</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-thermometer"></i>
+                                                    <p>wi-thermometer</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-cloud-up"></i>
+                                                    <p>wi-cloud-up</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-sunrise"></i>
+                                                    <p>wi-sunrise</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-refresh"></i>
+                                                    <p>wi-refresh</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-humidity"></i>
+                                                    <p>wi-humidity</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-celsius"></i>
+                                                    <p>wi-celsius</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-thermometer-exterior"></i>
+                                                    <p>wi-thermometer-exterior</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-cloud-refresh"></i>
+                                                    <p>wi-cloud-refresh</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-sunset"></i>
+                                                    <p>wi-sunset</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-refresh-alt"></i>
+                                                    <p>wi-refresh-alt</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-na"></i>
+                                                    <p>wi-na</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-fahrenheit"></i>
+                                                    <p>wi-fahrenheit</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-thermometer-internal"></i>
+                                                    <p>wi-thermometer-internal</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-horizon"></i>
+                                                    <p>wi-horizon</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moonrise"></i>
+                                                    <p>wi-moonrise</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-umbrella"></i>
+                                                    <p>wi-umbrella</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-train"></i>
+                                                    <p>wi-train</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-degrees"></i>
+                                                    <p>wi-degrees</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-cloud-down"></i>
+                                                    <p>wi-cloud-down</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-horizon-alt"></i>
+                                                    <p>wi-horizon-alt</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moonset"></i>
+                                                    <p>wi-moonset</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-barometer"></i>
+                                                    <p>wi-barometer</p>
+                                                </div>
+                                           </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Moon Phases</h4>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <blockquote class="blockquote">
+                                                    The moons are split into 28 icons, to correspond neatly with the 28 day moon cycle. There is a primary set and alternate set. The primary set is meant to be interpreted as: where there are pixels, that is the illuminated part of the moon. The alternate set is meant to be interpreted as: where there are pixels, that is the shadowed part of the moon.
+                                                </blockquote>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-new"></i>
+                                                    <p>wi-moon-new</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-crescent-4"></i>
+                                                    <p>wi-moon-waxing-crescent-4-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-gibbous-1"></i>
+                                                    <p>wi-moon-waxing-gibbous-1-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-gibbous-5"></i>
+                                                    <p>wi-moon-waxing-gibbous-5-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-gibbous-2"></i>
+                                                    <p>wi-moon-waning-gibbous-2-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-gibbous-6"></i>
+                                                    <p>wi-moon-waning-gibbous-6-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-crescent-3"></i>
+                                                    <p>wi-moon-waning-crescent-3-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-new"></i>
+                                                    <p>wi-moon-alt-new</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-crescent-4"></i>
+                                                    <p>wi-moon-alt-waxing-crescent-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-gibbous-1"></i>
+                                                    <p>wi-moon-alt-waxing-gibbous-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-gibbous-5"></i>
+                                                    <p>wi-moon-alt-waxing-gibbous-5</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-gibbous-2"></i>
+                                                    <p>wi-moon-alt-waning-gibbous-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-gibbous-6"></i>
+                                                    <p>wi-moon-alt-waning-gibbous-6</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-crescent-3"></i>
+                                                    <p>wi-moon-alt-waning-crescent-3</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-crescent-1"></i>
+                                                    <p>wi-moon-waxing-crescent-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-crescent-5"></i>
+                                                    <p>wi-moon-waxing-crescent-5</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-gibbous-2"></i>
+                                                    <p>wi-moon-waxing-gibbous-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-gibbous-6"></i>
+                                                    <p>wi-moon-waxing-gibbous-6</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-gibbous-3"></i>
+                                                    <p>wi-moon-waning-gibbous-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-third-quarter"></i>
+                                                    <p>wi-moon-third-quarter</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-crescent-4"></i>
+                                                    <p>wi-moon-waning-crescent-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-crescent-1"></i>
+                                                    <p>wi-moon-alt-waxing-crescent-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-crescent-5"></i>
+                                                    <p>wi-moon-alt-waxing-crescent-5</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-gibbous-2"></i>
+                                                    <p>wi-moon-alt-waxing-gibbous-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-gibbous-6"></i>
+                                                    <p>wi-moon-alt-waxing-gibbous-6</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-gibbous-3"></i>
+                                                    <p>wi-moon-alt-waning-gibbous-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-third-quarter"></i>
+                                                    <p>wi-moon-alt-third-quarter</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-crescent-4"></i>
+                                                    <p>wi-moon-alt-waning-crescent-4</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-crescent-2"></i>
+                                                    <p>wi-moon-waxing-crescent-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-crescent-6"></i>
+                                                    <p>wi-moon-waxing-crescent-6</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-gibbous-3"></i>
+                                                    <p>wi-moon-waxing-gibbous-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-full"></i>
+                                                    <p>wi-moon-full</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-gibbous-4"></i>
+                                                    <p>wi-moon-waning-gibbous-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-crescent-1"></i>
+                                                    <p>wi-moon-waning-crescent-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-crescent-5"></i>
+                                                    <p>wi-moon-waning-crescent-5</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-crescent-2"></i>
+                                                    <p>wi-moon-alt-waxing-crescent-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-crescent-6"></i>
+                                                    <p>wi-moon-alt-waxing-crescent-6</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-gibbous-3"></i>
+                                                    <p>wi-moon-alt-waxing-gibbous-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-full"></i>
+                                                    <p>wi-moon-alt-full</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-gibbous-4"></i>
+                                                    <p>wi-moon-alt-waning-gibbous-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-crescent-1"></i>
+                                                    <p>wi-moon-alt-waning-crescent-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-crescent-5"></i>
+                                                    <p>wi-moon-alt-waning-crescent-5</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-crescent-3"></i>
+                                                    <p>wi-moon-waxing-crescent-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-first-quarter"></i>
+                                                    <p>wi-moon-first-quarter</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waxing-gibbous-4"></i>
+                                                    <p>wi-moon-waxing-gibbous-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-gibbous-1"></i>
+                                                    <p>wi-moon-waning-gibbous-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-gibbous-5"></i>
+                                                    <p>wi-moon-waning-gibbous-5</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-crescent-2"></i>
+                                                    <p>wi-moon-waning-crescent-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-waning-crescent-6"></i>
+                                                    <p>wi-moon-waning-crescent-6</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-crescent-3"></i>
+                                                    <p>wi-moon-alt-waxing-crescent-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-first-quarter"></i>
+                                                    <p>wi-moon-alt-first-quarter</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waxing-gibbous-4"></i>
+                                                    <p>wi-moon-alt-waxing-gibbous-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-gibbous-1"></i>
+                                                    <p>wi-moon-alt-waning-gibbous-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-gibbous-5"></i>
+                                                    <p>wi-moon-alt-waning-gibbous-5</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-crescent-2"></i>
+                                                    <p>wi-moon-alt-waning-crescent-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-moon-alt-waning-crescent-6"></i>
+                                                    <p>wi-moon-alt-waning-crescent-6</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Time</h4>
+                                            </div>                               
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-1"></i>
+                                                    <p>wi-time-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-5"></i>
+                                                    <p>wi-time-5</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-9"></i>
+                                                    <p>wi-time-9</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-2"></i>
+                                                    <p>wi-time-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-6"></i>
+                                                    <p>wi-time-6</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-10"></i>
+                                                    <p>wi-time-10</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-3"></i>
+                                                    <p>wi-time-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-7"></i>
+                                                    <p>wi-time-7</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-11"></i>
+                                                    <p>wi-time-11</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-4"></i>
+                                                    <p>wi-time-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-8"></i>
+                                                    <p>wi-time-8</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-time-12"></i>
+                                                    <p>wi-time-12</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Directional Arrows</h4>
+                                            </div>                                         
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-up"></i>
+                                                    <p>wi-direction-up</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-down"></i>
+                                                    <p>wi-direction-down</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-up-right"></i>
+                                                    <p>wi-direction-up-right</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-down-left"></i>
+                                                    <p>wi-direction-down-left</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-right"></i>
+                                                    <p>wi-direction-right</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-left"></i>
+                                                    <p>wi-direction-left</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-down-right"></i>
+                                                    <p>wi-direction-down-right</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-direction-up-left"></i>
+                                                    <p>wi-direction-up-left</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Wind Degree Examples</h4>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <blockquote class="blockquote">
+                                                    <p>The classes for the wind direction indicator is split into 2 options. You can choose towards or from. Towards points to the degree, zero at the top. From points directly away from the degree. This means, if you want the indicator to represent "wind is coming from the south", you can use the <code>towards-0-deg</code> class, or if you prefer to use from, then you would use <code>from-180-deg</code>.</p>
+
+                                                    <p>There are 360 classes for each in 1 degree increments for maximum precision.</p>
+
+                                                    <p>To make a wind icon appear, you need to add 3 classes, the base icon class, the wind icon class, and then the direction you want it to face: <code>class="wi wi-wind towards-23-deg"</code></p>
+
+                                                    <p>NOTE: You must include the additional stylesheeet, <code>weather-icons-wind.css</code>  to use the wind icons and API mappings.</p>
+                                                </blockquote>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-0-deg"></i>
+                                                    <p>towards-0-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-90-deg"></i>
+                                                    <p>towards-90-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-180-deg"></i>
+                                                    <p>towards-180-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-270-deg"></i>
+                                                    <p>towards-270-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-180-deg"></i>
+                                                    <p>from-180-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-270-deg"></i>
+                                                    <p>from-270-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-0-deg"></i>
+                                                    <p>from-0-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-90-deg"></i>
+                                                    <p>from-90-deg</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-23-deg"></i>
+                                                    <p>towards-23-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-113-deg"></i>
+                                                    <p>towards-113-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-203-deg"></i>
+                                                    <p>towards-203-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-293-deg"></i>
+                                                    <p>towards-293-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-203-deg"></i>
+                                                    <p>from-203-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-293-deg"></i>
+                                                    <p>from-293-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-23-deg"></i>
+                                                    <p>from-23-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-113-deg"></i>
+                                                    <p>from-113-deg</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-45-deg"></i>
+                                                    <p>towards-45-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-135-deg"></i>
+                                                    <p>towards-135-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-225-deg"></i>
+                                                    <p>towards-225-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-313-deg"></i>
+                                                    <p>towards-313-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-225-deg"></i>
+                                                    <p>from-225-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-313-deg"></i>
+                                                    <p>from-313-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-45-deg"></i>
+                                                    <p>from-45-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-135-deg"></i>
+                                                    <p>from-135-deg</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-68-deg"></i>
+                                                    <p>towards-68-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-158-deg"></i>
+                                                    <p>towards-158-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-248-deg"></i>
+                                                    <p>towards-248-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind towards-336-deg"></i>
+                                                    <p>towards-336-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-248-deg"></i>
+                                                    <p>from-248-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-336-deg"></i>
+                                                    <p>from-336-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-68-deg"></i>
+                                                    <p>from-68-deg</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind from-158-deg"></i>
+                                                    <p>from-158-deg</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Wind Cardinal Examples</h4>
+                                            </div>                                   
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-n"></i>
+                                                    <p>wi-towards-n</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-e"></i>
+                                                    <p>wi-towards-e</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-s"></i>
+                                                    <p>wi-towards-s</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-w"></i>
+                                                    <p>wi-towards-w</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-n"></i>
+                                                    <p>wi-from-n</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-e"></i>
+                                                    <p>wi-from-e</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-s"></i>
+                                                    <p>wi-from-s</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-w"></i>
+                                                    <p>wi-from-w</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-nne"></i>
+                                                    <p>wi-towards-nne</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-ese"></i>
+                                                    <p>wi-towards-ese</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-ssw"></i>
+                                                    <p>wi-towards-ssw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-wnw"></i>
+                                                    <p>wi-towards-wnw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-nne"></i>
+                                                    <p>wi-from-nne</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-ese"></i>
+                                                    <p>wi-from-ese</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-ssw"></i>
+                                                    <p>wi-from-ssw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-wnw"></i>
+                                                    <p>wi-from-wnw</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-ne"></i>
+                                                    <p>wi-towards-ne</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-se"></i>
+                                                    <p>wi-towards-se</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-sw"></i>
+                                                    <p>wi-towards-sw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-nw"></i>
+                                                    <p>wi-towards-nw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-ne"></i>
+                                                    <p>wi-from-ne</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-se"></i>
+                                                    <p>wi-from-se</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-sw"></i>
+                                                    <p>wi-from-sw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-nw"></i>
+                                                    <p>wi-from-nw</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-ene"></i>
+                                                    <p>wi-towards-ene</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-sse"></i>
+                                                    <p>wi-towards-sse</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-wsw"></i>
+                                                    <p>wi-towards-wsw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-towards-nnw"></i>
+                                                    <p>wi-towards-nnw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-ene"></i>
+                                                    <p>wi-from-ene</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-sse"></i>
+                                                    <p>wi-from-sse</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-wsw"></i>
+                                                    <p>wi-from-wsw</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind wi-from-nnw"></i>
+                                                    <p>wi-from-nnw</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-5">
+                                                <h4>Beaufort Wind Scale</h4>
+                                            </div>                                
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-0"></i>
+                                                    <p>wi-wind-beaufort-0</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-4"></i>
+                                                    <p>wi-wind-beaufort-4</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-8"></i>
+                                                    <p>wi-wind-beaufort-8</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-12"></i>
+                                                    <p>wi-wind-beaufort-12</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-1"></i>
+                                                    <p>wi-wind-beaufort-1</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-5"></i>
+                                                    <p>wi-wind-beaufort-5</p>
+                                                </div>
+                                             </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-9"></i>
+                                                    <p>wi-wind-beaufort-9</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-2"></i>
+                                                    <p>wi-wind-beaufort-2</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-6"></i>
+                                                    <p>wi-wind-beaufort-6</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-10"></i>
+                                                    <p>wi-wind-beaufort-10</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-3"></i>
+                                                    <p>wi-wind-beaufort-3</p>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-7"></i>
+                                                    <p>wi-wind-beaufort-7</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-md-6 col-sm-6 custom-col-lg-3">
+                                                <div class="mb-4">
+                                                    <i class="wi wi-wind-beaufort-11"></i>
+                                                    <p>wi-wind-beaufort-11</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  END CONTENT PART  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!--  BEGIN FOOTER  -->
+    <footer class="footer-section theme-footer">
+
+        <div class="footer-section-1  sidebar-theme">
+            
+        </div>
+
+        <div class="footer-section-2 container-fluid">
+            <div class="row">
+                <div id="toggle-grid" class="col-xl-7 col-md-6 col-sm-6 col-12 text-sm-left text-center">
+                    <ul class="list-inline links ml-sm-5">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://themeforest.net/item/equation-responsive-admin-dashboard-template/23191987">Buy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-5 col-md-6 col-sm-6 col-12">
+                    <ul class="list-inline mb-0 d-flex justify-content-sm-end justify-content-center mr-sm-3 ml-sm-0 mx-3">
+                        <li class="list-inline-item  mr-3">
+                            <p class="bottom-footer">&#xA9; 2019 <a target="_blank" href="https://designreset.com/equation">Equation Admin Theme</a></p>
+                        </li>
+                        <li class="list-inline-item align-self-center">
+                            <div class="scrollTop"><i class="flaticon-up-arrow-fill-1"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  END FOOTER  -->
+
+    <!--  BEGIN PROFILE SIDEBAR  -->
+    <aside class="profile-sidebar text-center">
+        <div class="profile-content profile-content-scroll">
+            <div class="usr-profile">
+                <img src="assets/img/90x90.jpg" alt="admin-profile" class="img-fluid">
+            </div>
+            <p class="user-name mt-4 mb-4">Vincent Carpenter</p>
+            <div class="">
+                <div class="accordion" id="user-stats">
+                    <div class="card">
+                        <div class="card-header pb-4 mb-4" id="status">
+                            <h6 class="mb-0" data-toggle="collapse" data-target="#user-status" aria-expanded="true" aria-controls="user-status"><i class="flaticon-view-3 mr-2"></i> Status <i class="flaticon-down-arrow ml-2"></i> </h6>
+                        </div>
+                        <div id="user-status" class="collapse show" aria-labelledby="status" data-parent="#user-stats">
+                            <div class="card-body text-left">
+                                <ul class="list-unstyled pb-4">
+                                    <li class="status-online"><a href="javascript:void(0);">Online</a></li>
+                                    <li class="status-away"><a href="javascript:void(0);">Away</a></li>
+                                    <li class="status-no-disturb"><a href="javascript:void(0);">Not Disturb</a></li>
+                                    <li class="status-invisible"><a href="javascript:void(0);">Invisible</a></li>
+                                    <li class="status-offline"><a href="javascript:void(0);">Offline</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-links text-left">
+                <ul class="list-unstyled">
+                    <li><a href="apps_mailbox.html"><i class="flaticon-mail-22"></i> Inbox</a></li>
+                    <li><a href="user_profile.html"><i class="flaticon-user-11"></i> My Profile</a></li>
+                    <li><a href="user_login_1.html"><i class="flaticon-power-off"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--  BEGIN PROFILE SIDEBAR  -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY STYLES -->    
+</body>
+</html>

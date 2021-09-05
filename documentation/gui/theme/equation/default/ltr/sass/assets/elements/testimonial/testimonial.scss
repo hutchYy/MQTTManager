@@ -1,0 +1,222 @@
+
+//	=================
+//    	Imports
+//	=================
+
+@import '../../base/color_variables';   	// Color Variables
+@import '../../base/fonticons';   			// Fonticons Variables
+@import '../../base/urls';   				// URLS Variables
+@import '../../base/utilities_variables';  // Utilities Variables
+
+/*
+    Testimonial 4 
+*/
+.testimonial-4 {
+	padding: $p-0 15px;
+	text-align: $align-center;
+	.pic-4 {
+		display: inline-block;
+		border-radius: 50%;
+		margin-bottom: 15px;
+		overflow: hidden;
+		-webkit-box-shadow: $shadow-41, $shadow-42;
+		-moz-box-shadow: $shadow-41, $shadow-42;
+		box-shadow: $shadow-41, $shadow-42;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.description-4 {
+		padding: $p-0 15px;
+		color: $color_76;
+		line-height: 26px;
+		&:before {
+			content: "\f294";
+			font-family: $font_family_1;
+			display: inline-block;
+			font-size: $fs-20;
+			color: $color_57;
+			text-align: $align-left;
+			vertical-align: $v-align-middle;
+			margin-right: 8px;
+		}
+	}
+	.testimonial-title-4 {
+		font-size: $fs-20;
+		letter-spacing: 1px;
+		color: $color_55;
+		font-weight: 600;
+		text-transform: $transform-upper;
+		position: $pos-rel;
+		margin-top: $m-10;
+	}
+	h4 {
+		font-size: 14px;
+		font-weight: 100;
+		color: $color_56;
+		text-transform: $transform-upper;
+	}
+}
+.orange-text {
+	color: $color_294 !important;
+	.fa {
+		font-size: 14px;
+	}
+}
+#testimonial-slider-4.owl-theme {
+	.owl-controls {
+		position: $pos-rel;
+	}
+	.owl-dots {
+		.owl-dot.active {
+			span {
+				background-color: $color_90;
+			}
+		}
+		.owl-dot {
+			&:hover {
+				span {
+					background-color: $color_90;
+				}
+			}
+			span {
+				background-color: $color_490;
+			}
+		}
+	}
+}
+
+/* 
+    Testimonials 
+*/
+.testimonialsWrapper {
+	padding: 6.25rem 0rem;
+	position: $pos-rel;
+	padding: $p-100 $p-0;
+	overflow: hidden;
+	.carousel-outer {
+		max-width: 680px;
+		margin: $m-0 auto;
+	}
+	.owl-stage-outer {
+		overflow: visible;
+	}
+	.slide-item {
+		position: $pos-rel;
+		opacity: 0.30;
+		-webkit-transition: all 500ms ease;
+		-ms-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		-moz-transition: all 500ms ease;
+		transition: all 500ms ease;
+		.inner-box {
+			position: $pos-rel;
+			padding: $p-60 $p-50;
+			text-align: $align-center;
+			margin: 15px;
+			background: $white;
+			-webkit-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			transition: all 500ms ease;
+			&:before {
+				content: '"';
+				top: 20px;
+				position: $pos-abs;
+				left: 30px;
+				font-size: 43px;
+				opacity: .7;
+			}
+		}
+		.text {
+			position: $pos-rel;
+			font-size: $fs-16;
+			font-style: italic;
+			line-height: 1.9em;
+			margin-bottom: $m-30;
+		}
+		.info {
+			position: $pos-rel;
+			display: inline-block;
+			padding-left: $p-70;
+			min-height: 52px;
+			text-align: $align-left;
+			font-size: $fs-15;
+			.author-thumb {
+				position: $pos-abs;
+				left: 0px;
+				top: -10px;
+				width: 60px;
+			}
+			.author-title {
+				font-weight: 600;
+				line-height: 30px;
+			}
+		}
+	}
+	.active {
+		.slide-item {
+			opacity: 1;
+			.inner-box {
+				-webkit-box-shadow: $shadow-40;
+				-ms-box-shadow: $shadow-40;
+				-o-box-shadow: $shadow-40;
+				-moz-box-shadow: $shadow-40;
+				box-shadow: $shadow-40;
+				background: $color_492;
+				background: -webkit-linear-gradient(left, #ee3d50 , #6156ce);
+				background: -o-linear-gradient(right, #ee3d50 , #6156ce);
+				background: -moz-linear-gradient(right, #ee3d50 , #6156ce);
+				background: linear-gradient(to right, #ee3d50 , #6156ce);
+				color: $white;
+			}
+		}
+	}
+	.owl-dots {
+		position: $pos-rel;
+		padding-top: $p-70;
+		text-align: $align-center;
+		.owl-dot {
+			position: $pos-rel;
+			display: inline-block;
+			margin: 0px 8px;
+			span {
+				position: $pos-rel;
+				display: block;
+				width: 8px;
+				height: 8px;
+				background: $color_47;
+				border-radius: 50%;
+				&:before {
+					content: '';
+					position: $pos-abs;
+					left: -4px;
+					top: -4px;
+					right: -4px;
+					bottom: -4px;
+					border: $b-width-1 $solid $color_56;
+					border-radius: 50%;
+					opacity: 0;
+				}
+			}
+		}
+		.owl-dot.active {
+			span {
+				background: $color_491;
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.owl-carousel {
+	.owl-item {
+		img {
+			border: $solid $b-width-2 $light-gray;
+			border-radius: 50%;
+		}
+	}
+}

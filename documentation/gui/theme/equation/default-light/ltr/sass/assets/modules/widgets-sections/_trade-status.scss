@@ -1,0 +1,95 @@
+/*
+
+    Trade Status
+
+*/
+.trade-status {
+	background-color: $additional-color-2;
+	color: $white;
+}
+/*First Trade*/
+.first-trade {
+	border-right: 1px solid $color_47;
+	.widget-title {
+		margin-bottom: 0;
+		border-bottom: none;
+		padding: 10px 0;
+		font-weight: 300;
+		font-size: 15px;
+	}
+	.widget-date {
+		font-weight: 600;
+		font-size: 16px;
+	}
+	.widget-meta {
+		font-weight: 600;
+		font-size: 16px;
+	}
+	i {
+		font-size: 60px;
+		color: $additional-color-3;
+	}
+}
+/*Last Trade*/
+.last-trade {
+	border-right: 1px solid $color_47;
+	.widget-title {
+		margin-bottom: 0;
+		border-bottom: none;
+		padding: 10px 0;
+		font-weight: 300;
+		font-size: 15px;
+	}
+	.widget-date {
+		font-weight: 600;
+		font-size: 16px;
+	}
+	.widget-meta {
+		font-weight: 600;
+		font-size: 16px;
+	}
+	i {
+		font-size: 60px;
+		color: $color_59;
+	}
+}
+/*Total Trade*/
+.total-trades {
+	border-right: 1px solid $color_47;
+	.widget-title {
+		margin-bottom: 0;
+		border-bottom: none;
+		padding: 10px 0;
+		font-weight: 300;
+		font-size: 15px;
+	}
+	.widget-para {
+		font-weight: 600;
+		font-size: 16px;
+	}
+	i {
+		font-size: 60px;
+		color: $color_85;
+	}
+}
+/* Current Bitcoin Price */
+.current-bit-price {
+	.widget-title {
+		margin-bottom: 0;
+		border-bottom: none;
+		padding: 10px 0;
+		font-weight: 300;
+		font-size: 15px;
+	}
+	.widget-value {
+		font-weight: 600;
+		font-size: 15px;
+	}
+	.widget-rate {
+		color: $additional-color-3;
+	}
+	i {
+		font-size: 60px;
+		color: $color_84;
+	}
+}
