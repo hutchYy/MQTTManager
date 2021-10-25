@@ -1,11 +1,13 @@
 from queue import Queue
 import logging
-from flask import Flask
+from fastapi import FastAPI
+import uvicorn
 
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 log = logging.getLogger(f"{__name__}")
-webapp = Flask(__name__, template_folder="./gui/templates",static_folder="./gui/templates/static")
+webapp = FastAPI()
+webapp.
 
 def startMosquittoDaemon() -> None:
     from MQTTManager.service_managment import Services
@@ -21,7 +23,7 @@ def startMosquittoClient():
 
 def startWebApp(mqtt_queue:Queue):
     import MQTTManager.gui
-    webapp.run()
+    uvicorn.run(app:webapp, host="127.0.0.1", port=5000, log_level="info")
 
 def run():
     startMosquittoDaemon()

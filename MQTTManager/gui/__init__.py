@@ -15,11 +15,11 @@ def index():
     return render_template("index.html", SIDE_BAR=SIDE_BAR)
 
 @webapp.route("/mqtt/<page>")
-def index(page):
+def mqtt(page):
     global MAIN_FRAME
     SIDE_BAR=MAIN_FRAME["side-bar"]
     if page == "topics":
-        return render_template("index.html", SIDE_BAR=SIDE_BAR)
+        return render_template("mqtt/topics.htm", SIDE_BAR=SIDE_BAR)
     elif page == "topics":
         return render_template("index.html", SIDE_BAR=SIDE_BAR)
     else:
