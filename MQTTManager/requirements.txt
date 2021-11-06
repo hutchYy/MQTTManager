@@ -2,3 +2,5 @@ flask
 paho-mqtt
 fastapi[all]
 uvicorn
+python-jose[cryptography]
+passlib[bcrypt]

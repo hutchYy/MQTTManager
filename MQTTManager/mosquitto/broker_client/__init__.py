@@ -10,8 +10,7 @@ import time
 
 
 class BrokerClient(Thread):
-
-    def __init__(self, q:Queue) -> None:
+    def __init__(self, q: Queue) -> None:
         Thread.__init__(self)
         self.qeue = q
         self._stop_event = Event()
@@ -22,13 +21,17 @@ class BrokerClient(Thread):
     def run(self) -> None:
         self._stop_event = Event()
         self.set_callbacks()
-        self.client.connect("localhost", 1883, 60)
+        try:
+            self.client.connect("localhost", 1883, 60)
+        except Exception as e:
+            print(e)
+            return
         self.loop()
 
     def set_callbacks(self):
         # The callback for when the client receives a CONNACK response from the server.
         def on_connect(client, userdata, flags, rc):
-            self.log.debug("Connected with result code "+str(rc))
+            self.log.debug("Connected with result code " + str(rc))
 
             # Subscribing in on_connect() means that if we lose the connection and
             # reconnect then subscriptions will be renewed.
@@ -47,14 +50,26 @@ class BrokerClient(Thread):
             mid : Integer. The message id.
             properties: Properties class. In MQTT v5.0, the properties associated with the message.
             """
-            t = datetime.datetime.utcnow().replace(
-                tzinfo=datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+            t = (
+                datetime.datetime.utcnow()
+                .replace(tzinfo=datetime.timezone.utc)
+                .strftime("%Y-%m-%dT%H:%M:%SZ")
+            )
             base64_bytes = base64.b64encode(msg.payload)
             base64_string = base64_bytes.decode("ascii")
-  
-            json_payload = json.dumps({"timestamp": t, "topic": msg.topic, "payload": base64_string,
-                            "qos": msg.qos, "retain": msg.retain, "mid": msg.mid})
+
+            json_payload = json.dumps(
+                {
+                    "timestamp": t,
+                    "topic": msg.topic,
+                    "payload": base64_string,
+                    "qos": msg.qos,
+                    "retain": msg.retain,
+                    "mid": msg.mid,
+                }
+            )
             self.qeue.put(json_payload)
+
         self.client.on_connect = on_connect
         self.client.on_message = on_message
 

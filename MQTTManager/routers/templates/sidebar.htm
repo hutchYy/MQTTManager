@@ -1,0 +1,113 @@
+<!--  BEGIN SIDEBAR  -->
+
+{% macro processVal(text) -%}
+{% if text.lower() == "mqtt" %}
+{{text.upper()}}
+{% else %}
+{{text.capitalize()}}
+{% endif %}
+{%- endmacro %}
+
+<div class="sidebar-wrapper sidebar-theme">
+
+    <div id="dismiss" class="d-lg-none"><i class="flaticon-cancel-12"></i></div>
+
+    <nav id="sidebar">
+
+        <ul class="navbar-nav theme-brand flex-row  d-none d-lg-flex">
+            <li class="nav-item d-flex">
+                <a href="/" class="navbar-brand">
+                    <img src="{{ url_for('static', path='/assets/img/logo-3.png') }}" class="img-fluid" alt="logo">
+                </a>
+                <p class="border-underline"></p>
+            </li>
+            <li class="nav-item theme-text">
+                <a href="/" class="nav-link"> MQTTM </a>
+            </li>
+        </ul>
+
+
+        <ul class="list-unstyled menu-categories" id="accordionExample">
+            {% for key, val in SIDE_BAR.items() recursive %}
+            <li class="menu">
+                {% if val is mapping %}
+                {% if path.split("/")[1] == key %}
+                <a href="#{{ key }}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                    {% else%}
+                    <a href="#{{ key }}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        {% endif %}
+                        {% else %}
+                        <a href="/{{ key }}" class="dropdown-toggle">
+                            {% endif %}
+
+                            <div class="" {% if path.split("/")[1]==key %} style="color:#ffffff;" {% endif %}>
+                                <!-- <i class="flaticon-elements"></i> -->
+                                <span>{{ processVal(key) }}</span>
+                            </div>
+                            {% if val is mapping %}
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                            {% endif %}
+                        </a>
+                        {% if val is mapping %}
+                        {% if path.split("/")[1] == key %}
+                        <ul class="collapse submenu list-unstyled show" id="{{ key }}" data-parent="#accordionExample">
+                            {% else%}
+                            <ul class="collapse submenu list-unstyled" id="{{ key }}" data-parent="#accordionExample">
+                                {% endif %}
+
+                                {%- for subkey,subval in val.items() -%}
+                                {% if subval is mapping %}
+                                <li>
+                                    {% if path.split("/")[2] == subkey %}
+                                    <a href="#{{subkey}}" data-toggle="collapse" aria-expanded="true"
+                                        class="dropdown-toggle">
+                                        {{ processVal(subkey) }} <i class="flaticon-right-arrow"></i> </a>
+                                    <ul class="collapse list-unstyled sub-submenu show" id="{{subkey}}"
+                                        data-parent="#{{ key }}">
+                                        {% else%}
+                                        <a href="#{{subkey}}" data-toggle="collapse" aria-expanded="false"
+                                            class="dropdown-toggle">
+                                            {{ processVal(subkey) }} <i class="flaticon-right-arrow"></i> </a>
+                                        <ul class="collapse list-unstyled sub-submenu" id="{{subkey}}"
+                                            data-parent="#{{ key }}">
+                                            {% endif %}
+
+                                            {%- for subsubkey,subsubval in subval.items() -%}
+                                            {% if path.split("/")[3] == subsubkey %}
+                                            <li class="active">
+                                                {% else%}
+                                            <li>
+                                                {% endif %}
+                                                <a href="{{ subsubval }}"> {{ processVal(subsubkey) }} </a>
+                                            </li>
+                                            {% endfor -%}
+                                        </ul>
+                                </li>
+                                {% else %}
+                                <li>
+                                    {% if path.split("/")[2] == subkey %}
+
+                                    <a href="{{ subval }}" style="color: #ffffff;">
+                                        {{ processVal(subkey) }}</a>
+                                    {% else%}
+                                    <a href="{{ subval }}">
+                                        {{ processVal(subkey) }}</a>
+                                    {% endif %}
+
+                                </li>
+                                {% endif %}
+                                {% endfor -%}
+                            </ul>
+                            {% else %}
+
+                            {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+</div>
+
+<!--  END SIDEBAR  -->

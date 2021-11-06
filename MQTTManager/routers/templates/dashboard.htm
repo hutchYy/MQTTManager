@@ -1,0 +1,1178 @@
+{% extends "blank.htm" %}
+{% block body %}
+<!--  BEGIN CONTENT PART  -->
+<div id="content" class="main-content">
+    <div class="container">
+        <div class="page-header">
+            <div class="page-title">
+                <h3>Analytics Dashboard</h3>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4 p-0">
+                    <div class="organinc">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-6 align-self-center">
+                                <div class="organinc-title text-center">
+                                    <h6 class="mb-2">Organic
+                                    </h6>
+                                    <p class="">1,700</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-6 align-self-center">
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <p class="orgainc-stats mb-0">+14%</p>
+                                    </div>
+                                </div>
+                                <div class="organinc-body text-center">
+                                    <div id="linec1" class="mx-auto"
+                                        style="vertical-align: middle; display: inline-block; width: 100%; max-width: 90px; height: 45px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4 p-0">
+                    <div class="direct">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-6  align-self-center">
+                                <div class="direct-title text-center">
+                                    <h6 class="mb-2">Direct
+                                    </h6>
+                                    <p class="">1,560</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-6  align-self-center">
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <p class="direct-stats mb-0">-27%</p>
+                                    </div>
+                                </div>
+
+                                <div class="direct-body text-center">
+                                    <div id="linec2" class="mx-auto"
+                                        style="vertical-align: middle; display: inline-block; width: 100%; max-width: 90px; height: 45px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4 p-0">
+                    <div class="referral">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-6  align-self-center">
+                                <div class="referral-title text-center">
+                                    <h6 class="mb-2">Referral
+                                    </h6>
+                                    <p class="">1,900</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-6  align-self-center">
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <p class="referral-stats mb-0">+35%</p>
+                                    </div>
+                                </div>
+                                <div class="referral-body text-center">
+                                    <div id="linec3" class="mx-auto"
+                                        style="vertical-align: middle; display: inline-block; width: 100%; max-width: 90px; height: 45px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4 p-0">
+
+                    <div class="social">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-6  align-self-center">
+                                <div class="social-title text-center">
+                                    <h6 class="mb-2">Social
+                                    </h6>
+                                    <p class="">1,390</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-6  align-self-center">
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <p class="social-stats mb-0">-10%</p>
+                                    </div>
+                                </div>
+                                <div class="social-body text-center">
+                                    <div id="linec4" class="mx-auto"
+                                        style="vertical-align: middle; display: inline-block; width: 100%; max-width: 90px; height: 45px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4  h-100">
+                    <div class="total-visits">
+                        <div class="total-visits-title mb-5">
+                            <h6>Total Visits</h6>
+                            <p class="">26789</p>
+                        </div>
+
+                        <div class="total-visits-body">
+                            <div id="total-visits"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4 h-100">
+                    <div class="top-keyword">
+                        <div class="top-keyword-title mb-5">
+                            <h6 class="mb-0">Top Keywords</h6>
+                        </div>
+
+                        <div class="top-keyword-body">
+                            <a href="http://www.amcharts.com/javascript-charts/" title="JavaScript charts"
+                                target="_blank"
+                                style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; right: 5px; top: -20px;">JS
+                                chart by amCharts</a>
+
+                            <div id="top-keyword"></div>
+
+                            <div class="top-keyword-label mt-md-2 mt-3  mb-2 text-center">
+                                <div class="d-inline-block ml-2">
+                                    <div class="d-m-top-keyword-1  mr-1 data-marker align-self-center"></div>
+                                    <span class="page-view">BMW</span>
+                                </div>
+
+                                <div class="d-inline-block ml-2">
+                                    <div class="d-m-top-keyword-2  mr-1 data-marker align-self-center"></div>
+                                    <span class="page-view">HTC</span>
+                                </div>
+
+                                <div class="d-inline-block ml-2">
+                                    <div class="d-m-top-keyword-3  mr-1 data-marker align-self-center"></div>
+                                    <span class="page-view">XBOX</span>
+                                </div>
+
+                                <div class="d-inline-block ml-2">
+                                    <div class="d-m-top-keyword-4  mr-1 data-marker align-self-center"></div>
+                                    <span class="page-view">Go Pro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4 p-0  h-100">
+                    <div class="unique-visits">
+                        <div class="unique-visits-title d-flex justify-content-between">
+                            <h6 class="align-self-center mb-0">Unique Visitors</h6>
+                            <p class=" mb-0">22,311</p>
+                        </div>
+
+                        <div class="unique-visits-body">
+                            <div class="table-responsive mt-5">
+                                <table class="table">
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-head">
+                                                        <img alt="admin-profile" src="assets/img/88x60.jpg"
+                                                            class="rounded-circle mr-3">
+                                                    </div>
+                                                    <div class="f-body">
+                                                        <h6 class="">United States</h6>
+                                                        <p class=""><i class="flaticon-arrow-up"></i> 13.22%</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-right">
+                                                <p>14.54%</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-head">
+                                                        <img alt="admin-profile" src="assets/img/88x60.jpg"
+                                                            class="rounded-circle mr-3">
+                                                    </div>
+                                                    <div class="f-body">
+                                                        <h6 class="">China</h6>
+                                                        <p class=""><i class="flaticon-arrow-up"></i> 11.77%</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-right">
+                                                <p>14.40%</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-head">
+                                                        <img alt="admin-profile" src="assets/img/88x60.jpg"
+                                                            class="rounded-circle mr-3">
+                                                    </div>
+                                                    <div class="f-body">
+                                                        <h6 class="">India</h6>
+                                                        <p class=""><i class="flaticon-arrow-up"></i> 9.43%</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-right">
+                                                <p>8.65%</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-head">
+                                                        <img alt="admin-profile" src="assets/img/88x60.jpg"
+                                                            class="rounded-circle mr-3">
+                                                    </div>
+                                                    <div class="f-body">
+                                                        <h6 class="">Sweden</h6>
+                                                        <p class=""><i class="flaticon-arrow-up"></i> 8.92%</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <p>5.03%</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-head">
+                                                        <img alt="admin-profile" src="assets/img/88x60.jpg"
+                                                            class="rounded-circle mr-3">
+                                                    </div>
+                                                    <div class="f-body">
+                                                        <h6 class="">France</h6>
+                                                        <p class=""><i class="flaticon-arrow-up"></i> 8.56%</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right">
+                                                <p>3.83%</p>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="u-v-loadmore text-center">
+                                <button class="btn btn-primary btn-block">See 51+ more countries</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-8 col-sm-12 col-12 layout-spacing">
+                <div class="statbox widget box">
+                    <div class="widget-content widget-content-area weather-calendar br-4 p-0">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-12 mb-4 weather">
+                                <div class="main-info">
+                                    <div class="weather-top d-sm-flex d-block justify-content-between  px-4 py-5">
+                                        <div class="weather-grids text-sm-left text-center mb-4">
+                                            <h3>Weather</h3>
+                                        </div>
+                                        <div class="weather-grids weather-mdl mb-4">
+                                            <canvas id="clear-day" width="70" height="70"></canvas>
+                                        </div>
+                                        <div class="weather-grids text-sm-left text-center">
+                                            <h4>Max 27&#xB0;</h4>
+                                            <h2>21&#xB0;C</h2>
+                                            <h4>Min 10&#xB0;</h4>
+                                        </div>
+                                    </div>
+                                    <div class="weather-bottom">
+                                        <ul
+                                            class="list-unstyled mb-0 d-flex justify-content-sm-around justify-content-start">
+                                            <li class="">
+                                                <h4>SUN</h4>
+                                                <figure class="icons">
+                                                    <canvas id="cloudy" width="40" height="40"></canvas>
+                                                </figure>
+                                                <h5>18&#xB0;C</h5>
+                                                <h6>12&#xB0;C</h6>
+                                            </li>
+                                            <li class="">
+                                                <h4>MON</h4>
+                                                <figure class="icons">
+                                                    <canvas id="sleet" width="40" height="40"></canvas>
+                                                </figure>
+                                                <h5>17&#xB0;C</h5>
+                                                <h6>12&#xB0;C</h6>
+                                            </li>
+                                            <li class="">
+                                                <h4>TUE</h4>
+                                                <figure class="icons">
+                                                    <canvas id="clear-night" width="40" height="40"></canvas>
+                                                </figure>
+                                                <h5>17&#xB0;C</h5>
+                                                <h6>10&#xB0;C</h6>
+                                            </li>
+                                            <li class="">
+                                                <h4>WED</h4>
+                                                <figure class="icons">
+                                                    <canvas id="snow" width="40" height="40"></canvas>
+                                                </figure>
+                                                <h5>24&#xB0;C</h5>
+                                                <h6>10&#xB0;C</h6>
+                                            </li>
+                                            <li class="">
+                                                <h4>THR</h4>
+                                                <figure class="icons">
+                                                    <canvas id="wind" width="40" height="40"></canvas>
+                                                </figure>
+                                                <h5>25&#xB0;C</h5>
+                                                <h6>15&#xB0;C</h6>
+                                            </li>
+                                            <li class="">
+                                                <h4>FRI</h4>
+                                                <figure class="icons">
+                                                    <canvas id="rain" width="40" height="40"></canvas>
+                                                </figure>
+                                                <h5>27&#xB0;C</h5>
+                                                <h6>17&#xB0;C</h6>
+                                            </li>
+                                            <li class="">
+                                                <h4>SAT</h4>
+                                                <figure class="icons">
+                                                    <canvas id="partly-cloudy-day" width="40" height="40"></canvas>
+                                                </figure>
+                                                <h5>20&#xB0;C</h5>
+                                                <h6>15&#xB0;C</h6>
+                                            </li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 layout-spacing">
+                <div class="widget-content widget-content-area br-4 p-0 h-100">
+                    <div id="social-card-5" class="card br-4">
+                        <div class="card-top-section br-4">
+                            <div class="usr-profile-meta">
+                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                    class="img-fluid usr-profile rounded-circle">
+                            </div>
+                        </div>
+                        <div class="card-body mt-5">
+                            <div class="card-bottom-section mt-4">
+                                <div class="tweet">
+                                    <p class="">
+                                        <span class="t-symbol">#</span> Lorem ipsum dolor sit amet, consectetur sed do
+                                        eiusmod
+                                    </p>
+                                    <p class="meta-time">15 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xl-7 col-12 layout-spacing">
+                <div class="widget-content widget-content-area p-0 br-4">
+                    <div class="todo-list-advance">
+                        <div class="todo-list-header">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-6 col-10 mb-4 mb-sm-0">
+                                    <h5 class="mb-0">To-do list</h5>
+                                </div>
+                                <div class="col-md-7 col-sm-6 col-2 text-right">
+                                    <i class="flaticon-close-fill mt-1 remove-todo-close js-collapse"></i>
+                                    <i class="flaticon-plus-1 add-task"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="todo-list-body panel-collapse" style="">
+                            <div class="table-responsive  mt-4">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-success w-100">
+                                                        <input type="checkbox" class="new-control-input">
+                                                        <span class="new-control-indicator"></span>
+
+                                                        <span
+                                                            class="d-sm-flex d-block todo-item w-100 justify-content-between">
+
+                                                            <span class="align-self-center  d-inline-block">
+                                                                <span class="todo-text ml-4 mt-1">Create new users
+                                                                    Profile</span>
+                                                                <i class="flaticon-edit-5 task-edit ml-3"></i>
+                                                                <span
+                                                                    class="ml-1 flaticon-close-fill remove-task"></span>
+                                                            </span>
+
+
+                                                            <span class="d-inline-block">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid ml-sm-0 ml-4">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid">
+                                                            </span>
+
+                                                        </span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-success w-100">
+                                                        <input type="checkbox" class="new-control-input" checked="">
+                                                        <span class="new-control-indicator"></span>
+
+                                                        <span
+                                                            class="d-sm-flex d-block todo-item w-100 justify-content-between">
+
+                                                            <span class="align-self-center d-inline-block">
+                                                                <span class="todo-text ml-4 mt-1">Meeting with James at
+                                                                    4:50pm</span>
+                                                                <i class="flaticon-edit-5 task-edit ml-3"></i>
+                                                                <span
+                                                                    class="ml-1 flaticon-close-fill remove-task mt-1  "></span>
+                                                            </span>
+
+
+                                                            <span class="d-inline-block">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid ml-sm-0 ml-4">
+                                                            </span>
+
+                                                        </span>
+
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-success w-100">
+                                                        <input type="checkbox" class="new-control-input">
+                                                        <span class="new-control-indicator"></span>
+
+
+                                                        <span
+                                                            class="d-sm-flex d-block todo-item w-100 justify-content-between">
+
+                                                            <span class="align-self-center d-inline-block">
+                                                                <span class="todo-text ml-4 mt-1">Meet Lisa to discuss
+                                                                    project details</span>
+                                                                <i class="flaticon-edit-5 task-edit ml-3"></i>
+                                                                <span
+                                                                    class="ml-1 flaticon-close-fill remove-task mt-1  "></span>
+                                                            </span>
+
+                                                            <span class="d-inline-block">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid ml-sm-0 ml-4">
+                                                            </span>
+
+                                                        </span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-success w-100">
+                                                        <input type="checkbox" class="new-control-input" checked>
+                                                        <span class="new-control-indicator"></span>
+
+                                                        <span
+                                                            class="d-sm-flex d-block todo-item w-100 justify-content-between">
+
+                                                            <span class="align-self-center d-inline-block">
+                                                                <span class="todo-text ml-4 mt-1">Conference call with
+                                                                    Marketing Manager</span>
+                                                                <i class="flaticon-edit-5 task-edit ml-3"></i>
+                                                                <span
+                                                                    class="ml-1 flaticon-close-fill remove-task mt-1  "></span>
+                                                            </span>
+
+
+                                                            <span class="d-inline-block">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid ml-sm-0 ml-4">
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-success w-100">
+                                                        <input type="checkbox" class="new-control-input" checked>
+                                                        <span class="new-control-indicator"></span>
+
+                                                        <span
+                                                            class="d-sm-flex d-block todo-item w-100 justify-content-between">
+
+                                                            <span class="align-self-center d-inline-block">
+                                                                <span class="todo-text ml-4 mt-1">Team meet at
+                                                                    Starbucks</span>
+                                                                <i class="flaticon-edit-5 task-edit ml-3"></i>
+                                                                <span
+                                                                    class="ml-1 flaticon-close-fill remove-task mt-1 "></span>
+                                                            </span>
+
+                                                            <span class="d-inline-block">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid ml-sm-0 ml-4">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid">
+                                                            </span>
+
+                                                        </span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-success w-100">
+                                                        <input type="checkbox" class="new-control-input">
+                                                        <span class="new-control-indicator"></span>
+
+                                                        <span
+                                                            class="d-sm-flex d-block todo-item w-100 justify-content-between">
+
+                                                            <span class="align-self-center d-inline-block">
+                                                                <span class="todo-text ml-4 mt-1">Collect documents from
+                                                                    Sara</span>
+                                                                <i class="flaticon-edit-5 task-edit ml-3"></i>
+                                                                <span
+                                                                    class="ml-1 flaticon-close-fill remove-task mt-1  "></span>
+                                                            </span>
+
+
+                                                            <span class="d-inline-block">
+                                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                                    class="img-fluid ml-sm-0 ml-4">
+                                                            </span>
+
+                                                        </span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="todo-list-bottom text-center">
+                            <button class="btn btn-default"><i class="flaticon-arrow-left"></i></button>
+                            <span class="ml-3">View all</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-5 col-12 layout-spacing">
+                <div class="row">
+
+                    <div class="col-xl-12 col-lg-7 col-md-7 mb-4">
+                        <div class="widget-content widget-content-area br-4 p-0">
+                            <div id="user-profile-card-6" class="card br-4">
+
+                                <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <div class="usr-meta">
+                                                <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                    class="img-fluid rounded-circle">
+                                                <p class="usr-name  mt-3 mb-0">Amy Diaz</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 usr-activities text-center pl-0">
+                                            <div class="row">
+                                                <div class="col-sm-4 col-6 px-0">
+                                                    <p class="meta-info">Post</p>
+                                                    <h6 class="">674</h6>
+                                                </div>
+                                                <div class="col-sm-4 col-6 px-0">
+                                                    <p class="meta-info">Albums</p>
+                                                    <h6 class="">33</h6>
+                                                </div>
+                                                <div class="col-sm-4 col-12 px-0">
+                                                    <p class="meta-info">Followers</p>
+                                                    <h6 class="">13.5K</h6>
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                    <button class="btn btn-dark mr-3 mb-2">Follow</button>
+                                                    <button class="btn btn-dark mb-2">Message</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-5  px-4">
+
+                                            <div class="usr-posts">
+                                                <h6 class="mb-4 text-center">My Post</h6>
+                                                <div class="posts-thumbnails text-center">
+                                                    <img alt="admin-profile" src="assets/img/70x70.jpg"
+                                                        class="img-fluid mb-3">
+
+                                                    <img alt="admin-profile" src="assets/img/70x70.jpg"
+                                                        class="img-fluid mb-3">
+
+                                                    <img alt="admin-profile" src="assets/img/70x70.jpg"
+                                                        class="img-fluid mb-3">
+
+                                                    <img alt="admin-profile" src="assets/img/70x70.jpg"
+                                                        class="img-fluid mb-3">
+
+                                                    <img alt="admin-profile" src="assets/img/70x70.jpg"
+                                                        class="img-fluid mb-3">
+
+                                                    <img alt="admin-profile" src="assets/img/60x60.jpg"
+                                                        class="img-fluid mb-3">
+
+                                                    <img alt="admin-profile" src="assets/img/90x90.jpg"
+                                                        class="img-fluid mb-3">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-5 col-md-5">
+                        <div class="widget-content widget-content-area br-4 p-0">
+                            <div id="card-6" class="card br-4">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-12  align-self-center px-xl-3 px-md-0">
+                                            <h5 class="mb-2">Likes</h5>
+                                            <h4 class="mb-2">54329</h4>
+                                            <p>745+ from last week</p>
+                                            <img alt="admin-profile" src="assets/img/likes.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-6 col-lg-12 col-md-12 col-12 layout-spacing">
+                <div class="widget-content-area event-calendar p-0 br-4 h-100">
+                    <div class="calendar analytics"></div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-12 col-md-12 col-12 layout-spacing">
+                <div class="widget-content widget-content-area h-100 br-4 p-0">
+
+                    <div class="usr-list">
+
+                        <div class="usr-list-title">
+                            <h6 class="mb-0">User List</h6>
+                        </div>
+
+                        <div class="usr-list-body">
+                            <div class="table-responsive mt-4">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-header">
+                                                        <img src="assets/img/90x90.jpg" class="rounded-circle mr-3"
+                                                            alt="admin-profile">
+                                                    </div>
+                                                    <div class="f-body  align-self-center">
+                                                        <h6>Andy King</h6>
+                                                        <p>Developer</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <i class="flaticon-fill-tick mb-2 mr-2 bs-tooltip" data-placement="top"
+                                                    title="" data-original-title="Accept"></i>
+                                                <i class="flaticon-close-fill mb-2 mr-1 bs-tooltip" data-placement="top"
+                                                    title="" data-original-title="Remove"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-header">
+                                                        <img src="assets/img/90x90.jpg" class="rounded-circle mr-3"
+                                                            alt="admin-profile">
+                                                    </div>
+                                                    <div class="f-body  align-self-center">
+                                                        <h6>Sonia Shaw</h6>
+                                                        <p>UX Designer</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <i class="flaticon-fill-tick mb-2 mr-2 t-solved bs-tooltip"
+                                                    data-placement="top" title="" data-original-title="Accept"></i>
+                                                <i class="flaticon-close-fill mb-2 mr-1 bs-tooltip" data-placement="top"
+                                                    title="" data-original-title="Remove"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-header">
+                                                        <img src="assets/img/90x90.jpg" class="rounded-circle mr-3"
+                                                            alt="admin-profile">
+                                                    </div>
+                                                    <div class="f-body  align-self-center">
+                                                        <h6>Jesse Cory</h6>
+                                                        <p>Team Leader</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <i class="flaticon-fill-tick mb-2 mr-2 bs-tooltip" data-placement="top"
+                                                    title="" data-original-title="Accept"></i>
+                                                <i class="flaticon-close-fill mb-2 mr-1 t-not-solved bs-tooltip"
+                                                    data-placement="top" title="" data-original-title="Remove"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-header">
+                                                        <img src="assets/img/90x90.jpg" class="rounded-circle mr-3"
+                                                            alt="admin-profile">
+                                                    </div>
+                                                    <div class="f-body  align-self-center">
+                                                        <h6>Angie Lamb</h6>
+                                                        <p>Developer</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <i class="flaticon-fill-tick mb-2 mr-2 t-solved bs-tooltip"
+                                                    data-placement="top" title="" data-original-title="Accept"></i>
+                                                <i class="flaticon-close-fill mb-2 mr-1 bs-tooltip" data-placement="top"
+                                                    title="" data-original-title="Remove"></i>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="f-header">
+                                                        <img src="assets/img/90x90.jpg" class="rounded-circle mr-3"
+                                                            alt="admin-profile">
+                                                    </div>
+                                                    <div class="f-body  align-self-center">
+                                                        <h6>Amy Diaz</h6>
+                                                        <p>Writer</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <i class="flaticon-fill-tick mb-2 mr-2 t-solved bs-tooltip"
+                                                    data-placement="top" title="" data-original-title="Accept"></i>
+                                                <i class="flaticon-close-fill mb-2 mr-1 bs-tooltip" data-placement="top"
+                                                    title="" data-original-title="Remove"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="u-l-add-new text-center">
+                                <button class="btn btn-primary">Add New</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area p-0 br-4">
+                    <div class="news-feeds">
+                        <div class="news-feeds-header">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7 col-7 mb-4 mb-sm-0">
+                                    <h6 class="mb-0">News Feeds</h6>
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-5 text-right">
+                                    <div class="">View all</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-feeds-body">
+                            <div class="table-responsive  mt-3">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-danger mb-0">
+                                                        <input type="checkbox" class="new-control-input">
+                                                        <span class="new-control-indicator  mt-2"></span>
+                                                        <span class="d-flex justify-content-center ml-2">
+                                                            <span class="news-feeds-item ml-3">
+                                                                <span class="media d-sm-flex d-block">
+                                                                    <span class="usr-icon mr-4">
+                                                                        <i
+                                                                            class="bg-light-primary flaticon-heart-1"></i>
+                                                                    </span>
+                                                                    <span class="media-body">
+                                                                        <span class="news-feeds-text"><span
+                                                                                class="user-name">Alan Green</span>
+                                                                            accepted your invitation</span>
+                                                                        <span class="meta-time d-block mb-0">5 min
+                                                                            ago</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td><i class="flaticon-cancel-circle float-right task-delete bs-tooltip"
+                                                    data-original-title="Delete"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-danger mb-0">
+                                                        <input type="checkbox" class="new-control-input" checked="">
+                                                        <span class="new-control-indicator  mt-2"></span>
+                                                        <span class="d-flex justify-content-center ml-2">
+                                                            <span class="news-feeds-item ml-3">
+                                                                <span class="media d-sm-flex d-block">
+                                                                    <span class="usr-icon mr-4">
+                                                                        <i
+                                                                            class="bg-light-success flaticon-chat-line-1"></i>
+                                                                    </span>
+                                                                    <span class="media-body">
+                                                                        <span class="news-feeds-text"><span
+                                                                                class="user-name">Justin</span> send you
+                                                                            a <span class="action">Message</span></span>
+                                                                        <span class="meta-time d-block mb-0">14 min
+                                                                            ago</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td><i class="flaticon-cancel-circle float-right task-delete bs-tooltip"
+                                                    data-original-title="Delete"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-danger mb-0">
+                                                        <input type="checkbox" class="new-control-input">
+                                                        <span class="new-control-indicator  mt-2"></span>
+
+                                                        <span class="d-flex justify-content-center ml-2">
+                                                            <span class="news-feeds-item ml-3">
+                                                                <span class="media d-sm-flex d-block">
+                                                                    <span class="usr-icon mr-4">
+                                                                        <i class="bg-light-info flaticon-calendar"></i>
+                                                                    </span>
+                                                                    <span class="media-body">
+                                                                        <span class="news-feeds-text"><span
+                                                                                class="user-name">Amy Diaz</span>
+                                                                            accepted your <span
+                                                                                class="action">Schedule</span></span>
+                                                                        <span class="meta-time d-block mb-0">5 min
+                                                                            ago</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td><i class="flaticon-cancel-circle float-right task-delete bs-tooltip"
+                                                    data-original-title="Delete"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-danger mb-0">
+                                                        <input type="checkbox" class="new-control-input">
+                                                        <span class="new-control-indicator  mt-2"></span>
+                                                        <span class="d-flex justify-content-center ml-2">
+                                                            <span class="news-feeds-item ml-3">
+                                                                <span class="media d-sm-flex d-block">
+                                                                    <span class="usr-icon mr-4">
+                                                                        <i class="bg-light-warning flaticon-like-3"></i>
+                                                                    </span>
+                                                                    <span class="media-body">
+                                                                        <span class="news-feeds-text"><span
+                                                                                class="user-name">Kelly Young</span>
+                                                                            send you a <span
+                                                                                class="action">Request</span></span>
+                                                                        <span class="meta-time d-block mb-0">1 hour
+                                                                            ago</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td><i class="flaticon-cancel-circle float-right task-delete bs-tooltip"
+                                                    data-original-title="Delete"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="n-chk">
+                                                    <label class="new-control new-checkbox checkbox-danger mb-0">
+                                                        <input type="checkbox" class="new-control-input">
+                                                        <span class="new-control-indicator  mt-2"></span>
+                                                        <span class="d-flex justify-content-center ml-2">
+                                                            <span class="news-feeds-item ml-3">
+                                                                <span class="media d-sm-flex d-block">
+                                                                    <span class="usr-icon mr-4">
+                                                                        <i class="bg-light-secondary flaticon-view"></i>
+                                                                    </span>
+                                                                    <span class="media-body">
+                                                                        <span class="news-feeds-text"><span
+                                                                                class="user-name">Oscar Garner
+                                                                            </span>view your profile</span>
+                                                                        <span class="meta-time d-block mb-0">1 day
+                                                                            ago</span>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td><i class="flaticon-cancel-circle float-right task-delete bs-tooltip"
+                                                    data-original-title="Delete"></i></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-12 layout-spacing">
+                <div class="widget-content widget-content-area p-0 br-4">
+                    <div class="browser-statistics">
+                        <div class="browser-statistics-header">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-12 mb-4 mb-sm-0">
+                                    <h6 class="mb-0">Browser Statistics</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="browser-statistics-body">
+                            <div class="table-responsive mt-2">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="pro-name mb-2">Chrome</div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="progress progress-md w-100">
+                                                        <div class="progress-bar bg-success" role="progressbar"
+                                                            style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <p class="v-amount mb-0  mt-4 mr-4">725</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="pro-name mb-2">Mozilla</div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="progress progress-md w-100">
+                                                        <div class="progress-bar bg-secondary" role="progressbar"
+                                                            style="width: 62%" aria-valuenow="65" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <p class="v-amount mb-0  mt-4 mr-4">220</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="pro-name mb-2">Safari</div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="progress progress-md w-100">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 57%" aria-valuenow="57" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <p class="v-amount mb-0  mt-4 mr-4">35</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="pro-name mb-2">Internet Explorer</div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="progress progress-md w-100">
+                                                        <div class="progress-bar bg-dark" role="progressbar"
+                                                            style="width: 88%" aria-valuenow="88" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <p class="v-amount mb-0  mt-4 mr-4">375</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="pro-name mb-2">Edge</div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="progress progress-md w-100">
+                                                        <div class="progress-bar bg-primary" role="progressbar"
+                                                            style="width: 52%" aria-valuenow="52" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <p class="v-amount mb-0  mt-4 mr-4">25</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="pro-name mb-2">Opera</div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="progress progress-md w-100">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                            style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="action text-right">
+                                                <p class="v-amount mb-0  mt-4 mr-4">450</p>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--  END CONTENT PART  -->
+{% endblock %}
